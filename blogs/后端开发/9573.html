@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>史上最强的嵌入式底层驱动开发课程 Linux系统开发+Linux高级程序+主板开发+ARM等 | 集合网</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="dns-prefetch" href="//xbcyw.github.io">
+    <meta name="description" content="集合网 你想要的这里都有！">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <link rel="preload" href="/assets/css/0.styles.9201202a.css" as="style"><link rel="preload" href="/assets/js/app.f0bea6b2.js" as="script"><link rel="preload" href="/assets/js/3.bd2d6c39.js" as="script"><link rel="preload" href="/assets/js/1.c0a1e8d4.js" as="script"><link rel="preload" href="/assets/js/134.e5ea858e.js" as="script"><link rel="prefetch" href="/assets/js/10.d8749845.js"><link rel="prefetch" href="/assets/js/100.871b3285.js"><link rel="prefetch" href="/assets/js/101.810d32c9.js"><link rel="prefetch" href="/assets/js/102.54d2e77b.js"><link rel="prefetch" href="/assets/js/103.f11a1551.js"><link rel="prefetch" href="/assets/js/104.5f5672b4.js"><link rel="prefetch" href="/assets/js/105.c6892885.js"><link rel="prefetch" href="/assets/js/106.d1b91456.js"><link rel="prefetch" href="/assets/js/107.030aa003.js"><link rel="prefetch" href="/assets/js/108.a603a710.js"><link rel="prefetch" href="/assets/js/109.bbc7f30f.js"><link rel="prefetch" href="/assets/js/11.5a92e117.js"><link rel="prefetch" href="/assets/js/110.9082020a.js"><link rel="prefetch" href="/assets/js/111.24a1a6cd.js"><link rel="prefetch" href="/assets/js/112.36c3f26c.js"><link rel="prefetch" href="/assets/js/113.177dfac3.js"><link rel="prefetch" href="/assets/js/114.76e58a54.js"><link rel="prefetch" href="/assets/js/115.19982b36.js"><link rel="prefetch" href="/assets/js/116.f6d7ec3f.js"><link rel="prefetch" href="/assets/js/117.445f7d13.js"><link rel="prefetch" href="/assets/js/118.da02f71e.js"><link rel="prefetch" href="/assets/js/119.56c52942.js"><link rel="prefetch" href="/assets/js/12.5fad491f.js"><link rel="prefetch" href="/assets/js/120.05483e26.js"><link rel="prefetch" href="/assets/js/121.09740e6b.js"><link rel="prefetch" href="/assets/js/122.7e2e5f28.js"><link rel="prefetch" href="/assets/js/123.d5e2a74a.js"><link rel="prefetch" href="/assets/js/124.76832bd2.js"><link rel="prefetch" href="/assets/js/125.bf9ca7b7.js"><link rel="prefetch" href="/assets/js/126.1feb9bec.js"><link rel="prefetch" href="/assets/js/127.949946fe.js"><link rel="prefetch" href="/assets/js/128.68840469.js"><link rel="prefetch" href="/assets/js/129.a85ffd15.js"><link rel="prefetch" href="/assets/js/13.4a5a5648.js"><link rel="prefetch" href="/assets/js/130.b7260ffa.js"><link rel="prefetch" href="/assets/js/131.2736df0f.js"><link rel="prefetch" href="/assets/js/132.5591e86d.js"><link rel="prefetch" href="/assets/js/133.d201bf40.js"><link rel="prefetch" href="/assets/js/135.aa0f9ee3.js"><link rel="prefetch" href="/assets/js/136.09be86a2.js"><link rel="prefetch" href="/assets/js/137.c9ec69ad.js"><link rel="prefetch" href="/assets/js/138.953250ae.js"><link rel="prefetch" href="/assets/js/139.0bcc0972.js"><link rel="prefetch" href="/assets/js/14.d58aebbc.js"><link rel="prefetch" href="/assets/js/140.22dd9ab1.js"><link rel="prefetch" href="/assets/js/141.71f85f97.js"><link rel="prefetch" href="/assets/js/142.04794549.js"><link rel="prefetch" href="/assets/js/143.5c000e65.js"><link rel="prefetch" href="/assets/js/144.68cc100b.js"><link rel="prefetch" href="/assets/js/145.7ea6cffe.js"><link rel="prefetch" href="/assets/js/146.066caa16.js"><link rel="prefetch" href="/assets/js/147.204c7733.js"><link rel="prefetch" href="/assets/js/148.938aaa1f.js"><link rel="prefetch" href="/assets/js/149.24031e39.js"><link rel="prefetch" href="/assets/js/15.6bd76073.js"><link rel="prefetch" href="/assets/js/150.140fe33a.js"><link rel="prefetch" href="/assets/js/151.804b4ab8.js"><link rel="prefetch" href="/assets/js/152.a0949b6d.js"><link rel="prefetch" href="/assets/js/153.c7a7c614.js"><link rel="prefetch" href="/assets/js/154.f0884ac6.js"><link rel="prefetch" href="/assets/js/155.01d02444.js"><link rel="prefetch" href="/assets/js/156.63076214.js"><link rel="prefetch" href="/assets/js/157.ff62e0cf.js"><link rel="prefetch" href="/assets/js/158.4985f2fa.js"><link rel="prefetch" href="/assets/js/159.447521bb.js"><link rel="prefetch" href="/assets/js/16.ac6963c9.js"><link rel="prefetch" href="/assets/js/160.b1b04817.js"><link rel="prefetch" href="/assets/js/161.a2ba1982.js"><link rel="prefetch" href="/assets/js/162.c2c85ffb.js"><link rel="prefetch" href="/assets/js/163.31529196.js"><link rel="prefetch" href="/assets/js/164.805d4c78.js"><link rel="prefetch" href="/assets/js/165.08a0797f.js"><link rel="prefetch" href="/assets/js/166.3879fb0f.js"><link rel="prefetch" href="/assets/js/167.38e1ea90.js"><link rel="prefetch" href="/assets/js/168.ef1bab0e.js"><link rel="prefetch" href="/assets/js/169.13685d94.js"><link rel="prefetch" href="/assets/js/17.c6f1ef36.js"><link rel="prefetch" href="/assets/js/170.03e7a5e5.js"><link rel="prefetch" href="/assets/js/171.f6748b29.js"><link rel="prefetch" href="/assets/js/172.08daf913.js"><link rel="prefetch" href="/assets/js/173.5aaa2002.js"><link rel="prefetch" href="/assets/js/174.227b1ae8.js"><link rel="prefetch" href="/assets/js/175.a3e799e3.js"><link rel="prefetch" href="/assets/js/176.4083bf0f.js"><link rel="prefetch" href="/assets/js/177.1667e4d4.js"><link rel="prefetch" href="/assets/js/178.241305a6.js"><link rel="prefetch" href="/assets/js/179.197315ce.js"><link rel="prefetch" href="/assets/js/18.df593222.js"><link rel="prefetch" href="/assets/js/180.0e0601e1.js"><link rel="prefetch" href="/assets/js/181.5390ce71.js"><link rel="prefetch" href="/assets/js/182.71b1ff3d.js"><link rel="prefetch" href="/assets/js/183.11b75f09.js"><link rel="prefetch" href="/assets/js/184.630f202f.js"><link rel="prefetch" href="/assets/js/185.f68b6028.js"><link rel="prefetch" href="/assets/js/186.e3b9452b.js"><link rel="prefetch" href="/assets/js/187.1449b8a7.js"><link rel="prefetch" href="/assets/js/188.0ae49279.js"><link rel="prefetch" href="/assets/js/189.5cdfb97a.js"><link rel="prefetch" href="/assets/js/19.65c50af6.js"><link rel="prefetch" href="/assets/js/190.fda363f8.js"><link rel="prefetch" href="/assets/js/191.e2ce070b.js"><link rel="prefetch" href="/assets/js/192.82b09728.js"><link rel="prefetch" href="/assets/js/193.e6b0474c.js"><link rel="prefetch" href="/assets/js/194.92c2d2a5.js"><link rel="prefetch" href="/assets/js/195.188e6fce.js"><link rel="prefetch" href="/assets/js/196.af316ee1.js"><link rel="prefetch" href="/assets/js/197.4debf9fa.js"><link rel="prefetch" href="/assets/js/198.ab18aea8.js"><link rel="prefetch" href="/assets/js/199.80cba630.js"><link rel="prefetch" href="/assets/js/20.88b0490a.js"><link rel="prefetch" href="/assets/js/200.09403d55.js"><link rel="prefetch" href="/assets/js/201.a06005ad.js"><link rel="prefetch" href="/assets/js/202.25c60eac.js"><link rel="prefetch" href="/assets/js/203.f9a06708.js"><link rel="prefetch" href="/assets/js/204.286d7003.js"><link rel="prefetch" href="/assets/js/205.abe9ecc1.js"><link rel="prefetch" href="/assets/js/206.5292414a.js"><link rel="prefetch" href="/assets/js/207.d91d8b9f.js"><link rel="prefetch" href="/assets/js/208.fc795860.js"><link rel="prefetch" href="/assets/js/21.a09c7adb.js"><link rel="prefetch" href="/assets/js/22.5b6ad798.js"><link rel="prefetch" href="/assets/js/23.cc66d154.js"><link rel="prefetch" href="/assets/js/24.c796da12.js"><link rel="prefetch" href="/assets/js/25.8d17e5c0.js"><link rel="prefetch" href="/assets/js/26.9cfe2dcd.js"><link rel="prefetch" href="/assets/js/27.8aef4915.js"><link rel="prefetch" href="/assets/js/28.f1b488b4.js"><link rel="prefetch" href="/assets/js/29.07ee0857.js"><link rel="prefetch" href="/assets/js/30.bf929eb2.js"><link rel="prefetch" href="/assets/js/31.545302e5.js"><link rel="prefetch" href="/assets/js/32.c3a5d7c6.js"><link rel="prefetch" href="/assets/js/33.209b8b31.js"><link rel="prefetch" href="/assets/js/34.345be3e9.js"><link rel="prefetch" href="/assets/js/35.865228e8.js"><link rel="prefetch" href="/assets/js/36.3bf55dc5.js"><link rel="prefetch" href="/assets/js/37.88e5cd40.js"><link rel="prefetch" href="/assets/js/38.540e411d.js"><link rel="prefetch" href="/assets/js/39.b75b0a11.js"><link rel="prefetch" href="/assets/js/4.aa1a76a3.js"><link rel="prefetch" href="/assets/js/40.77abac5c.js"><link rel="prefetch" href="/assets/js/41.d5a932d0.js"><link rel="prefetch" href="/assets/js/42.a632d36a.js"><link rel="prefetch" href="/assets/js/43.c1db631e.js"><link rel="prefetch" href="/assets/js/44.60d2c6d2.js"><link rel="prefetch" href="/assets/js/45.9e95a1dc.js"><link rel="prefetch" href="/assets/js/46.bac46586.js"><link rel="prefetch" href="/assets/js/47.440dd243.js"><link rel="prefetch" href="/assets/js/48.257e37b9.js"><link rel="prefetch" href="/assets/js/49.d1ad3e71.js"><link rel="prefetch" href="/assets/js/5.ff423660.js"><link rel="prefetch" href="/assets/js/50.8b883751.js"><link rel="prefetch" href="/assets/js/51.9c8ad38b.js"><link rel="prefetch" href="/assets/js/52.5dae59f5.js"><link rel="prefetch" href="/assets/js/53.c5b096df.js"><link rel="prefetch" href="/assets/js/54.94fdb4ad.js"><link rel="prefetch" href="/assets/js/55.d26ee223.js"><link rel="prefetch" href="/assets/js/56.ff2d21a5.js"><link rel="prefetch" href="/assets/js/57.71685d03.js"><link rel="prefetch" href="/assets/js/58.469b8440.js"><link rel="prefetch" href="/assets/js/59.9e5144da.js"><link rel="prefetch" href="/assets/js/6.c205a04c.js"><link rel="prefetch" href="/assets/js/60.472d05fa.js"><link rel="prefetch" href="/assets/js/61.14250980.js"><link rel="prefetch" href="/assets/js/62.d3929e73.js"><link rel="prefetch" href="/assets/js/63.cd98a1b1.js"><link rel="prefetch" href="/assets/js/64.8452f3a9.js"><link rel="prefetch" href="/assets/js/65.b962240c.js"><link rel="prefetch" href="/assets/js/66.ddb3cd84.js"><link rel="prefetch" href="/assets/js/67.4c19371e.js"><link rel="prefetch" href="/assets/js/68.8e74e4e6.js"><link rel="prefetch" href="/assets/js/69.4c384ca4.js"><link rel="prefetch" href="/assets/js/7.1e8513ba.js"><link rel="prefetch" href="/assets/js/70.5c4353ff.js"><link rel="prefetch" href="/assets/js/71.7abcbf93.js"><link rel="prefetch" href="/assets/js/72.0af2ef18.js"><link rel="prefetch" href="/assets/js/73.c2da77a2.js"><link rel="prefetch" href="/assets/js/74.9d43ba12.js"><link rel="prefetch" href="/assets/js/75.648ec1f9.js"><link rel="prefetch" href="/assets/js/76.be3f883a.js"><link rel="prefetch" href="/assets/js/77.cb8e2983.js"><link rel="prefetch" href="/assets/js/78.14282d94.js"><link rel="prefetch" href="/assets/js/79.9fb9f9d6.js"><link rel="prefetch" href="/assets/js/8.4b6c3393.js"><link rel="prefetch" href="/assets/js/80.0cf0dc7b.js"><link rel="prefetch" href="/assets/js/81.1444bf27.js"><link rel="prefetch" href="/assets/js/82.e80bf191.js"><link rel="prefetch" href="/assets/js/83.7c316a29.js"><link rel="prefetch" href="/assets/js/84.a29298af.js"><link rel="prefetch" href="/assets/js/85.c1c243c9.js"><link rel="prefetch" href="/assets/js/86.95aab4b8.js"><link rel="prefetch" href="/assets/js/87.3c0515b6.js"><link rel="prefetch" href="/assets/js/88.7c280773.js"><link rel="prefetch" href="/assets/js/89.67c0f5f8.js"><link rel="prefetch" href="/assets/js/9.a5ce18a8.js"><link rel="prefetch" href="/assets/js/90.8b340f1d.js"><link rel="prefetch" href="/assets/js/91.c135f141.js"><link rel="prefetch" href="/assets/js/92.a95d468f.js"><link rel="prefetch" href="/assets/js/93.d9dcdf9e.js"><link rel="prefetch" href="/assets/js/94.f24e10b7.js"><link rel="prefetch" href="/assets/js/95.10147b23.js"><link rel="prefetch" href="/assets/js/96.3f109faf.js"><link rel="prefetch" href="/assets/js/97.aa6005f8.js"><link rel="prefetch" href="/assets/js/98.e847fc8d.js"><link rel="prefetch" href="/assets/js/99.16fdb89d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.9201202a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-7dd95ae2><div data-v-7dd95ae2><div class="password-shadow password-wrapper-out" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>集合网</h3> <p class="description" data-v-59e6cb88>集合网 你想要的这里都有！</p> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>🔅</span>
+          
+        <span data-v-59e6cb88>2021 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-7dd95ae2><header class="navbar" data-v-7dd95ae2><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">集合网</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-7dd95ae2></div> <aside class="sidebar" data-v-7dd95ae2><div class="personal-info-wrapper" data-v-1fad0c41 data-v-7dd95ae2><img src="/logo.svg" alt="author-avatar" class="personal-img" data-v-1fad0c41> <h3 class="name" data-v-1fad0c41>
+    🔅
+  </h3> <div class="num" data-v-1fad0c41><div data-v-1fad0c41><h3 data-v-1fad0c41>198</h3> <h6 data-v-1fad0c41>Articles</h6></div> <div data-v-1fad0c41><h3 data-v-1fad0c41>0</h3> <h6 data-v-1fad0c41>Tags</h6></div></div> <ul class="social-links" data-v-1fad0c41><li class="social-item" data-v-1fad0c41><i class="iconfont reco-rss" style="color:#f26d6d;" data-v-1fad0c41></i></li></ul> <hr data-v-1fad0c41></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-59e6cb88 data-v-7dd95ae2><h3 class="title" data-v-59e6cb88>史上最强的嵌入式底层驱动开发课程 Linux系统开发+Linux高级程序+主板开发+ARM等</h3> <!----> <label id="box" class="inputBox" data-v-59e6cb88><input type="password" value="" data-v-59e6cb88> <span data-v-59e6cb88>Konck! Knock!</span> <button data-v-59e6cb88>OK</button></label> <div class="footer" data-v-59e6cb88><span data-v-59e6cb88><i class="iconfont reco-theme" data-v-59e6cb88></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-59e6cb88>vuePress-theme-reco</a></span> <span data-v-59e6cb88><i class="iconfont reco-copyright" data-v-59e6cb88></i> <a data-v-59e6cb88><span data-v-59e6cb88>🔅</span>
+          
+        <span data-v-59e6cb88>2021 - </span>
+        2024
+      </a></span></div></div> <div data-v-7dd95ae2><div data-v-7dd95ae2><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">史上最强的嵌入式底层驱动开发课程 Linux系统开发+Linux高级程序+主板开发+ARM等</h1> <div data-v-8a445198><i class="iconfont reco-account" data-v-8a445198><span data-v-8a445198>🔅</span></i> <i class="iconfont reco-date" data-v-8a445198><span data-v-8a445198>4/25/2024</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><div id="boxx" data-v-f4ca0dac><div data-v-f4ca0dac><p v-if="true" class="custom-block-title" data-v-f4ca0dac></p> <p v-if="true" data-v-f4ca0dac></p></div></div> <p><img src="https://www.itxbzxw.com/wp-content/uploads/2024/04/b216c0ef594549a167773f9055c7e21f.jpg" alt="史上最强的嵌入式底层驱动开发课程 Linux系统开发+Linux高级程序+主板开发+ARM等"></p> <h3 id="课程目录"><a href="#课程目录" class="header-anchor">#</a> 课程目录：</h3> <p>史上最强的嵌入式底层驱动开发课程 Linux系统开发+Linux高级程序+主板开发+ARM等<br>
+├──0 从零开始认识开发板<br>
+| ├──01 – 从零开始认识开发板1 .mp4 77.27M<br>
+| ├──02 – 从零开始认识开发板2 .mp4 71.28M<br>
+| ├──03 – 从零开始认识开发板3 .mp4 13.19M<br>
+| ├──04 – 从零开始认识开发板4 .mp4 44.44M<br>
+| └──05 – 从零开始认识开发板5 .mp4 17.92M<br>
+├──1 Linux操作系统基础<br>
+| ├──01 – 说在前面的话1- .mp4 13.05M<br>
+| ├──02 – 说在前面的话2- .mp4 13.54M<br>
+| ├──03 – 说在前面的话3- .mp4 11.10M<br>
+| ├──04 – 说在前面的话4- .mp4 8.22M<br>
+| ├──05 – 计算机组成原理概述1 – .mp4 9.74M<br>
+| ├──06 – 计算机组成原理概述2 – .mp4 11.65M<br>
+| ├──07 – 计算机组成原理概述3 – .mp4 6.99M<br>
+| ├──08 – Linux基础及操作系统框架1- .mp4 19.00M<br>
+| ├──09 – Linux基础及操作系统框架2- .mp4 16.19M<br>
+| ├──10 – Linux基础及操作系统框架3- .mp4 19.65M<br>
+| ├──11 – Linux基础及操作系统框架4- .mp4 3.28M<br>
+| ├──12 – Shell命令机制1- .mp4 14.59M<br>
+| ├──13 – Shell命令机制2- .mp4 40.46M<br>
+| ├──14 – Shell命令机制3- .mp4 55.70M<br>
+| ├──15 – Shell命令机制4- .mp4 2.71M<br>
+| ├──16 – Linux命令类库机制及常用命令_命令操练1- .mp4 13.92M<br>
+| ├──17 – 命令操练2- .mp4 15.23M<br>
+| ├──18 – 命令操练3- .mp4 14.03M<br>
+| ├──19 – 命令操练4- .mp4 17.07M<br>
+| ├──20 – 命令操练5- .mp4 5.77M<br>
+| ├──21 – 命令操练6- .mp4 17.57M<br>
+| ├──22 – 命令操练7- .mp4 17.27M<br>
+| ├──23 – 命令操练8- .mp4 16.51M<br>
+| ├──24 – 命令操练9- .mp4 12.07M<br>
+| ├──25 – 命令操练10- .mp4 18.53M<br>
+| ├──26 – 命令操练11- .mp4 19.27M<br>
+| ├──27 – Linux应用程序安装及卸载1- .mp4 11.27M<br>
+| ├──28 – Linux应用程序安装及卸载2- .mp4 22.45M<br>
+| ├──29 – Linux应用程序安装及卸载3- .mp4 22.05M<br>
+| ├──30 – Linux应用程序安装及卸载4- .mp4 29.13M<br>
+| ├──31 – Linux应用程序安装及卸载5- .mp4 31.82M<br>
+| ├──32 – Linux服务程序的安装及配置1- .mp4 20.24M<br>
+| ├──33 – Linux服务程序的安装及配置2- .mp4 21.41M<br>
+| ├──34 – Linux服务程序的安装及配置3- .mp4 25.89M<br>
+| ├──35 – Linux服务程序的安装及配置4- .mp4 7.46M<br>
+| ├──36 – Vi的设计思想及使用1- .mp4 18.05M<br>
+| ├──37 – Vi的设计思想及使用2- .mp4 18.60M<br>
+| └──38 – Vi的设计思想及使用3- .mp4 13.48M<br>
+├──2 Linux应用系统开发<br>
+| ├──001 – GNU开发环境基础1- .mp4 13.89M<br>
+| ├──002 – GNU开发环境基础2- .mp4 25.58M<br>
+| ├──003 – GNU开发环境基础3- .mp4 15.11M<br>
+| ├──004 – GNU开发环境基础4- .mp4 9.46M<br>
+| ├──005 – GNU开发环境基础_gcc编译1- .mp4 34.13M<br>
+| ├──006 – GNU开发环境基础_gcc编译2- .mp4 51.56M<br>
+| ├──007 – GNU开发环境基础_gcc编译3- .wmv 85.57M<br>
+| ├──008 – GNU开发环境基础_gdb- .mp4 13.82M<br>
+| ├──009 – GNU开发环境基础_Makefile1- .mp4 22.33M<br>
+| ├──10 – GNU开发环境基础_Makefile2- .wmv 68.94M<br>
+| ├──11 – GNU开发环境基础_Makefile3- .wmv 72.52M<br>
+| ├──12 – GNU开发环境基础_Autotools1- .mp4 24.59M<br>
+| ├──14 – GNU开发环境基础_Autotools3- .mp4 13.58M<br>
+| ├──15 – GNU开发环境基础_EclipseForLinux- .mp4 25.84M<br>
+| ├──16 – Linux高级程序_IO操作1- .mp4 17.39M<br>
+| ├──17 – Linux高级程序_IO操作2- .wmv 76.90M<br>
+| ├──18 – Linux高级程序_IO操作3- .mp4 22.92M<br>
+| ├──19 – Linux高级程序_IO操作4- .wmv 72.40M<br>
+| ├──20 – Linux高级程序_IO操作5- .mp4 9.27M<br>
+| ├──21 – Linux高级程序_IO操作6- .wmv 16.44M<br>
+| ├──22 – Linux高级程序_IO操作7- .mp4 23.48M<br>
+| ├──23 – Linux高级程序_IO操作8- .wmv 91.47M<br>
+| ├──24 – Linux高级程序_IO操作9- .mp4 5.52M<br>
+| ├──25 – Linux高级程序_IO操作_lock1- .wmv 89.12M<br>
+| ├──26 – Linux高级程序_IO操作_lock2- .wmv 82.99M<br>
+| ├──27 – Linux高级程序_IO操作_lock3- .mp4 6.29M<br>
+| ├──28 – Linux高级程序_IO操作_dir1- .mp4 12.85M<br>
+| ├──29 – Linux高级程序_IO操作_dir2- .wmv 76.85M<br>
+| ├──30 – Linux高级程序_IO操作_dir3- .wmv 29.96M<br>
+| ├──31 – Linux高级程序_进程管理1- .mp4 12.19M<br>
+| ├──32 – Linux高级程序_进程管理2- .mp4 12.87M<br>
+| ├──33 – Linux高级程序_进程管理3- .wmv 81.93M<br>
+| ├──34 – Linux高级程序_进程管理4- .wmv 63.43M<br>
+| ├──35 – Linux高级程序_进程管理5- .mp4 18.47M<br>
+| ├──36 – Linux高级程序_进程管理6- .mp4 15.51M<br>
+| ├──37 – Linux高级程序_进程管理_Daemon1- .avi 35.42M<br>
+| ├──38 – Linux高级程序_进程管理_Daemon2- .avi 30.40M<br>
+| ├──39 – Linux高级程序_进程管理_Daemon3- .mp4 21.58M<br>
+| ├──40 – Linux高级程序_进程间通信_Pipe1- .avi 28.72M<br>
+| ├──41 – Linux高级程序_进程间通信_Pipe2- .mp4 11.09M<br>
+| ├──42 – Linux高级程序_进程间通信_Pipe3- .avi 51.89M<br>
+| ├──43 – Linux高级程序_进程间通信_Fifo1- .mp4 16.72M<br>
+| ├──44 – Linux高级程序_进程间通信_Fifo2- .mp4 13.71M<br>
+| ├──45 – Linux高级程序_进程间通信_Signal1- .avi 33.12M<br>
+| ├──46 – Linux高级程序_进程间通信_Signal2- .avi 28.89M<br>
+| ├──47 – Linux高级程序_进程间通信_Signal3- .mp4 28.76M<br>
+| ├──48 – Linux高级程序_进程间通信_SHM1- .avi 27.85M<br>
+| ├──49 – Linux高级程序_进程间通信_SHM2- .avi 29.34M<br>
+| ├──50 – Linux高级程序_进程间通信_SHM3- .mp4 17.31M<br>
+| ├──51 – Linux高级程序_进程间通信_MsgQueue1- .avi 32.76M<br>
+| ├──52 – Linux高级程序_进程间通信_MsgQueue2- .avi 51.99M<br>
+| ├──53 – Linux高级程序_进程间通信_Semaphore1- .mp4 14.22M<br>
+| ├──54 – Linux高级程序_进程间通信_Semaphore2- .avi 17.32M<br>
+| ├──55 – 线程_Thread1- .avi 49.02M<br>
+| ├──56 – 线程_Thread2- .mp4 10.43M<br>
+| ├──57 – 线程_Thread3- .mp4 22.93M<br>
+| ├──58 – 网络编程_Concept1- .mp4 13.20M<br>
+| ├──59 – 网络编程_Concept2- .avi 39.36M<br>
+| ├──60 – 网络编程_Concept3- .mp4 15.59M<br>
+| ├──61 – 网络编程_Concept4- .mp4 13.92M<br>
+| ├──62 – 网络编程_TCPIP编程基础1- .mp4 13.85M<br>
+| ├──63 – 网络编程_TCPIP编程基础2- .avi 32.31M<br>
+| ├──64 – 网络编程_TCPIP编程基础3- .avi 34.39M<br>
+| ├──65 – 网络编程_TCPIP编程基础4- .mp4 17.21M<br>
+| ├──66 – 网络编程_TCPIP编程基础5- .avi 13.24M<br>
+| ├──67 – 网络编程_TCPIP编程基础6- .mp4 11.10M<br>
+| ├──68 – 网络编程_HTTP原理1- .mp4 12.51M<br>
+| ├──69 – 网络编程_HTTP原理2- .avi 39.10M<br>
+| ├──70 – 网络编程_HTTP原理3- .avi 36.56M<br>
+| ├──71 – 网络编程_HTTP原理4 – .mp4 18.16M<br>
+| ├──72 – 网络编程_HTTP原理5- .mp4 22.09M<br>
+| ├──73 – 网络编程_HTTP原理6- .mp4 10.85M<br>
+| ├──74 – 网络编程_Socket内核跟踪1- .avi 41.40M<br>
+| └──75 – 网络编程_Socket内核跟踪2- .mp4 9.49M<br>
+├──3 ARM嵌入式开发裸板篇<br>
+| ├──01 – ARM准备工作及熟悉开发板1- .mp4 11.93M<br>
+| ├──02 – ARM准备工作及熟悉开发板2- .mp4 15.67M<br>
+| ├──03 – ARM准备工作及熟悉开发板3- .avi 41.12M<br>
+| ├──04 – ARM准备工作及熟悉开发板4- .mp4 10.38M<br>
+| ├──05 – 原理图及电路图1- .mp4 34.59M<br>
+| ├──06 – 原理图及电路图2- .avi 41.97M<br>
+| ├──07 – 原理图及电路图3- .mp4 5.89M<br>
+| ├──08 – ARM世界 – .mp4 5.89M<br>
+| ├──09 – 开发环境搭建1- .mp4 30.98M<br>
+| ├──10 – 开发环境搭建2- .avi 25.28M<br>
+| ├──100 – 中断流程代码1- .mp4 14.19M<br>
+| ├──101 – 中断流程代码2- .avi 32.22M<br>
+| ├──102 – 中断流程代码3- .mp4 17.61M<br>
+| ├──103 – IIC协议介绍1- .avi 20.79M<br>
+| ├──104 – IIC协议介绍2- .mp4 15.03M<br>
+| ├──105 – IIC协议介绍3- .mp4 24.18M<br>
+| ├──106 – IIC协议介绍4- .avi 11.23M<br>
+| ├──107 – IIC协议介绍5- .mp4 20.91M<br>
+| ├──108 – IIC协议介绍6- .mp4 398.23kb<br>
+| ├──109 – watchdog介绍1- .mp4 10.28M<br>
+| ├──11 – 补充Linux装Sourceinsight- .mp4 5.12M<br>
+| ├──110 – watchdog介绍2- .mp4 8.99M<br>
+| ├──111 – RTC介绍- .avi 27.01M<br>
+| ├──112 – PWM介绍1- .mp4 18.06M<br>
+| ├──113 – PWM介绍2- .avi 32.79M<br>
+| ├──114 – PWM介绍3- .mp4 1.18M<br>
+| ├──115 – ADC介绍1- .avi 36.42M<br>
+| ├──116 – ADC介绍2- .mp4 9.85M<br>
+| ├──117 – ARM硬件接口项目介绍1- .avi 27.08M<br>
+| ├──118 – ARM硬件接口项目介绍2- .mp4 21.09M<br>
+| ├──119 – ARM硬件接口项目介绍3- .avi 28.74M<br>
+| ├──12 – 补充MiniTool烧写开发板-11.30更新工具- .avi 29.09M<br>
+| ├──120 – ARM硬件接口项目介绍4- .mp4 31.40M<br>
+| ├──121 – ARM硬件接口项目介绍5- .avi 49.25M<br>
+| ├──122 – ARM硬件接口项目介绍6- .mp4 30.64M<br>
+| ├──123 – ARM硬件接口项目介绍7- .mp4 5.07M<br>
+| ├──13 – ARM体系结构-学习方法- .mp4 14.58M<br>
+| ├──14 – ARM体系结构-处理器和名词1- .mp4 18.87M<br>
+| ├──15 – ARM体系结构-处理器和名词2- .avi 28.29M<br>
+| ├──16 – ARM体系结构-工具和交叉工具链- .mp4 18.59M<br>
+| ├──17 – 处理器模式和片内寄存器1- .avi 28.12M<br>
+| ├──18 – 处理器模式和片内寄存器2- .mp4 11.03M<br>
+| ├──19 – 处理器模式和片内寄存器3- .avi 27.68M<br>
+| ├──20 – 处理器模式和片内寄存器4- .mp4 5.95M<br>
+| ├──21 – ARM汇编寻址模式1- .mp4 11.32M<br>
+| ├──22 – ARM汇编寻址模式2- .avi 31.15M<br>
+| ├──23 – ARM汇编寻址模式3- .mp4 11.87M<br>
+| ├──24 – ARM汇编算数操作1- .mp4 13.70M<br>
+| ├──25 – ARM汇编算数操作2- .avi 23.36M<br>
+| ├──26 – ARM汇编算数操作3- .mp4 15.58M<br>
+| ├──27 – ARM汇编算数操作4- .mp4 9.43M<br>
+| ├──28 – ARM汇编内存操作1- .avi 27.32M<br>
+| ├──29 – ARM汇编内存操作2- .mp4 14.39M<br>
+| ├──30 – 跳转指令及其它1- .mp4 14.55M<br>
+| ├──31 – 跳转指令及其它2- .avi 24.45M<br>
+| ├──32 – ARM汇编伪指令1- .mp4 16.26M<br>
+| ├──33 – ARM汇编伪指令2- .avi 28.84M<br>
+| ├──34 – ARM汇编伪指令3- .avi 12.65M<br>
+| ├──35 – ARM汇编伪指令4- .mp4 16.76M<br>
+| ├──36 – 混合编程1- .avi 28.33M<br>
+| ├──37 – 混合编程2- .mp4 10.86M<br>
+| ├──38 – ARM硬件基础概述1- .avi 34.99M<br>
+| ├──39 – ARM硬件基础概述2 – .mp4 16.09M<br>
+| ├──40 – ARM硬件基础概述3 – .mp4 5.59M<br>
+| ├──41 – ARM硬件基础-SIMD&amp;NEON- .mp4 24.27M<br>
+| ├──42 – ARM硬件基础-Cache1- .avi 53.95M<br>
+| ├──43 – ARM硬件基础-Cache2- .mp4 8.08M<br>
+| ├──44 – ARM硬件基础-MMU1- .mp4 11.35M<br>
+| ├──45 – ARM硬件基础-MMU2(1)- .mp4 11.38M<br>
+| ├──45 – ARM硬件基础-MMU2- .mp4 11.38M<br>
+| ├──46 – ARM硬件基础-MMU3- .mp4 7.42M<br>
+| ├──47 – ARM异常及中断1 – .avi 26.88M<br>
+| ├──48 – ARM异常及中断2- .mp4 14.95M<br>
+| ├──49 – 第一个裸板试验1- .avi 32.40M<br>
+| ├──50 – 第一个裸板试验2- .mp4 14.81M<br>
+| ├──51 – S5PV210启动原理1- .mp4 24.66M<br>
+| ├──52 – S5PV210启动原理2- .avi 29.36M<br>
+| ├──53 – ARM硬件接口GPIO1- .mp4 24.41M<br>
+| ├──54 – ARM硬件接口GPIO2- .avi 27.74M<br>
+| ├──55 – ARM硬件接口GPIO3- .mp4 4.26M<br>
+| ├──56 – ARM硬件接口GPIO4- .avi 32.61M<br>
+| ├──57 – ARM硬件接口GPIO5- .mp4 21.77M<br>
+| ├──58 – ARM硬件接口开发前言- .mp4 10.31M<br>
+| ├──59 – ARM硬件接口开发简介- .avi 6.43M<br>
+| ├──60 – 确定开发板资源1- .avi 19.93M<br>
+| ├──61 – 确定开发板资源2- .mp4 16.17M<br>
+| ├──62 – 确定开发板资源3- .avi 29.16M<br>
+| ├──63 – 确定开发板资源4- .mp4 6.11M<br>
+| ├──64 – 驱动开发板资源5- .avi 30.95M<br>
+| ├──65 – 驱动开发板资源6- .mp4 16.45M<br>
+| ├──66 – 驱动开发板资源7- .mp4 25.87M<br>
+| ├──67 – bootloader概述1- .mp4 12.76M<br>
+| ├──68 – bootloader概述2 – .avi 23.89M<br>
+| ├──69 – bootloader概述3- .avi 3.86M<br>
+| ├──70 – bootloader概述4- .mp4 12.88M<br>
+| ├──71 – bootloader概述5- .mp4 11.50M<br>
+| ├──72 – C5工程搭建Makefile1- .mp4 13.45M<br>
+| ├──73 – C5工程搭建Makefile2- .avi 20.36M<br>
+| ├──74 – C5工程搭建Makefile3- .mp4 8.35M<br>
+| ├──75 – 工程搭建链接脚本录像1- .mp4 11.12M<br>
+| ├──76 – 工程搭建链接脚本录像2- .avi 19.47M<br>
+| ├──77 – 工程搭建C代码点灯录像1- .avi 37.08M<br>
+| ├──78 – 工程搭建C代码点灯录像2- .avi 33.99M<br>
+| ├──79 – 工程搭建C代码点灯录像3- .mp4 24.12M<br>
+| ├──80 – 通信模型介绍录像1- .mp4 11.43M<br>
+| ├──81 – 通信模型介绍录像2- .avi 5.47M<br>
+| ├──82 – UART协议介绍录像1- .mp4 13.85M<br>
+| ├──83 – UART协议介绍录像2- .avi 23.77M<br>
+| ├──84 – UART协议介绍录像3- .avi 3.61M<br>
+| ├──85 – UART控制器介绍录像1- .mp4 16.75M<br>
+| ├──86 – UART控制器介绍录像2- .mp4 17.55M<br>
+| ├──87 – 通过串口发送一个字符录像1- .mp4 19.60M<br>
+| ├──88 – 通过串口发送一个字符录像2- .avi 38.22M<br>
+| ├──89 – 通过串口发送一个字符录像3- .avi 35.96M<br>
+| ├──90 – 通过串口发送一个字符录像4- .mp4 13.87M<br>
+| ├──91 – 通过串口发送一个字符串1- .avi 37.73M<br>
+| ├──92 – 通过串口发送一个字符串2- .mp4 2.03M<br>
+| ├──93 – 中断介绍1- .avi 20.75M<br>
+| ├──94 – 中断介绍2- .mp4 16.64M<br>
+| ├──95 – 中断介绍3- .avi 25.45M<br>
+| ├──96 – 中断介绍4- .mp4 20.94M<br>
+| ├──97 – 中断初始化代码1- .mp4 29.27M<br>
+| ├──98 – 中断初始化代码2- .avi 50.01M<br>
+| └──99 – 中断初始化代码3- .mp4 23.55M<br>
+├──4 ARM嵌入式开发Linux内核骗<br>
+| ├──01 – 开篇的话1- .mp4 1.34M<br>
+| ├──02 – 开篇的话2- .mp4 13.34M<br>
+| ├──03 – 开篇的话3- .mp4 14.28M<br>
+| ├──04 – 内核开发初探1- .mp4 32.09M<br>
+| ├──05 – 内核开发初探2- .avi 41.90M<br>
+| ├──06 – 内核开发初探3- .mp4 24.44M<br>
+| ├──07 – Linux内核的基本概念1- .mp4 18.71M<br>
+| ├──08 – Linux内核的基本概念2- .avi 25.34M<br>
+| ├──09 – Linux内核的基本概念3- .avi 10.47M<br>
+| ├──10 – Linux内核的基本概念4- .mp4 33.52M<br>
+| ├──11 – Linux内核的基本概念5- .mp4 37.44M<br>
+| ├──12 – Linux驱动程序开发基础1- .avi 78.56M<br>
+| ├──13 – Linux驱动程序开发基础2- .mp4 41.43M<br>
+| ├──14 – Linux驱动程序开发基础3- .mp4 14.85M<br>
+| ├──15 – Linux驱动程序开发基础4- .avi 66.29M<br>
+| ├──16 – Linux驱动程序开发基础5- .mp4 8.99M<br>
+| ├──17 – LED设备驱动1- .mp4 19.91M<br>
+| ├──18 – LED设备驱动2- .mp4 9.67M<br>
+| ├──19 – LED设备驱动3- .avi 66.58M<br>
+| ├──20 – LED设备驱动4- .mp4 3.48M<br>
+| ├──21 – LED设备驱动5- .avi 21.53M<br>
+| ├──22 – RTC驱动1- .mp4 30.67M<br>
+| ├──23 – RTC驱动2- .avi 54.82M<br>
+| ├──24 – RTC驱动3- .avi 93.75M<br>
+| ├──25 – RTC驱动4- .mp4 35.89M<br>
+| ├──26 – 电容触摸屏驱动1- .avi 85.44M<br>
+| ├──28 – 电容触摸屏驱动3- .avi 59.58M<br>
+| ├──29 – 电容触摸屏驱动4- .mp4 46.47M<br>
+| ├──30 – 网络设备驱动1- .mp4 20.00M<br>
+| ├──31 – 网络设备驱动2- .avi 47.25M<br>
+| ├──32 – 网络设备驱动3- .avi 62.44M<br>
+| ├──33 – 网络设备驱动4- .mp4 65.14M<br>
+| ├──34 – 网络设备驱动5- .avi 26.24M<br>
+| ├──35 – 网络设备驱动6- .mp4 72.32M<br>
+| ├──36 – 声卡驱动1- .mp4 15.32M<br>
+| ├──37 – 声卡驱动2- .avi 43.23M<br>
+| ├──38 – 声卡驱动3- .avi 60.61M<br>
+| ├──39 – 声卡驱动4- .mp4 8.27M<br>
+| ├──40 – 声卡驱动5- .mp4 53.37M<br>
+| ├──41 – 声卡驱动6- .mp4 14.66M<br>
+| ├──42 – LCD驱动1- .mp4 30.85M<br>
+| ├──43 – LCD驱动2- .mp4 12.92M<br>
+| ├──44 – LCD驱动3- .avi 4.35M<br>
+| ├──45 – LCD驱动4- .mp4 31.68M<br>
+| ├──46 – LCD驱动5- .avi 93.92M<br>
+| ├──47 – LCD驱动6- .avi 96.25M<br>
+| ├──48 – LCD驱动7- .mp4 30.94M<br>
+| ├──49 – LCD驱动8- .mp4 18.33M<br>
+| ├──50 – LCD驱动9- .avi 25.62M<br>
+| ├──51 – LCD驱动10- .mp4 9.23M<br>
+| ├──52 – nandflash驱动1- .mp4 21.23M<br>
+| ├──53 – nandflash驱动2- .mp4 53.94M<br>
+| ├──54 – nandflash驱动3- .avi 32.74M<br>
+| ├──55 – nandflash驱动4- .avi 39.26M<br>
+| ├──56 – nandflash驱动5- .mp4 31.43M<br>
+| ├──57 – nandflash驱动6- .mp4 3.24M<br>
+| └──58 – 驱动课程总结提高- .mp4 9.53M<br>
+└──资料<br>
+| └──资料.exe 271.41M</p> <h2 id="下载地址"><a href="#下载地址" class="header-anchor">#</a> 下载地址：</h2> <p><a href="https://www.itxbzxw.com/learn/hdkf/linux/9573.html" target="_blank" rel="noopener noreferrer">史上最强的嵌入式底层驱动开发课程 Linux系统开发+Linux高级程序+主板开发+ARM等-小白自学网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-b57cc07c data-v-7dd95ae2></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div></div></div></div>
+    <script src="/assets/js/app.f0bea6b2.js" defer></script><script src="/assets/js/3.bd2d6c39.js" defer></script><script src="/assets/js/1.c0a1e8d4.js" defer></script><script src="/assets/js/134.e5ea858e.js" defer></script>
+  </body>
+</html>
