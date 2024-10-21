@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>C／C++全栈 内核 调试(51hook软件安全课程) | 集合网</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="dns-prefetch" href="//xbcyw.github.io">
+    <meta name="description" content="集合网 你想要的这里都有！">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <link rel="preload" href="/assets/css/0.styles.1492f243.css" as="style"><link rel="preload" href="/assets/js/app.90e28c80.js" as="script"><link rel="preload" href="/assets/js/3.8f2f0e42.js" as="script"><link rel="preload" href="/assets/js/1.883b222e.js" as="script"><link rel="preload" href="/assets/js/129.7d6357ed.js" as="script"><link rel="prefetch" href="/assets/js/10.3bd6c80e.js"><link rel="prefetch" href="/assets/js/100.459c7d82.js"><link rel="prefetch" href="/assets/js/101.92bea8a6.js"><link rel="prefetch" href="/assets/js/102.8a2b5393.js"><link rel="prefetch" href="/assets/js/103.744b00bf.js"><link rel="prefetch" href="/assets/js/104.38319089.js"><link rel="prefetch" href="/assets/js/105.d53d5da4.js"><link rel="prefetch" href="/assets/js/106.c2a58d3e.js"><link rel="prefetch" href="/assets/js/107.831a13f5.js"><link rel="prefetch" href="/assets/js/108.8740bfa7.js"><link rel="prefetch" href="/assets/js/109.f71850d0.js"><link rel="prefetch" href="/assets/js/11.9401f477.js"><link rel="prefetch" href="/assets/js/110.e3adb775.js"><link rel="prefetch" href="/assets/js/111.03a391ff.js"><link rel="prefetch" href="/assets/js/112.9d597ab6.js"><link rel="prefetch" href="/assets/js/113.b7372dfc.js"><link rel="prefetch" href="/assets/js/114.1d540861.js"><link rel="prefetch" href="/assets/js/115.aea25f49.js"><link rel="prefetch" href="/assets/js/116.fa60748d.js"><link rel="prefetch" href="/assets/js/117.adabad14.js"><link rel="prefetch" href="/assets/js/118.cbaab345.js"><link rel="prefetch" href="/assets/js/119.7cc2d4a7.js"><link rel="prefetch" href="/assets/js/12.c10f2840.js"><link rel="prefetch" href="/assets/js/120.19c86a4b.js"><link rel="prefetch" href="/assets/js/121.28d6f9ba.js"><link rel="prefetch" href="/assets/js/122.19471702.js"><link rel="prefetch" href="/assets/js/123.dee344ce.js"><link rel="prefetch" href="/assets/js/124.1d1b8650.js"><link rel="prefetch" href="/assets/js/125.0b1cfcf5.js"><link rel="prefetch" href="/assets/js/126.acc512d7.js"><link rel="prefetch" href="/assets/js/127.fd5a0182.js"><link rel="prefetch" href="/assets/js/128.6a3c7be2.js"><link rel="prefetch" href="/assets/js/13.85d9b756.js"><link rel="prefetch" href="/assets/js/130.f269ca56.js"><link rel="prefetch" href="/assets/js/131.c69fa94b.js"><link rel="prefetch" href="/assets/js/132.9034212a.js"><link rel="prefetch" href="/assets/js/133.eef07d54.js"><link rel="prefetch" href="/assets/js/134.e0e15f54.js"><link rel="prefetch" href="/assets/js/135.e68bd0ed.js"><link rel="prefetch" href="/assets/js/136.e522d27e.js"><link rel="prefetch" href="/assets/js/137.3b47e88e.js"><link rel="prefetch" href="/assets/js/138.cf28ef23.js"><link rel="prefetch" href="/assets/js/139.b200649f.js"><link rel="prefetch" href="/assets/js/14.082eec52.js"><link rel="prefetch" href="/assets/js/140.fad90d14.js"><link rel="prefetch" href="/assets/js/141.0bac212f.js"><link rel="prefetch" href="/assets/js/142.dddf7981.js"><link rel="prefetch" href="/assets/js/143.856dbc26.js"><link rel="prefetch" href="/assets/js/144.dc7779bb.js"><link rel="prefetch" href="/assets/js/145.ff55cfe8.js"><link rel="prefetch" href="/assets/js/146.94806384.js"><link rel="prefetch" href="/assets/js/147.6c3112ab.js"><link rel="prefetch" href="/assets/js/148.fa05c392.js"><link rel="prefetch" href="/assets/js/149.862ef7ed.js"><link rel="prefetch" href="/assets/js/15.faed4899.js"><link rel="prefetch" href="/assets/js/150.208ed3b0.js"><link rel="prefetch" href="/assets/js/151.0be8a5fa.js"><link rel="prefetch" href="/assets/js/152.ec0565b8.js"><link rel="prefetch" href="/assets/js/153.6de59819.js"><link rel="prefetch" href="/assets/js/154.3bb79b50.js"><link rel="prefetch" href="/assets/js/155.2adbd4d7.js"><link rel="prefetch" href="/assets/js/156.4441a21f.js"><link rel="prefetch" href="/assets/js/157.37e04cc1.js"><link rel="prefetch" href="/assets/js/158.06376bf0.js"><link rel="prefetch" href="/assets/js/159.81f7491e.js"><link rel="prefetch" href="/assets/js/16.bfe7bc66.js"><link rel="prefetch" href="/assets/js/160.7a04afd4.js"><link rel="prefetch" href="/assets/js/161.53038747.js"><link rel="prefetch" href="/assets/js/162.da19ab50.js"><link rel="prefetch" href="/assets/js/163.67769f69.js"><link rel="prefetch" href="/assets/js/164.cada22e0.js"><link rel="prefetch" href="/assets/js/165.1a03e095.js"><link rel="prefetch" href="/assets/js/166.05a35de0.js"><link rel="prefetch" href="/assets/js/167.a1c7d638.js"><link rel="prefetch" href="/assets/js/168.3bc6d58e.js"><link rel="prefetch" href="/assets/js/169.1fb31c7f.js"><link rel="prefetch" href="/assets/js/17.269bf09a.js"><link rel="prefetch" href="/assets/js/170.52e918f8.js"><link rel="prefetch" href="/assets/js/171.ea5ff1c3.js"><link rel="prefetch" href="/assets/js/172.1ce8a0b1.js"><link rel="prefetch" href="/assets/js/173.2b78c437.js"><link rel="prefetch" href="/assets/js/174.aa5d2bc7.js"><link rel="prefetch" href="/assets/js/175.4838bd98.js"><link rel="prefetch" href="/assets/js/176.870f3468.js"><link rel="prefetch" href="/assets/js/177.18b0aebf.js"><link rel="prefetch" href="/assets/js/178.9216e435.js"><link rel="prefetch" href="/assets/js/179.a43604f1.js"><link rel="prefetch" href="/assets/js/18.0dc9dbdb.js"><link rel="prefetch" href="/assets/js/180.2d2e8eaf.js"><link rel="prefetch" href="/assets/js/181.322c1deb.js"><link rel="prefetch" href="/assets/js/182.57f31f30.js"><link rel="prefetch" href="/assets/js/183.ce852777.js"><link rel="prefetch" href="/assets/js/184.a6216b3b.js"><link rel="prefetch" href="/assets/js/185.0cc0db3b.js"><link rel="prefetch" href="/assets/js/186.3204a11a.js"><link rel="prefetch" href="/assets/js/187.75e03169.js"><link rel="prefetch" href="/assets/js/188.20b80846.js"><link rel="prefetch" href="/assets/js/189.b0ecfb55.js"><link rel="prefetch" href="/assets/js/19.b78e423a.js"><link rel="prefetch" href="/assets/js/190.b9d8895a.js"><link rel="prefetch" href="/assets/js/191.35746a9b.js"><link rel="prefetch" href="/assets/js/192.a37d2246.js"><link rel="prefetch" href="/assets/js/193.03d4c3e8.js"><link rel="prefetch" href="/assets/js/194.a2d8f05a.js"><link rel="prefetch" href="/assets/js/195.2f8d62e6.js"><link rel="prefetch" href="/assets/js/196.7176fa12.js"><link rel="prefetch" href="/assets/js/197.ef0cc426.js"><link rel="prefetch" href="/assets/js/198.1ac2baae.js"><link rel="prefetch" href="/assets/js/199.8dcef405.js"><link rel="prefetch" href="/assets/js/20.bac548a3.js"><link rel="prefetch" href="/assets/js/200.00c60ce5.js"><link rel="prefetch" href="/assets/js/201.322ecabf.js"><link rel="prefetch" href="/assets/js/202.aac6c29d.js"><link rel="prefetch" href="/assets/js/203.44a94879.js"><link rel="prefetch" href="/assets/js/204.8a6333b7.js"><link rel="prefetch" href="/assets/js/205.65af1ff3.js"><link rel="prefetch" href="/assets/js/206.d9a6f9e6.js"><link rel="prefetch" href="/assets/js/207.d8a955d9.js"><link rel="prefetch" href="/assets/js/208.561dedd2.js"><link rel="prefetch" href="/assets/js/209.2858c3b3.js"><link rel="prefetch" href="/assets/js/21.00076643.js"><link rel="prefetch" href="/assets/js/210.1de5838f.js"><link rel="prefetch" href="/assets/js/211.321fb6d6.js"><link rel="prefetch" href="/assets/js/212.b7be3e99.js"><link rel="prefetch" href="/assets/js/213.44ac1f2d.js"><link rel="prefetch" href="/assets/js/214.69a86303.js"><link rel="prefetch" href="/assets/js/215.7fddbb30.js"><link rel="prefetch" href="/assets/js/216.df176c8d.js"><link rel="prefetch" href="/assets/js/217.67edb833.js"><link rel="prefetch" href="/assets/js/218.484f5e91.js"><link rel="prefetch" href="/assets/js/219.36263177.js"><link rel="prefetch" href="/assets/js/22.641e20b7.js"><link rel="prefetch" href="/assets/js/220.71c8c60c.js"><link rel="prefetch" href="/assets/js/221.c9eda352.js"><link rel="prefetch" href="/assets/js/222.8ff10839.js"><link rel="prefetch" href="/assets/js/223.72138bdb.js"><link rel="prefetch" href="/assets/js/224.a2fe6fe6.js"><link rel="prefetch" href="/assets/js/225.2575b506.js"><link rel="prefetch" href="/assets/js/226.adf817e2.js"><link rel="prefetch" href="/assets/js/227.24a9a43b.js"><link rel="prefetch" href="/assets/js/228.a0f1e470.js"><link rel="prefetch" href="/assets/js/229.fa0ab85e.js"><link rel="prefetch" href="/assets/js/23.1d77d0f4.js"><link rel="prefetch" href="/assets/js/230.dbc2ba1f.js"><link rel="prefetch" href="/assets/js/231.e11acac8.js"><link rel="prefetch" href="/assets/js/232.9eb0cf35.js"><link rel="prefetch" href="/assets/js/233.e2ecd7e2.js"><link rel="prefetch" href="/assets/js/234.066e6ca1.js"><link rel="prefetch" href="/assets/js/235.da63128c.js"><link rel="prefetch" href="/assets/js/236.4bfdc648.js"><link rel="prefetch" href="/assets/js/237.864cb2f4.js"><link rel="prefetch" href="/assets/js/238.0b11770d.js"><link rel="prefetch" href="/assets/js/239.572e40e3.js"><link rel="prefetch" href="/assets/js/24.7d99d701.js"><link rel="prefetch" href="/assets/js/240.8822e770.js"><link rel="prefetch" href="/assets/js/241.cc6366be.js"><link rel="prefetch" href="/assets/js/242.e48e473d.js"><link rel="prefetch" href="/assets/js/243.a2a1c0ec.js"><link rel="prefetch" href="/assets/js/244.197c0f4f.js"><link rel="prefetch" href="/assets/js/245.9cb3cecc.js"><link rel="prefetch" href="/assets/js/246.07d600ea.js"><link rel="prefetch" href="/assets/js/247.445530d3.js"><link rel="prefetch" href="/assets/js/248.30abc3c8.js"><link rel="prefetch" href="/assets/js/249.734f114a.js"><link rel="prefetch" href="/assets/js/25.eeed7b50.js"><link rel="prefetch" href="/assets/js/250.0f0a4389.js"><link rel="prefetch" href="/assets/js/251.68dfb001.js"><link rel="prefetch" href="/assets/js/252.930203c0.js"><link rel="prefetch" href="/assets/js/253.743eac09.js"><link rel="prefetch" href="/assets/js/254.dde32d5b.js"><link rel="prefetch" href="/assets/js/255.54668415.js"><link rel="prefetch" href="/assets/js/256.a7af4a22.js"><link rel="prefetch" href="/assets/js/257.8e4bf84a.js"><link rel="prefetch" href="/assets/js/258.15af805b.js"><link rel="prefetch" href="/assets/js/259.a65e1dcb.js"><link rel="prefetch" href="/assets/js/26.9ed7bdeb.js"><link rel="prefetch" href="/assets/js/260.7e0ef9ec.js"><link rel="prefetch" href="/assets/js/261.eec21009.js"><link rel="prefetch" href="/assets/js/262.ae38e3a6.js"><link rel="prefetch" href="/assets/js/263.dea36a3d.js"><link rel="prefetch" href="/assets/js/264.3fa4a4ba.js"><link rel="prefetch" href="/assets/js/265.7492d91b.js"><link rel="prefetch" href="/assets/js/266.1ba0d471.js"><link rel="prefetch" href="/assets/js/267.d6fbf742.js"><link rel="prefetch" href="/assets/js/268.3b920662.js"><link rel="prefetch" href="/assets/js/269.75008e58.js"><link rel="prefetch" href="/assets/js/27.da13631d.js"><link rel="prefetch" href="/assets/js/270.da3295d4.js"><link rel="prefetch" href="/assets/js/271.2f3a66ed.js"><link rel="prefetch" href="/assets/js/28.fd42e645.js"><link rel="prefetch" href="/assets/js/29.a7b4a624.js"><link rel="prefetch" href="/assets/js/30.5734a12f.js"><link rel="prefetch" href="/assets/js/31.ae471ce1.js"><link rel="prefetch" href="/assets/js/32.ef7c4dd5.js"><link rel="prefetch" href="/assets/js/33.d3a3a793.js"><link rel="prefetch" href="/assets/js/34.d8c8121d.js"><link rel="prefetch" href="/assets/js/35.d51c3522.js"><link rel="prefetch" href="/assets/js/36.e2cbb574.js"><link rel="prefetch" href="/assets/js/37.c285bd48.js"><link rel="prefetch" href="/assets/js/38.7b0cd10a.js"><link rel="prefetch" href="/assets/js/39.b8ddbbe0.js"><link rel="prefetch" href="/assets/js/4.f660f003.js"><link rel="prefetch" href="/assets/js/40.a9fd69ff.js"><link rel="prefetch" href="/assets/js/41.ff363044.js"><link rel="prefetch" href="/assets/js/42.d6077b09.js"><link rel="prefetch" href="/assets/js/43.aa010037.js"><link rel="prefetch" href="/assets/js/44.4533de3a.js"><link rel="prefetch" href="/assets/js/45.eb81448b.js"><link rel="prefetch" href="/assets/js/46.e0acbe22.js"><link rel="prefetch" href="/assets/js/47.98c5e46b.js"><link rel="prefetch" href="/assets/js/48.3c5bbbc1.js"><link rel="prefetch" href="/assets/js/49.278e58be.js"><link rel="prefetch" href="/assets/js/5.42305035.js"><link rel="prefetch" href="/assets/js/50.bcf5aab6.js"><link rel="prefetch" href="/assets/js/51.34c38581.js"><link rel="prefetch" href="/assets/js/52.a0ba7d37.js"><link rel="prefetch" href="/assets/js/53.ad4a967f.js"><link rel="prefetch" href="/assets/js/54.ec144e7c.js"><link rel="prefetch" href="/assets/js/55.85dc9e98.js"><link rel="prefetch" href="/assets/js/56.0ffd08fc.js"><link rel="prefetch" href="/assets/js/57.75200542.js"><link rel="prefetch" href="/assets/js/58.7676efe5.js"><link rel="prefetch" href="/assets/js/59.178474c9.js"><link rel="prefetch" href="/assets/js/6.8a5b1f54.js"><link rel="prefetch" href="/assets/js/60.dd3c9682.js"><link rel="prefetch" href="/assets/js/61.5bea9b26.js"><link rel="prefetch" href="/assets/js/62.b3fcc61d.js"><link rel="prefetch" href="/assets/js/63.7b1cf323.js"><link rel="prefetch" href="/assets/js/64.a769b47f.js"><link rel="prefetch" href="/assets/js/65.7c81ca03.js"><link rel="prefetch" href="/assets/js/66.58d4c894.js"><link rel="prefetch" href="/assets/js/67.73ccf5ef.js"><link rel="prefetch" href="/assets/js/68.75d56c49.js"><link rel="prefetch" href="/assets/js/69.1e6d9bcf.js"><link rel="prefetch" href="/assets/js/7.87f3349d.js"><link rel="prefetch" href="/assets/js/70.c7ae69cf.js"><link rel="prefetch" href="/assets/js/71.225bfd9b.js"><link rel="prefetch" href="/assets/js/72.7d809c06.js"><link rel="prefetch" href="/assets/js/73.5efb60b4.js"><link rel="prefetch" href="/assets/js/74.1371a638.js"><link rel="prefetch" href="/assets/js/75.0dc924b2.js"><link rel="prefetch" href="/assets/js/76.4f8a3a5e.js"><link rel="prefetch" href="/assets/js/77.7a238b06.js"><link rel="prefetch" href="/assets/js/78.792e6bbc.js"><link rel="prefetch" href="/assets/js/79.f313e2da.js"><link rel="prefetch" href="/assets/js/8.d08ebc9e.js"><link rel="prefetch" href="/assets/js/80.4bd87f97.js"><link rel="prefetch" href="/assets/js/81.dc1bf36b.js"><link rel="prefetch" href="/assets/js/82.1adc0cbf.js"><link rel="prefetch" href="/assets/js/83.f4e8e162.js"><link rel="prefetch" href="/assets/js/84.a1372533.js"><link rel="prefetch" href="/assets/js/85.2f1e0f60.js"><link rel="prefetch" href="/assets/js/86.0158e433.js"><link rel="prefetch" href="/assets/js/87.aff5c51b.js"><link rel="prefetch" href="/assets/js/88.26efbcec.js"><link rel="prefetch" href="/assets/js/89.3c629c43.js"><link rel="prefetch" href="/assets/js/9.a063f978.js"><link rel="prefetch" href="/assets/js/90.2a898ddf.js"><link rel="prefetch" href="/assets/js/91.724a9bc3.js"><link rel="prefetch" href="/assets/js/92.bbdb9c00.js"><link rel="prefetch" href="/assets/js/93.f037671c.js"><link rel="prefetch" href="/assets/js/94.6a553249.js"><link rel="prefetch" href="/assets/js/95.36e82865.js"><link rel="prefetch" href="/assets/js/96.1b7f82c9.js"><link rel="prefetch" href="/assets/js/97.e5a24c4e.js"><link rel="prefetch" href="/assets/js/98.a5c01129.js"><link rel="prefetch" href="/assets/js/99.f59aa88d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1492f243.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-ff03da5a><div data-v-ff03da5a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-2b487510 data-v-ff03da5a data-v-ff03da5a><h3 class="title" data-v-2b487510>集合网</h3> <p class="description" data-v-2b487510>集合网 你想要的这里都有！</p> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-ff03da5a><header class="navbar" data-v-ff03da5a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">集合网</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ff03da5a></div> <aside class="sidebar" data-v-ff03da5a><div class="personal-info-wrapper" data-v-400a92f6 data-v-ff03da5a><img src="/logo.svg" alt="author-avatar" class="personal-img" data-v-400a92f6> <h3 class="name" data-v-400a92f6>
+    🔅
+  </h3> <div class="num" data-v-400a92f6><div data-v-400a92f6><h3 data-v-400a92f6>261</h3> <h6 data-v-400a92f6>Articles</h6></div> <div data-v-400a92f6><h3 data-v-400a92f6>0</h3> <h6 data-v-400a92f6>Tags</h6></div></div> <ul class="social-links" data-v-400a92f6><li class="social-item" data-v-400a92f6><i class="iconfont reco-rss" style="color:#f26d6d;" data-v-400a92f6></i></li></ul> <hr data-v-400a92f6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-2b487510 data-v-ff03da5a><h3 class="title" data-v-2b487510>C／C++全栈 内核 调试(51hook软件安全课程)</h3> <!----> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2024
+      </a></span></div></div> <div data-v-ff03da5a><div data-v-ff03da5a><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">C／C++全栈 内核 调试(51hook软件安全课程)</h1> <div data-v-666b8910><i class="iconfont reco-account" data-v-666b8910><span data-v-666b8910>🔅</span></i> <i class="iconfont reco-date" data-v-666b8910><span data-v-666b8910>10/2/2024</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><div id="boxx" data-v-817d5b90><div data-v-817d5b90><p v-if="true" class="custom-block-title" data-v-817d5b90></p> <p v-if="true" data-v-817d5b90></p></div></div> <p><img src="https://www.itxbzxw.com/wp-content/uploads/2024/08/1f703753e9eaf0f7fbaf27d67e5c459b.jpg" alt="C／C++全栈 内核 调试(51hook软件安全课程)"></p> <h3 id="资源目录"><a href="#资源目录" class="header-anchor">#</a> 资源目录：</h3> <p>├──1-35 c c逆向基础课<br>
+| ├──100_99List Contorl2_高清 1080P.mp4 90.34M<br>
+| ├──101_100动态链接库_高清 1080P.mp4 89.97M<br>
+| ├──102_101初识MFC_高清 1080P.mp4 99.24M<br>
+| ├──103_102消息反射_高清 1080P.mp4 90.76M<br>
+| ├──104_103单选多选框控件_高清 1080P.mp4 96.48M<br>
+| ├──105_104时钟控件_高清 1080P.mp4 112.43M<br>
+| ├──106_105tab控件_高清 1080P.mp4 154.07M<br>
+| ├──107_106listContrl_高清 1080P.mp4 110.08M<br>
+| ├──108_107树、工具栏、状态栏_高清 1080P.mp4 148.46M<br>
+| ├──109_108认识进程线程_高清 1080P.mp4 80.48M<br>
+| ├──10_10类型转换_高清 1080P.mp4 74.58M<br>
+| ├──110_109进程相关操作_高清 1080P.mp4 72.75M<br>
+| ├──111_110文件操作_高清 1080P.mp4 135.20M<br>
+| ├──112_111进程间通信_高清 1080P.mp4 187.05M<br>
+| ├──113_112线程_高清 1080P.mp4 121.37M<br>
+| ├──114_113线程2_高清 1080P.mp4 58.94M<br>
+| ├──115_114线程同步-临界区、互斥体_高清 1080P.mp4 99.26M<br>
+| ├──116_115游戏限制多开原理_高清 1080P.mp4 108.56M<br>
+| ├──117_116异步IO_高清 1080P.mp4 52.41M<br>
+| ├──118_117异步IO2_高清 1080P.mp4 63.59M<br>
+| ├──119_118网络编程1_高清 1080P.mp4 87.00M<br>
+| ├──11_11控制语句if_高清 1080P.mp4 104.52M<br>
+| ├──120_119网络编程-多人聊天功能_高清 1080P.mp4 71.99M<br>
+| ├──121_120IOCP_高清 1080P.mp4 117.78M<br>
+| ├──122_121初识汇编_高清 1080P.mp4 78.26M<br>
+| ├──123_122内存读写_高清 1080P.mp4 110.37M<br>
+| ├──124_123运算指令_高清 1080P.mp4 71.53M<br>
+| ├──125_124寻址方式，lea指令_高清 1080P.mp4 64.61M<br>
+| ├──126_125堆栈_高清 1080P.mp4 78.86M<br>
+| ├──127_126堆栈操作_高清 1080P.mp4 71.17M<br>
+| ├──128_127标志寄存器_高清 1080P.mp4 92.37M<br>
+| ├──129_128基础指令_高清 1080P.mp4 96.98M<br>
+| ├──12_12if-else更新_高清 1080P.mp4 21.61M<br>
+| ├──130_129JCC指令_高清 1080P.mp4 101.56M<br>
+| ├──131_130call retn指令_高清 1080P.mp4 78.11M<br>
+| ├──132_131MVOS、STOS指令_高清 1080P.mp4 106.02M<br>
+| ├──133_132函数调用堆栈图_高清 1080P.mp4 183.12M<br>
+| ├──134_133函数调用约定_高清 1080P.mp4 117.08M<br>
+| ├──135_134if-else分析_高清 1080P.mp4 74.43M<br>
+| ├──136_135switch语句逆向分析_高清 1080P.mp4 138.71M<br>
+| ├──137_136MOVZX,MOVSX指令;循环语句分析_高清 1080P.mp4 106.97M<br>
+| ├──138_137逆向练习_高清 1080P.mp4 162.46M<br>
+| ├──139_138X64程序逆向分析_高清 1080P.mp4 374.68M<br>
+| ├──13_13if-else if-else多选择结构_高清 1080P.mp4 141.60M<br>
+| ├──140_139逆向练习3_高清 1080P.mp4 127.19M<br>
+| ├──141_140内联汇编_高清 1080P.mp4 61.61M<br>
+| ├──142_141C类对象逆向分析_高清 1080P.mp4 119.74M<br>
+| ├──143_142虚函数逆向分析_高清 1080P.mp4 59.31M<br>
+| ├──144_143PE文件解析-DOS头解析_高清 1080P.mp4 134.91M<br>
+| ├──145_144PE文件解析-PE头解析_高清 1080P.mp4 102.78M<br>
+| ├──146_145PE文件解析-可选PE头_高清 1080P.mp4 155.73M<br>
+| ├──147_146PE解析-区段头（区段表）_高清 1080P.mp4 213.57M<br>
+| ├──148_147PE文件解析-导出表_高清 1080P.mp4 180.09M<br>
+| ├──149_148PE文件解析-导入表解析1_高清 1080P.mp4 84.94M<br>
+| ├──14_14switch语句_高清 1080P.mp4 23.34M<br>
+| ├──150_149PE文件解析-导入表解析2_高清 1080P.mp4 169.12M<br>
+| ├──151_150PE文件解析-重定位表_高清 1080P.mp4 130.08M<br>
+| ├──152_1511TLS反调试_高清 1080P.mp4 102.32M<br>
+| ├──153_152内存管理-堆_高清 1080P.mp4 57.11M<br>
+| ├──154_153虚拟内存管理_高清 1080P.mp4 129.94M<br>
+| ├──155_154限制多开的另一种思路-共享内存_高清 1080P.mp4 113.44M<br>
+| ├──156_155dll注入_高清 1080P.mp4 95.58M<br>
+| ├──157_156消息HOOK_高清 1080P.mp4 160.54M<br>
+| ├──158_157IAT HOOK_高清 1080P.mp4 164.88M<br>
+| ├──159_158 inline hook_高清 1080P.mp4 140.93M<br>
+| ├──15_15for循环_高清 1080P.mp4 92.33M<br>
+| ├──160_159游戏外挂基础-课前准备_高清 1080P.mp4 176.39M<br>
+| ├──161_160游戏外挂基础-通过hook实现无敌功能_高清 1080P.mp4 264.03M<br>
+| ├──162_161游戏外挂基础-无敌功能代码编写_高清 1080P.mp4 209.50M<br>
+| ├──163_162游戏外挂基础-游戏内存搜索技巧_高清 1080P.mp4 238.34M<br>
+| ├──164_163游戏外挂基础-自动施法自动加血功能-1_高清 1080P.mp4 202.27M<br>
+| ├──165_163游戏外挂基础-自动施法自动加血功能-2_高清 1080P.mp4 63.00M<br>
+| ├──166_164游戏外挂基础-自动补药代码编写_高清 1080P.mp4 107.59M<br>
+| ├──167_165游戏外挂基础-将外挂窗口注入到游戏进程_高清 1080P.mp4 180.43M<br>
+| ├──168_166游戏外挂基础-注入方式实现无敌功能_高清 1080P.mp4 164.39M<br>
+| ├──169_167软件漏洞-初识漏洞_高清 1080P.mp4 149.61M<br>
+| ├──16_16while循环_高清 1080P.mp4 128.30M<br>
+| ├──170_168软件漏洞-hello shellcode_高清 1080P.mp4 174.11M<br>
+| ├──171_169软件漏洞-跳板指令定位shellcode_高清 1080P.mp4 61.66M<br>
+| ├──172_170软件漏洞-使用 TEB PEB查找核心模块_高清 1080P.mp4 144.58M<br>
+| ├──173_171软件漏洞-优化shellcode_高清 1080P.mp4 204.51M<br>
+| ├──174_172软件漏洞-shellcode调试_高清 1080P.mp4 74.08M<br>
+| ├──175_173软件漏洞-shellcode瘦身_高清 1080P.mp4 75.18M<br>
+| ├──176_174软件漏洞-实现后门程序（上）_高清 1080P.mp4 144.18M<br>
+| ├──177_175软件漏洞-实现后门程序（下）_高清 1080P.mp4 224.02M<br>
+| ├──178_176软件漏洞-shellcode加解密_高清 1080P.mp4 172.66M<br>
+| ├──179_178壳-壳的原理_高清 1080P.mp4 128.05M<br>
+| ├──17_17goto语句_高清 1080P.mp4 102.48M<br>
+| ├──180_179壳-将shellcode写入到PE文件_高清 1080P.mp4 114.83M<br>
+| ├──181_180壳-添加壳代码的几种方式_高清 1080P.mp4 109.24M<br>
+| ├──182_181加壳01_高清 1080P.mp4 140.53M<br>
+| ├──183_182加壳02_高清 1080P.mp4 152.29M<br>
+| ├──184_183加壳03_高清 1080P.mp4 148.35M<br>
+| ├──185_184加壳-修复重定位表_高清 1080P.mp4 185.47M<br>
+| ├──186_185加壳-加密导入表_高清 1080P.mp4 185.14M<br>
+| ├──187_186加壳-移动导入表代码实现_高清 1080P.mp4 145.19M<br>
+| ├──188_187壳项目-重定位表终极之战_高清 1080P.mp4 236.00M<br>
+| ├──189_188脱壳-UPX脱壳原理_高清 1080P.mp4 210.60M<br>
+| ├──18_18猜数字游戏_高清 1080P.mp4 54.83M<br>
+| ├──190_189脱壳-修复加密IAT_高清 1080P.mp4 142.01M<br>
+| ├──191_190脱壳-偷梁换柱修复IAT_高清 1080P.mp4 170.74M<br>
+| ├──192_191脱壳-脱壳脚本编写_高清 1080P.mp4 136.77M<br>
+| ├──193_192脱壳-SEH_高清 1080P.mp4 108.20M<br>
+| ├──194_193脱壳-自定义异常处理器并添加调试器检测_高清 1080P.mp4 87.05M<br>
+| ├──195_194脱壳-带反调试的壳_高清 1080P.mp4 231.27M<br>
+| ├──196_195脱壳-断点原理_高清 1080P.mp4 197.27M<br>
+| ├──197_196VEH_高清 1080P.mp4 24.58M<br>
+| ├──198_197VEH HOOK_高清 1080P.mp4 154.07M<br>
+| ├──199_198浅析VMprotect虚拟化架构_高清 1080P.mp4 96.66M<br>
+| ├──19_19数组1_高清 1080P.mp4 38.83M<br>
+| ├──1_01进制_高清 1080P.mp4 26.77M<br>
+| ├──200_199代码膨胀与变异原理_高清 1080P.mp4 57.80M<br>
+| ├──201_200反调试-过CRC校验,虚拟机检测_高清 1080P.mp4 101.41M<br>
+| ├──202_201如何关闭其他进程句柄_高清 1080P.mp4 153.19M<br>
+| ├──20_20数组2_高清 1080P.mp4 94.68M<br>
+| ├──21_21二维数组_高清 1080P.mp4 48.47M<br>
+| ├──22_22char数组和字符串文本最终_高清 1080P.mp4 121.00M<br>
+| ├──23_23字符串链接_高清 1080P.mp4 24.62M<br>
+| ├──24_24字符串比较_高清 1080P.mp4 26.28M<br>
+| ├──25_25字符串查找_高清 1080P.mp4 61.79M<br>
+| ├──26_26字符串API实现修改后_高清 1080P.mp4 59.62M<br>
+| ├──27_27指针1_高清 1080P.mp4 116.74M<br>
+| ├──28_28指针2修改后_高清 1080P.mp4 116.43M<br>
+| ├──29_29指针3_高清 1080P.mp4 133.91M<br>
+| ├──2_02数据的宽度_高清 1080P.mp4 20.71M<br>
+| ├──30_30指针与字符串_高清 1080P.mp4 138.41M<br>
+| ├──31_31指针与数组_高清 1080P.mp4 125.20M<br>
+| ├──32_32常量指针与指针常量_高清 1080P.mp4 23.01M<br>
+| ├──33_关于指针常量常量指针叫法的补充_高清 1080P.mp4 10.99M<br>
+| ├──34_33函数修改_高清 1080P.mp4 132.80M<br>
+| ├──35_34函数传参改_高清 1080P.mp4 64.57M<br>
+| ├──36_35内存分配_高清 1080P.mp4 109.53M<br>
+| ├──37_36函数指针与指针函数sj_高清 1080P.mp4 98.36M<br>
+| ├──38_37变量的作用域及生命周期_高清 1080P.mp4 141.96M<br>
+| ├──39_38函数递归调用_高清 1080P.mp4 47.76M<br>
+| ├──3_03逻辑运算_高清 1080P.mp4 51.57M<br>
+| ├──40_39参数数量可变的函数_高清 1080P.mp4 58.21M<br>
+| ├──41_40main函数及命令行参数获取_高清 1080P.mp4 104.15M<br>
+| ├──42_41结构体定义与使用_高清 1080P.mp4 103.07M<br>
+| ├──43_42结构体的定义与使用2_高清 1080P.mp4 56.81M<br>
+| ├──44_43结构体中的指针与数组_高清 1080P.mp4 64.62M<br>
+| ├──45_44结构体浅拷贝深拷贝_高清 1080P.mp4 46.55M<br>
+| ├──46_45结构体长度计算_高清 1080P.mp4 72.33M<br>
+| ├──47_46单向链表的定义_高清 1080P.mp4 55.95M<br>
+| ├──48_47单向链表的增删改查_高清 1080P.mp4 133.00M<br>
+| ├──49_48单向循环链表_高清 1080P.mp4 67.91M<br>
+| ├──4_04第一个C程序_高清 1080P.mp4 91.98M<br>
+| ├──50_49双向链表_高清 1080P.mp4 114.02M<br>
+| ├──51_50树的定义_高清 1080P.mp4 53.13M<br>
+| ├──52_51二叉数的创建与遍历_高清 1080P.mp4 103.99M<br>
+| ├──53_52二叉排序树_高清 1080P.mp4 73.60M<br>
+| ├──54_53联合体_高清 1080P.mp4 79.65M<br>
+| ├──55_54枚举类型_高清 1080P.mp4 61.35M<br>
+| ├──56_55位运算_高清 1080P.mp4 33.58M<br>
+| ├──57_56宏定义与应用_高清 1080P.mp4 50.62M<br>
+| ├──58_57条件编译_高清 1080P.mp4 119.98M<br>
+| ├──59_58文件操作_高清 1080P.mp4 82.96M<br>
+| ├──5_05数据类型与变量_高清 1080P.mp4 53.59M<br>
+| ├──60_59文件读写_高清 1080P.mp4 82.77M<br>
+| ├──61_60按照行读写文件fgets、fputs_高清 1080P.mp4 68.81M<br>
+| ├──62_61初识C++_高清 1080P.mp4 40.80M<br>
+| ├──63_62C命名空间_高清 1080P.mp4 107.93M<br>
+| ├──64_63USING声明及USING编译指令_高清 1080P.mp4 69.51M<br>
+| ├──65_64C对C语言的增强与扩展_高清 1080P.mp4 60.92M<br>
+| ├──66_65C对C语言的增强与扩展2_高清 1080P.mp4 81.55M<br>
+| ├──67_66引用_高清 1080P.mp4 47.20M<br>
+| ├──68_67C引用2_高清 1080P.mp4 52.93M<br>
+| ├──69_68类的声明，定义与应用_高清 1080P.mp4 61.05M<br>
+| ├──6_006整型变量的存储_高清 1080P.mp4 29.14M<br>
+| ├──70_69Cthis指针_高清 1080P.mp4 26.96M<br>
+| ├──71_70C构造析构函数_高清 1080P.mp4 74.29M<br>
+| ├──72_71C构造析构函数2_高清 1080P.mp4 35.07M<br>
+| ├──73_72继承_高清 1080P.mp4 108.69M<br>
+| ├──74_73访问权限_高清 1080P.mp4 93.08M<br>
+| ├──75_74Cnew-delete关键字_高清 1080P.mp4 169.84M<br>
+| ├──76_75拷贝构造函数_高清 1080P.mp4 74.16M<br>
+| ├──77_76静态_高清 1080P.mp4 67.40M<br>
+| ├──78_77虚继承_高清 1080P.mp4 104.61M<br>
+| ├──79_78友元_高清 1080P.mp4 34.58M<br>
+| ├──7_07浮点数补充_高清 1080P.mp4 50.58M<br>
+| ├──80_79运算符重载_高清 1080P.mp4 63.37M<br>
+| ├──81_80运算符重载2_高清 1080P.mp4 52.44M<br>
+| ├──82_81虚函数_高清 1080P.mp4 66.35M<br>
+| ├──83_82虚函数内存模型_高清 1080P.mp4 80.89M<br>
+| ├──84_83模板_高清 1080P.mp4 62.05M<br>
+| ├──85_84异常处理_高清 1080P.mp4 78.65M<br>
+| ├──86_85STL01_高清 1080P.mp4 212.94M<br>
+| ├──87_86STL2_高清 1080P.mp4 95.22M<br>
+| ├──88_87windows编程-从控制台到窗口程序_高清 1080P.mp4 56.28M<br>
+| ├──89_88windows编程-字符串处理_高清 1080P.mp4 62.70M<br>
+| ├──8_08字符类型_高清 1080P.mp4 126.28M<br>
+| ├──90_89windows编程-第一个窗口程序_高清 1080P.mp4 88.96M<br>
+| ├──91_90windows编程-消息处理_高清 1080P.mp4 83.01M<br>
+| ├──92_91windows编程-窗口控件_高清 1080P.mp4 113.73M<br>
+| ├──93_92窗口操作函数的使用_高清 1080P.mp4 138.48M<br>
+| ├──94_93资源操作1_高清 1080P.mp4 66.30M<br>
+| ├──95_94资源操作2_高清 1080P.mp4 128.67M<br>
+| ├──96_95控件的使用_高清 1080P.mp4 110.07M<br>
+| ├──97_96图片控件、下拉框控件_高清 1080P.mp4 84.16M<br>
+| ├──98_97滑块、进度条控件_高清 1080P.mp4 44.87M<br>
+| ├──99_98List Control_高清 1080P.mp4 120.02M<br>
+| └──9_09运算符_高清 1080P.mp4 58.50M<br>
+├──36-37-R3反调试专题<br>
+| ├──01异常过滤器<br>
+| | ├──01异常过滤器.docx 23.28kb<br>
+| | └──01异常过滤器.mp4 43.50M<br>
+| ├──02反调试1<br>
+| | ├──02反调试.docx 24.60kb<br>
+| | └──02反调试1.mp4 196.21M<br>
+| ├──03反调试2<br>
+| | ├──03反调试2.docx 25.32kb<br>
+| | └──反调试2.mp4 122.96M<br>
+| ├──04反调试3<br>
+| | ├──04反调试3-硬件断点反调试.mp4 69.16M<br>
+| | └──04反调试3.docx 51.24kb<br>
+| ├──05反调试4<br>
+| | ├──05反调试4-检测调试对象.mp4 210.25M<br>
+| | └──05反调试4.docx 29.73kb<br>
+| ├──06反调试5<br>
+| | ├──06反调试5.docx 27.66kb<br>
+| | └──06反调试5.mp4 224.36M<br>
+| ├──07反调试6-CRC检测<br>
+| | ├──07反调试6-CRC检测.docx 27.17kb<br>
+| | └──07反调试6-CRC检测.mp4 58.12M<br>
+| ├──08反调试-过CRC校验<br>
+| | ├──08反调试-过CRC校验,虚拟机检测.docx 26.99kb<br>
+| | ├──08反调试-过CRC校验,虚拟机检测.mp4 144.92M<br>
+| | ├──爆破.exe 708.00kb<br>
+| | └──过CRC32检测练习.exe 708.00kb<br>
+| ├──09反调试-调试器原理<br>
+| | ├──09反调试-调试器原理.docx 26.11kb<br>
+| | └──09反调试-调试器原理.mp4 231.00M<br>
+| ├──10反调试-反附加<br>
+| | └──10反调试-反附加.docx 25.97kb<br>
+| ├──11反调试-过Strong OD代码实现<br>
+| | ├──11反调试-过Strong OD代码实现.docx 26.02kb<br>
+| | └──11反调试-过Strong OD代码实现.mp4 96.53M<br>
+| ├──12反调试11<br>
+| | ├──12反调试11.docx 138.42kb<br>
+| | └──12反调试11.mp4 95.17M<br>
+| ├──13反调试12<br>
+| | ├──13反调试12-通过程序子窗口特点检测.mp4 67.67M<br>
+| | └──13反调试12.docx 25.64kb<br>
+| ├──14关闭其他进程句柄<br>
+| | ├──14关闭其他进程句柄.docx 29.22kb<br>
+| | └──14关闭其他进程句柄.mp4 237.15M<br>
+| └──15反调试-系统调用<br>
+| | ├──15反调试-系统调用.docx 62.17kb<br>
+| | └──15反调试-系统调用.mp4 81.98M<br>
+├──38.网络游戏编程1 51hook<br>
+| ├──1.游戏环境搭建.mp4 203.26M<br>
+| ├──10.数据结构分析-vector.mp4 215.64M<br>
+| ├──2.搜索血值来源.mp4 746.24M<br>
+| ├──3.通过发包函数找功能call.mp4 632.47M<br>
+| ├──4.分析喊话call参数来源.mp4 654.25M<br>
+| ├──5.线程发包讲解.mp4 600.12M<br>
+| ├──6.使用背包物品call.mp4 381.17M<br>
+| ├──7.人物背包分析.mp4 587.47M<br>
+| ├──8.遍历背包.mp4 795.98M<br>
+| └──9.数据结构分析-list.mp4 234.97M<br>
+├──39.网络游戏编程2<br>
+| ├──1.数据结构分析-二叉树.mp4 175.42M<br>
+| ├──10.技能列表分析2.mp4 719.00M<br>
+| ├──2.周围对象分析.mp4 927.78M<br>
+| ├──3.周围对象分析2.mp4 1.09G<br>
+| ├──4.周围对象集合基址查找.mp4 265.56M<br>
+| ├──5.遍历周围对象1.mp4 420.53M<br>
+| ├──6.自动打怪、dll调试.mp4 433.82M<br>
+| ├──7.自动攻击分析.mp4 445.71M<br>
+| ├──8.技能栏技能分析.mp4 270.95M<br>
+| └──9.技能列表分析1.mp4 1.06G<br>
+├──40.网络游戏编程3<br>
+| ├──1.人物武学技能基址查找.mp4 614.50M<br>
+| ├──10.自动打怪3-功能调用.mp4 281.24M<br>
+| ├──2.实现技能遍历功能.mp4 717.03M<br>
+| ├──3.对象阵营分析.mp4 560.48M<br>
+| ├──4.周围对象类型分析代码实现.mp4 485.81M<br>
+| ├──5.怪物血量分析.mp4 364.30M<br>
+| ├──6.技能CD分析1.mp4 322.08M<br>
+| ├──7.判断技能冷却call参数分析.mp4 671.57M<br>
+| ├──8.自动打怪逻辑实现1.mp4 180.66M<br>
+| └──9.自动打怪2-挂接游戏主线程…mp4 280.26M<br>
+├──41.网络游戏编程4<br>
+| ├──1.自动打怪4-选取最近目标.mp4 371.31M<br>
+| ├──10.遍历掉落物品.mp4 385.49M<br>
+| ├──2.自动打怪5-选取最近目标.mp4 522.22M<br>
+| ├──3.自动打怪6-筛选出怪物.mp4 359.75M<br>
+| ├──4.自动打怪7-使用技能自动攻击.mp4 243.59M<br>
+| ├──5.自动寻路.mp4 511.30M<br>
+| ├──6.自动寻路代码实现-数据管理.mp4 363.74M<br>
+| ├──7.掉落物品分析1.mp4 476.86M<br>
+| ├──8.物品掉落分析2.mp4 520.76M<br>
+| └──9.掉落物品分析3-哈希表结构.mp4 283.57M<br>
+├──42.网络游戏编程5<br>
+| ├──1.任务列表分析.mp4 571.64M<br>
+| ├──10.istringstream补充.mp4 8.85M<br>
+| ├──2.任务列表遍历.mp4 245.10M<br>
+| ├──3.可接任务列表分析.mp4 545.80M<br>
+| ├──4.可接任务列表2.mp4 765.40M<br>
+| ├──5.可接任务列表遍历.mp4 214.59M<br>
+| ├──6.接受任务分析1.mp4 418.81M<br>
+| ├──7.跳过NPC对话接受任务分析.mp4 268.38M<br>
+| ├──8.自动更新基址1.mp4 508.08M<br>
+| └──9.自动更新基址2.mp4 270.17M<br>
+├──43.网络游戏编程6<br>
+| ├──1.自动更新基址3.mp4 337.75M<br>
+| └──多余目录.mp4 51.97M<br>
+├──44.反调试专题1<br>
+| ├──1.过滤器异常.mp4 154.33M<br>
+| ├──10.反调试9-过掉Strong Od反反附加.mp4 358.58M<br>
+| ├──2.反调试1.mp4 189.33M<br>
+| ├──3.反调试2.mp4 404.83M<br>
+| ├──4.反调试3-硬件断点反调试.mp4 240.92M<br>
+| ├──5.反调试4-检测调试对象.mp4 546.60M<br>
+| ├──6.反调试5.mp4 246.24M<br>
+| ├──7.反调试6-CRC检测.mp4 198.62M<br>
+| ├──8.反调试7-过CRC校验,虚拟机检测.mp4 376.38M<br>
+| └──9.反调试8-调试器原理.mp4 259.17M<br>
+├──45.反调试专题2<br>
+| ├──1.反调试10-过Strong OD代码实现.mp4 326.32M<br>
+| ├──2.反调试11-环境检测,TF标志位.mp4 263.48M<br>
+| ├──3.反调试12-通过程序子窗口特点检测.mp4 228.70M<br>
+| ├──4.关闭其他进程句柄.mp4 554.71M<br>
+| └──多余目录.mp4 51.97M<br>
+├──46.windows内核开发1 51hook<br>
+| ├──1.双机调试环境搭建…mp4 212.83M<br>
+| ├──10.任务段.mp4 800.74M<br>
+| ├──2.段寄存器.mp4 283.66M<br>
+| ├──3.段描述符.mp4 254.13M<br>
+| ├──4.段描述符解析.mp4 402.37M<br>
+| ├──5.权限级别.mp4 303.79M<br>
+| ├──6.提权实验.mp4 255.79M<br>
+| ├──7.调用门.mp4 479.42M<br>
+| ├──8.中断门.mp4 287.40M<br>
+| └──9.陷阱门.mp4 112.25M<br>
+├──47.windows内核开发2<br>
+| ├──1.任务门.mp4 136.64M<br>
+| ├──2.分页机制-环境配置.mp4 107.89M<br>
+| ├──3.101012分页.mp4 236.70M<br>
+| ├──4.页属性.mp4 266.63M<br>
+| ├──5.作业讲解.mp4 301.32M<br>
+| ├──6.101012分页内存管理.mp4 462.64M<br>
+| ├──7.29912分页.mp4 135.37M<br>
+| ├──8.18TLB.mp4 412.80M<br>
+| └──9.控制寄存器.mp4 195.67M<br>
+├──48.windows内核开发3<br>
+| ├──1.第一个驱动程序.mp4 407.35M<br>
+| ├──10.注册表操作2.mp4 399.00M<br>
+| ├──2.UnicodeString的使用.mp4 274.95M<br>
+| ├──3.内存分配.mp4 431.65M<br>
+| ├──4.链表LIST_ENTRY.mp4 311.82M<br>
+| ├──5.二叉查找树.mp4 502.03M<br>
+| ├──6.文件操作.mp4 496.29M<br>
+| ├──7.文件操作2.mp4 247.45M<br>
+| ├──8.作业讲解.mp4 491.59M<br>
+| └──9.注册表操作.mp4 208.02M<br>
+├──49.windows内核开发4<br>
+| ├──1.应用层与驱动层之间的通信1.mp4 479.19M<br>
+| ├──10.动态获取调用号-解析ntdll导出表.mp4 570.79M<br>
+| ├──2.应用层与驱动层之间的通信2.mp4 285.88M<br>
+| ├──3.应用层与驱动层通信3.mp4 377.80M<br>
+| ├──4.数据交互方式1.mp4 285.33M<br>
+| ├──5.DeviceIoControl实现直接读写2.mp4 273.48M<br>
+| ├──6.API调用过程.mp4 164.53M<br>
+| ├──7.快速系统调用.mp4 243.80M<br>
+| ├──8.SSDT.mp4 955.54M<br>
+| └──9.SSDT HOOK.mp4 300.16M<br>
+├──50.windows内核开发5<br>
+| ├──1.动态获取调用号2.mp4 354.61M<br>
+| ├──10.线程切换.mp4 396.01M<br>
+| ├──2.wow64进程.mp4 277.50M<br>
+| ├──3.进程结构体及进程保护.mp4 264.79M<br>
+| ├──4.内核中遍历进程.mp4 195.05M<br>
+| ├──5.断链隐藏进程.mp4 171.44M<br>
+| ├──6.线程结构.mp4 204.00M<br>
+| ├──7.驱动遍历与隐藏.mp4 215.47M<br>
+| ├──8.进程与线程的枚举.mp4 165.50M<br>
+| └──9.KPCR.mp4 338.06M<br>
+├──51.windows内核开发6<br>
+| ├──1.线程主动切换.mp4 327.12M<br>
+| ├──10.作业讲解.mp4 205.65M<br>
+| ├──2.线程被动切换.mp4 176.45M<br>
+| ├──3.进程挂靠.mp4 235.05M<br>
+| ├──4.内核中线程相关操作.mp4 359.66M<br>
+| ├──5.全局句柄表.mp4 412.09M<br>
+| ├──6.私有句柄表.mp4 482.63M<br>
+| ├──7.作业讲解.mp4 585.30M<br>
+| ├──8.句柄降权实现反调试.mp4 289.70M<br>
+| └──9.过掉句柄降权保护.mp4 434.52M<br>
+├──52.windows内核开发7<br>
+| ├──1.APC.mp4 152.45M<br>
+| ├──2.APC注入.mp4 301.46M<br>
+| ├──3.APC队列插入过程分析.mp4 367.12M<br>
+| ├──4.内核APC插入操作.mp4 401.29M<br>
+| ├──5.内核层插入用户模式APC.mp4 131.09M<br>
+| └──6.DPC.mp4 252.31M<br>
+├──53.驱动读写项目 51hook<br>
+| ├──1.驱动读写项目1-三环与驱动另类通信方式.mp4 276.52M<br>
+| ├──10.驱动读写9-获取应用层加载的模块.mp4 287.93M<br>
+| ├──2.驱动读写1r3r0通信.docx 34.58kb<br>
+| ├──3.驱动读写2-注册回调.mp4 178.78M<br>
+| ├──4.驱动读写3-完善r3与r0之间的通信.mp4 151.50M<br>
+| ├──5.驱动读写4-卸载通信.mp4 97.93M<br>
+| ├──6.驱动读写5-驱动层读取进程内存.mp4 161.57M<br>
+| ├──7.驱动读写6-修改cr3读取内存.mp4 205.18M<br>
+| ├──8.驱动读写7-MDL方式访问内存.mp4 319.62M<br>
+| └──9.驱动读写8-驱动读取内存测试.mp4 196.78M<br>
+├──54.驱动读写项目2<br>
+| ├──1.驱动读写10-作业讲解.mp4 213.36M<br>
+| ├──10.驱动读写19-作业讲解.mp4 131.16M<br>
+| ├──2.驱动读写11-win10下r3与r0的另类通信方式.mp4 75.51M<br>
+| ├──3.驱动读写12-查找指定内核模块.mp4 259.51M<br>
+| ├──4.驱动读写13-特征码搜索.mp4 268.44M<br>
+| ├──5.驱动读写14-特征码搜索2.mp4 146.07M<br>
+| ├──6.驱动读写15-蓝屏处理.mp4 289.81M<br>
+| ├──7.驱动读写16-代码实现驱动加载.mp4 171.23M<br>
+| ├──8.驱动读写17-驱动名称随机.mp4 237.51M<br>
+| └──9.驱动读写18-内存属性查询.mp4 298.77M<br>
+├──55.驱动读写项目3<br>
+| ├──1.驱动读写20-注册回调实现进程保护.mp4 302.34M<br>
+| ├──2.驱动读写21-修改进程对象头实现进程保护.mp4 133.43M<br>
+| ├──3.驱动读写22-隐藏回调保护.mp4 201.98M<br>
+| ├──4.驱动读写23-0环线程劫持1.mp4 266.22M<br>
+| ├──5.驱动读写24-线程劫持2.mp4 164.33M<br>
+| └──6.驱动读写25-进程、线程、模块检测.mp4 189.21M<br>
+├──56.X64网游实战<br>
+| ├──1.X64汇编与32区别.mp4 133.00M<br>
+| ├──10.使用指定物品代码实现.mp4 255.52M<br>
+| ├──2.X64调用约定.mp4 225.51M<br>
+| ├──3.X64HOOK.mp4 163.06M<br>
+| ├──4.函数调用.mp4 143.04M<br>
+| ├──5.游戏血值来源.mp4 228.10M<br>
+| ├──6.使用背包物品call.mp4 305.12M<br>
+| ├──7.人物背包分析.mp4 566.57M<br>
+| ├──8.变长传参、浮点类型传参.mp4 102.96M<br>
+| └──9.X64下调用游戏功能call.mp4 164.72M<br>
+├──56.X64网游实战2<br>
+| ├──1.屏蔽玩家功能分析.mp4 186.32M<br>
+| ├──10.自动寻路.mp4 326.44M<br>
+| ├──2.周围对象分析1.mp4 413.58M<br>
+| ├──3.周围对象分析2.mp4 367.37M<br>
+| ├──4.对象数组结构分析.mp4 389.26M<br>
+| ├──5.选中最近的怪物.mp4 365.41M<br>
+| ├──6.自动选怪代码实现.mp4 269.71M<br>
+| ├──7.普通攻击call.mp4 166.68M<br>
+| ├──8.地面物品分析.mp4 349.10M<br>
+| └──9.地面物品类型区分.mp4 234.46M<br>
+├──58.X64网游实战3<br>
+| ├──1.自动寻路代码实现.mp4 195.76M<br>
+| ├──10.技能数组分析.mp4 366.62M<br>
+| ├──2.按键call分析.mp4 252.03M<br>
+| ├──3.走路call分析1.mp4 401.62M<br>
+| ├──4.走路call2-CE搜索基址技巧.mp4 303.91M<br>
+| ├──5.另一种方式分析走路call.mp4 179.06M<br>
+| ├──6.已接任务列表分析.mp4 242.71M<br>
+| ├──7.NPC对话call.mp4 247.64M<br>
+| ├──8.喊话call分析.mp4 269.62M<br>
+| └──9.天人合一分析.mp4 242.79M<br>
+├──59.X64内核基础<br>
+| ├──1.X64段寄存器.mp4 94.39M<br>
+| ├──10.X64SSDT.mp4 166.71M<br>
+| ├──2.x64下的系统段.mp4 109.38M<br>
+| ├──3.64位调用门提权.mp4 175.19M<br>
+| ├──4.32应用使用调用门.mp4 97.79M<br>
+| ├──5.64位页表.mp4 107.13M<br>
+| ├──6.win7下的页表基址.mp4 152.08M<br>
+| ├──7.win10下的页表基址.mp4 141.26M<br>
+| ├──8.通过页表基址修改页属性.mp4 182.61M<br>
+| └──9.作业讲解.mp4 207.12M<br>
+├──60.X64内核基础2<br>
+| ├──1.x64SSDT表遍历.mp4 171.89M<br>
+| ├──2.X64下SSDT HOOK.mp4 258.61M<br>
+| └──3.win1064位全局句柄表解析.mp4 138.50M<br>
+├──61.VT基础 51hook<br>
+| ├──1.VT技术简介.mp4 180.58M<br>
+| ├──10.VT开启流程-HOST区域.mp4 135.72M<br>
+| ├──2.VT开启流程-环境检测.mp4 240.44M<br>
+| ├──3.VT开启流程-初始化工作.mp4 217.21M<br>
+| ├──4.VT开启流程-VMCS区域.mp4 106.51M<br>
+| ├──5.VT开启流程-填充VMCS.mp4 116.64M<br>
+| ├──6.VT开启流程-作业讲解.mp4 234.04M<br>
+| ├──7.VT开启流程-作业讲解.mp4 196.05M<br>
+| ├──8.VT开启流程-Rip Rsp内容补充.mp4 142.20M<br>
+| └──9.VT开启流程-完善Guest区域.mp4 205.17M<br>
+├──62.VT基础2<br>
+| ├──1.VT开启流程-VMCS控制区.mp4 155.73M<br>
+| ├──10.MSR寄存器拦截代码实现.mp4 302.88M<br>
+| ├──2.VT开启流程-vmentry,vmexit.mp4 223.22M<br>
+| ├──3.VT开启流程-handler.mp4 181.09M<br>
+| ├──4.VT开启流程-事件处.mp4 173.58M<br>
+| ├──5.VT开启流程-CPUID处理.mp4 149.11M<br>
+| ├──6.VT开启流程-关闭VT.mp4 252.43M<br>
+| ├──7.VT开启流程-VT启动测试.mp4 345.80M<br>
+| ├──8.VT开启bug处理.mp4 349.90M<br>
+| └──9.MSR寄存器拦截.mp4 240.60M<br>
+├──63.VT基础3<br>
+| ├──1.MSR寄存器拦截扫尾.mp4 121.87M<br>
+| ├──EPT.mp4 172.87M<br>
+| ├──EPT初始化.mp4 391.20M<br>
+| ├──EPT实现无痕HOOK1.mp4 233.04M<br>
+| ├──EPT实现无痕HOOK2.mp4 493.20M<br>
+| ├──EPT实现无痕HOOK3.mp4 275.34M<br>
+| ├──开启EPT.mp4 209.18M<br>
+| └──开启EPT检测.mp4 167.18M<br>
+├──VT课件.exe 129.71M<br>
+└──课件.exe 850.50kb</p> <h2 id="下载地址"><a href="#下载地址" class="header-anchor">#</a> 下载地址：</h2> <p><a href="https://www.itxbzxw.com/learn/hdkf/c/10025.html" target="_blank" rel="noopener noreferrer">C／C++全栈 内核 调试(51hook软件安全课程)-小白自学网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-4a336604 data-v-ff03da5a></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-2a01419c data-v-2a01419c><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-2a01419c><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-2a01419c></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-2a01419c></path></svg></div><div></div></div></div>
+    <script src="/assets/js/app.90e28c80.js" defer></script><script src="/assets/js/3.8f2f0e42.js" defer></script><script src="/assets/js/1.883b222e.js" defer></script><script src="/assets/js/129.7d6357ed.js" defer></script>
+  </body>
+</html>
