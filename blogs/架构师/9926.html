@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>马士兵云原生2024架构师课程 | 集合网</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="dns-prefetch" href="//xbcyw.github.io">
+    <meta name="description" content="集合网 你想要的这里都有！">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <link rel="preload" href="/assets/css/0.styles.1492f243.css" as="style"><link rel="preload" href="/assets/js/app.e97f35a2.js" as="script"><link rel="preload" href="/assets/js/3.8f2f0e42.js" as="script"><link rel="preload" href="/assets/js/1.883b222e.js" as="script"><link rel="preload" href="/assets/js/263.59b417de.js" as="script"><link rel="prefetch" href="/assets/js/10.3bd6c80e.js"><link rel="prefetch" href="/assets/js/100.b83d9ee2.js"><link rel="prefetch" href="/assets/js/101.fc4e6b05.js"><link rel="prefetch" href="/assets/js/102.cb9a15dc.js"><link rel="prefetch" href="/assets/js/103.f8baa5ed.js"><link rel="prefetch" href="/assets/js/104.479427ee.js"><link rel="prefetch" href="/assets/js/105.f7c87916.js"><link rel="prefetch" href="/assets/js/106.211b9763.js"><link rel="prefetch" href="/assets/js/107.9c9c89f7.js"><link rel="prefetch" href="/assets/js/108.a5414a9a.js"><link rel="prefetch" href="/assets/js/109.c027f682.js"><link rel="prefetch" href="/assets/js/11.1bd9d0a9.js"><link rel="prefetch" href="/assets/js/110.d4f39b88.js"><link rel="prefetch" href="/assets/js/111.0ca8cd1d.js"><link rel="prefetch" href="/assets/js/112.56f5a475.js"><link rel="prefetch" href="/assets/js/113.724ebaff.js"><link rel="prefetch" href="/assets/js/114.1843571b.js"><link rel="prefetch" href="/assets/js/115.78943b0e.js"><link rel="prefetch" href="/assets/js/116.8a735fed.js"><link rel="prefetch" href="/assets/js/117.33627c60.js"><link rel="prefetch" href="/assets/js/118.83682e87.js"><link rel="prefetch" href="/assets/js/119.5cc6bcab.js"><link rel="prefetch" href="/assets/js/12.c22a21a3.js"><link rel="prefetch" href="/assets/js/120.3c60b4dd.js"><link rel="prefetch" href="/assets/js/121.b649567a.js"><link rel="prefetch" href="/assets/js/122.677109e1.js"><link rel="prefetch" href="/assets/js/123.81186806.js"><link rel="prefetch" href="/assets/js/124.d9b2ae6c.js"><link rel="prefetch" href="/assets/js/125.97e23f0a.js"><link rel="prefetch" href="/assets/js/126.b169b13f.js"><link rel="prefetch" href="/assets/js/127.751a9ce6.js"><link rel="prefetch" href="/assets/js/128.3675ce80.js"><link rel="prefetch" href="/assets/js/129.89be81b4.js"><link rel="prefetch" href="/assets/js/13.0c3a4ba7.js"><link rel="prefetch" href="/assets/js/130.b5a91962.js"><link rel="prefetch" href="/assets/js/131.e890fae7.js"><link rel="prefetch" href="/assets/js/132.9c5f1dbd.js"><link rel="prefetch" href="/assets/js/133.af3ab888.js"><link rel="prefetch" href="/assets/js/134.566fab6f.js"><link rel="prefetch" href="/assets/js/135.3c3df0b7.js"><link rel="prefetch" href="/assets/js/136.78430071.js"><link rel="prefetch" href="/assets/js/137.ec7121e2.js"><link rel="prefetch" href="/assets/js/138.646057cd.js"><link rel="prefetch" href="/assets/js/139.e7bc47d3.js"><link rel="prefetch" href="/assets/js/14.6dd2fdcc.js"><link rel="prefetch" href="/assets/js/140.bc961c0c.js"><link rel="prefetch" href="/assets/js/141.2c1fd141.js"><link rel="prefetch" href="/assets/js/142.079c0eb9.js"><link rel="prefetch" href="/assets/js/143.f30349b1.js"><link rel="prefetch" href="/assets/js/144.7a97c857.js"><link rel="prefetch" href="/assets/js/145.0eec7ad2.js"><link rel="prefetch" href="/assets/js/146.73f7cd25.js"><link rel="prefetch" href="/assets/js/147.3672fe84.js"><link rel="prefetch" href="/assets/js/148.bc7a9515.js"><link rel="prefetch" href="/assets/js/149.ea3c2756.js"><link rel="prefetch" href="/assets/js/15.e850eca9.js"><link rel="prefetch" href="/assets/js/150.efd3ca1d.js"><link rel="prefetch" href="/assets/js/151.f51b10df.js"><link rel="prefetch" href="/assets/js/152.9c532559.js"><link rel="prefetch" href="/assets/js/153.7b9d0466.js"><link rel="prefetch" href="/assets/js/154.42adce51.js"><link rel="prefetch" href="/assets/js/155.7d2447f7.js"><link rel="prefetch" href="/assets/js/156.e099da40.js"><link rel="prefetch" href="/assets/js/157.fa459471.js"><link rel="prefetch" href="/assets/js/158.4f508b29.js"><link rel="prefetch" href="/assets/js/159.1e2185fb.js"><link rel="prefetch" href="/assets/js/16.5051dd7f.js"><link rel="prefetch" href="/assets/js/160.f19e0f3f.js"><link rel="prefetch" href="/assets/js/161.4036d5d3.js"><link rel="prefetch" href="/assets/js/162.d28a0bc4.js"><link rel="prefetch" href="/assets/js/163.3d945b4e.js"><link rel="prefetch" href="/assets/js/164.ebd0b417.js"><link rel="prefetch" href="/assets/js/165.75c43da0.js"><link rel="prefetch" href="/assets/js/166.6f261643.js"><link rel="prefetch" href="/assets/js/167.cadf7595.js"><link rel="prefetch" href="/assets/js/168.581f8440.js"><link rel="prefetch" href="/assets/js/169.b52bc11d.js"><link rel="prefetch" href="/assets/js/17.9e069ddd.js"><link rel="prefetch" href="/assets/js/170.ee5ca790.js"><link rel="prefetch" href="/assets/js/171.ad6db6a2.js"><link rel="prefetch" href="/assets/js/172.6aebdbdb.js"><link rel="prefetch" href="/assets/js/173.c1922a92.js"><link rel="prefetch" href="/assets/js/174.d9202df4.js"><link rel="prefetch" href="/assets/js/175.87fbf320.js"><link rel="prefetch" href="/assets/js/176.d0847530.js"><link rel="prefetch" href="/assets/js/177.a44c0286.js"><link rel="prefetch" href="/assets/js/178.b2e82b98.js"><link rel="prefetch" href="/assets/js/179.845c2070.js"><link rel="prefetch" href="/assets/js/18.3a3b3ffd.js"><link rel="prefetch" href="/assets/js/180.ea02a570.js"><link rel="prefetch" href="/assets/js/181.b0e1c6db.js"><link rel="prefetch" href="/assets/js/182.65f2c1ba.js"><link rel="prefetch" href="/assets/js/183.d739aa0d.js"><link rel="prefetch" href="/assets/js/184.f856fc1d.js"><link rel="prefetch" href="/assets/js/185.5fc4251e.js"><link rel="prefetch" href="/assets/js/186.e3e69c56.js"><link rel="prefetch" href="/assets/js/187.894b76e8.js"><link rel="prefetch" href="/assets/js/188.f78828bd.js"><link rel="prefetch" href="/assets/js/189.f0efe8ba.js"><link rel="prefetch" href="/assets/js/19.766843bc.js"><link rel="prefetch" href="/assets/js/190.761b76aa.js"><link rel="prefetch" href="/assets/js/191.ffa65fe4.js"><link rel="prefetch" href="/assets/js/192.11476010.js"><link rel="prefetch" href="/assets/js/193.b4d1fed8.js"><link rel="prefetch" href="/assets/js/194.7111f48a.js"><link rel="prefetch" href="/assets/js/195.09a4daef.js"><link rel="prefetch" href="/assets/js/196.76ee3115.js"><link rel="prefetch" href="/assets/js/197.bed2bd17.js"><link rel="prefetch" href="/assets/js/198.195ce5c5.js"><link rel="prefetch" href="/assets/js/199.7491a40f.js"><link rel="prefetch" href="/assets/js/20.03dbaebd.js"><link rel="prefetch" href="/assets/js/200.8eda6d47.js"><link rel="prefetch" href="/assets/js/201.a8648cd8.js"><link rel="prefetch" href="/assets/js/202.52083ac5.js"><link rel="prefetch" href="/assets/js/203.9bcdfbe5.js"><link rel="prefetch" href="/assets/js/204.2467c42d.js"><link rel="prefetch" href="/assets/js/205.0f846b8e.js"><link rel="prefetch" href="/assets/js/206.cee13aff.js"><link rel="prefetch" href="/assets/js/207.abdca0db.js"><link rel="prefetch" href="/assets/js/208.6e008fc6.js"><link rel="prefetch" href="/assets/js/209.887d83c5.js"><link rel="prefetch" href="/assets/js/21.32eb116f.js"><link rel="prefetch" href="/assets/js/210.48b81f37.js"><link rel="prefetch" href="/assets/js/211.759192e2.js"><link rel="prefetch" href="/assets/js/212.430af991.js"><link rel="prefetch" href="/assets/js/213.1722f286.js"><link rel="prefetch" href="/assets/js/214.711b4506.js"><link rel="prefetch" href="/assets/js/215.7e78c415.js"><link rel="prefetch" href="/assets/js/216.8a635218.js"><link rel="prefetch" href="/assets/js/217.c20423ac.js"><link rel="prefetch" href="/assets/js/218.d6585436.js"><link rel="prefetch" href="/assets/js/219.f04f98e9.js"><link rel="prefetch" href="/assets/js/22.dcff49d1.js"><link rel="prefetch" href="/assets/js/220.f2939df9.js"><link rel="prefetch" href="/assets/js/221.f459c595.js"><link rel="prefetch" href="/assets/js/222.1f489d19.js"><link rel="prefetch" href="/assets/js/223.b01c0768.js"><link rel="prefetch" href="/assets/js/224.f7814e38.js"><link rel="prefetch" href="/assets/js/225.db8d71dc.js"><link rel="prefetch" href="/assets/js/226.e9adf82a.js"><link rel="prefetch" href="/assets/js/227.3771ac47.js"><link rel="prefetch" href="/assets/js/228.b9bf672b.js"><link rel="prefetch" href="/assets/js/229.a4681c5e.js"><link rel="prefetch" href="/assets/js/23.539b9e8c.js"><link rel="prefetch" href="/assets/js/230.3bac0dce.js"><link rel="prefetch" href="/assets/js/231.f9cf7c32.js"><link rel="prefetch" href="/assets/js/232.abc8bbf1.js"><link rel="prefetch" href="/assets/js/233.3033d5d8.js"><link rel="prefetch" href="/assets/js/234.954f4846.js"><link rel="prefetch" href="/assets/js/235.ebe9d859.js"><link rel="prefetch" href="/assets/js/236.44d91b15.js"><link rel="prefetch" href="/assets/js/237.51b07173.js"><link rel="prefetch" href="/assets/js/238.888e8d1e.js"><link rel="prefetch" href="/assets/js/239.bf47cfb5.js"><link rel="prefetch" href="/assets/js/24.986af3e6.js"><link rel="prefetch" href="/assets/js/240.d388f6ee.js"><link rel="prefetch" href="/assets/js/241.215f1a3d.js"><link rel="prefetch" href="/assets/js/242.a4371cc0.js"><link rel="prefetch" href="/assets/js/243.af013604.js"><link rel="prefetch" href="/assets/js/244.1924637a.js"><link rel="prefetch" href="/assets/js/245.d4d34e23.js"><link rel="prefetch" href="/assets/js/246.85c88bf7.js"><link rel="prefetch" href="/assets/js/247.cde80ae2.js"><link rel="prefetch" href="/assets/js/248.d2d7286c.js"><link rel="prefetch" href="/assets/js/249.f654cc66.js"><link rel="prefetch" href="/assets/js/25.fda89900.js"><link rel="prefetch" href="/assets/js/250.21268189.js"><link rel="prefetch" href="/assets/js/251.201633d9.js"><link rel="prefetch" href="/assets/js/252.e86c3e2a.js"><link rel="prefetch" href="/assets/js/253.541bc424.js"><link rel="prefetch" href="/assets/js/254.e660363e.js"><link rel="prefetch" href="/assets/js/255.9e29bb15.js"><link rel="prefetch" href="/assets/js/256.d6f117a7.js"><link rel="prefetch" href="/assets/js/257.6202b5b8.js"><link rel="prefetch" href="/assets/js/258.8a161d65.js"><link rel="prefetch" href="/assets/js/259.90ec101a.js"><link rel="prefetch" href="/assets/js/26.fd69aee8.js"><link rel="prefetch" href="/assets/js/260.170e780b.js"><link rel="prefetch" href="/assets/js/261.cab10d5d.js"><link rel="prefetch" href="/assets/js/262.1e02fbae.js"><link rel="prefetch" href="/assets/js/264.592690db.js"><link rel="prefetch" href="/assets/js/265.1da59738.js"><link rel="prefetch" href="/assets/js/266.52430d27.js"><link rel="prefetch" href="/assets/js/267.7aea26aa.js"><link rel="prefetch" href="/assets/js/268.ab880997.js"><link rel="prefetch" href="/assets/js/269.eae77d77.js"><link rel="prefetch" href="/assets/js/27.f3e771e5.js"><link rel="prefetch" href="/assets/js/270.ffa28202.js"><link rel="prefetch" href="/assets/js/271.d8785287.js"><link rel="prefetch" href="/assets/js/272.28b43a84.js"><link rel="prefetch" href="/assets/js/273.543478d6.js"><link rel="prefetch" href="/assets/js/274.fce40ebf.js"><link rel="prefetch" href="/assets/js/275.75e2e576.js"><link rel="prefetch" href="/assets/js/276.24eee95c.js"><link rel="prefetch" href="/assets/js/277.116e075c.js"><link rel="prefetch" href="/assets/js/278.ad096bf8.js"><link rel="prefetch" href="/assets/js/279.4a2389ed.js"><link rel="prefetch" href="/assets/js/28.15fcd4af.js"><link rel="prefetch" href="/assets/js/280.60752c3c.js"><link rel="prefetch" href="/assets/js/281.1cdedc83.js"><link rel="prefetch" href="/assets/js/282.16b0e637.js"><link rel="prefetch" href="/assets/js/283.f883ea4b.js"><link rel="prefetch" href="/assets/js/284.5dad71d1.js"><link rel="prefetch" href="/assets/js/285.241720c9.js"><link rel="prefetch" href="/assets/js/286.54a4daa8.js"><link rel="prefetch" href="/assets/js/287.816d15b3.js"><link rel="prefetch" href="/assets/js/288.e234b3ec.js"><link rel="prefetch" href="/assets/js/289.5f3d0bc9.js"><link rel="prefetch" href="/assets/js/29.3ff94c9c.js"><link rel="prefetch" href="/assets/js/290.d098ac6e.js"><link rel="prefetch" href="/assets/js/291.cb6ad6e9.js"><link rel="prefetch" href="/assets/js/292.29efdd60.js"><link rel="prefetch" href="/assets/js/293.7156332c.js"><link rel="prefetch" href="/assets/js/294.67242e46.js"><link rel="prefetch" href="/assets/js/295.3fc15995.js"><link rel="prefetch" href="/assets/js/296.8d43bcf2.js"><link rel="prefetch" href="/assets/js/297.fed5844a.js"><link rel="prefetch" href="/assets/js/298.fdc2b121.js"><link rel="prefetch" href="/assets/js/299.59e41c86.js"><link rel="prefetch" href="/assets/js/30.78450e8b.js"><link rel="prefetch" href="/assets/js/300.74d9d451.js"><link rel="prefetch" href="/assets/js/301.cc237149.js"><link rel="prefetch" href="/assets/js/302.66a1b180.js"><link rel="prefetch" href="/assets/js/31.061687f1.js"><link rel="prefetch" href="/assets/js/32.83952946.js"><link rel="prefetch" href="/assets/js/33.789646df.js"><link rel="prefetch" href="/assets/js/34.9190ddaa.js"><link rel="prefetch" href="/assets/js/35.746e9f8c.js"><link rel="prefetch" href="/assets/js/36.b2b9145d.js"><link rel="prefetch" href="/assets/js/37.de989843.js"><link rel="prefetch" href="/assets/js/38.71b99631.js"><link rel="prefetch" href="/assets/js/39.54684a29.js"><link rel="prefetch" href="/assets/js/4.f660f003.js"><link rel="prefetch" href="/assets/js/40.fe4e8f7e.js"><link rel="prefetch" href="/assets/js/41.334165eb.js"><link rel="prefetch" href="/assets/js/42.9f173a74.js"><link rel="prefetch" href="/assets/js/43.2748e7d3.js"><link rel="prefetch" href="/assets/js/44.4126f9c0.js"><link rel="prefetch" href="/assets/js/45.1b34dbc2.js"><link rel="prefetch" href="/assets/js/46.1982b36a.js"><link rel="prefetch" href="/assets/js/47.e96bc901.js"><link rel="prefetch" href="/assets/js/48.9560dc01.js"><link rel="prefetch" href="/assets/js/49.606a96b7.js"><link rel="prefetch" href="/assets/js/5.42305035.js"><link rel="prefetch" href="/assets/js/50.346885a8.js"><link rel="prefetch" href="/assets/js/51.c6c06891.js"><link rel="prefetch" href="/assets/js/52.63522899.js"><link rel="prefetch" href="/assets/js/53.b7513d2e.js"><link rel="prefetch" href="/assets/js/54.ff8f7b42.js"><link rel="prefetch" href="/assets/js/55.61a23504.js"><link rel="prefetch" href="/assets/js/56.529cca25.js"><link rel="prefetch" href="/assets/js/57.23a9d953.js"><link rel="prefetch" href="/assets/js/58.4bd398a7.js"><link rel="prefetch" href="/assets/js/59.5bc7bb41.js"><link rel="prefetch" href="/assets/js/6.8a5b1f54.js"><link rel="prefetch" href="/assets/js/60.b6873373.js"><link rel="prefetch" href="/assets/js/61.4461c735.js"><link rel="prefetch" href="/assets/js/62.680562da.js"><link rel="prefetch" href="/assets/js/63.6420b274.js"><link rel="prefetch" href="/assets/js/64.129f8d06.js"><link rel="prefetch" href="/assets/js/65.37fd31ad.js"><link rel="prefetch" href="/assets/js/66.7452d3ef.js"><link rel="prefetch" href="/assets/js/67.96b99d99.js"><link rel="prefetch" href="/assets/js/68.50ac718c.js"><link rel="prefetch" href="/assets/js/69.2255e7a3.js"><link rel="prefetch" href="/assets/js/7.87f3349d.js"><link rel="prefetch" href="/assets/js/70.5d056b8b.js"><link rel="prefetch" href="/assets/js/71.0674aabd.js"><link rel="prefetch" href="/assets/js/72.e681e645.js"><link rel="prefetch" href="/assets/js/73.4d8976a7.js"><link rel="prefetch" href="/assets/js/74.d098e329.js"><link rel="prefetch" href="/assets/js/75.85a7604b.js"><link rel="prefetch" href="/assets/js/76.b2a06005.js"><link rel="prefetch" href="/assets/js/77.2b19f8c0.js"><link rel="prefetch" href="/assets/js/78.ae66997f.js"><link rel="prefetch" href="/assets/js/79.bc6c2b5c.js"><link rel="prefetch" href="/assets/js/8.d08ebc9e.js"><link rel="prefetch" href="/assets/js/80.649c5204.js"><link rel="prefetch" href="/assets/js/81.530856c2.js"><link rel="prefetch" href="/assets/js/82.9607e429.js"><link rel="prefetch" href="/assets/js/83.e559b613.js"><link rel="prefetch" href="/assets/js/84.373ee996.js"><link rel="prefetch" href="/assets/js/85.79c61e21.js"><link rel="prefetch" href="/assets/js/86.5c2d3892.js"><link rel="prefetch" href="/assets/js/87.4e603cb9.js"><link rel="prefetch" href="/assets/js/88.07b6b26d.js"><link rel="prefetch" href="/assets/js/89.5b19866a.js"><link rel="prefetch" href="/assets/js/9.5551a540.js"><link rel="prefetch" href="/assets/js/90.77986152.js"><link rel="prefetch" href="/assets/js/91.1750f6f3.js"><link rel="prefetch" href="/assets/js/92.6ddae8e0.js"><link rel="prefetch" href="/assets/js/93.384f6f22.js"><link rel="prefetch" href="/assets/js/94.f42df694.js"><link rel="prefetch" href="/assets/js/95.10ff875f.js"><link rel="prefetch" href="/assets/js/96.f99bd338.js"><link rel="prefetch" href="/assets/js/97.eb2645fc.js"><link rel="prefetch" href="/assets/js/98.f0e730d3.js"><link rel="prefetch" href="/assets/js/99.13e23d80.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1492f243.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-ff03da5a><div data-v-ff03da5a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-2b487510 data-v-ff03da5a data-v-ff03da5a><h3 class="title" data-v-2b487510>集合网</h3> <p class="description" data-v-2b487510>集合网 你想要的这里都有！</p> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2024
+      </a></span></div></div> <div class="hide" data-v-ff03da5a><header class="navbar" data-v-ff03da5a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">集合网</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ff03da5a></div> <aside class="sidebar" data-v-ff03da5a><div class="personal-info-wrapper" data-v-400a92f6 data-v-ff03da5a><img src="/logo.svg" alt="author-avatar" class="personal-img" data-v-400a92f6> <h3 class="name" data-v-400a92f6>
+    🔅
+  </h3> <div class="num" data-v-400a92f6><div data-v-400a92f6><h3 data-v-400a92f6>292</h3> <h6 data-v-400a92f6>Articles</h6></div> <div data-v-400a92f6><h3 data-v-400a92f6>0</h3> <h6 data-v-400a92f6>Tags</h6></div></div> <ul class="social-links" data-v-400a92f6><li class="social-item" data-v-400a92f6><i class="iconfont reco-rss" style="color:#f47e60;" data-v-400a92f6></i></li></ul> <hr data-v-400a92f6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-2b487510 data-v-ff03da5a><h3 class="title" data-v-2b487510>马士兵云原生2024架构师课程</h3> <!----> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2024
+      </a></span></div></div> <div data-v-ff03da5a><div data-v-ff03da5a><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">马士兵云原生2024架构师课程</h1> <div data-v-666b8910><i class="iconfont reco-account" data-v-666b8910><span data-v-666b8910>🔅</span></i> <i class="iconfont reco-date" data-v-666b8910><span data-v-666b8910>8/5/2024</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><div id="boxx" data-v-817d5b90><div data-v-817d5b90><p v-if="true" class="custom-block-title" data-v-817d5b90></p> <p v-if="true" data-v-817d5b90></p></div></div> <p><img src="https://www.itxbzxw.com/wp-content/uploads/2024/07/d89ac80b10f13c3419507bac842010a7.png" alt="马士兵云原生2024架构师课程"></p> <h3 id="课程目录"><a href="#课程目录" class="header-anchor">#</a> 课程目录:</h3> <p>——马士兵云原生2024<br>
+├──1-Linux操作系统<br>
+| ├──1-项目部署之-Linux操作系统<br>
+| | ├──1-Linux概述与安装<br>
+| | ├──2-Linux基本操作<br>
+| | └──3-Linux软件安装与配置<br>
+| └──2-Shell编程<br>
+| | └──1-Shell编程<br>
+├──10-Kubernetes容器镜像仓库管理方案<br>
+| └──1-容器镜像仓库管理方案Harbor<br>
+| | └──1-kubernetes集群使用容器镜像仓库Harbor<br>
+├──11-Kubernetes安全机制<br>
+| └──1-安全机制<br>
+| | ├──1-k8s安全管理安全框架<br>
+| | ├──2-k8s安全管理认证实践用户实践<br>
+| | ├──3-k8s安全管理认证实践集群认证<br>
+| | ├──4-k8s安全管理认证实践授权基础<br>
+| | └──5-k8s安全管理认证实践授权案例<br>
+├──12-Kubernetes存储解决方案<br>
+| ├──1-kubernetes存储卷<br>
+| | ├──1-kubernetes存储卷<br>
+| | ├──2-PV与PVC<br>
+| | └──3-kubernetes存储动态供给<br>
+| ├──2-存储解决方案GlusterFS<br>
+| | └──1-Kubernetes集群存储解决方案GlusterFS<br>
+| └──3-存储解决方案Ceph<br>
+| | ├──1-Ceph分布式存储快速入门<br>
+| | ├──2-Ceph分布式存储核心实战<br>
+| | └──3-Ceph分布式存储综合实践<br>
+├──13-Kubernetes项目上云部署<br>
+| ├──1-kubernetes集群公共服务<br>
+| | └──1-kubernetes集群公共服务<br>
+| ├──2-项目部署JAVA项目<br>
+| | ├──1-项目部署前准备工作<br>
+| | ├──2-持久化存储准备工作<br>
+| | ├──3-项目容器镜像仓库及项目源码准备<br>
+| | ├──4-项目上云部署<br>
+| | └──5-项目部署访问验证<br>
+| ├──3-项目部署Python项目<br>
+| | └──1-kubernetes集群python项目上云部署<br>
+| └──4-项目部署GoLang项目<br>
+| | └──1-基于Golang开发百万并发IM即时消息系统<br>
+├──14-Kubernetes集群节点及Pod日志收集方案<br>
+| ├──1-集群及Pod日志收集ELK<br>
+| | ├──1-收集日志必要性及收集方案介绍<br>
+| | ├──2-ELK集群部署及应用验证<br>
+| | └──3-使用ELK收集日志应用案例<br>
+| └──2-集群及Pod日志收集EFK<br>
+| | ├──1-EFK介绍<br>
+| | └──2-EFK部署<br>
+├──15-Kubernetes云原生中间件上云部署<br>
+| ├──1-企业级中间件类应用部署案例zookeeper<br>
+| | └──1-kubernetes云原生中间件上云部署zookeeper<br>
+| ├──2-企业级中间件类应用部署案例kafka<br>
+| | └──1-kubernetes云原生中间件上云部署kafka<br>
+| └──3-企业级中间件类应用部署案例rocketmq<br>
+| | ├──1-RocketMQ介绍<br>
+| | └──2-RocketMQ部署<br>
+├──16-Kubernetes云原生包管理方案<br>
+| └──1-包管理方案Helm应用商店<br>
+| | ├──1-helm介绍<br>
+| | ├──2-helm基础使用<br>
+| | ├──3-helmchart包开发<br>
+| | └──4-helm应用商店Kubeapps<br>
+├──17-Kubernetes原生配置管理<br>
+| └──1-Kubernetes原生配置管理Kustomize<br>
+| | └──1-Kubernetes原生配置管理Kustomize<br>
+├──18-kubernetes网络解决方案<br>
+| ├──1-网络解决方案flannel<br>
+| | ├──1-kubernetes集群部署（flannel）<br>
+| | └──2-网络解决方案flannel方案<br>
+| ├──2-网络解决方案calico<br>
+| | ├──1-k8s集群网络解决方案Calico方案之CNI方案<br>
+| | ├──2-k8s集群网络解决方案Calico部署<br>
+| | └──3-k8s集群网络解决方案Calico应用实战<br>
+| ├──3-k8s集群underlay网络方案HybridNet<br>
+| | └──1-k8s集群underlay网络方案HybridNet<br>
+| └──4-k8s集群双栈协议方案antrea(IPv4&amp;IPv6)<br>
+| | └──1-k8s集群双栈协议方案antrea(IPv4&amp;IPv6)<br>
+├──19-基于KubernetesPaaS云平台<br>
+| ├──1-PaaS云平台rancher<br>
+| | ├──1-Rancher容器云管理平台<br>
+| | └──2-基于Kubernetes构建Rancher高可用平台<br>
+| └──2-PaaS云平台kubesphere<br>
+| | ├──1-在Linux主机上以allinone模式安装Kubesphere<br>
+| | ├──2-在Kubernetes集群中安装Kubesphere<br>
+| | ├──3-KubeSphere多租户系统应用<br>
+| | └──4-KubeSphere应用发布初体验<br>
+├──2-计算机网络基础<br>
+| └──1-计算机网络基础<br>
+| | ├──1-前言<br>
+| | ├──2-计算机网络概述<br>
+| | ├──3-计算机网络体系结构<br>
+| | └──4-笔试题讲解<br>
+├──20-主流公有云容器服务<br>
+| ├──1-阿里云容器服务ACK<br>
+| | └──1-阿里云容器服务ACK初识<br>
+| └──2-基于阿里云ECS自建K8S集群<br>
+| | └──1-基于阿里云ECS自建K8S集群<br>
+├──21-DevOps项目发布一体化平台构建及应用实践<br>
+| ├──1-基于Kubernetes集群构建大中型企业CICD应用平台<br>
+| | ├──1-DevOps介绍<br>
+| | ├──10-Kubernetes编排工具<br>
+| | ├──2-Code阶段工具<br>
+| | ├──3-Build阶段工具<br>
+| | ├──4-Operate阶段工具<br>
+| | ├──5-Integrate工具<br>
+| | ├──6-Jenkins实现CI、CD操作<br>
+| | ├──7-SonarQube代码质量检测工具<br>
+| | ├──8-Harbor私有镜像仓库<br>
+| | └──9-Jenkins流水线<br>
+| ├──2-基于KubeSphere构建企业新一代自动化CICD应用平台<br>
+| | ├──1-KubeSphereDevOps使用前账号准备<br>
+| | └──2-基于KubeSphere实现DevOps<br>
+| └──3-云原生多云持续交付GitOps<br>
+| | ├──1-GitOps介绍<br>
+| | ├──2-GitOps系统实现<br>
+| | ├──3-GitOps项目案例<br>
+| | ├──4-ArgoCD部署（2.9.1）指南<br>
+| | ├──5-通过ArgoCD实现多K8S集群项目发布<br>
+| | └──6-通过Gitlab及ArgoCD实现项目发布<br>
+├──22-微服务项目部署<br>
+| ├──1-sangomall微服务项目<br>
+| | ├──1-Kubernetes集群公共服务DNS<br>
+| | ├──2-Kubernetes集群公共服务Harbor<br>
+| | ├──3-负载均衡器OpenELB<br>
+| | ├──4-云原生微服务网关APISIX<br>
+| | ├──5-KubeSphere集成本地容器镜像仓库Harbor<br>
+| | ├──6-微服务中间件部署<br>
+| | ├──7-微服务项目部署准备<br>
+| | └──8-流水线部署微服务项目<br>
+| └──2-严选微服务项目<br>
+| | ├──1-KubeSphere运行K8S集群部署<br>
+| | ├──10-严选商城项目中间件部署<br>
+| | ├──11-严选商城项目第三方服务申请<br>
+| | ├──12-严选商城项目配置导入及数据库导入<br>
+| | ├──13-严选项目流水线基础环境准备<br>
+| | ├──14-严选中台及商城项目流水线编写及项目发布<br>
+| | ├──15-严选前端项目流水线编写及项目发布<br>
+| | ├──2-K8S公共服务-DNS服务<br>
+| | ├──3-CoreDNS级联本地DNS服务<br>
+| | ├──4-K8S公共服务-容器镜像仓库服务Harbor<br>
+| | ├──5-KubeSphere部署<br>
+| | ├──6-KubeSphere多租户系统应用<br>
+| | ├──7-KubeSphere集成本地容器镜像仓库Harbor<br>
+| | ├──8-云原生负载均衡器OpenELB<br>
+| | └──9-云原生服务网关APISIX<br>
+├──23-云原生监控系统<br>
+| ├──1-Prometheus监控<br>
+| | ├──1-二进制方式部署Prometheus监控系统<br>
+| | ├──2-二进制方式部署Prometheus监控系统告警<br>
+| | ├──3-容器化构建Prometheus监控系统<br>
+| | ├──4-容器监控方案CAdvisor<br>
+| | └──5-k8s监控方案KSM<br>
+| ├──2-Prometheus监控<br>
+| | └──1-helm安装prometheus全家桶及应用案例<br>
+| ├──3-K8S成本监控方案KubeCost<br>
+| | └──1-k8s成本监控方案<br>
+| ├──4-应用性能管理APM平台Skywalking<br>
+| | └──1-应用性能监控APM平台Skywalking<br>
+| ├──5-OpenTelemetry全链路状态跟踪<br>
+| | └──1-云原生应用全链路状态跟踪OpenTelemetry<br>
+| └──6-云原生应用可观测方案Pixie<br>
+| | └──1-云原生应用可观测方案Pixie<br>
+├──24-微服务治理与服务网络<br>
+| ├──1-服务治理之Istio(1.17版)<br>
+| | ├──1-Isito服务治理_大纲脉络<br>
+| | ├──2-Istio快速入门_istio基础<br>
+| | ├──3-Istio快速入门_Istio部署<br>
+| | ├──4-Istio快速入门_istio原理<br>
+| | └──5-Istio快速入门_流量基础<br>
+| └──2-ServiceMesh实战之Istio<br>
+| | ├──1-istio概述<br>
+| | ├──10-istio熔断和故障注入<br>
+| | ├──11-istio流量镜像、可观测性<br>
+| | ├──2-istio基础环境安装<br>
+| | ├──3-istio安装和bookinfo安装<br>
+| | ├──4-istio组件介绍，kiali安装<br>
+| | ├──5-istio原理介绍<br>
+| | ├──6-istio流量管理和命名空间<br>
+| | ├──7-istio虚拟服务和目标规则<br>
+| | ├──8-istio超时，重试，以及灰度发布<br>
+| | └──9-istioessgateway<br>
+├──25-k8s多集群管理方案<br>
+| ├──1-k8s多集群管理方案<br>
+| | ├──1-使用kubeconfig管理多集群<br>
+| | └──2-集群联邦karmada<br>
+| ├──2-k8s集群舰队管理方案Kurator<br>
+| | └──1-K8S集群舰队管理<br>
+| └──3-Cilium多集群方案ClusterMesh<br>
+| | └──1-Cilium多集群方案ClusterMesh<br>
+├──26-云原生应用备份与恢复方案<br>
+| └──1-k8s集群备份与恢复利器Velero<br>
+| | └──1-使用Velero实现对云原生应用备、恢复、迁移<br>
+├──27-云计算下一个十年技术Serverless<br>
+| ├──1-Serverless深度实战之Knative<br>
+| | ├──1-使用Knative平台环境说明<br>
+| | ├──10-Tekton全自动发布Knative平台应用案例<br>
+| | ├──11-Tekton应用_初体验<br>
+| | ├──12-Tekton应用_构建自定义Tag镜像应用案例<br>
+| | ├──13-Tekton应用_流水线中使用WorkSpace应用案例<br>
+| | ├──14-Tekton应用_使用DIND实现容器镜像构建应用案例<br>
+| | ├──15-Tekton应用_使用GitLabWebHook触发Tekton自动构建应用案例<br>
+| | ├──16-Tekton应用_使用Tekton实现自动流水线应用案例<br>
+| | ├──17-Tekton应用_Tekton与ArgoCD结合实现GitOps<br>
+| | ├──18-Knative平台应用可观测性<br>
+| | ├──19-Knative平台应用日志收集分析<br>
+| | ├──2-现阶段云原生应用领域介绍<br>
+| | ├──3-为什么要引入Serverless<br>
+| | ├──4-Serverless应用场景<br>
+| | ├──5-Serverless架构优缺点<br>
+| | ├──6-Knative介绍<br>
+| | ├──7-Knative在云原生应用领域的定位<br>
+| | ├──8-Knative与云原生平台的三个实践方式<br>
+| | └──9-Knative部署及应用案例<br>
+| └──2-serverless之OpenFaaS函数即服务平台<br>
+| | ├──1-OpenFaaS介绍<br>
+| | ├──2-OpenFaaS运行基础环境<br>
+| | ├──3-使用Helm部署OpenFaaS及Gateway访问<br>
+| | ├──4-OpenFaaS使用初体验<br>
+| | ├──5-使用模板开发和部署Function<br>
+| | ├──6-开发并部署PythonFunction<br>
+| | └──7-OpenFaaS自动扩缩容<br>
+├──28-基于Kubernetes构建大数据生态圈<br>
+| ├──1-基于Kubernetes部署Flink实时计算平台<br>
+| | ├──1-基于Kubernetes构建大数据生态圈之环境准备<br>
+| | └──2-基于Kubernetes部署实时计算平台Flink<br>
+| ├──2-基于Kubernetes部署Spark实时计算平台<br>
+| | └──1-基于Kubernetes部署实时计算平台Spark<br>
+| └──3-基于K8S构建机器学习平台KubeFlow<br>
+| | └──1-基于Kubernetes构建机器学习平台KubeFlow<br>
+├──29-云原生数据服务<br>
+| └──1-基于K8S构建云原生数据基础设施平台KubeBlocks<br>
+| | └──1-云原生数据服务基础设施平台KubeBlocks<br>
+├──3-云原生生态介绍<br>
+| └──1-云原生介绍<br>
+| | ├──1-云原生定义<br>
+| | ├──2-云原生发展<br>
+| | └──3-CNCF云原生全景图<br>
+├──30-kubernetes应用二次开发<br>
+| ├──1-基于win10打造K8S应用开发环境<br>
+| | └──1-基于win10打造k8s应用开发环境<br>
+| ├──2-k8soperator应用开发实战理论篇<br>
+| | ├──1-让k8s的价值起飞<br>
+| | ├──2-认识k8soperator<br>
+| | └──3-揭开k8soperator的神秘面纱<br>
+| ├──3-k8soperator应用开发实战理论篇<br>
+| | ├──1-让k8s的价值起飞<br>
+| | ├──2-认识k8soperator<br>
+| | └──3-揭开k8soperator的神秘面纱<br>
+| ├──4-k8soperator应用开发实战进阶篇手撸SaaS站<br>
+| | └──1-手撸代码之世界知名SaaS站Heroku<br>
+| ├──5-k8soperator应用开发实战进阶篇手撸SaaS站<br>
+| | └──1-手撸代码之世界知名SaaS站Heroku<br>
+| ├──6-DevOps应用开发实战之CI-CD落地方案<br>
+| | └──1-ci-cd落地<br>
+| └──7-云原生DevOps应用平台开发实战<br>
+| | └──1-CI-CDOperator开发<br>
+├──31-云原生边缘计算<br>
+| └──1-云原生边缘计算KubeEdge<br>
+| | ├──1-k8s1.22版本集群部署<br>
+| | └──2-kubeedge部署<br>
+├──32-kubernetes管理虚拟机<br>
+| └──1-kubernetes管理虚拟机利器KubeVirt<br>
+| | └──1-Kubernetes管理虚拟机利器KubeVirt<br>
+├──33-Golang开发入门精讲<br>
+| └──1-Golang语法精讲<br>
+| | ├──1-马士兵老师介绍-go语言<br>
+| | ├──10-第5阶段：函数<br>
+| | ├──11-第5阶段：函数<br>
+| | ├──12-第6阶段：错误处理<br>
+| | ├──13-第7阶段：数组<br>
+| | ├──14-第8阶段：切片<br>
+| | ├──15-第9阶段：映射<br>
+| | ├──16-第10阶段：面向对象<br>
+| | ├──17-第10阶段：面向对象<br>
+| | ├──18-第11阶段：文件和操作<br>
+| | ├──19-第12阶段：协程和管道<br>
+| | ├──2-马士兵老师介绍-go语言中的面向对象<br>
+| | ├──20-第13阶段：网络编程<br>
+| | ├──21-第14阶段：反射<br>
+| | ├──3-第1阶段：走进Golang<br>
+| | ├──4-第1阶段：走进Golang<br>
+| | ├──5-第2阶段：变量与数据类型<br>
+| | ├──6-第2阶段：变量与数据类型<br>
+| | ├──7-第3阶段：运算符<br>
+| | ├──8-第4阶段：流程控制<br>
+| | └──9-第4阶段：流程控制<br>
+├──34-Kubernetes应用实战及源码剖析<br>
+| └──1-kubernetes实战与源码剖析<br>
+| | ├──1-第1章准备工作<br>
+| | ├──10-第10章kubelet中的cgroupManager解读<br>
+| | ├──11-第11章kubelet中的资源管理器cpuManager、memoryManager、deviceManager解读<br>
+| | ├──12-第12章kubeletpleg对象和containerManager总结<br>
+| | ├──13-第13章kubeletcontainerRuntime和sandbox容器<br>
+| | ├──14-第14章containerRuntime创建init容器前期工作<br>
+| | ├──15-第15章创建init和app容器的后期工作<br>
+| | ├──16-第16章containerRuntime停止容器的流程<br>
+| | ├──17-第17章kubelet的GarbageCollection<br>
+| | ├──18-第18章kubelet的syncLoop的第1大监听configCh<br>
+| | ├──19-第19章kubelet的syncLoop的其余监听<br>
+| | ├──2-第2章创建pod时kubectl的执行流程和它的设计模式<br>
+| | ├──20-第20章kubelet中内置的cadvisor<br>
+| | ├──21-第21章kubelet中内置的dockershim机制<br>
+| | ├──22-第22章容器底层技术之镜像原理<br>
+| | ├──23-第23章k8sjob和cronjob源码解读<br>
+| | ├──24-第24章k8sdeployment源码解读<br>
+| | ├──25-第25章k8sReplicaSetController源码分析<br>
+| | ├──26-第26章k8sdaemonSet源码分析<br>
+| | ├──27-第27章k8sstatefulSet源码分析<br>
+| | ├──28-第28章Service的定义和概念<br>
+| | ├──29-第29章kube-proxyiptables和ipvs模式源码解读<br>
+| | ├──3-第3章apiserver中的权限相关<br>
+| | ├──30-第30章k8s网络底层原理<br>
+| | ├──31-第31章k8sIngress7层路由机制和traefik源码解读<br>
+| | ├──32-第32章k8s存储对象源码解读<br>
+| | ├──33-第33章k8sconfigMap和secret解析<br>
+| | ├──34-第34章k8shpa扩容和Aggregator汇聚插件原理解读<br>
+| | ├──35-第35章基于prometheus-adaptor的自定义指标HPA<br>
+| | ├──36-第36章k8svpa扩容<br>
+| | ├──37-第37章k8shpa和vpa依赖的metrics-server源码解读和kubelettop原理<br>
+| | ├──38-第38章k8scrd开发<br>
+| | ├──39-第39章istio上手使用和sidecar流量劫持原理解析<br>
+| | ├──4-第4章自定义准入控制器，完成nginxsidecar的注入<br>
+| | ├──40-第40章envoy基础知识<br>
+| | ├──41-第41章istio组件分析<br>
+| | ├──5-第5章API核心服务的处理流程<br>
+| | ├──6-第6章kube-scheduler调度pod的流程<br>
+| | ├──7-第7章kube-controller-manager控制管理中心的作用<br>
+| | ├──8-第8章kubelet节点上控制容器生命周期的管理者<br>
+| | └──9-第9章kubelet稳定性保证Eviction驱逐和oom<br>
+├──35-VIP直播课<br>
+| └──1-云原生（K8S核心）架构师VIP直播<br>
+| | ├──1-云原生（K8S核心）架构师VIP直播<br>
+| | └──2-2024-云原生VIP直播课<br>
+├──36-Prometheus应用实战及源码剖析<br>
+| └──1-Prometheus-基础入门到源码剖析<br>
+| | ├──1-学习本课程的收益<br>
+| | ├──10-redis-exporter安装和使用<br>
+| | ├──11-java应用监控jvm实例<br>
+| | ├──12-pushgateway使用<br>
+| | ├──13-告警和alertmanager简单使用<br>
+| | ├──14-k8s监控难点分析<br>
+| | ├──15-k8s监控环境搭建，yaml讲解<br>
+| | ├──16-k8s容器基础资源指标采集原理和指标讲解<br>
+| | ├──17-k8s对象资源指标<br>
+| | ├──18-k8s服务组件指标<br>
+| | ├──19-k8s部署在pod中业务埋点指标<br>
+| | ├──2-学习目标<br>
+| | ├──20-分析pull模型在k8s中的应用，对比push模型<br>
+| | ├──21-k8s接口鉴权、认证和在监控中的实现<br>
+| | ├──22-k8s服务发现原理解析<br>
+| | ├──23-章k8s监控中标签relabel的应用和k8s监控总结<br>
+| | ├──24-主流服务发现类型介绍，监控系统和服务树CMDB如何打通<br>
+| | ├──25-如何降低采集资源消耗<br>
+| | ├──26-分位值作用和原理<br>
+| | ├──27-采集端高可用实战<br>
+| | ├──28-go实战项目动态分片解决pushgateway高可用<br>
+| | ├──29-如何使用非侵入式形式如日志接入prometheus<br>
+| | ├──3-安装prometheus和上手使用<br>
+| | ├──30-时序数据库存储模型<br>
+| | ├──31-facebook-gorilla压缩算法原理<br>
+| | ├──32-prometheus自研tsdb底层原理<br>
+| | ├──33-集群tsdb原理和实战（一）<br>
+| | ├──34-m3db原理和实战<br>
+| | ├──35-thanos项目和组件源码解读<br>
+| | ├──36-kube-prometheus和prometheus-operator原理和实战<br>
+| | ├──37-prometheus核心接口源码解析<br>
+| | ├──38-范围查询分阶段原理<br>
+| | ├──39-prometheus接口开发实战<br>
+| | ├──4-prometheus基本概念介绍<br>
+| | ├──40-高基数查询和prometheus预聚合原理和源码解读<br>
+| | ├──41-查询提速实战提升查询速度30-100倍<br>
+| | ├──42-告警触发prometheus源码解读和告警触发模块高可用方案<br>
+| | ├──43-alertmanager源码解读和实战<br>
+| | ├──44-告警回调实战<br>
+| | ├──5-node_exporter安装和使用<br>
+| | ├──6-grafana安装和使用<br>
+| | ├──7-黑盒探针blackbox_exporter安装和使用<br>
+| | ├──8-mysqld_exporter使用和源码改造<br>
+| | └──9-process-exporter安装和使用<br>
+├──37-容器云-云原生架构师面试宝典<br>
+| └──2-kubernetes面试题<br>
+| | └──1-大厂kubernetes面试夺命九连问第一季<br>
+├──4-虚拟化与云计算<br>
+| ├──1-虚拟化技术<br>
+| | └──1-虚拟化技术介绍<br>
+| └──2-云计算<br>
+| | └──1-云计算概念<br>
+├──5-容器管理工具Docker<br>
+| ├──1-容器管理工具Docker<br>
+| | ├──1-应用部署容器化演进之路<br>
+| | ├──10-Docker容器数据持久化存储机制<br>
+| | ├──11-Docker容器服务编排利器DockerCompose应用实战<br>
+| | ├──12-Docker主机集群化方案DockerSwarm<br>
+| | ├──13-基于Docker容器DevOps应用方案企业业务代码发布系统<br>
+| | ├──2-容器技术涉及Linux内核关键技术<br>
+| | ├──3-Docker生态架构及部署<br>
+| | ├──4-使用容器运行Nginx及docker命令介绍<br>
+| | ├──5-容器镜像介绍及应用<br>
+| | ├──6-Docker容器镜像加速器及容器镜像仓库<br>
+| | ├──7-Docker容器化部署企业级应用集群<br>
+| | ├──8-Dockerfile精讲及新型容器镜像构建技术<br>
+| | └──9-Docker容器网络与通信原理深度解析<br>
+| └──2-容器管理工具Docker<br>
+| | └──1-容器运行时Docker<br>
+├──6-轻量或工业级容器管理工具Containerd<br>
+| └──1-容器管理工具Containerd<br>
+| | ├──1-Containerd介绍<br>
+| | ├──10-Docker结合Containerd实现容器管理<br>
+| | ├──11-Containerd配置使用Harbor容器镜像仓库<br>
+| | ├──12-基于nerdctl+buildkit构建容器镜像<br>
+| | ├──2-Containerd安装<br>
+| | ├──3-Containerd容器镜像管理<br>
+| | ├──4-Containerd容器管理<br>
+| | ├──5-Containerd使用私有容器镜像仓库Harbor<br>
+| | ├──6-ContainerdNamespace管理<br>
+| | ├──7-Containerd网络管理<br>
+| | ├──8-Containerd容器共享命令空间<br>
+| | └──9-Containerd容器数据持久化存储<br>
+├──7-Kubernetes应用基础<br>
+| ├──1-Kubernetes集群部署（云原生）<br>
+| | ├──1-Kubernetes介绍及集群架构<br>
+| | ├──10-k8s1.26集群使用containerd容器运行时<br>
+| | ├──11-基于sealos部署高可用Kubernetes集群<br>
+| | ├──12-k8s1.27集群部署&amp;容器运行时docker<br>
+| | ├──13-集群部署利器KubeSpray部署k8s1.26版本集群<br>
+| | ├──2-Kubernetes集群部署方式<br>
+| | ├──3-使用kubeadm快速部署Kubernetes集群<br>
+| | ├──4-使用kubeadm快速部署Kubernetes高可用集群<br>
+| | ├──5-使用RKE部署企业级生产Kubernetes集群<br>
+| | ├──6-使用二进制方式部署Kubernetes高可用集群(RuntimeDocker)<br>
+| | ├──7-使用二进制方式部署Kubernetes高可用集群(RuntimeContainerd)<br>
+| | ├──8-Kubernetes集群UI及主机资源监控<br>
+| | └──9-kubernetes1.24集群部署<br>
+| ├──10-Kubernetes集群核心概念Service<br>
+| | ├──1-Service作用<br>
+| | ├──2-kube-proxy三种代理模式<br>
+| | ├──3-Service分类及创建<br>
+| | └──4-SessionAffinity<br>
+| ├──11-安全容器运行时KataContainers<br>
+| | └──1-安全容器运行时KataContainers<br>
+| ├──12-安全容器运行时gVisor<br>
+| | └──1-新型沙箱安全容器运行时工具gVisor<br>
+| ├──13-k8s集群应用自动伸缩实践<br>
+| | ├──1-K8S集群服务水平自动伸缩（HPA）<br>
+| | ├──2-利用Prometheus自定义指标实现应用水平自动伸缩<br>
+| | ├──3-K8S集群服务垂直自动伸缩（VPA）<br>
+| | └──4-基于事件驱动实现K8S应用自动伸缩（KEDA）<br>
+| ├──14-全链路灰度发布解决方案<br>
+| | ├──1-使用Argo-Rollouts实现金丝雀发布<br>
+| | ├──2-原地升级解决方案OpenKruise<br>
+| | └──3-全链路灰度发布解决方案KruiseRollouts<br>
+| ├──2-Kubernetes集群部署（云原生）<br>
+| | ├──1-基于cri-o部署K8S1.27版本集群<br>
+| | ├──10-注重K8S安全RKE2部署K8S高可用集群<br>
+| | ├──11-RockyLinux操作系统部署K8S集群<br>
+| | ├──12-信创国产操作系统OpenEuler部署K8S集群<br>
+| | ├──13-信创国产麒麟(KylinOS)操作系统部署K8S集群<br>
+| | ├──14-OpenEuler22.03基于iSulad部署K8S集群<br>
+| | ├──15-kubernetes集群部署口袋工具minikube<br>
+| | ├──16-kube-vip实现K8S集群高可用及ServiceLB<br>
+| | ├──17-使用kubeadm快速部署K8S1.29.0集群<br>
+| | ├──18-使用k0s部署K8S二进制集群<br>
+| | ├──19-基于Ubuntu22.04部署原生K8S1.29.0集群<br>
+| | ├──2-使用kubeasz部署k8s二进制高可用集群<br>
+| | ├──3-基于Containerd部署K8S1.28版本集群<br>
+| | ├──4-基于Docker部署K8S1.28版本集群<br>
+| | ├──5-K8S二进制高可用集群部署（多容器运行时）<br>
+| | ├──6-构建网络高性能（Cilium）K8S集群<br>
+| | ├──7-基于Ubuntu22.04操作系统部署K8S集群<br>
+| | ├──8-基于Ubuntu23.04操作系统部署K8S集群<br>
+| | └──9-Debian12部署K8S最佳实践<br>
+| ├──3-Kubernetes集群客户端命令kubectl<br>
+| | └──1-Kubernetes集群客户端工具kubectl<br>
+| ├──4-Kubernetes集群Node管理<br>
+| | └──1-Kubernetes集群Node管理<br>
+| ├──5-Kubernetes集群声明式文件YAML<br>
+| | └──1-Kubernetes集群声明式文件YAML<br>
+| ├──6-kubernetes集群Namespace<br>
+| | └──1-Kubernetes集群Namespace<br>
+| ├──7-kubernetes核心概念概述<br>
+| | ├──1-kubernetes核心概念<br>
+| | └──2-kubernetes核心概念之间的关系<br>
+| ├──8-Kubernetes集群核心概念Pod<br>
+| | ├──1-Pod定义及分类<br>
+| | ├──2-Pod创建与删除<br>
+| | ├──3-Pod生命周期管理<br>
+| | └──4-Pod故障排除方法<br>
+| └──9-Kubernetes集群核心概念Controller<br>
+| | ├──1-Controller作用及分类<br>
+| | ├──2-Deployment介绍及应用<br>
+| | ├──3-ReplicaSet介绍及应用<br>
+| | ├──4-DaemonSet介绍及应用<br>
+| | ├──5-StatefulSet介绍及应用<br>
+| | ├──6-Job介绍及应用案例<br>
+| | └──7-CronJob介绍及应用案例<br>
+├──8-Kubernetes服务暴露<br>
+| ├──1-IngressNginxController<br>
+| | ├──1-ingress作用<br>
+| | ├──2-ingress控制器种类<br>
+| | ├──3-ingressnginxcontroller位置<br>
+| | ├──4-ingressnginxcontroller部署<br>
+| | ├──5-ingressnginxcontroller资源对象应用案例<br>
+| | ├──6-ingressnginxcontroller1.4.0<br>
+| | └──7-基于IngressNginx实现灰度发布<br>
+| └──2-Ingress服务发现traefik<br>
+| | ├──1-traefik初识<br>
+| | ├──2-traefik部署<br>
+| | ├──3-traefikdashboard访问<br>
+| | ├──4-traefik基础应用<br>
+| | ├──5-traefik中间件<br>
+| | ├──6-traefik高级应用<br>
+| | └──7-KubernetesGatewayAPI<br>
+├──9-Kubernetes配置与密钥管理<br>
+| ├──1-配置和密钥管理ConfigMap<br>
+| | └──1-Kubernetes配置与密钥管理ConfigMap<br>
+| └──2-配置和密钥管理Secret<br>
+| | └──1-kubernetes配置与密钥管理Secret<br>
+└──云原生架构师资料文件夹<br>
+| ├──10-Kubernetes配置与密钥管理<br>
+| | ├──1-配置和密钥管理 ConfigMap<br>
+| | └──2-配置和密钥管理 Secret<br>
+| ├──11-Kubernetes容器镜像仓库管理方案<br>
+| | └──1-容器镜像仓库管理方案 Harbor<br>
+| ├──13-Kubernetes存储解决方案<br>
+| | ├──1-kubernetes存储卷<br>
+| | └──2-存储解决方案 GlusterFS<br>
+| ├──14-Kubernetes项目上云部署<br>
+| | ├──1-kubernetes集群公共服务<br>
+| | ├──2-项目部署 JAVA项目<br>
+| | ├──3-项目部署 Python项目<br>
+| | └──4-项目部署 GoLang项目<br>
+| ├──15-Kubernetes集群节点及Pod监控方案<br>
+| | └──1-集群节点及Pod监控 Prometheus<br>
+| ├──16-Kubernetes集群节点及Pod日志收集方案<br>
+| | ├──1-集群及Pod日志收集 ELK<br>
+| | └──2-集群及Pod日志收集 EFK<br>
+| ├──18-Kubernetes云原生包管理方案<br>
+| | └──1-包管理方案 Helm应用商店<br>
+| ├──2-Linux操作系统<br>
+| | ├──1-项目部署之-Linux操作系统<br>
+| | └──2-Shell编程<br>
+| ├──20-基于Kubernetes PaaS云平台<br>
+| | ├──1-PaaS云平台 rancher<br>
+| | └──2-PaaS云平台 kubesphere<br>
+| ├──21-DevOps项目发布一体化平台构建及应用实践<br>
+| | └──1-基于Kubernetes集群构建大中型企业CICD应用平台<br>
+| ├──22-微服务治理与服务网络<br>
+| | └──4- Service Mesh实战之Istio<br>
+| ├──23-云计算下一个十年技术Serverless<br>
+| | └──1-Serverless深度实战之Knative<br>
+| ├──24-Golang 开发入门精讲<br>
+| | ├──1-Golang语法精讲<br>
+| | └──2-走进Golang<br>
+| ├──25-Golang Web应用开发<br>
+| | └──1-Go Web二期新更<br>
+| ├──26-Golang 运维平台开发</p> <h2 id="下载地址"><a href="#下载地址" class="header-anchor">#</a> 下载地址：</h2> <p><a href="https://www.itxbzxw.com/learn/jiagoushi/9926.html" target="_blank" rel="noopener noreferrer">马士兵云原生2024架构师课程-小白自学网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-4a336604 data-v-ff03da5a></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-2a01419c data-v-2a01419c><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-2a01419c><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-2a01419c></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-2a01419c></path></svg></div><div></div></div></div>
+    <script src="/assets/js/app.e97f35a2.js" defer></script><script src="/assets/js/3.8f2f0e42.js" defer></script><script src="/assets/js/1.883b222e.js" defer></script><script src="/assets/js/263.59b417de.js" defer></script>
+  </body>
+</html>
