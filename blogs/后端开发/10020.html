@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>零声【golang/云原生就业课二期】（Go语言/分布式/微服务/DevOps/k8s） | 集合网</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="dns-prefetch" href="//xbcyw.github.io">
+    <meta name="description" content="集合网 你想要的这里都有！">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <link rel="preload" href="/assets/css/0.styles.1492f243.css" as="style"><link rel="preload" href="/assets/js/app.3436e7ba.js" as="script"><link rel="preload" href="/assets/js/3.8f2f0e42.js" as="script"><link rel="preload" href="/assets/js/1.883b222e.js" as="script"><link rel="preload" href="/assets/js/198.eed72dc3.js" as="script"><link rel="prefetch" href="/assets/js/10.49ba9b8c.js"><link rel="prefetch" href="/assets/js/100.b995bc0b.js"><link rel="prefetch" href="/assets/js/101.79e9edb6.js"><link rel="prefetch" href="/assets/js/102.0be18a26.js"><link rel="prefetch" href="/assets/js/103.feb616ac.js"><link rel="prefetch" href="/assets/js/104.cd99e826.js"><link rel="prefetch" href="/assets/js/105.4983bf72.js"><link rel="prefetch" href="/assets/js/106.7aace8a8.js"><link rel="prefetch" href="/assets/js/107.3f7669ea.js"><link rel="prefetch" href="/assets/js/108.da27aa64.js"><link rel="prefetch" href="/assets/js/109.c03addef.js"><link rel="prefetch" href="/assets/js/11.8fa7f378.js"><link rel="prefetch" href="/assets/js/110.fbb22d31.js"><link rel="prefetch" href="/assets/js/111.f589f35f.js"><link rel="prefetch" href="/assets/js/112.015e3631.js"><link rel="prefetch" href="/assets/js/113.207b856c.js"><link rel="prefetch" href="/assets/js/114.b650b25c.js"><link rel="prefetch" href="/assets/js/115.d0511952.js"><link rel="prefetch" href="/assets/js/116.5c514bbe.js"><link rel="prefetch" href="/assets/js/117.0dc6c38b.js"><link rel="prefetch" href="/assets/js/118.1ac45496.js"><link rel="prefetch" href="/assets/js/119.05b0c4a5.js"><link rel="prefetch" href="/assets/js/12.e9f281bc.js"><link rel="prefetch" href="/assets/js/120.f5f728ca.js"><link rel="prefetch" href="/assets/js/121.c3467812.js"><link rel="prefetch" href="/assets/js/122.135ca377.js"><link rel="prefetch" href="/assets/js/123.dcf6258e.js"><link rel="prefetch" href="/assets/js/124.759b9b46.js"><link rel="prefetch" href="/assets/js/125.69aebdfc.js"><link rel="prefetch" href="/assets/js/126.13c87c44.js"><link rel="prefetch" href="/assets/js/127.b942fd50.js"><link rel="prefetch" href="/assets/js/128.f1c57c02.js"><link rel="prefetch" href="/assets/js/129.9d88d22d.js"><link rel="prefetch" href="/assets/js/13.2a1907fe.js"><link rel="prefetch" href="/assets/js/130.af155c7f.js"><link rel="prefetch" href="/assets/js/131.369de250.js"><link rel="prefetch" href="/assets/js/132.86d94950.js"><link rel="prefetch" href="/assets/js/133.1a99004c.js"><link rel="prefetch" href="/assets/js/134.9590f6d5.js"><link rel="prefetch" href="/assets/js/135.f46bc631.js"><link rel="prefetch" href="/assets/js/136.d03673cd.js"><link rel="prefetch" href="/assets/js/137.668277b5.js"><link rel="prefetch" href="/assets/js/138.6c1a0f6a.js"><link rel="prefetch" href="/assets/js/139.752b62ca.js"><link rel="prefetch" href="/assets/js/14.3021b3b6.js"><link rel="prefetch" href="/assets/js/140.d783514e.js"><link rel="prefetch" href="/assets/js/141.97638602.js"><link rel="prefetch" href="/assets/js/142.48b45489.js"><link rel="prefetch" href="/assets/js/143.60b520c4.js"><link rel="prefetch" href="/assets/js/144.8152edc8.js"><link rel="prefetch" href="/assets/js/145.550c8e04.js"><link rel="prefetch" href="/assets/js/146.18067597.js"><link rel="prefetch" href="/assets/js/147.ddd43095.js"><link rel="prefetch" href="/assets/js/148.732072ce.js"><link rel="prefetch" href="/assets/js/149.38ca8905.js"><link rel="prefetch" href="/assets/js/15.e850eca9.js"><link rel="prefetch" href="/assets/js/150.4e5a868d.js"><link rel="prefetch" href="/assets/js/151.d0334832.js"><link rel="prefetch" href="/assets/js/152.2bbb7d45.js"><link rel="prefetch" href="/assets/js/153.a594f58c.js"><link rel="prefetch" href="/assets/js/154.1c939946.js"><link rel="prefetch" href="/assets/js/155.35898be4.js"><link rel="prefetch" href="/assets/js/156.b63ee41b.js"><link rel="prefetch" href="/assets/js/157.fd0ccafe.js"><link rel="prefetch" href="/assets/js/158.d3b2bbf8.js"><link rel="prefetch" href="/assets/js/159.df2b1ee1.js"><link rel="prefetch" href="/assets/js/16.a7b72cd2.js"><link rel="prefetch" href="/assets/js/160.e9f953fa.js"><link rel="prefetch" href="/assets/js/161.575145bf.js"><link rel="prefetch" href="/assets/js/162.ab7b24aa.js"><link rel="prefetch" href="/assets/js/163.2ae98f0d.js"><link rel="prefetch" href="/assets/js/164.3873e591.js"><link rel="prefetch" href="/assets/js/165.6c773dfc.js"><link rel="prefetch" href="/assets/js/166.2a23e393.js"><link rel="prefetch" href="/assets/js/167.01ead0f6.js"><link rel="prefetch" href="/assets/js/168.911fc530.js"><link rel="prefetch" href="/assets/js/169.d5deb23f.js"><link rel="prefetch" href="/assets/js/17.e732e55c.js"><link rel="prefetch" href="/assets/js/170.ef29181a.js"><link rel="prefetch" href="/assets/js/171.afa3de81.js"><link rel="prefetch" href="/assets/js/172.018d2334.js"><link rel="prefetch" href="/assets/js/173.84e4c4d6.js"><link rel="prefetch" href="/assets/js/174.2e638243.js"><link rel="prefetch" href="/assets/js/175.174ceca1.js"><link rel="prefetch" href="/assets/js/176.d9d6ca46.js"><link rel="prefetch" href="/assets/js/177.bf8dfd38.js"><link rel="prefetch" href="/assets/js/178.431eab6e.js"><link rel="prefetch" href="/assets/js/179.154d4626.js"><link rel="prefetch" href="/assets/js/18.a7acd756.js"><link rel="prefetch" href="/assets/js/180.6a3595a3.js"><link rel="prefetch" href="/assets/js/181.9c39c72d.js"><link rel="prefetch" href="/assets/js/182.6140ad4e.js"><link rel="prefetch" href="/assets/js/183.e2018141.js"><link rel="prefetch" href="/assets/js/184.10a67c51.js"><link rel="prefetch" href="/assets/js/185.cd1d2aad.js"><link rel="prefetch" href="/assets/js/186.f4d15eba.js"><link rel="prefetch" href="/assets/js/187.4c6801a6.js"><link rel="prefetch" href="/assets/js/188.37dbedfa.js"><link rel="prefetch" href="/assets/js/189.5809b27c.js"><link rel="prefetch" href="/assets/js/19.1d22f542.js"><link rel="prefetch" href="/assets/js/190.39dc8167.js"><link rel="prefetch" href="/assets/js/191.df075a6e.js"><link rel="prefetch" href="/assets/js/192.b6a7839d.js"><link rel="prefetch" href="/assets/js/193.13fb7b1d.js"><link rel="prefetch" href="/assets/js/194.ae53abb6.js"><link rel="prefetch" href="/assets/js/195.4f8a8ded.js"><link rel="prefetch" href="/assets/js/196.837dfa40.js"><link rel="prefetch" href="/assets/js/197.a94b0fa3.js"><link rel="prefetch" href="/assets/js/199.ebafda0d.js"><link rel="prefetch" href="/assets/js/20.14c50dae.js"><link rel="prefetch" href="/assets/js/200.7504cf71.js"><link rel="prefetch" href="/assets/js/201.e7c322d5.js"><link rel="prefetch" href="/assets/js/202.cc23974c.js"><link rel="prefetch" href="/assets/js/203.8992c3d9.js"><link rel="prefetch" href="/assets/js/204.a9f6ad30.js"><link rel="prefetch" href="/assets/js/205.e8853d87.js"><link rel="prefetch" href="/assets/js/206.0e75a84b.js"><link rel="prefetch" href="/assets/js/207.edc1053f.js"><link rel="prefetch" href="/assets/js/208.dac8b11a.js"><link rel="prefetch" href="/assets/js/209.f6dd7b31.js"><link rel="prefetch" href="/assets/js/21.90c837a5.js"><link rel="prefetch" href="/assets/js/210.6b0a22a9.js"><link rel="prefetch" href="/assets/js/211.ea55f4a9.js"><link rel="prefetch" href="/assets/js/212.7ae17810.js"><link rel="prefetch" href="/assets/js/213.6b50e98f.js"><link rel="prefetch" href="/assets/js/214.2bc335ed.js"><link rel="prefetch" href="/assets/js/215.f71e021a.js"><link rel="prefetch" href="/assets/js/216.18e75c39.js"><link rel="prefetch" href="/assets/js/217.e336180f.js"><link rel="prefetch" href="/assets/js/218.973977ae.js"><link rel="prefetch" href="/assets/js/219.4601dbc7.js"><link rel="prefetch" href="/assets/js/22.6329b227.js"><link rel="prefetch" href="/assets/js/220.c1de7384.js"><link rel="prefetch" href="/assets/js/221.5e92eceb.js"><link rel="prefetch" href="/assets/js/222.e570bd2d.js"><link rel="prefetch" href="/assets/js/223.4099bc44.js"><link rel="prefetch" href="/assets/js/224.1f2bbfa4.js"><link rel="prefetch" href="/assets/js/225.a9129274.js"><link rel="prefetch" href="/assets/js/226.b4fb8e4e.js"><link rel="prefetch" href="/assets/js/227.39823ff3.js"><link rel="prefetch" href="/assets/js/228.581565c3.js"><link rel="prefetch" href="/assets/js/229.b7bcc9f3.js"><link rel="prefetch" href="/assets/js/23.f17fa4e8.js"><link rel="prefetch" href="/assets/js/230.852bc01e.js"><link rel="prefetch" href="/assets/js/231.b7c041c7.js"><link rel="prefetch" href="/assets/js/232.68573a4c.js"><link rel="prefetch" href="/assets/js/233.05a11fed.js"><link rel="prefetch" href="/assets/js/234.3c65d62f.js"><link rel="prefetch" href="/assets/js/235.1833702b.js"><link rel="prefetch" href="/assets/js/236.648b5128.js"><link rel="prefetch" href="/assets/js/237.8b6e64f3.js"><link rel="prefetch" href="/assets/js/238.ee51ed1c.js"><link rel="prefetch" href="/assets/js/239.4537fce7.js"><link rel="prefetch" href="/assets/js/24.137cc9d2.js"><link rel="prefetch" href="/assets/js/240.c9fc8fdd.js"><link rel="prefetch" href="/assets/js/241.e57edc83.js"><link rel="prefetch" href="/assets/js/242.9766d956.js"><link rel="prefetch" href="/assets/js/243.3fcd2e7d.js"><link rel="prefetch" href="/assets/js/244.27043a47.js"><link rel="prefetch" href="/assets/js/245.45db7e37.js"><link rel="prefetch" href="/assets/js/246.d10b6ac5.js"><link rel="prefetch" href="/assets/js/247.ac926dae.js"><link rel="prefetch" href="/assets/js/248.a3cb97e5.js"><link rel="prefetch" href="/assets/js/249.03ff0c76.js"><link rel="prefetch" href="/assets/js/25.8a7dc372.js"><link rel="prefetch" href="/assets/js/250.e1136618.js"><link rel="prefetch" href="/assets/js/251.005ffed4.js"><link rel="prefetch" href="/assets/js/252.c20158f5.js"><link rel="prefetch" href="/assets/js/253.6ed3a8f1.js"><link rel="prefetch" href="/assets/js/254.8b5fc3a8.js"><link rel="prefetch" href="/assets/js/255.6ad53ae2.js"><link rel="prefetch" href="/assets/js/256.5f02bb99.js"><link rel="prefetch" href="/assets/js/257.aa4e4488.js"><link rel="prefetch" href="/assets/js/258.bf015a6a.js"><link rel="prefetch" href="/assets/js/259.b9241050.js"><link rel="prefetch" href="/assets/js/26.dcf4b778.js"><link rel="prefetch" href="/assets/js/260.42ce6461.js"><link rel="prefetch" href="/assets/js/261.bf30f6d1.js"><link rel="prefetch" href="/assets/js/262.08571e76.js"><link rel="prefetch" href="/assets/js/263.45f25bfa.js"><link rel="prefetch" href="/assets/js/264.cf3cc102.js"><link rel="prefetch" href="/assets/js/265.74fd6fdb.js"><link rel="prefetch" href="/assets/js/266.146a5741.js"><link rel="prefetch" href="/assets/js/267.e93f0c09.js"><link rel="prefetch" href="/assets/js/268.041cd59b.js"><link rel="prefetch" href="/assets/js/269.2a52a7b3.js"><link rel="prefetch" href="/assets/js/27.cee233ab.js"><link rel="prefetch" href="/assets/js/270.5e643419.js"><link rel="prefetch" href="/assets/js/271.dad58fff.js"><link rel="prefetch" href="/assets/js/272.e225aa49.js"><link rel="prefetch" href="/assets/js/273.4095977a.js"><link rel="prefetch" href="/assets/js/274.f8a8ac42.js"><link rel="prefetch" href="/assets/js/275.7d0cce33.js"><link rel="prefetch" href="/assets/js/276.0ca04233.js"><link rel="prefetch" href="/assets/js/277.fefa80ac.js"><link rel="prefetch" href="/assets/js/278.08a81f4a.js"><link rel="prefetch" href="/assets/js/279.f5c9575c.js"><link rel="prefetch" href="/assets/js/28.0b5d33d6.js"><link rel="prefetch" href="/assets/js/280.ee309f4b.js"><link rel="prefetch" href="/assets/js/281.fb087c78.js"><link rel="prefetch" href="/assets/js/282.ea40ef94.js"><link rel="prefetch" href="/assets/js/283.c6437648.js"><link rel="prefetch" href="/assets/js/284.30bdaa34.js"><link rel="prefetch" href="/assets/js/285.463efb76.js"><link rel="prefetch" href="/assets/js/286.d6b1efe9.js"><link rel="prefetch" href="/assets/js/287.9be486ee.js"><link rel="prefetch" href="/assets/js/288.1644fde0.js"><link rel="prefetch" href="/assets/js/289.9528bb1b.js"><link rel="prefetch" href="/assets/js/29.d20fb547.js"><link rel="prefetch" href="/assets/js/290.2286688b.js"><link rel="prefetch" href="/assets/js/291.5ace3068.js"><link rel="prefetch" href="/assets/js/292.35489e17.js"><link rel="prefetch" href="/assets/js/293.25e11559.js"><link rel="prefetch" href="/assets/js/294.5341cfab.js"><link rel="prefetch" href="/assets/js/295.52db9b94.js"><link rel="prefetch" href="/assets/js/296.e2582db2.js"><link rel="prefetch" href="/assets/js/297.1276b385.js"><link rel="prefetch" href="/assets/js/298.4ffba9c6.js"><link rel="prefetch" href="/assets/js/299.c412ef9a.js"><link rel="prefetch" href="/assets/js/30.03d15d5a.js"><link rel="prefetch" href="/assets/js/300.6fe05523.js"><link rel="prefetch" href="/assets/js/301.19ecf929.js"><link rel="prefetch" href="/assets/js/302.01ab770e.js"><link rel="prefetch" href="/assets/js/303.ad02e558.js"><link rel="prefetch" href="/assets/js/304.c6599660.js"><link rel="prefetch" href="/assets/js/305.9d046b96.js"><link rel="prefetch" href="/assets/js/306.1a0b768c.js"><link rel="prefetch" href="/assets/js/307.8b378f9f.js"><link rel="prefetch" href="/assets/js/308.b73b9e37.js"><link rel="prefetch" href="/assets/js/309.1a17900c.js"><link rel="prefetch" href="/assets/js/31.4fc9c534.js"><link rel="prefetch" href="/assets/js/310.44437129.js"><link rel="prefetch" href="/assets/js/311.2891bd12.js"><link rel="prefetch" href="/assets/js/312.093921bf.js"><link rel="prefetch" href="/assets/js/313.b7c2757b.js"><link rel="prefetch" href="/assets/js/314.a5d7e1d2.js"><link rel="prefetch" href="/assets/js/315.add4b181.js"><link rel="prefetch" href="/assets/js/316.d734bafb.js"><link rel="prefetch" href="/assets/js/317.4ece6b17.js"><link rel="prefetch" href="/assets/js/318.716df279.js"><link rel="prefetch" href="/assets/js/319.7c71e08c.js"><link rel="prefetch" href="/assets/js/32.e4c01273.js"><link rel="prefetch" href="/assets/js/320.110ecf17.js"><link rel="prefetch" href="/assets/js/321.d3fccadd.js"><link rel="prefetch" href="/assets/js/322.7db63538.js"><link rel="prefetch" href="/assets/js/323.7d8dc21b.js"><link rel="prefetch" href="/assets/js/324.63844b49.js"><link rel="prefetch" href="/assets/js/325.b32413d4.js"><link rel="prefetch" href="/assets/js/326.6168b296.js"><link rel="prefetch" href="/assets/js/327.59d80312.js"><link rel="prefetch" href="/assets/js/328.c4f22ab5.js"><link rel="prefetch" href="/assets/js/329.0e4c480c.js"><link rel="prefetch" href="/assets/js/33.b0c285e5.js"><link rel="prefetch" href="/assets/js/330.568ac1cd.js"><link rel="prefetch" href="/assets/js/331.7a25782a.js"><link rel="prefetch" href="/assets/js/332.5c5bdc67.js"><link rel="prefetch" href="/assets/js/333.b94d5a62.js"><link rel="prefetch" href="/assets/js/334.73793ee1.js"><link rel="prefetch" href="/assets/js/335.9eff22ad.js"><link rel="prefetch" href="/assets/js/336.978216af.js"><link rel="prefetch" href="/assets/js/337.883017ca.js"><link rel="prefetch" href="/assets/js/338.cc2ba8db.js"><link rel="prefetch" href="/assets/js/339.e2d3e03f.js"><link rel="prefetch" href="/assets/js/34.231f216b.js"><link rel="prefetch" href="/assets/js/340.934ff609.js"><link rel="prefetch" href="/assets/js/341.54d9cdc2.js"><link rel="prefetch" href="/assets/js/342.638a19e9.js"><link rel="prefetch" href="/assets/js/343.808048f0.js"><link rel="prefetch" href="/assets/js/344.bd14bd0d.js"><link rel="prefetch" href="/assets/js/345.a4aec9ee.js"><link rel="prefetch" href="/assets/js/346.b035f8c7.js"><link rel="prefetch" href="/assets/js/347.2cf8625e.js"><link rel="prefetch" href="/assets/js/348.11a857a3.js"><link rel="prefetch" href="/assets/js/349.8cad3c6a.js"><link rel="prefetch" href="/assets/js/35.a27dc2ef.js"><link rel="prefetch" href="/assets/js/350.cc7e2b53.js"><link rel="prefetch" href="/assets/js/351.d6a2da05.js"><link rel="prefetch" href="/assets/js/352.4caa5209.js"><link rel="prefetch" href="/assets/js/353.b0fb4aac.js"><link rel="prefetch" href="/assets/js/354.f730649b.js"><link rel="prefetch" href="/assets/js/355.1d1d34af.js"><link rel="prefetch" href="/assets/js/356.5a1168d1.js"><link rel="prefetch" href="/assets/js/357.9881ef89.js"><link rel="prefetch" href="/assets/js/358.d26aa6a9.js"><link rel="prefetch" href="/assets/js/359.079afbd7.js"><link rel="prefetch" href="/assets/js/36.b345b762.js"><link rel="prefetch" href="/assets/js/360.efb0b278.js"><link rel="prefetch" href="/assets/js/361.2a18a628.js"><link rel="prefetch" href="/assets/js/362.8d82575d.js"><link rel="prefetch" href="/assets/js/363.80f9a2fe.js"><link rel="prefetch" href="/assets/js/364.c1e28b58.js"><link rel="prefetch" href="/assets/js/365.adc9f91e.js"><link rel="prefetch" href="/assets/js/366.47ecfded.js"><link rel="prefetch" href="/assets/js/367.a6fb9264.js"><link rel="prefetch" href="/assets/js/368.dbcd73aa.js"><link rel="prefetch" href="/assets/js/369.b20fb98c.js"><link rel="prefetch" href="/assets/js/37.c8c6a955.js"><link rel="prefetch" href="/assets/js/370.4d9f2a50.js"><link rel="prefetch" href="/assets/js/371.afdf42f7.js"><link rel="prefetch" href="/assets/js/372.3a14ecc1.js"><link rel="prefetch" href="/assets/js/373.53952fe0.js"><link rel="prefetch" href="/assets/js/374.c4d5e04c.js"><link rel="prefetch" href="/assets/js/375.ea8c3c63.js"><link rel="prefetch" href="/assets/js/376.290cb7d1.js"><link rel="prefetch" href="/assets/js/377.a226d28a.js"><link rel="prefetch" href="/assets/js/378.2dc3fcf0.js"><link rel="prefetch" href="/assets/js/379.e644a1bf.js"><link rel="prefetch" href="/assets/js/38.059f707c.js"><link rel="prefetch" href="/assets/js/380.2f421568.js"><link rel="prefetch" href="/assets/js/381.2055c2ee.js"><link rel="prefetch" href="/assets/js/382.f4bd13f0.js"><link rel="prefetch" href="/assets/js/383.62e3c726.js"><link rel="prefetch" href="/assets/js/384.e1c1b32b.js"><link rel="prefetch" href="/assets/js/385.cafa72b5.js"><link rel="prefetch" href="/assets/js/386.8d03bb12.js"><link rel="prefetch" href="/assets/js/387.2d5dc493.js"><link rel="prefetch" href="/assets/js/388.299809ef.js"><link rel="prefetch" href="/assets/js/389.80bfe2e4.js"><link rel="prefetch" href="/assets/js/39.b937e337.js"><link rel="prefetch" href="/assets/js/390.db1da549.js"><link rel="prefetch" href="/assets/js/391.4e02b373.js"><link rel="prefetch" href="/assets/js/392.d19015d7.js"><link rel="prefetch" href="/assets/js/393.3534887e.js"><link rel="prefetch" href="/assets/js/394.8fadee11.js"><link rel="prefetch" href="/assets/js/395.20f951b8.js"><link rel="prefetch" href="/assets/js/396.ae8daed5.js"><link rel="prefetch" href="/assets/js/397.1ed39014.js"><link rel="prefetch" href="/assets/js/398.0f40f08f.js"><link rel="prefetch" href="/assets/js/399.0b73d11f.js"><link rel="prefetch" href="/assets/js/4.f660f003.js"><link rel="prefetch" href="/assets/js/40.69eec573.js"><link rel="prefetch" href="/assets/js/400.4800e53c.js"><link rel="prefetch" href="/assets/js/401.23bf5613.js"><link rel="prefetch" href="/assets/js/402.f7286969.js"><link rel="prefetch" href="/assets/js/403.dce80b37.js"><link rel="prefetch" href="/assets/js/404.ee270006.js"><link rel="prefetch" href="/assets/js/405.c4c4e9a3.js"><link rel="prefetch" href="/assets/js/406.a48f5375.js"><link rel="prefetch" href="/assets/js/407.a35d8a03.js"><link rel="prefetch" href="/assets/js/408.0d458b98.js"><link rel="prefetch" href="/assets/js/409.22436afc.js"><link rel="prefetch" href="/assets/js/41.10045088.js"><link rel="prefetch" href="/assets/js/410.5121ad6e.js"><link rel="prefetch" href="/assets/js/411.5afa1f60.js"><link rel="prefetch" href="/assets/js/412.eb1bebc1.js"><link rel="prefetch" href="/assets/js/413.c68bf419.js"><link rel="prefetch" href="/assets/js/414.95123da2.js"><link rel="prefetch" href="/assets/js/415.f82af9f1.js"><link rel="prefetch" href="/assets/js/416.d7649703.js"><link rel="prefetch" href="/assets/js/417.283899da.js"><link rel="prefetch" href="/assets/js/418.d4c4d499.js"><link rel="prefetch" href="/assets/js/419.0c2a4cd7.js"><link rel="prefetch" href="/assets/js/42.e6ed6edb.js"><link rel="prefetch" href="/assets/js/420.7c806dd4.js"><link rel="prefetch" href="/assets/js/421.8fca2444.js"><link rel="prefetch" href="/assets/js/422.f02c51c0.js"><link rel="prefetch" href="/assets/js/423.03cd3416.js"><link rel="prefetch" href="/assets/js/424.57cb2326.js"><link rel="prefetch" href="/assets/js/425.8261229a.js"><link rel="prefetch" href="/assets/js/426.1d126e64.js"><link rel="prefetch" href="/assets/js/427.37816793.js"><link rel="prefetch" href="/assets/js/428.3453cafb.js"><link rel="prefetch" href="/assets/js/429.18267ab7.js"><link rel="prefetch" href="/assets/js/43.00c681a6.js"><link rel="prefetch" href="/assets/js/430.23ede2c0.js"><link rel="prefetch" href="/assets/js/431.e00f6539.js"><link rel="prefetch" href="/assets/js/432.ed63d606.js"><link rel="prefetch" href="/assets/js/433.c1980218.js"><link rel="prefetch" href="/assets/js/434.90bfffdc.js"><link rel="prefetch" href="/assets/js/435.3660a9b7.js"><link rel="prefetch" href="/assets/js/436.2aa21265.js"><link rel="prefetch" href="/assets/js/437.84d0e30f.js"><link rel="prefetch" href="/assets/js/438.e6f1fa05.js"><link rel="prefetch" href="/assets/js/439.458e692c.js"><link rel="prefetch" href="/assets/js/44.e34f18c9.js"><link rel="prefetch" href="/assets/js/440.d23e3e65.js"><link rel="prefetch" href="/assets/js/441.e72ef629.js"><link rel="prefetch" href="/assets/js/442.5550b9ae.js"><link rel="prefetch" href="/assets/js/443.f1cfd916.js"><link rel="prefetch" href="/assets/js/45.229c78ef.js"><link rel="prefetch" href="/assets/js/46.229a5c87.js"><link rel="prefetch" href="/assets/js/47.d6ad6568.js"><link rel="prefetch" href="/assets/js/48.af84c4c1.js"><link rel="prefetch" href="/assets/js/49.654ad6d2.js"><link rel="prefetch" href="/assets/js/5.42305035.js"><link rel="prefetch" href="/assets/js/50.45a7d4d2.js"><link rel="prefetch" href="/assets/js/51.22833ff4.js"><link rel="prefetch" href="/assets/js/52.759e65ab.js"><link rel="prefetch" href="/assets/js/53.021b386e.js"><link rel="prefetch" href="/assets/js/54.7863431a.js"><link rel="prefetch" href="/assets/js/55.f5b38c5e.js"><link rel="prefetch" href="/assets/js/56.d6ba3534.js"><link rel="prefetch" href="/assets/js/57.5150f8e7.js"><link rel="prefetch" href="/assets/js/58.329572da.js"><link rel="prefetch" href="/assets/js/59.cc824e2e.js"><link rel="prefetch" href="/assets/js/6.8a5b1f54.js"><link rel="prefetch" href="/assets/js/60.19d31e9a.js"><link rel="prefetch" href="/assets/js/61.6066906b.js"><link rel="prefetch" href="/assets/js/62.f17bf0a3.js"><link rel="prefetch" href="/assets/js/63.c37e7cad.js"><link rel="prefetch" href="/assets/js/64.cddae093.js"><link rel="prefetch" href="/assets/js/65.b7371491.js"><link rel="prefetch" href="/assets/js/66.6c82d06f.js"><link rel="prefetch" href="/assets/js/67.9ec78ee1.js"><link rel="prefetch" href="/assets/js/68.e810618d.js"><link rel="prefetch" href="/assets/js/69.ef256ea7.js"><link rel="prefetch" href="/assets/js/7.87f3349d.js"><link rel="prefetch" href="/assets/js/70.39a8974c.js"><link rel="prefetch" href="/assets/js/71.0ebaa5c9.js"><link rel="prefetch" href="/assets/js/72.a051d87e.js"><link rel="prefetch" href="/assets/js/73.06e136f3.js"><link rel="prefetch" href="/assets/js/74.2f0d883d.js"><link rel="prefetch" href="/assets/js/75.8acecdb4.js"><link rel="prefetch" href="/assets/js/76.6b9229fe.js"><link rel="prefetch" href="/assets/js/77.71fdb962.js"><link rel="prefetch" href="/assets/js/78.da4ffb92.js"><link rel="prefetch" href="/assets/js/79.a3e2e931.js"><link rel="prefetch" href="/assets/js/8.d08ebc9e.js"><link rel="prefetch" href="/assets/js/80.815409bc.js"><link rel="prefetch" href="/assets/js/81.e54c1878.js"><link rel="prefetch" href="/assets/js/82.587ec880.js"><link rel="prefetch" href="/assets/js/83.731c2128.js"><link rel="prefetch" href="/assets/js/84.84df6d0a.js"><link rel="prefetch" href="/assets/js/85.d5ada846.js"><link rel="prefetch" href="/assets/js/86.7f8a68dd.js"><link rel="prefetch" href="/assets/js/87.13239b80.js"><link rel="prefetch" href="/assets/js/88.ab96b620.js"><link rel="prefetch" href="/assets/js/89.051a297a.js"><link rel="prefetch" href="/assets/js/9.0eb14491.js"><link rel="prefetch" href="/assets/js/90.4409855e.js"><link rel="prefetch" href="/assets/js/91.79d0cbf0.js"><link rel="prefetch" href="/assets/js/92.3044a60d.js"><link rel="prefetch" href="/assets/js/93.1238db18.js"><link rel="prefetch" href="/assets/js/94.148468b5.js"><link rel="prefetch" href="/assets/js/95.b390054b.js"><link rel="prefetch" href="/assets/js/96.1e666bf6.js"><link rel="prefetch" href="/assets/js/97.0c7aba88.js"><link rel="prefetch" href="/assets/js/98.b8c73381.js"><link rel="prefetch" href="/assets/js/99.3ab3566e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1492f243.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-ff03da5a><div data-v-ff03da5a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-2b487510 data-v-ff03da5a data-v-ff03da5a><h3 class="title" data-v-2b487510>集合网</h3> <p class="description" data-v-2b487510>集合网 你想要的这里都有！</p> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2025
+      </a></span></div></div> <div class="hide" data-v-ff03da5a><header class="navbar" data-v-ff03da5a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">集合网</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习路线/" class="nav-link"><i class="undefined"></i>
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/逆向分析/" class="nav-link"><i class="undefined"></i>
+  逆向分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ff03da5a></div> <aside class="sidebar" data-v-ff03da5a><div class="personal-info-wrapper" data-v-400a92f6 data-v-ff03da5a><img src="/logo.svg" alt="author-avatar" class="personal-img" data-v-400a92f6> <h3 class="name" data-v-400a92f6>
+    🔅
+  </h3> <div class="num" data-v-400a92f6><div data-v-400a92f6><h3 data-v-400a92f6>433</h3> <h6 data-v-400a92f6>Articles</h6></div> <div data-v-400a92f6><h3 data-v-400a92f6>0</h3> <h6 data-v-400a92f6>Tags</h6></div></div> <ul class="social-links" data-v-400a92f6><li class="social-item" data-v-400a92f6><i class="iconfont reco-rss" style="color:#e15b64;" data-v-400a92f6></i></li></ul> <hr data-v-400a92f6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习路线/" class="nav-link"><i class="undefined"></i>
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/逆向分析/" class="nav-link"><i class="undefined"></i>
+  逆向分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-2b487510 data-v-ff03da5a><h3 class="title" data-v-2b487510>零声【golang/云原生就业课二期】（Go语言/分布式/微服务/DevOps/k8s）</h3> <!----> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2025
+      </a></span></div></div> <div data-v-ff03da5a><div data-v-ff03da5a><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">零声【golang/云原生就业课二期】（Go语言/分布式/微服务/DevOps/k8s）</h1> <div data-v-666b8910><i class="iconfont reco-account" data-v-666b8910><span data-v-666b8910>🔅</span></i> <i class="iconfont reco-date" data-v-666b8910><span data-v-666b8910>10/2/2024</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><div id="boxx" data-v-817d5b90><div data-v-817d5b90><p v-if="true" class="custom-block-title" data-v-817d5b90></p> <p v-if="true" data-v-817d5b90></p></div></div> <p><img src="https://www.itxbzxw.com/wp-content/uploads/2024/08/4776018e5c2b04aa82016cdacfe62a99.jpg" alt="零声【golang/云原生就业课二期】（Go语言/分布式/微服务/DevOps/k8s）"></p> <p>注意：25章节行业功能应用（空缺）非完整版，介意勿下<br>
+注意：25章节行业功能应用（空缺）非完整版，介意勿下<br>
+注意：25章节行业功能应用（空缺）非完整版，介意勿下</p> <h3 id="资源介绍"><a href="#资源介绍" class="header-anchor">#</a> 资源介绍：</h3> <p>【golang/云原生就业课二期】（Go语言/分布式/微服务/DevOps/k8s）：解决go语言编程问题 工程组件：解决golang工程化问题 分布式中间件：解决技术栈单一及分布式开发问题 云原生：解决云原生分布式部署及监控和运维的问题 场景化解决方案：项目实战、提供实际的分布式解决方案以及解决方案落地</p> <h3 id="资源目录"><a href="#资源目录" class="header-anchor">#</a> 资源目录:</h3> <p>├──01-GO语言基础精讲和test方法<br>
+| ├──1-src<br>
+| | └──src.exe 325.79kb<br>
+| ├──0.1 Windows GO语言环境搭建.pdf 1.74M<br>
+| ├──1-1-go语言特性.mp4 150.70M<br>
+| ├──1-2-基本数据类型和操作符.mp4 91.42M<br>
+| ├──1-3-函数,值传递,引用传递,defer函数.mp4 66.50M<br>
+| ├──1-4-闭包、数组切片、map、package.mp4 97.68M<br>
+| ├──1-5-Go test.mp4 33.27M<br>
+| └──1-Go语言基础精讲-20201124.pdf 1.32M<br>
+├──02-Go语言接口与反射<br>
+| ├──2-src<br>
+| | └──src.exe 336.15kb<br>
+| ├──2-Go语言接口与反射-20201126.pdf 1.24M<br>
+| ├──2.1结构体、匿名成员、方法、指针与引用.mp4 146.27M<br>
+| ├──2.2接口、定义、多态、嵌套、组合、变量.mp4 161.03M<br>
+| └──2.3反射定义、利弊、reflect.mp4 144.04M<br>
+├──03-Go语言并发编程<br>
+| ├──3-src<br>
+| | └──src.exe 330.83kb<br>
+| ├──20201128.png 779.17kb<br>
+| ├──3-Go语言并发编程.pdf 1.22M<br>
+| ├──3.1Goroutine、panic、recover.mp4 131.20M<br>
+| ├──3.2channel、创建、读写、安全关闭.mp4 162.90M<br>
+| ├──3.3线程安全、互斥锁、读写锁、匿名锁.mp4 54.94M<br>
+| └──3.4Context Background().mp4 112.80M<br>
+├──04-Go语言网络编程和Redis实战<br>
+| ├──资料<br>
+| | ├──4-src<br>
+| | ├──20201202.png 1.06M<br>
+| | └──4-Go语言网络编程和常用库.pdf 1.11M<br>
+| ├──4.1TCP网络编程.mp4 241.59M<br>
+| ├──4.2redis中间件、增删改查 .mp4 170.49M<br>
+| ├──4.3对象池使用.mp4 72.93M<br>
+| ├──4.4文件解析器goconfig.mp4 69.74M<br>
+| └──4.5uuid唯一ID.mp4 90.51M<br>
+├──05-Go语言Web开发与数据库实战<br>
+| ├──课件资料<br>
+| | ├──5-src<br>
+| | ├──20201203.png 754.11kb<br>
+| | ├──5-Go语言Web开发与数据库实战.pdf 1.49M<br>
+| | ├──Postman-win64-7.36.0-Setup.exe 96.68M<br>
+| | └──编译gin_restful错误说明.txt 0.22kb<br>
+| ├──5.1HTTP编程、表单处理、panic处理.mp4 230.21M<br>
+| ├──5.2简单Web模板.mp4 55.26M<br>
+| ├──5.3mysql增删改查、预处理、事务.mp4 252.59M<br>
+| └──5.4Gin、rest api和mysql curd.mp4 98.79M<br>
+├──06-GO微信后台开发实战<br>
+| ├──课件资料<br>
+| | ├──20201205.png 1.40M<br>
+| | ├──6-Go语言微信后台开发实战.pdf 1.04M<br>
+| | └──6-src.exe 8.11M<br>
+| ├──6.1微信公众号开发逻辑、注册公众号.mp4 83.49M<br>
+| ├──6.2HTTP服务，get方法处理token验证.mp4 21.91M<br>
+| ├──6.3token机制微信公众号签名.mp4 130.28M<br>
+| ├──6.4XML解析，CDATA解析 .mp4 124.61M<br>
+| └──6.5交换协议、接收消息协议.mp4 138.09M<br>
+├──07-流媒体网站开发<br>
+| ├──2-架构分析和api设计.pptx 842.98kb<br>
+| ├──3-stream-scheduler详细设计.pptx 1.05M<br>
+| ├──7.0流媒体知识精讲和架构设计.mp4 404.13M<br>
+| ├──7.1架构分析、技术要点分析.mp4 126.87M<br>
+| ├──7.2API设计,包括用户,视频,评论.mp4 12.44M<br>
+| ├──7.3数据库设计.mp4 91.17M<br>
+| ├──7.4端口开放和代码纵览.mp4 237.90M<br>
+| ├──7.5streamserver,middleware.mp4 124.76M<br>
+| ├──7.6scheduler模块设计.mp4 196.15M<br>
+| ├──7.7httpweb模块设计.mp4 204.69M<br>
+| └──流媒体知识精讲和架构设计.pdf 2.12M<br>
+├──08-Gin和jwt验证实战<br>
+| ├──课件资料<br>
+| | ├──20201216-gin.png 568.91kb<br>
+| | ├──gin_practice.exe 1022.32kb<br>
+| | ├──gin框架-JWT验证实践.pdf 1.48M<br>
+| | └──gin实战-20201216_v2.pdf 1.32M<br>
+| ├──8.2RESTful-API实践.mp4 96.06M<br>
+| ├──8.3URL查询参数.mp4 33.48M<br>
+| ├──8.4query接收数组和Map.mp4 22.97M<br>
+| ├──8.5表单参数.mp4 46.68M<br>
+| ├──8.6上传文件.mp4 42.94M<br>
+| ├──8.7route以及中间件授权.mp4 196.75M<br>
+| └──8.8json、struct、xml、yaml.mp4 62.49M<br>
+├──09-Go Admin实战<br>
+| ├──资料课件<br>
+| | ├──1-go-admin架构分析和环境配置.pdf 948.63kb<br>
+| | ├──2-go-admin后台设计之casbin权限管理.pdf 729.80kb<br>
+| | ├──2-go-admin后台设计之授权机制.pdf 517.19kb<br>
+| | ├──20201216-gin.png 568.91kb<br>
+| | ├──20201217.png 738.35kb<br>
+| | ├──20201219.png 726.12kb<br>
+| | ├──3 go-admin后台设计-添加应用实战.pdf 1.86M<br>
+| | ├──casbin.exe 328.89kb<br>
+| | ├──cobra.exe 4.12M<br>
+| | ├──gin框架-JWT验证实践.pdf 1.48M<br>
+| | ├──gin实战-20201216_v2.pdf 1.32M<br>
+| | ├──go-admin.exe 34.75M<br>
+| | ├──go-admin架构分析和环境配置-20201219.pdf 905.10kb<br>
+| | ├──go-admin架构分析和环境配置.pdf 905.70kb<br>
+| | ├──GORM实践.pdf 1006.45kb<br>
+| | ├──Go语言资源汇总.pdf 1.08M<br>
+| | ├──jwt-gorm.exe 18.96M<br>
+| | └──使用 go cobra创建命令行项目.pdf 253.43kb<br>
+| ├──9.1GORM模型、增删改查、连接池.mp4 112.89M<br>
+| ├──9.2Gin_Json-Web-Token.mp4 245.47M<br>
+| ├──9.3GoAdmin工程安装.mp4 219.68M<br>
+| ├──9.4架构分析、模块讲解.mp4 104.96M<br>
+| ├──9.5使用go-cobra创建命令行项目.mp4 36.64M<br>
+| ├──9.6整体源码分析.mp4 180.45M<br>
+| ├──9.7分组权限,校验,数据库…mp4 516.93M<br>
+| └──9.8go-admin添加应用实战.mp4 536.79M<br>
+├──10-11-redis命令以及原理<br>
+| ├──Redis源码<br>
+| | └──redis.exe 320.41kb<br>
+| ├──1.redis介绍.mp4 84.99M<br>
+| ├──10.redigo管道以及事务-脚本事务.mp4 96.79M<br>
+| ├──11.redigo订阅发布以及stream-stream.mp4 104.65M<br>
+| ├──2.redis-string结构以及应用.mp4 100.53M<br>
+| ├──3.redis-list结构以及应用.mp4 157.64M<br>
+| ├──4.redis-hash结构以及应用.mp4 117.67M<br>
+| ├──5.redis-set结构以及应用.mp4 68.71M<br>
+| ├──6.redis-zset结构与应用.mp4 109.38M<br>
+| ├──7.redigo基本命令操作.mp4 196.96M<br>
+| ├──8.redigo管道以及事务-管道.mp4 68.53M<br>
+| ├──9.redigo管道以及事务-命令事务.mp4 47.92M<br>
+| ├──redigo订阅发布以及stream.pdf 221.55kb<br>
+| ├──Redigo管道以及事务.pdf 255.57kb<br>
+| ├──Redigo基本命令操作.pdf 342.71kb<br>
+| ├──Redis-hash结构以及应用.pdf 545.19kb<br>
+| ├──Redis-list结构以及应用.pdf 121.89kb<br>
+| ├──Redis-set结构以及应用.pdf 80.53kb<br>
+| ├──Redis-string结构以及应用.pdf 116.23kb<br>
+| ├──Redis-zset结构以及应用.pdf 233.45kb<br>
+| └──Redis介绍.pdf 183.36kb<br>
+├──12-elasticsearch<br>
+| ├──12-elasticsearch.exe 988.88kb<br>
+| ├──ElasticSearch查询.mp4 170.72M<br>
+| ├──ElasticSearch基本操作以及原理.mp4 254.18M<br>
+| ├──ElasticSearch简介以及环境搭建.mp4 141.86M<br>
+| └──Go操作Elasticsearch.mp4 192.12M<br>
+├──13-etcd<br>
+| ├──1.etcd 介绍.pdf 180.73kb<br>
+| ├──1.etcd_介绍.mp4 74.17M<br>
+| ├──2.etcd APIs.pdf 119.70kb<br>
+| ├──2.etcd_APIs.mp4 155.79M<br>
+| ├──3.etcd Go操作.pdf 55.03kb<br>
+| ├──3.etcd_go操作.mp4 183.86M<br>
+| ├──4.etcd 存储原理以及读写机制.pdf 615.25kb<br>
+| ├──4.etcd_存储原理以及读写机制.mp4 50.14M<br>
+| ├──5.etcd Raft核心原理剖析.pdf 260.79kb<br>
+| ├──5.etcd_Raft核心原理剖析.mp4 84.66M<br>
+| └──etcd.exe 325.76kb<br>
+├──14-MySQL<br>
+| ├──1.MySQL介绍.mp4 75.23M<br>
+| ├──1.MySQL介绍.pdf 750.29kb<br>
+| ├──14-MySQL.exe 3.64M<br>
+| ├──2.MySQL基本操作.mp4 125.62M<br>
+| ├──2.MySQL基本操作.pdf 156.42kb<br>
+| ├──3.MySQL操作应用.mp4 281.07M<br>
+| ├──3.MySQL操作应用.pdf 94.69kb<br>
+| ├──4.MySQL索引.mp4 193.52M<br>
+| ├──4.MySQL索引.pdf 1.91M<br>
+| ├──5.MySQL-Go操作.pdf 179.50kb<br>
+| ├──6.MySQL事务.pdf 337.46kb<br>
+| ├──事务.jpg 267.69kb<br>
+| ├──事务A.sql 1.61kb<br>
+| ├──事务B.sql 1.17kb<br>
+| └──做题.png 595.86kb<br>
+├──15-kafka<br>
+| ├──1.kafka 介绍.mp4 115.00M<br>
+| ├──1.kafka 介绍.pdf 147.30kb<br>
+| ├──2.kafka 基本原理.mp4 235.19M<br>
+| ├──2.kafka 基本原理.pdf 178.71kb<br>
+| ├──3.kafka 环境安装.mp4 99.54M<br>
+| ├──3.kafka 环境安装.pdf 118.96kb<br>
+| ├──4.kafka go操作.mp4 132.50M<br>
+| ├──4.kafka go操作.pdf 102.67kb<br>
+| ├──jdk-8u301-linux-x64.tar.exe 110.79M<br>
+| ├──kafka.exe 322.56kb<br>
+| └──kafka_2.13-2.8.0.exe 67.75M<br>
+├──16-17-Mongodb<br>
+| ├──1-mongodb简介.mp4 83.50M<br>
+| ├──10.1-go mongo连接CURD.mp4 74.99M<br>
+| ├──2-mongodb原理.mp4 62.52M<br>
+| ├──3 安装MongoDB.mp4 50.87M<br>
+| ├──4 MongoDB概念解析.mp4 92.11M<br>
+| ├──5 MongoDB数据库操作.mp4 9.45M<br>
+| ├──6 MongoDB集合操作.mp4 37.83M<br>
+| ├──7.1.1 插入文档.mp4 45.82M<br>
+| ├──7.1.2 更新文档.mp4 44.85M<br>
+| ├──7.1.3MongoDB 查询文档.mp4 51.86M<br>
+| ├──7.1.4 MongoDB 删除文档.mp4 21.87M<br>
+| ├──7.2-7.3MongoDB条件操作符和type.mp4 80.48M<br>
+| ├──7.4-limit、skip、sort.mp4 19.00M<br>
+| ├──7.5MongoDB单索引查询.mp4 53.93M<br>
+| ├──7.5MongoDB复合索引查询.mp4 45.33M<br>
+| ├──7.5MongoDB索引创建删除.mp4 20.66M<br>
+| ├──8-9MongoDB聚合.mp4 127.38M<br>
+| ├──MongoDB专题.pdf 2.56M<br>
+| └──src.exe 5.56M<br>
+├──18-OAuth2认证<br>
+| ├──OAuth2<br>
+| | ├──OAuth2-github登录流程1.mp4 51.26M<br>
+| | ├──OAuth2-github登录流程2.mp4 9.11M<br>
+| | ├──OAuth2-github登录流程3.mp4 22.99M<br>
+| | ├──OAuth2-github登录流程4.mp4 5.74M<br>
+| | ├──OAuth2-github应用注册1.mp4 31.26M<br>
+| | ├──OAuth2-github应用注册2.mp4 1.15M<br>
+| | ├──OAuth2获取令牌1.mp4 28.53M<br>
+| | ├──OAuth2获取令牌2.mp4 11.29M<br>
+| | ├──OAuth2介绍1.mp4 13.21M<br>
+| | ├──OAuth2介绍2.mp4 9.41M<br>
+| | └──readme.txt 0.08kb<br>
+| ├──1-OAuth2介绍.mp4 36.11M<br>
+| ├──2-OAuth2获取令牌.mp4 63.61M<br>
+| ├──3-OAuth2-github应用注册.mp4 44.55M<br>
+| ├──oauth2-base.exe 318.35kb<br>
+| ├──OAuth2.0.pdf 218.93kb<br>
+| └──readme.txt 0.14kb<br>
+├──19-20-分布式日志cosmos_log<br>
+| ├──视频<br>
+| | ├──1-Go分布式日志系统-架构分析.mp4 37.33M<br>
+| | ├──2-Go分布式日志系统-构建工程.mp4 16.25M<br>
+| | ├──3-Go分布式日志系统-构建日志监控模块.mp4 133.46M<br>
+| | ├──4-Go分布式日志系统-封装kafka模块.mp4 101.77M<br>
+| | ├──5.1-组件安装-ubuntu16.04下elasticsearch和kibana的安装.mp4 111.08M<br>
+| | ├──5.2-Go分布式日志系统-从kafka读日志发送给es和kibana显示.mp4 144.42M<br>
+| | ├──6.1-配置文件读取和热更新-读取配置文件.mp4 74.74M<br>
+| | ├──6.2-配置文件读取和热更新-配置文件热更新.mp4 33.29M<br>
+| | ├──6.3-配置文件读取和热更新-集成到日志系统.mp4 153.56M<br>
+| | ├──7.1-构建etcd获取日志路径和热更新-获取KV.mp4 59.41M<br>
+| | ├──7.2-构建etcd获取日志路径和热更新-热更新.mp4 242.01M<br>
+| | ├──7.3-构建etcd获取日志路径和热更新-集成.mp4 57.45M<br>
+| | └──8.通过web管理后台管理日志.mp4 95.37M<br>
+| ├──文档.exe 4.95M<br>
+| └──源码.exe 37.52M<br>
+├──22-kratos微服务<br>
+| ├──1-Kratos微服务-框架整体分析.mp4 79.13M<br>
+| ├──1-Kratos微服务-框架整体分析.pdf 555.13kb<br>
+| ├──2-Kratos微服务-快速构建项目.mp4 146.29M<br>
+| ├──2-Kratos微服务-快速构建项目.pdf 843.58kb<br>
+| ├──3-Kratos微服务-依赖注入工具(go-wire).pdf 317.85kb<br>
+| ├──3-Kratos微服务-依赖注入工具(go-wire).png 624.83kb<br>
+| └──3_wire.exe 319.35kb<br>
+├──23-游戏框架leaf<br>
+| ├──1-leaf环境安装以及介绍.mp4 115.64M<br>
+| └──2-leaf内部原理.mp4 79.28M<br>
+├──24-goim千万级消息推送项目<br>
+| ├──goim千万级推送-1环境搭建.mp4 168.80M<br>
+| └──goim千万级推送-2框架分析.mp4 165.25M<br>
+├──26-27-28-docker专栏<br>
+| ├──1. docker环境准备<br>
+| | ├──docker环境准备.mp4 117.90M<br>
+| | └──docker环境准备.pdf 418.57kb<br>
+| ├──11.Docker Compose<br>
+| | ├──11. Docker Compose.pdf 1.55M<br>
+| | └──11.Docker Compose.mp4 259.82M<br>
+| ├──12.Docker Swarm<br>
+| | ├──12. Docker Swarm.pdf 1.49M<br>
+| | ├──12.0 Docker Swarm 简介.mp4 62.08M<br>
+| | ├──12.1 Swarm集群管理和节点管理.mp4 151.96M<br>
+| | ├──12.2 Swarm 服务部署.mp4 194.78M<br>
+| | └──12.3 Swarm与Compose协作部署.mp4 60.01M<br>
+| ├──13.持续集成与持续部署<br>
+| | ├──13.1 基于gitlab的持续集成与部署.mp4 306.71M<br>
+| | └──13.持续集成持续部署.pdf 2.08M<br>
+| ├──2. docker的起源于容器的由来<br>
+| | ├──docker的起源与容器的由来.mp4 217.61M<br>
+| | └──docker的起源与容器的由来.pdf 1.15M<br>
+| ├──3. Docker容器的隔离机制<br>
+| | ├──Docker容器的隔离机制.mp4 237.77M<br>
+| | └──Docker容器的隔离机制.pdf 786.08kb<br>
+| ├──4. Docker常用命令<br>
+| | ├──4. docker 常用命令.pdf 1.32M<br>
+| | ├──4.0 docker常用命令概览.mp4 27.06M<br>
+| | ├──4.1 docker常用命令-容器生命周期管理.mp4 152.82M<br>
+| | ├──4.2 docker常用命令-容器运维管理.mp4 290.34M<br>
+| | └──4.3 docker常用命令-镜像和镜像仓库.mp4 207.74M<br>
+| ├──5. 搭建一个负载均衡应用<br>
+| | ├──5. 搭建一个负载均衡应用.mp4 84.45M<br>
+| | └──5. 搭建一个负载均衡应用.pdf 311.76kb<br>
+| ├──6.Docker镜像<br>
+| | ├──6.Docker镜像.mp4 299.49M<br>
+| | └──6.Docker镜像.pdf 1.21M<br>
+| ├──7.Dockerfile<br>
+| | ├──7.0 Dockerfile简介.mp4 64.72M<br>
+| | ├──7.1 Dockerfile 基本语法实践.mp4 44.96M<br>
+| | ├──7.2 Dockerfile—docker build 上下文.mp4 108.01M<br>
+| | ├──7.3 Dockerfile 多阶段构建以及ADD与COPY.mp4 113.64M<br>
+| | ├──7.4 Dockerfile CMD 与 ENTRYPOINT.mp4 118.04M<br>
+| | └──7.Dockerfile.pdf 1005.33kb<br>
+| ├──8.Docker数据卷<br>
+| | ├──8.Docker 数据卷.mp4 314.82M<br>
+| | └──8.Docker数据卷.pdf 703.27kb<br>
+| └──9.Docker网络<br>
+| | ├──10.容器监控<br>
+| | ├──9. Docker网络.pdf 789.85kb<br>
+| | └──9.Docker网络.mp4 188.04M<br>
+├──29-30-31 k8s专栏<br>
+| ├──1. Kubernetes简介<br>
+| | ├──1. Kubernetes简介.mp4 63.54M<br>
+| | └──1. Kubernetes简介.pdf 290.70kb<br>
+| ├──10. 使用MetalLB做为外部负载均衡<br>
+| | ├──10. 使用MetalLB做为外部负载均衡.mp4 87.47M<br>
+| | └──10. 使用MetalLB做为外部负载均衡.pdf 127.96kb<br>
+| ├──11. ConfigMap与Secret<br>
+| | ├──11. ConfigMap与Secret.mp4 263.71M<br>
+| | └──11. ConfigMap与Secret.pdf 373.19kb<br>
+| ├──12. Volume<br>
+| | ├──12. Volume.mp4 139.33M<br>
+| | └──12. Volume.pdf 164.97kb<br>
+| ├──2. Kubernetes基本概念和术语<br>
+| | ├──2. Kubernetes基本概念和术语.mp4 241.73M<br>
+| | └──2. Kubernetes基本概念和术语.pdf 300.99kb<br>
+| ├──3. Kubernetes v1.24 集群安装配置<br>
+| | ├──3. Kubernetes v1.24 集群安装配置.pdf 636.89kb<br>
+| | ├──3.0 Kubernetes 集群安装配置.mp4 9.80M<br>
+| | ├──3.1 docker容器运行时安装.mp4 68.30M<br>
+| | ├──3.2 kubeadm和相关工具的安装.mp4 42.37M<br>
+| | ├──3.3 主机环境调整.mp4 39.07M<br>
+| | └──3.4 Kubernetes集群初始化.mp4 120.87M<br>
+| ├──4. 部署一个web应用<br>
+| | ├──4. 部署一个web应用.mp4 32.97M<br>
+| | └──4. 部署一个web应用.pdf 54.21kb<br>
+| ├──5. 通过kubeadm升级集群<br>
+| | ├──5. 通过kubeadm升级集群.mp4 104.50M<br>
+| | └──5. 通过kubeadm升级集群.pdf 193.09kb<br>
+| ├──6. kubectl常用命令<br>
+| | ├──6. kubectl常用命令.pdf 418.15kb<br>
+| | ├──6.0 kubectl基本语法.mp4 74.44M<br>
+| | ├──6.1 kubectl基础操作命令.mp4 314.05M<br>
+| | ├──6.2 kubectl应用部署命令.mp4 203.49M<br>
+| | ├──6.3 kubectl集群管理.mp4 66.28M<br>
+| | └──6.4 kubectl故障排除和调试命令.mp4 191.29M<br>
+| ├──7. Pod<br>
+| | ├──7. Pod.pdf 358.43kb<br>
+| | ├──7.0 Pod的定义.mp4 74.41M<br>
+| | ├──7.1 Pod的使用.mp4 183.77M<br>
+| | ├──7.2 容器的探测.mp4 85.94M<br>
+| | └──7.3 Pod的部署.mp4 269.67M<br>
+| ├──8. Service<br>
+| | ├──8. Service.mp4 326.94M<br>
+| | └──8. Service.pdf 245.22kb<br>
+| └──9. Ingress<br>
+| | ├──9. Ingress.mp4 246.96M<br>
+| | └──9. Ingress.pdf 313.10kb<br>
+├──golang入门必备<br>
+| ├──1.第一个golang程序<br>
+| | ├──HelloGolang.exe 319.28kb<br>
+| | └──第一个golang程序.pdf 132.97kb<br>
+| ├──10.UDP实现DNS请求<br>
+| | ├──udp.exe 346.49kb<br>
+| | └──UDP实现DNS请求.pdf 345.52kb<br>
+| ├──2.golang实现ping操作<br>
+| | ├──golang实现ping操作.pdf 138.51kb<br>
+| | └──goping.exe 319.87kb<br>
+| ├──3.课程管理系统<br>
+| | ├──CourseManagement.exe 367.75kb<br>
+| | └──课程管理系统.pdf 78.63kb<br>
+| ├──4.内存缓存系统<br>
+| | ├──memCache.exe 321.99kb<br>
+| | └──内存缓存系统.pdf 75.39kb<br>
+| ├──5.文件读写<br>
+| | ├──FileReadWrite.exe 17.39M<br>
+| | └──文件读写.pdf 64.88kb<br>
+| ├──6.mysql数据库读写<br>
+| | ├──mysqlOp.exe 320.79kb<br>
+| | └──mysql数据库读写.pdf 67.89kb<br>
+| ├──7.redis读写<br>
+| | ├──redis 读写.pdf 54.91kb<br>
+| | └──redisOp.exe 320.74kb<br>
+| ├──8.生产者消费者模式<br>
+| | ├──producer-consumer.exe 321.37kb<br>
+| | └──生产者消费者模式.pdf 86.32kb<br>
+| └──9.TCP文件传输<br>
+| | ├──tcp-trans-file.exe 4.74M<br>
+| | └──TCP文件传输.pdf 33.82kb<br>
+├──公有云项目<br>
+| ├──1.服务接入基本套路<br>
+| | ├──1.公有云服务接入基本套路.mp4 14.82M<br>
+| | └──1.公有云服务接入基本套路.pdf 243.67kb<br>
+| ├──10.人脸核身<br>
+| | ├──10.公有云人脸核身接入.pdf 137.03kb<br>
+| | └──face-recognition.exe 383.00kb<br>
+| ├──2.短信服务<br>
+| | ├──1.短信签名与短信模板.mp4 31.81M<br>
+| | ├──2.短信应用创建及设置.mp4 17.63M<br>
+| | ├──2.公有云短信接入.pdf 660.37kb<br>
+| | ├──3.短信发送demo实现.mp4 41.44M<br>
+| | ├──4.短信发送逻辑封装.mp4 134.87M<br>
+| | ├──5.短信模板注册.mp4 68.16M<br>
+| | ├──6.短信发送接口实现.mp4 82.52M<br>
+| | ├──7.redis客户端初始化.mp4 28.50M<br>
+| | ├──8.短信验证码接口实现.mp4 190.69M<br>
+| | └──sms.exe 392.38kb<br>
+| ├──3.邮件推动服务<br>
+| | ├──1.邮件推送前置条件.mp4 52.70M<br>
+| | ├──2.ses邮件推动demo.mp4 34.57M<br>
+| | ├──3.ses邮件发送逻辑封装.mp4 140.20M<br>
+| | ├──3.公有云邮件推送接入.pdf 366.39kb<br>
+| | ├──4.ses邮件模板注册.mp4 81.48M<br>
+| | ├──5.ses邮件发送接口实现.mp4 88.46M<br>
+| | ├──6.smtp邮件发送demo.mp4 37.96M<br>
+| | ├──7.smtp发送邮件逻辑封装.mp4 164.25M<br>
+| | ├──8.smtp邮件发送接口实现.mp4 54.77M<br>
+| | └──email.exe 391.59kb<br>
+| ├──4.人机验证<br>
+| | ├──1.人机验证简介.mp4 31.94M<br>
+| | ├──2.验证码控制台配置及接入流程.mp4 25.83M<br>
+| | ├──4.公有云人机验证接入.pdf 247.09kb<br>
+| | ├──4.验证码服务逻辑封装.mp4 103.28M<br>
+| | ├──5.验证码票据校验接口实现.mp4 161.28M<br>
+| | └──captcha.exe 386.76kb<br>
+| ├──5.对象存储<br>
+| | ├──1.对象存储相关概览介绍.mp4 31.45M<br>
+| | ├──5.公有云对象存储接入.pdf 1.69M<br>
+| | └──cos.exe 1.16M<br>
+| ├──6.日志服务<br>
+| | ├──6.公有云日志服务接入.pdf 442.64kb<br>
+| | └──cls.exe 375.64kb<br>
+| ├──7.云直播<br>
+| | ├──7.公有云云直播接入.pdf 50.12kb<br>
+| | └──live.exe 384.75kb<br>
+| ├──8.云点播<br>
+| | ├──8.公有云云点播接入.pdf 93.63kb<br>
+| | └──vod.exe 9.50M<br>
+| └──9.文字识别<br>
+| | ├──9.公有云文字识别接入.pdf 204.71kb<br>
+| | └──ocr.exe 380.82kb<br>
+├──go.jpeg 2.11M<br>
+└──云原生.jpeg 5.07M</p> <h2 id="下载地址"><a href="#下载地址" class="header-anchor">#</a> 下载地址：</h2> <p><a href="https://www.itxbzxw.com/learn/hdkf/go/10020.html" target="_blank" rel="noopener noreferrer">零声【golang/云原生就业课二期】（Go语言/分布式/微服务/DevOps/k8s）-小白自学网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-4a336604 data-v-ff03da5a></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-2a01419c data-v-2a01419c><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-2a01419c><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-2a01419c></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-2a01419c></path></svg></div><div></div></div></div>
+    <script src="/assets/js/app.3436e7ba.js" defer></script><script src="/assets/js/3.8f2f0e42.js" defer></script><script src="/assets/js/1.883b222e.js" defer></script><script src="/assets/js/198.eed72dc3.js" defer></script>
+  </body>
+</html>
