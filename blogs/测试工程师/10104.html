@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>大厂软件测试全景认知课 从需求分析到测试报告完整流程解析 软件测试高效学习 | 集合网</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="dns-prefetch" href="//xbcyw.github.io">
+    <meta name="description" content="集合网 你想要的这里都有！">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <link rel="preload" href="/assets/css/0.styles.1492f243.css" as="style"><link rel="preload" href="/assets/js/app.d369f835.js" as="script"><link rel="preload" href="/assets/js/3.8f2f0e42.js" as="script"><link rel="preload" href="/assets/js/1.883b222e.js" as="script"><link rel="preload" href="/assets/js/392.c987738c.js" as="script"><link rel="prefetch" href="/assets/js/10.3bd6c80e.js"><link rel="prefetch" href="/assets/js/100.2ab1231d.js"><link rel="prefetch" href="/assets/js/101.040b3b23.js"><link rel="prefetch" href="/assets/js/102.a8523589.js"><link rel="prefetch" href="/assets/js/103.d1070395.js"><link rel="prefetch" href="/assets/js/104.5e9ca2ad.js"><link rel="prefetch" href="/assets/js/105.898e0d89.js"><link rel="prefetch" href="/assets/js/106.f49581d2.js"><link rel="prefetch" href="/assets/js/107.07598157.js"><link rel="prefetch" href="/assets/js/108.b54aebd4.js"><link rel="prefetch" href="/assets/js/109.db758d20.js"><link rel="prefetch" href="/assets/js/11.9401f477.js"><link rel="prefetch" href="/assets/js/110.1260cbe1.js"><link rel="prefetch" href="/assets/js/111.d099e7b8.js"><link rel="prefetch" href="/assets/js/112.f1088efa.js"><link rel="prefetch" href="/assets/js/113.0b32bad7.js"><link rel="prefetch" href="/assets/js/114.39dab9c3.js"><link rel="prefetch" href="/assets/js/115.221e9eb6.js"><link rel="prefetch" href="/assets/js/116.e08731f2.js"><link rel="prefetch" href="/assets/js/117.dfa11249.js"><link rel="prefetch" href="/assets/js/118.1bd41e26.js"><link rel="prefetch" href="/assets/js/119.d81323e6.js"><link rel="prefetch" href="/assets/js/12.8989bea7.js"><link rel="prefetch" href="/assets/js/120.d9438bee.js"><link rel="prefetch" href="/assets/js/121.25d8d771.js"><link rel="prefetch" href="/assets/js/122.ca33b455.js"><link rel="prefetch" href="/assets/js/123.6b50a340.js"><link rel="prefetch" href="/assets/js/124.284a538d.js"><link rel="prefetch" href="/assets/js/125.c3ffe9ae.js"><link rel="prefetch" href="/assets/js/126.1d8c3bc0.js"><link rel="prefetch" href="/assets/js/127.904e8eb2.js"><link rel="prefetch" href="/assets/js/128.ac49fa17.js"><link rel="prefetch" href="/assets/js/129.82b007d0.js"><link rel="prefetch" href="/assets/js/13.85d9b756.js"><link rel="prefetch" href="/assets/js/130.ee6f15f2.js"><link rel="prefetch" href="/assets/js/131.63027416.js"><link rel="prefetch" href="/assets/js/132.b8511286.js"><link rel="prefetch" href="/assets/js/133.ff19ecb6.js"><link rel="prefetch" href="/assets/js/134.e1128949.js"><link rel="prefetch" href="/assets/js/135.612962e1.js"><link rel="prefetch" href="/assets/js/136.435e0d5a.js"><link rel="prefetch" href="/assets/js/137.23e4daaf.js"><link rel="prefetch" href="/assets/js/138.b98e16ee.js"><link rel="prefetch" href="/assets/js/139.6764c9b8.js"><link rel="prefetch" href="/assets/js/14.ce957747.js"><link rel="prefetch" href="/assets/js/140.19f02490.js"><link rel="prefetch" href="/assets/js/141.5640a50d.js"><link rel="prefetch" href="/assets/js/142.84a55191.js"><link rel="prefetch" href="/assets/js/143.c851347f.js"><link rel="prefetch" href="/assets/js/144.a7ad9d82.js"><link rel="prefetch" href="/assets/js/145.1ea6448c.js"><link rel="prefetch" href="/assets/js/146.1ad3d6b4.js"><link rel="prefetch" href="/assets/js/147.dbb64364.js"><link rel="prefetch" href="/assets/js/148.f53353e1.js"><link rel="prefetch" href="/assets/js/149.bf9b29ad.js"><link rel="prefetch" href="/assets/js/15.e850eca9.js"><link rel="prefetch" href="/assets/js/150.44f5f893.js"><link rel="prefetch" href="/assets/js/151.d23581f6.js"><link rel="prefetch" href="/assets/js/152.3a587096.js"><link rel="prefetch" href="/assets/js/153.69f4c47c.js"><link rel="prefetch" href="/assets/js/154.cb4f5cc8.js"><link rel="prefetch" href="/assets/js/155.25318f80.js"><link rel="prefetch" href="/assets/js/156.22f67c2b.js"><link rel="prefetch" href="/assets/js/157.5ac1cd12.js"><link rel="prefetch" href="/assets/js/158.61ea7f71.js"><link rel="prefetch" href="/assets/js/159.035b30ad.js"><link rel="prefetch" href="/assets/js/16.5051dd7f.js"><link rel="prefetch" href="/assets/js/160.987b67bc.js"><link rel="prefetch" href="/assets/js/161.d1697a55.js"><link rel="prefetch" href="/assets/js/162.cc6e3736.js"><link rel="prefetch" href="/assets/js/163.7297e262.js"><link rel="prefetch" href="/assets/js/164.2ce1752c.js"><link rel="prefetch" href="/assets/js/165.f41a2135.js"><link rel="prefetch" href="/assets/js/166.dc2f93be.js"><link rel="prefetch" href="/assets/js/167.5087ccdc.js"><link rel="prefetch" href="/assets/js/168.3dfad797.js"><link rel="prefetch" href="/assets/js/169.8b4d83d8.js"><link rel="prefetch" href="/assets/js/17.3791c1ba.js"><link rel="prefetch" href="/assets/js/170.4b9bcf0a.js"><link rel="prefetch" href="/assets/js/171.56c99a46.js"><link rel="prefetch" href="/assets/js/172.9aab2cb9.js"><link rel="prefetch" href="/assets/js/173.51c819e6.js"><link rel="prefetch" href="/assets/js/174.6ebf37de.js"><link rel="prefetch" href="/assets/js/175.c5a76a3f.js"><link rel="prefetch" href="/assets/js/176.a530c710.js"><link rel="prefetch" href="/assets/js/177.96939959.js"><link rel="prefetch" href="/assets/js/178.fbb1b5c8.js"><link rel="prefetch" href="/assets/js/179.02292488.js"><link rel="prefetch" href="/assets/js/18.02e8b6ba.js"><link rel="prefetch" href="/assets/js/180.09b97c09.js"><link rel="prefetch" href="/assets/js/181.5be0b195.js"><link rel="prefetch" href="/assets/js/182.28a7bbc9.js"><link rel="prefetch" href="/assets/js/183.287be31f.js"><link rel="prefetch" href="/assets/js/184.87056030.js"><link rel="prefetch" href="/assets/js/185.406d4102.js"><link rel="prefetch" href="/assets/js/186.30009a68.js"><link rel="prefetch" href="/assets/js/187.c52fd575.js"><link rel="prefetch" href="/assets/js/188.b8eb4ab3.js"><link rel="prefetch" href="/assets/js/189.d5c68a2d.js"><link rel="prefetch" href="/assets/js/19.8d2682b5.js"><link rel="prefetch" href="/assets/js/190.25e440c1.js"><link rel="prefetch" href="/assets/js/191.0971b126.js"><link rel="prefetch" href="/assets/js/192.7d889809.js"><link rel="prefetch" href="/assets/js/193.e6b9682c.js"><link rel="prefetch" href="/assets/js/194.75f0f8f9.js"><link rel="prefetch" href="/assets/js/195.4e77d7bd.js"><link rel="prefetch" href="/assets/js/196.4c77a2ce.js"><link rel="prefetch" href="/assets/js/197.a65668dd.js"><link rel="prefetch" href="/assets/js/198.ff7df3b5.js"><link rel="prefetch" href="/assets/js/199.fa50a3d8.js"><link rel="prefetch" href="/assets/js/20.dd5082df.js"><link rel="prefetch" href="/assets/js/200.15174322.js"><link rel="prefetch" href="/assets/js/201.3230039c.js"><link rel="prefetch" href="/assets/js/202.1193b5d7.js"><link rel="prefetch" href="/assets/js/203.6a7d7dae.js"><link rel="prefetch" href="/assets/js/204.3bf28a5a.js"><link rel="prefetch" href="/assets/js/205.aa01fba1.js"><link rel="prefetch" href="/assets/js/206.f4cb23a5.js"><link rel="prefetch" href="/assets/js/207.38bc13ca.js"><link rel="prefetch" href="/assets/js/208.d0979f03.js"><link rel="prefetch" href="/assets/js/209.1a54ab20.js"><link rel="prefetch" href="/assets/js/21.8f0f0afb.js"><link rel="prefetch" href="/assets/js/210.1602d18d.js"><link rel="prefetch" href="/assets/js/211.57d75204.js"><link rel="prefetch" href="/assets/js/212.c263cb4e.js"><link rel="prefetch" href="/assets/js/213.3ef60ad0.js"><link rel="prefetch" href="/assets/js/214.61839ec6.js"><link rel="prefetch" href="/assets/js/215.d69220a4.js"><link rel="prefetch" href="/assets/js/216.809c2b43.js"><link rel="prefetch" href="/assets/js/217.2581c107.js"><link rel="prefetch" href="/assets/js/218.78534893.js"><link rel="prefetch" href="/assets/js/219.6c4a788f.js"><link rel="prefetch" href="/assets/js/22.e9006b53.js"><link rel="prefetch" href="/assets/js/220.e4de5142.js"><link rel="prefetch" href="/assets/js/221.07fede92.js"><link rel="prefetch" href="/assets/js/222.a9d4a9f6.js"><link rel="prefetch" href="/assets/js/223.e1b40fd8.js"><link rel="prefetch" href="/assets/js/224.bdbbe6b5.js"><link rel="prefetch" href="/assets/js/225.6cc581d8.js"><link rel="prefetch" href="/assets/js/226.f2ae2c40.js"><link rel="prefetch" href="/assets/js/227.1e5d8c06.js"><link rel="prefetch" href="/assets/js/228.84b8e762.js"><link rel="prefetch" href="/assets/js/229.5c69a0b9.js"><link rel="prefetch" href="/assets/js/23.6de4d490.js"><link rel="prefetch" href="/assets/js/230.99c68914.js"><link rel="prefetch" href="/assets/js/231.0e3e2a9d.js"><link rel="prefetch" href="/assets/js/232.0cf0889d.js"><link rel="prefetch" href="/assets/js/233.b6efe591.js"><link rel="prefetch" href="/assets/js/234.7d0fd240.js"><link rel="prefetch" href="/assets/js/235.8411fa73.js"><link rel="prefetch" href="/assets/js/236.a663724c.js"><link rel="prefetch" href="/assets/js/237.fa04594e.js"><link rel="prefetch" href="/assets/js/238.80e0a567.js"><link rel="prefetch" href="/assets/js/239.7196685b.js"><link rel="prefetch" href="/assets/js/24.55583270.js"><link rel="prefetch" href="/assets/js/240.ac578d84.js"><link rel="prefetch" href="/assets/js/241.8527f7f4.js"><link rel="prefetch" href="/assets/js/242.a57e7ab9.js"><link rel="prefetch" href="/assets/js/243.b6dbbae9.js"><link rel="prefetch" href="/assets/js/244.01c02698.js"><link rel="prefetch" href="/assets/js/245.3fc33eb9.js"><link rel="prefetch" href="/assets/js/246.27aa9c43.js"><link rel="prefetch" href="/assets/js/247.00f868b3.js"><link rel="prefetch" href="/assets/js/248.b57539e1.js"><link rel="prefetch" href="/assets/js/249.c58dd989.js"><link rel="prefetch" href="/assets/js/25.8a7dc372.js"><link rel="prefetch" href="/assets/js/250.6ed17c20.js"><link rel="prefetch" href="/assets/js/251.b5f9b834.js"><link rel="prefetch" href="/assets/js/252.c577e1fa.js"><link rel="prefetch" href="/assets/js/253.26430acf.js"><link rel="prefetch" href="/assets/js/254.4b8f3b01.js"><link rel="prefetch" href="/assets/js/255.1960eaa3.js"><link rel="prefetch" href="/assets/js/256.35eae150.js"><link rel="prefetch" href="/assets/js/257.96e44e23.js"><link rel="prefetch" href="/assets/js/258.4058c64a.js"><link rel="prefetch" href="/assets/js/259.4ceb8c86.js"><link rel="prefetch" href="/assets/js/26.e2862f09.js"><link rel="prefetch" href="/assets/js/260.4e064b09.js"><link rel="prefetch" href="/assets/js/261.49f12b2c.js"><link rel="prefetch" href="/assets/js/262.4dd1f267.js"><link rel="prefetch" href="/assets/js/263.fc1f4ffe.js"><link rel="prefetch" href="/assets/js/264.1c40b6d5.js"><link rel="prefetch" href="/assets/js/265.d982b56d.js"><link rel="prefetch" href="/assets/js/266.732e00a2.js"><link rel="prefetch" href="/assets/js/267.d030daad.js"><link rel="prefetch" href="/assets/js/268.6be395dc.js"><link rel="prefetch" href="/assets/js/269.83af01cc.js"><link rel="prefetch" href="/assets/js/27.cee233ab.js"><link rel="prefetch" href="/assets/js/270.2896725c.js"><link rel="prefetch" href="/assets/js/271.0d40efe5.js"><link rel="prefetch" href="/assets/js/272.d965310f.js"><link rel="prefetch" href="/assets/js/273.40aa3718.js"><link rel="prefetch" href="/assets/js/274.d9d14f91.js"><link rel="prefetch" href="/assets/js/275.0bf82bd7.js"><link rel="prefetch" href="/assets/js/276.f4736e78.js"><link rel="prefetch" href="/assets/js/277.f5e5a4de.js"><link rel="prefetch" href="/assets/js/278.0dc1f54b.js"><link rel="prefetch" href="/assets/js/279.7de3ea14.js"><link rel="prefetch" href="/assets/js/28.f663c11d.js"><link rel="prefetch" href="/assets/js/280.a021bf7f.js"><link rel="prefetch" href="/assets/js/281.f7d6cc1f.js"><link rel="prefetch" href="/assets/js/282.2217b273.js"><link rel="prefetch" href="/assets/js/283.d5725eb3.js"><link rel="prefetch" href="/assets/js/284.4f3cb3fe.js"><link rel="prefetch" href="/assets/js/285.7b4c1fd6.js"><link rel="prefetch" href="/assets/js/286.a90e8d24.js"><link rel="prefetch" href="/assets/js/287.41805795.js"><link rel="prefetch" href="/assets/js/288.aad2ad49.js"><link rel="prefetch" href="/assets/js/289.697f6dfb.js"><link rel="prefetch" href="/assets/js/29.d20fb547.js"><link rel="prefetch" href="/assets/js/290.e69d3634.js"><link rel="prefetch" href="/assets/js/291.253701f2.js"><link rel="prefetch" href="/assets/js/292.7c4d854b.js"><link rel="prefetch" href="/assets/js/293.66407e03.js"><link rel="prefetch" href="/assets/js/294.9e5bc21b.js"><link rel="prefetch" href="/assets/js/295.d182d58c.js"><link rel="prefetch" href="/assets/js/296.b1db44f7.js"><link rel="prefetch" href="/assets/js/297.6333b66b.js"><link rel="prefetch" href="/assets/js/298.3f34baab.js"><link rel="prefetch" href="/assets/js/299.2896965f.js"><link rel="prefetch" href="/assets/js/30.b3ae1497.js"><link rel="prefetch" href="/assets/js/300.ae333446.js"><link rel="prefetch" href="/assets/js/301.bedac314.js"><link rel="prefetch" href="/assets/js/302.24842a4a.js"><link rel="prefetch" href="/assets/js/303.c427c532.js"><link rel="prefetch" href="/assets/js/304.3af06fb5.js"><link rel="prefetch" href="/assets/js/305.98990b52.js"><link rel="prefetch" href="/assets/js/306.0dca35e7.js"><link rel="prefetch" href="/assets/js/307.ed35405a.js"><link rel="prefetch" href="/assets/js/308.4b491cdb.js"><link rel="prefetch" href="/assets/js/309.b0ef9f64.js"><link rel="prefetch" href="/assets/js/31.4fc9c534.js"><link rel="prefetch" href="/assets/js/310.c78c7e4e.js"><link rel="prefetch" href="/assets/js/311.55c80fb5.js"><link rel="prefetch" href="/assets/js/312.85c85a68.js"><link rel="prefetch" href="/assets/js/313.07c372de.js"><link rel="prefetch" href="/assets/js/314.755b5399.js"><link rel="prefetch" href="/assets/js/315.3f81204a.js"><link rel="prefetch" href="/assets/js/316.ef6f3e94.js"><link rel="prefetch" href="/assets/js/317.99c2a24f.js"><link rel="prefetch" href="/assets/js/318.e9119713.js"><link rel="prefetch" href="/assets/js/319.59e3b52d.js"><link rel="prefetch" href="/assets/js/32.4a2b1bd0.js"><link rel="prefetch" href="/assets/js/320.a861e374.js"><link rel="prefetch" href="/assets/js/321.152f6b77.js"><link rel="prefetch" href="/assets/js/322.4ceb261b.js"><link rel="prefetch" href="/assets/js/323.a4d1f3d8.js"><link rel="prefetch" href="/assets/js/324.e1d21da9.js"><link rel="prefetch" href="/assets/js/325.00f0bac2.js"><link rel="prefetch" href="/assets/js/326.f54184c3.js"><link rel="prefetch" href="/assets/js/327.cd1a0d90.js"><link rel="prefetch" href="/assets/js/328.d5862171.js"><link rel="prefetch" href="/assets/js/329.8e206140.js"><link rel="prefetch" href="/assets/js/33.b038112f.js"><link rel="prefetch" href="/assets/js/330.df9aacb3.js"><link rel="prefetch" href="/assets/js/331.95a94652.js"><link rel="prefetch" href="/assets/js/332.4e45255c.js"><link rel="prefetch" href="/assets/js/333.004486ec.js"><link rel="prefetch" href="/assets/js/334.5c74090e.js"><link rel="prefetch" href="/assets/js/335.292ad8ce.js"><link rel="prefetch" href="/assets/js/336.89f44edf.js"><link rel="prefetch" href="/assets/js/337.3b4a12fe.js"><link rel="prefetch" href="/assets/js/338.8626226b.js"><link rel="prefetch" href="/assets/js/339.e9c56f83.js"><link rel="prefetch" href="/assets/js/34.480b6608.js"><link rel="prefetch" href="/assets/js/340.ca341b48.js"><link rel="prefetch" href="/assets/js/341.3b8392a6.js"><link rel="prefetch" href="/assets/js/342.a5c66074.js"><link rel="prefetch" href="/assets/js/343.07c9dfb9.js"><link rel="prefetch" href="/assets/js/344.219a742a.js"><link rel="prefetch" href="/assets/js/345.4d7d7189.js"><link rel="prefetch" href="/assets/js/346.8d833ccb.js"><link rel="prefetch" href="/assets/js/347.2ef50daa.js"><link rel="prefetch" href="/assets/js/348.069a9556.js"><link rel="prefetch" href="/assets/js/349.371477ef.js"><link rel="prefetch" href="/assets/js/35.ab93aeba.js"><link rel="prefetch" href="/assets/js/350.cc0939b0.js"><link rel="prefetch" href="/assets/js/351.2e499c7e.js"><link rel="prefetch" href="/assets/js/352.7d98e43a.js"><link rel="prefetch" href="/assets/js/353.7eaf51e0.js"><link rel="prefetch" href="/assets/js/354.5b68b922.js"><link rel="prefetch" href="/assets/js/355.0743f6af.js"><link rel="prefetch" href="/assets/js/356.0d5d3fc2.js"><link rel="prefetch" href="/assets/js/357.36fc054f.js"><link rel="prefetch" href="/assets/js/358.8d393f95.js"><link rel="prefetch" href="/assets/js/359.bb13b365.js"><link rel="prefetch" href="/assets/js/36.9c79d283.js"><link rel="prefetch" href="/assets/js/360.e7312ed2.js"><link rel="prefetch" href="/assets/js/361.9fc221cf.js"><link rel="prefetch" href="/assets/js/362.b4a08ac1.js"><link rel="prefetch" href="/assets/js/363.8c8f281e.js"><link rel="prefetch" href="/assets/js/364.de7ee00c.js"><link rel="prefetch" href="/assets/js/365.46dacb1b.js"><link rel="prefetch" href="/assets/js/366.5c135e2a.js"><link rel="prefetch" href="/assets/js/367.3f1b4ed2.js"><link rel="prefetch" href="/assets/js/368.02125a4d.js"><link rel="prefetch" href="/assets/js/369.eacb4d39.js"><link rel="prefetch" href="/assets/js/37.8012a714.js"><link rel="prefetch" href="/assets/js/370.e171a720.js"><link rel="prefetch" href="/assets/js/371.739b6e1a.js"><link rel="prefetch" href="/assets/js/372.50f3869e.js"><link rel="prefetch" href="/assets/js/373.11f50765.js"><link rel="prefetch" href="/assets/js/374.52d2675b.js"><link rel="prefetch" href="/assets/js/375.8771a999.js"><link rel="prefetch" href="/assets/js/376.14940eb6.js"><link rel="prefetch" href="/assets/js/377.05282adc.js"><link rel="prefetch" href="/assets/js/378.ec86d59d.js"><link rel="prefetch" href="/assets/js/379.ed6cce53.js"><link rel="prefetch" href="/assets/js/38.2b0cf929.js"><link rel="prefetch" href="/assets/js/380.afb3ab6f.js"><link rel="prefetch" href="/assets/js/381.c711d739.js"><link rel="prefetch" href="/assets/js/382.8a915576.js"><link rel="prefetch" href="/assets/js/383.2159a8a7.js"><link rel="prefetch" href="/assets/js/384.f8945f52.js"><link rel="prefetch" href="/assets/js/385.0b405aa2.js"><link rel="prefetch" href="/assets/js/386.40667699.js"><link rel="prefetch" href="/assets/js/387.90685e79.js"><link rel="prefetch" href="/assets/js/388.1f03d668.js"><link rel="prefetch" href="/assets/js/389.e556d540.js"><link rel="prefetch" href="/assets/js/39.53ec39a9.js"><link rel="prefetch" href="/assets/js/390.5e74c8f8.js"><link rel="prefetch" href="/assets/js/391.ee909eae.js"><link rel="prefetch" href="/assets/js/393.4cc7216f.js"><link rel="prefetch" href="/assets/js/394.36ad23f8.js"><link rel="prefetch" href="/assets/js/395.87f9c4bb.js"><link rel="prefetch" href="/assets/js/396.6422d5b0.js"><link rel="prefetch" href="/assets/js/397.81d5584e.js"><link rel="prefetch" href="/assets/js/398.80407db8.js"><link rel="prefetch" href="/assets/js/399.e4ccb401.js"><link rel="prefetch" href="/assets/js/4.f660f003.js"><link rel="prefetch" href="/assets/js/40.36f48086.js"><link rel="prefetch" href="/assets/js/400.c57e40fe.js"><link rel="prefetch" href="/assets/js/401.216c95ce.js"><link rel="prefetch" href="/assets/js/402.9fcea069.js"><link rel="prefetch" href="/assets/js/403.b0bb22b6.js"><link rel="prefetch" href="/assets/js/404.0e45c1d9.js"><link rel="prefetch" href="/assets/js/405.8183ea52.js"><link rel="prefetch" href="/assets/js/406.6d02267d.js"><link rel="prefetch" href="/assets/js/407.0a8cd1c1.js"><link rel="prefetch" href="/assets/js/408.eb2b9a3d.js"><link rel="prefetch" href="/assets/js/409.be390f04.js"><link rel="prefetch" href="/assets/js/41.d5a6462b.js"><link rel="prefetch" href="/assets/js/410.8b22c021.js"><link rel="prefetch" href="/assets/js/411.ba7457ef.js"><link rel="prefetch" href="/assets/js/412.9955be6c.js"><link rel="prefetch" href="/assets/js/413.770679bb.js"><link rel="prefetch" href="/assets/js/414.71d29389.js"><link rel="prefetch" href="/assets/js/415.e2882f4f.js"><link rel="prefetch" href="/assets/js/416.d2b6e32b.js"><link rel="prefetch" href="/assets/js/417.5ba0b20c.js"><link rel="prefetch" href="/assets/js/418.3228dc81.js"><link rel="prefetch" href="/assets/js/419.a0acfb7a.js"><link rel="prefetch" href="/assets/js/42.e6ed6edb.js"><link rel="prefetch" href="/assets/js/420.33265d0f.js"><link rel="prefetch" href="/assets/js/421.2463bf87.js"><link rel="prefetch" href="/assets/js/422.81c9cbe7.js"><link rel="prefetch" href="/assets/js/423.fb38d2fc.js"><link rel="prefetch" href="/assets/js/424.f5e2c6a3.js"><link rel="prefetch" href="/assets/js/425.acf01185.js"><link rel="prefetch" href="/assets/js/426.aa4990d5.js"><link rel="prefetch" href="/assets/js/427.774f2ff1.js"><link rel="prefetch" href="/assets/js/428.8c142162.js"><link rel="prefetch" href="/assets/js/429.722e2d78.js"><link rel="prefetch" href="/assets/js/43.46bb4919.js"><link rel="prefetch" href="/assets/js/430.4baa1c25.js"><link rel="prefetch" href="/assets/js/431.cfc793f8.js"><link rel="prefetch" href="/assets/js/432.87340869.js"><link rel="prefetch" href="/assets/js/433.4e04ad72.js"><link rel="prefetch" href="/assets/js/434.1732fb9c.js"><link rel="prefetch" href="/assets/js/435.78c8e409.js"><link rel="prefetch" href="/assets/js/436.f7b464a9.js"><link rel="prefetch" href="/assets/js/437.1dc17ccf.js"><link rel="prefetch" href="/assets/js/438.52c007a9.js"><link rel="prefetch" href="/assets/js/439.05c30516.js"><link rel="prefetch" href="/assets/js/44.e08f0732.js"><link rel="prefetch" href="/assets/js/440.e915df11.js"><link rel="prefetch" href="/assets/js/441.e3cc70ed.js"><link rel="prefetch" href="/assets/js/442.a492698a.js"><link rel="prefetch" href="/assets/js/443.742b575f.js"><link rel="prefetch" href="/assets/js/444.0e326b5d.js"><link rel="prefetch" href="/assets/js/445.53c85515.js"><link rel="prefetch" href="/assets/js/446.6e8bce0e.js"><link rel="prefetch" href="/assets/js/447.f06ac26d.js"><link rel="prefetch" href="/assets/js/448.fd967842.js"><link rel="prefetch" href="/assets/js/449.9e89194c.js"><link rel="prefetch" href="/assets/js/45.f049abca.js"><link rel="prefetch" href="/assets/js/450.37c4a1f2.js"><link rel="prefetch" href="/assets/js/451.1911d236.js"><link rel="prefetch" href="/assets/js/452.56a515d2.js"><link rel="prefetch" href="/assets/js/453.c7b218c6.js"><link rel="prefetch" href="/assets/js/454.2734e974.js"><link rel="prefetch" href="/assets/js/455.96b0f999.js"><link rel="prefetch" href="/assets/js/456.08f137a8.js"><link rel="prefetch" href="/assets/js/457.074b174b.js"><link rel="prefetch" href="/assets/js/458.b63b170e.js"><link rel="prefetch" href="/assets/js/459.68dbbb2d.js"><link rel="prefetch" href="/assets/js/46.5b2fa451.js"><link rel="prefetch" href="/assets/js/460.d8f74210.js"><link rel="prefetch" href="/assets/js/461.127d2b31.js"><link rel="prefetch" href="/assets/js/462.62da7793.js"><link rel="prefetch" href="/assets/js/47.d6ad6568.js"><link rel="prefetch" href="/assets/js/48.f770c476.js"><link rel="prefetch" href="/assets/js/49.581b6492.js"><link rel="prefetch" href="/assets/js/5.42305035.js"><link rel="prefetch" href="/assets/js/50.a544d1b3.js"><link rel="prefetch" href="/assets/js/51.754cd059.js"><link rel="prefetch" href="/assets/js/52.87b28d95.js"><link rel="prefetch" href="/assets/js/53.36371198.js"><link rel="prefetch" href="/assets/js/54.4a2c954c.js"><link rel="prefetch" href="/assets/js/55.315042eb.js"><link rel="prefetch" href="/assets/js/56.09a2b0eb.js"><link rel="prefetch" href="/assets/js/57.06650b7e.js"><link rel="prefetch" href="/assets/js/58.6bee5d0c.js"><link rel="prefetch" href="/assets/js/59.3d7be3b3.js"><link rel="prefetch" href="/assets/js/6.8a5b1f54.js"><link rel="prefetch" href="/assets/js/60.63a374d5.js"><link rel="prefetch" href="/assets/js/61.1eb05626.js"><link rel="prefetch" href="/assets/js/62.245ba352.js"><link rel="prefetch" href="/assets/js/63.0416d53c.js"><link rel="prefetch" href="/assets/js/64.f039ab19.js"><link rel="prefetch" href="/assets/js/65.ba979b86.js"><link rel="prefetch" href="/assets/js/66.caf1cceb.js"><link rel="prefetch" href="/assets/js/67.178218fb.js"><link rel="prefetch" href="/assets/js/68.22200988.js"><link rel="prefetch" href="/assets/js/69.2f000a91.js"><link rel="prefetch" href="/assets/js/7.87f3349d.js"><link rel="prefetch" href="/assets/js/70.ecfe3306.js"><link rel="prefetch" href="/assets/js/71.972642b7.js"><link rel="prefetch" href="/assets/js/72.2f38d931.js"><link rel="prefetch" href="/assets/js/73.cf3e3ea1.js"><link rel="prefetch" href="/assets/js/74.b5a00d35.js"><link rel="prefetch" href="/assets/js/75.fa1f9e13.js"><link rel="prefetch" href="/assets/js/76.f9620970.js"><link rel="prefetch" href="/assets/js/77.de2d7455.js"><link rel="prefetch" href="/assets/js/78.fa100b70.js"><link rel="prefetch" href="/assets/js/79.453ae3cc.js"><link rel="prefetch" href="/assets/js/8.d08ebc9e.js"><link rel="prefetch" href="/assets/js/80.d73f7f71.js"><link rel="prefetch" href="/assets/js/81.ca9791e9.js"><link rel="prefetch" href="/assets/js/82.39cec050.js"><link rel="prefetch" href="/assets/js/83.d6747a58.js"><link rel="prefetch" href="/assets/js/84.0954fcc2.js"><link rel="prefetch" href="/assets/js/85.b9672a3d.js"><link rel="prefetch" href="/assets/js/86.1d010491.js"><link rel="prefetch" href="/assets/js/87.05526eda.js"><link rel="prefetch" href="/assets/js/88.d4540388.js"><link rel="prefetch" href="/assets/js/89.25ff7581.js"><link rel="prefetch" href="/assets/js/9.73a5f672.js"><link rel="prefetch" href="/assets/js/90.a502f8b4.js"><link rel="prefetch" href="/assets/js/91.fe3cdef8.js"><link rel="prefetch" href="/assets/js/92.278a5616.js"><link rel="prefetch" href="/assets/js/93.fcf4ab6c.js"><link rel="prefetch" href="/assets/js/94.79d76fda.js"><link rel="prefetch" href="/assets/js/95.34d5393f.js"><link rel="prefetch" href="/assets/js/96.df29f853.js"><link rel="prefetch" href="/assets/js/97.32561f5f.js"><link rel="prefetch" href="/assets/js/98.c15ab46b.js"><link rel="prefetch" href="/assets/js/99.9e38b0de.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.1492f243.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-ff03da5a><div data-v-ff03da5a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-2b487510 data-v-ff03da5a data-v-ff03da5a><h3 class="title" data-v-2b487510>集合网</h3> <p class="description" data-v-2b487510>集合网 你想要的这里都有！</p> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2025
+      </a></span></div></div> <div class="hide" data-v-ff03da5a><header class="navbar" data-v-ff03da5a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">集合网</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习路线/" class="nav-link"><i class="undefined"></i>
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li><li class="dropdown-item"><!----> <a href="/categories/逆向分析/" class="nav-link"><i class="undefined"></i>
+  逆向分析
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ff03da5a></div> <aside class="sidebar" data-v-ff03da5a><div class="personal-info-wrapper" data-v-400a92f6 data-v-ff03da5a><img src="/logo.svg" alt="author-avatar" class="personal-img" data-v-400a92f6> <h3 class="name" data-v-400a92f6>
+    🔅
+  </h3> <div class="num" data-v-400a92f6><div data-v-400a92f6><h3 data-v-400a92f6>452</h3> <h6 data-v-400a92f6>Articles</h6></div> <div data-v-400a92f6><h3 data-v-400a92f6>0</h3> <h6 data-v-400a92f6>Tags</h6></div></div> <ul class="social-links" data-v-400a92f6><li class="social-item" data-v-400a92f6><i class="iconfont reco-rss" style="color:#f26d6d;" data-v-400a92f6></i></li></ul> <hr data-v-400a92f6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习路线/" class="nav-link"><i class="undefined"></i>
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li><li class="dropdown-item"><!----> <a href="/categories/逆向分析/" class="nav-link"><i class="undefined"></i>
+  逆向分析
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-2b487510 data-v-ff03da5a><h3 class="title" data-v-2b487510>大厂软件测试全景认知课 从需求分析到测试报告完整流程解析 软件测试高效学习</h3> <!----> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2025
+      </a></span></div></div> <div data-v-ff03da5a><div data-v-ff03da5a><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">大厂软件测试全景认知课 从需求分析到测试报告完整流程解析 软件测试高效学习</h1> <div data-v-666b8910><i class="iconfont reco-account" data-v-666b8910><span data-v-666b8910>🔅</span></i> <i class="iconfont reco-date" data-v-666b8910><span data-v-666b8910>10/7/2024</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><div id="boxx" data-v-817d5b90><div data-v-817d5b90><p v-if="true" class="custom-block-title" data-v-817d5b90></p> <p v-if="true" data-v-817d5b90></p></div></div> <p><img src="https://www.itxbzxw.com/wp-content/uploads/2024/09/33300346bc15a5affe380032fce1b662.jpg" alt="大厂软件测试全景认知课 从需求分析到测试报告完整流程解析 软件测试高效学习"></p> <h3 id="课程介绍"><a href="#课程介绍" class="header-anchor">#</a> 课程介绍:</h3> <p>本课程将带您全面认知软件测试的全景，从需求分析到测试报告的完整流程进行深度解析与实操。我们将重点讲解软件测试工作流程中各个环节的重要性和实际操作技巧，涵盖测试用例设计、需求评审、项目测试执行、bug管理以及测试报告编写等方面。通过丰富的案例实操，您将学会如何应对各种复杂项目情况，提高测试工作的准确性和效率，为成为软件测试领域的专业人士奠定坚实基础。</p> <h3 id="课程目录"><a href="#课程目录" class="header-anchor">#</a> 课程目录:</h3> <p>(1)\00 资料<br>
+├─00 资料.zip<br>
+(2)\1 柠檬班七周年<br>
+├─1–柠檬班七周年.mp4<br>
+(3)\10 用例设计方法之四大金刚<br>
+├─32–用例设计方法之四大金刚.mp4<br>
+(4)\100 抓包工具fiddler实战从入门到精通2；目录中文件数:9个<br>
+├─179–Session List会话列表.mp4<br>
+├─180–Fiddler-状态栏与Quick Exec.mp4<br>
+├─181–FiddlerStatistics统计分析.mp4<br>
+├─182–Fiddler-Inspector检查器.mp4<br>
+├─183–AutoResponder自动响应器.mp4<br>
+├─184–Fiddler-Composer设计器.mp4<br>
+├─185–Fiddler-Filter过滤器.mp4<br>
+├─186–Fiddler-断点应用.mp4<br>
+├─187–Fiddler-弱网测试.mp4<br>
+(5)\101 抓包工具fiddler实战从入门到精通3<br>
+├─188–设置Fiddler捕获HTTPS流量.mp4<br>
+├─189–捕获Firefox HTTPS流量.mp4<br>
+├─190–Android APP抓包详解.mp4<br>
+├─191–Fiddler-iOS APP抓包详解.mp4<br>
+├─192–Fiddler-Willow插件安装.mp4<br>
+├─193–Fiddler-Willow插件的使用.mp4<br>
+(6)\102 RobotFramework web自动化测试；目录中文件数:5个<br>
+├─194–1-RF第一节课：RF基础语法和用户关键字.mp4<br>
+├─195–2-RF第二节课：RF变量和控制流.mp4<br>
+├─196–3-RF第三节课：web自动化之页面元素定位.mp4<br>
+├─197–4-RF第四节课：web自动化之等待和切换.mp4<br>
+├─198–5-Jenkins+RF+svn持续集成&amp;知识梳理.mp4<br>
+(7)\103 白盒测试赠送录播；目录中文件数:7个<br>
+├─199–白盒测试赠送录播一.mp4<br>
+├─200–白盒测试赠送录播二.mp4<br>
+├─201–白盒测试赠送录播三.mp4<br>
+├─202–白盒测试赠送录播四.mp4<br>
+├─203–白盒测试赠送录播五.mp4<br>
+├─204–白盒测试赠送录播六.mp4<br>
+├─205–白盒测试赠送录播七.mp4<br>
+(8)\104 jmeter性能测试VIP赠送<br>
+├─206–jmeter性能测试VIP赠送01.mp4<br>
+├─207–jmeter性能测试VIP赠送02.mp4<br>
+├─208–jmeter性能测试VIP赠送03.mp4<br>
+├─209–jmeter性能测试VIP赠送04.mp4<br>
+├─210–jmeter性能测试VIP赠送05.mp4<br>
+├─211–jmeter性能测试VIP赠送06.mp4<br>
+(9)\105 airtest自动化测试款框架-1；目录中文件数:10个<br>
+├─212–工具介绍和环境安装.mp4<br>
+├─213–工具界面介绍.mp4<br>
+├─214–连接设备.mp4<br>
+├─215–点击APP和运行查看报告.mp4<br>
+├─216–图片识别规则设置.mp4<br>
+├─217–注释方法.mp4<br>
+├─218–text api的使用.mp4<br>
+├─219–wait api的使用.mp4<br>
+├─220–swipe.mp4<br>
+├─221–keyevent.mp4<br>
+(10)\106 airtest自动化测试款框架-2；目录中文件数:10个<br>
+├─222–snapshot和sleep.mp4<br>
+├─223–exist.mp4<br>
+├─224–assert_exist和assert_not_exist.mp4<br>
+├─225–asser_equal和assert_not_equal.mp4<br>
+├─226–android APP自动化实战.mp4<br>
+├─227–webUI自动化环境准备和原理介绍.mp4<br>
+├─228–web自动化启动浏览器和start-web.mp4<br>
+├─229–web自动化touch操作.mp4<br>
+├─230–web自动化text操作.mp4<br>
+├─231–web自动化assert和snapshot操作.mp4<br>
+(11)\107 airtest自动化测试款框架-3；目录中文件数:5个<br>
+├─232–airtest touch操作和assert template.mp4<br>
+├─233–web自动化tab切换和back-forward.mp4<br>
+├─234–web自动化测试图像识别缺陷.mp4<br>
+├─235–web自动化项目实战.mp4<br>
+├─236–web自动化命令行运行脚本.mp4<br>
+(12)\108 数据库-1；目录中文件数:10个<br>
+├─237–存储过程-Hello World.mp4<br>
+├─238–存储过程-存储过程和函数的区别.mp4<br>
+├─239–存储过程-IN类型参数.mp4<br>
+├─240–存储过程-OUT类型参数.mp4<br>
+├─241–存储过程-INOUT类型参数和三种类型的比较.mp4<br>
+├─242–存储过程-条件和处理程序-应用场景.mp4<br>
+├─243–存储过程-条件和处理程序-定义条件.mp4<br>
+├─244–存储过程-条件和处理程序-处理程序.mp4<br>
+├─245–存储过程-光标.mp4<br>
+├─246–存储过程-项目实战-编写还款存储过程.mp4<br>
+(13)\109 数据库-2；目录中文件数:8个<br>
+├─247–存储过程项目实战-验证与错误修复1.mp4<br>
+├─248–存储过程项目实战-错误修复2.mp4<br>
+├─249–MySQL-事件.mp4<br>
+├─250–MySQL-事件-项目实战.mp4<br>
+├─251–MySQL-视图View.mp4<br>
+├─252–索引-新建表创建100w条数据.mp4<br>
+├─253–索引-概念和创建普通索引.mp4<br>
+├─254–索引-索引的分类和组合索引说明.mp4<br>
+(14)\11 软件测试用例的编写<br>
+├─33–软件测试用例的编写.mp4<br>
+(15)\12 软件测试用例的评审<br>
+├─34–软件测试用例的评审.mp4<br>
+(16)\13 bug的定义&amp;生命周期<br>
+├─35–bug的定义&amp;生命周期.mp4<br>
+(17)\14 bug状态的处理<br>
+├─36–bug状态的处理.mp4<br>
+(18)\15 bug管理系统禅道的使用<br>
+├─37–bug管理系统禅道的使用.mp4<br>
+(19)\16 基础课程作业讲解<br>
+├─38–讲解软件测试计划编写.mp4<br>
+(20)\17 讲解软件测试计划编写<br>
+├─40–版本控制工具Git的使用.mp4<br>
+(21)\18 讲解软件测试报告编写<br>
+├─39–讲解软件测试报告编写.mp4<br>
+(22)\19 版本控制工具Git的使用<br>
+├─41–浏览器兼容性测试.mp4<br>
+(23)\2 课程导学<br>
+├─2–软件测试行业分析.mp4<br>
+├─3–软件测试工作需要掌握的技能.mp4<br>
+├─4–1个案例带你走进软件测试.mp4<br>
+├─5–就业保障.mp4<br>
+├─6–学完课程我能拿到多少月薪.mp4<br>
+├─7–测试用例设计方法介绍+作业.mp4<br>
+(24)\20 浏览器兼容性测试<br>
+├─42–基础课程作业讲解.mp4<br>
+(25)\21 项目立项<br>
+├─43–项目立项.mp4<br>
+(26)\22 软件测试-需求评审<br>
+├─44–软件测试-需求评审.mp4<br>
+(27)\23 软件测试-需求讲解<br>
+├─45–软件测试-需求讲解.mp4<br>
+(28)\24 编写软件测试用例实战<br>
+├─46–编写软件测试用例实战.mp4<br>
+(29)\25 项目测试设计之用例评审（上）<br>
+├─47–项目测试设计之用例评审（上）.mp4<br>
+(30)\26 项目测试设计之用例评审（下）<br>
+├─48–项目测试设计之用例评审（下）.mp4<br>
+(31)\27 项目实战bug总结分析<br>
+├─49–项目实战bug总结分析.mp4<br>
+(32)\28 项目总结&amp;测试报告编写<br>
+├─50–项目总结&amp;测试报告编写.mp4<br>
+(33)\29 软件测试基础知识梳理以及考试<br>
+├─51–软件测试基础知识梳理以及考试.mp4<br>
+(34)\3 优秀学员分享；目录中文件数:0个<br>
+(35)\30 Linux操作环境的准备<br>
+├─52–Linux操作环境的准备.mp4<br>
+(36)\31 Linux初级命令学习<br>
+├─53–Linux初级命令学习.mp4<br>
+(37)\32 Linux中级命令学习<br>
+├─54–Linux中级命令学习.mp4<br>
+(38)\33 Linux高级命令学习<br>
+├─55–Linux高级命令学习.mp4<br>
+(39)\34 Linux下安装docker的使用<br>
+├─56–Linux下安装docker的使用.mp4<br>
+(40)\35 Linux下安装MySQL数据库<br>
+├─57–Linux下安装MySQL数据库.mp4<br>
+(41)\36 Linux下docker部署测试环境<br>
+├─58–Linux下docker部署测试环境.mp4<br>
+(42)\37 掌握创建数据库，表的sql命令<br>
+├─59–掌握创建数据库，表的sql命令.mp4<br>
+(43)\38 掌握数据库操作之增删改的sql命令<br>
+├─60–掌握数据库操作之增删改的sql命令.mp4<br>
+(44)\39 掌握数据库操作之查询的sql命令<br>
+├─61–掌握数据库操作之查询的sql命令.mp4<br>
+(45)\4 预习视频；目录中文件数:9个<br>
+├─18–职业规划和前景分析.mp4<br>
+├─19–测试类型.mp4<br>
+├─20–测试类型（下）.mp4<br>
+├─21–测试用例毫无头绪？来-等价类边界值.mp4<br>
+├─22–玩转测试用例设计—场景法应用.mp4<br>
+├─23–xmind高效编写用例.mp4<br>
+├─24–搞定测试计划，让你独当一面.mp4<br>
+├─25–测试杠把子的测试报告都这么写.mp4<br>
+├─26–京东重大bug漏洞该怎么避免？.mp4<br>
+(46)\40 掌握数据库内外，左右连接的sql命令的用法<br>
+├─62–掌握数据库内外，左右连接的sql命令的用法.mp4<br>
+(47)\41 掌握数据库其他高级查询sql命令的用法<br>
+├─63–掌握数据库其他高级查询sql命令的用法.mp4<br>
+(48)\42 数据库作业讲解,知识梳理<br>
+├─64–数据库作业讲解,知识梳理.mp4<br>
+(49)\43 项目立项，需求分析和讲解<br>
+├─65–项目立项，需求分析和讲解.mp4<br>
+(50)\44 编写软件测试用例实战<br>
+├─66–编写软件测试用例实战.mp4<br>
+(51)\45 项目测试设计之用例评审和执行<br>
+├─67–项目测试设计之用例评审和执行.mp4<br>
+(52)\46 项目实战bug总结分析<br>
+├─68–项目实战bug总结分析.mp4<br>
+(53)\47 项目总结&amp;测试报告编写<br>
+├─69–项目总结&amp;测试报告编写.mp4<br>
+(54)\48 知识梳理&amp;考试<br>
+├─70–知识梳理&amp;考试.mp4<br>
+(55)\49 APP测试技术<br>
+├─71–APP测试技术.mp4<br>
+(56)\5 开学典礼<br>
+├─27–开学典礼.mp4<br>
+(57)\50 APP项目常见测试问题<br>
+├─72–APP项目常见测试问题.mp4<br>
+(58)\51 H5测试技术<br>
+├─73–H5测试技术.mp4<br>
+(59)\52 小程序测试技术<br>
+├─74–小程序测试技术.mp4<br>
+(60)\53 APP专项测试之日志分析<br>
+├─75–APP专项测试之日志分析.mp4<br>
+(61)\54 APP项目敏捷开发模式之项目立项<br>
+├─76–APP项目敏捷开发模式之项目立项.mp4<br>
+(62)\55 APP项目敏捷开发模式之需求分析<br>
+├─77–APP项目敏捷开发模式之需求分析.mp4<br>
+(63)\56 APP项目测试设计之用例评审<br>
+├─78–APP项目测试设计之用例评审.mp4<br>
+(64)\57 项目测试执行之测试执行<br>
+├─79–项目测试执行之测试执行.mp4<br>
+(65)\58 APP项目敏捷开发模式之测试执行及总结<br>
+├─80–APP项目敏捷开发模式之测试执行及总结.mp4<br>
+(66)\59 知识梳理&amp;考试<br>
+├─81–知识梳理&amp;考试.mp4<br>
+(67)\6 软件测试的定义&amp;分类<br>
+├─28–软件测试的定义&amp;分类.mp4<br>
+(68)\60 接口项目之接口概念<br>
+├─82–接口项目之接口概念.mp4<br>
+(69)\61 接口项目之http协议详解&amp;F12获取接口数据<br>
+├─83–接口项目之http协议详解&amp;F12获取接口数据.mp4<br>
+(70)\62 接口项目之接口需求分析<br>
+├─84–接口项目之接口需求分析.mp4<br>
+(71)\63 接口项目之用例编写实战<br>
+├─85–接口项目之用例编写实战.mp4<br>
+(72)\64 接口测试工具jmeter的常见测试元件<br>
+├─86–接口测试工具jmeter的常见测试元件.mp4<br>
+(73)\65 接口测试工具jmeter之http、jdbc请求<br>
+├─87–接口测试工具jmeter之http、jdbc请求.mp4<br>
+(74)\66 接口测试工具jmeter之参数化<br>
+├─88–接口测试工具jmeter之参数化.mp4<br>
+(75)\67 接口测试工具jmeter之关联<br>
+├─89–接口测试工具jmeter之关联.mp4<br>
+(76)\68 接口测试工具jmeter之断言<br>
+├─90–接口测试工具jmeter之断言.mp4<br>
+(77)\69 接口项目之用例评审<br>
+├─91–接口项目之用例评审.mp4<br>
+(78)\7 软件的生命周期<br>
+├─29–软件的生命周期.mp4<br>
+(79)\70 接口项目之测试用例执行<br>
+├─92–接口项目之测试用例执行.mp4<br>
+(80)\71 接口测试工具Jmeter实现接口自动化<br>
+├─93–接口测试工具Jmeter实现接口自动化.mp4<br>
+(81)\72 接口项目之项目总结<br>
+├─94–接口项目之项目总结.mp4<br>
+(82)\73 <a href="http://www.santongit.com/forum-787-1.html" target="_blank" rel="noopener noreferrer">python<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>基础语法&amp;Python常用数据类型<br>
+├─95–Python基础语法&amp;Python常用数据类型.mp4<br>
+(83)\74 Python变量，格式化输出以及运算符<br>
+├─96–Python变量，格式化输出以及运算符.mp4<br>
+(84)\75 Python常用控制流&amp;字典&amp;列表<br>
+├─97–Python常用控制流&amp;字典&amp;列表.mp4<br>
+(85)\76 Python内置函数&amp;函数的学习<br>
+├─98–Python内置函数&amp;函数的学习.mp4<br>
+(86)\77 python的requests请求<br>
+├─99–python的requests请求.mp4<br>
+(87)\78 python利用Excel读取和存储测试数据<br>
+├─100–python利用Excel读取和存储测试数据.mp4<br>
+(88)\79 Python之接口自动化实战<br>
+├─101–Python之接口自动化实战.mp4<br>
+(89)\8 软件测试工作流程<br>
+├─30–软件测试工作流程.mp4<br>
+(90)\80 Python的selenium库介绍和web自动化基础，元素定位<br>
+├─102–Python的selenium库介绍和web自动化基础.mp4<br>
+(91)\81 Python的web自动化之iframe切换、页面等待<br>
+├─103–Python的web自动化之iframe切换、页面等待.mp4<br>
+(92)\82 Python+git+jenkins完成持续集成和知识梳理<br>
+├─104–Python+git+jenkins完成持续集成和知识梳理.mp4<br>
+(93)\83 接口项目知识梳理及考试<br>
+├─105–接口项目知识梳理及考试.mp4<br>
+(94)\84 全程班知识总结梳理<br>
+├─106–全程班知识总结梳理.mp4<br>
+(95)\85 简历辅导&amp;在线简历检查&amp;投递技巧<br>
+├─107–简历辅导&amp;在线简历检查&amp;投递技巧.mp4<br>
+(96)\9 测试需求分析<br>
+├─31–测试需求分析.mp4<br>
+(97)\91 移动端APP专项测试；目录中文件数:10个<br>
+├─108–APP专项测试-课程背景&amp;专项维度.mp4<br>
+├─109–App专项测试_兼容性测试.mp4<br>
+├─110–Monkey测试背景&amp;基础命令.mp4<br>
+├─111–Monkey基础参数使用.mp4<br>
+├─112–Monkey高阶参数使用.mp4<br>
+├─113–弱网测试概念及Fiddler配置弱网.mp4<br>
+├─114–弱网测试之Emulator工具使用及数据参考.mp4<br>
+├─115–GT工具获取CPU、内存.mp4<br>
+├─116–GT工具获取流畅度、耗电量、流量.mp4<br>
+├─117–soloPi获取基础性能指标及录屏分帧.mp4<br>
+(98)\92 Git版本控制从入门到精通；目录中文件数:10个<br>
+├─128–忽略文件gitignore.mp4<br>
+├─129–版本比对diff.mp4<br>
+├─130–版本比对2.mp4<br>
+├─131–rm删除文件.mp4<br>
+├─132–mv移动文件.mp4<br>
+├─133–文件补录.mp4<br>
+├─134–标签1.mp4<br>
+├─135–标签2.mp4<br>
+├─136–checkout检出版本.mp4<br>
+├─137–通过标签检出版本.mp4<br>
+(99)\93 Git版本控制从入门到精通2<br>
+├─118–忽略文件gitignore.mp4<br>
+├─119–版本比对diff.mp4<br>
+├─120–版本比对2.mp4<br>
+├─121–rm删除文件.mp4<br>
+├─122–mv移动文件.mp4<br>
+├─123–文件补录.mp4<br>
+├─124–标签1.mp4<br>
+├─125–标签2.mp4<br>
+├─126–checkout检出版本.mp4<br>
+├─127–通过标签检出版本.mp4<br>
+(100)\94 Git版本控制从入门到精通3<br>
+├─138–别名.mp4<br>
+├─139–github的使用.mp4<br>
+├─140–git远程地址.mp4<br>
+├─141–远程push和pull.mp4<br>
+├─142–远程名称修改.mp4<br>
+├─143–克隆.mp4<br>
+(101)\95 postman接口测试实战1<br>
+├─144–Postman工具之介绍&amp;安装.mp4<br>
+├─145–Postman工具之页面详解.mp4<br>
+├─146–Postman工具之接口测试.mp4<br>
+├─147–Postman工具之collection集合.mp4<br>
+├─148–Postman工具之集合测试执行.mp4<br>
+├─149–Postman工具之设置变量.mp4<br>
+├─150–Postman工具之Tests断言.mp4<br>
+├─151–Postman工具之参数化.mp4<br>
+├─152–Postman工具之随机数.mp4<br>
+├─153–Postman工具之Monitor监视器.mp4<br>
+(102)\96 postman接口测试实战2<br>
+├─154–Postman工具之抓取请求.mp4<br>
+├─155–Postman工具之导入导出测试脚本&amp;代码片段.mp4<br>
+(103)\97 soapui接口测试实战1；目录中文件数:10个<br>
+├─156–soapui介绍、下载安装.mp4<br>
+├─157–接口概念接口测试原理？为什么要做接口测试.mp4<br>
+├─158–接口包含内容，接口数据格式.mp4<br>
+├─159–soapui完成http请求.mp4<br>
+├─160–soapui完成webservice请求.mp4<br>
+├─161–soapui完成jdbc请求.mp4<br>
+├─162–接口测试流程介绍.mp4<br>
+├─163–http接口实战之接口需求分析、接口用例编写.mp4<br>
+├─164–http接口实战之创建项目，运行单个请求.mp4<br>
+├─165–http接口实战之关联.mp4<br>
+(104)\98 soapui接口测试实战2<br>
+├─166–http接口实战之参数化.mp4<br>
+├─167–http接口实战之检查点.mp4<br>
+├─168–http接口实战之接口测试用例管理.mp4<br>
+(105)\99 抓包工具fiddler实战从入门到精通1<br>
+├─169–课程简介+初识Fiddler.mp4<br>
+├─170–BS架构简介和请求过程理解.mp4<br>
+├─171–Fiddler原理.mp4<br>
+├─172–HTTP协议概述.mp4<br>
+├─173–HTTP协议请求报文详解（上）.mp4<br>
+├─174–HTTP协议响应报文详解（下）.mp4<br>
+├─175–Fiddler安装.mp4<br>
+├─176–Fiddler菜单栏.mp4<br>
+├─177–Fiddler工具栏-重放请求和移除请求.mp4<br>
+├─178–Fiddler工具栏.mp4</p> <h2 id="下载地址"><a href="#下载地址" class="header-anchor">#</a> 下载地址：</h2> <p><a href="https://www.itxbzxw.com/learn/ceshi/10104.html" target="_blank" rel="noopener noreferrer">大厂软件测试全景认知课 从需求分析到测试报告完整流程解析 软件测试高效学习-小白自学网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-4a336604 data-v-ff03da5a></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-2a01419c data-v-2a01419c><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-2a01419c><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-2a01419c></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-2a01419c></path></svg></div><div></div></div></div>
+    <script src="/assets/js/app.d369f835.js" defer></script><script src="/assets/js/3.8f2f0e42.js" defer></script><script src="/assets/js/1.883b222e.js" defer></script><script src="/assets/js/392.c987738c.js" defer></script>
+  </body>
+</html>
