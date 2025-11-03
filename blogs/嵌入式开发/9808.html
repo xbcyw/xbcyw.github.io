@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>黑马-嵌入式开发2024单片机开发教程 | 集合网</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="dns-prefetch" href="//xbcyw.github.io">
+    <meta name="description" content="集合网 你想要的这里都有！">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <link rel="preload" href="/assets/css/0.styles.8d39077f.css" as="style"><link rel="preload" href="/assets/js/app.28272836.js" as="script"><link rel="preload" href="/assets/js/3.e4614d1a.js" as="script"><link rel="preload" href="/assets/js/1.26ec475b.js" as="script"><link rel="preload" href="/assets/js/507.0edd50d3.js" as="script"><link rel="prefetch" href="/assets/js/10.49ba9b8c.js"><link rel="prefetch" href="/assets/js/100.19984c37.js"><link rel="prefetch" href="/assets/js/101.dc7866ef.js"><link rel="prefetch" href="/assets/js/102.4e772d99.js"><link rel="prefetch" href="/assets/js/103.28ebe009.js"><link rel="prefetch" href="/assets/js/104.c7c6cbbf.js"><link rel="prefetch" href="/assets/js/105.d7e75dd9.js"><link rel="prefetch" href="/assets/js/106.b446db66.js"><link rel="prefetch" href="/assets/js/107.7aa80550.js"><link rel="prefetch" href="/assets/js/108.18fa6115.js"><link rel="prefetch" href="/assets/js/109.a653f147.js"><link rel="prefetch" href="/assets/js/11.4de6be44.js"><link rel="prefetch" href="/assets/js/110.8665ba13.js"><link rel="prefetch" href="/assets/js/111.80b747fa.js"><link rel="prefetch" href="/assets/js/112.366e2f05.js"><link rel="prefetch" href="/assets/js/113.e083009f.js"><link rel="prefetch" href="/assets/js/114.3018a6e8.js"><link rel="prefetch" href="/assets/js/115.fb793b7c.js"><link rel="prefetch" href="/assets/js/116.b87fa2cb.js"><link rel="prefetch" href="/assets/js/117.ae3d3624.js"><link rel="prefetch" href="/assets/js/118.061a6056.js"><link rel="prefetch" href="/assets/js/119.094056ee.js"><link rel="prefetch" href="/assets/js/12.d618e98c.js"><link rel="prefetch" href="/assets/js/120.d3ba36ea.js"><link rel="prefetch" href="/assets/js/121.0f98ba70.js"><link rel="prefetch" href="/assets/js/122.8df9a9c6.js"><link rel="prefetch" href="/assets/js/123.5a9e1459.js"><link rel="prefetch" href="/assets/js/124.69507889.js"><link rel="prefetch" href="/assets/js/125.f806a87c.js"><link rel="prefetch" href="/assets/js/126.50e7aaf7.js"><link rel="prefetch" href="/assets/js/127.61e72efb.js"><link rel="prefetch" href="/assets/js/128.9410be52.js"><link rel="prefetch" href="/assets/js/129.016d460e.js"><link rel="prefetch" href="/assets/js/13.5b5acc17.js"><link rel="prefetch" href="/assets/js/130.7e04aa62.js"><link rel="prefetch" href="/assets/js/131.69d431e1.js"><link rel="prefetch" href="/assets/js/132.4ff2aaaa.js"><link rel="prefetch" href="/assets/js/133.1583ed2d.js"><link rel="prefetch" href="/assets/js/134.fb2af574.js"><link rel="prefetch" href="/assets/js/135.05ae5cac.js"><link rel="prefetch" href="/assets/js/136.46bcd136.js"><link rel="prefetch" href="/assets/js/137.aebcbb1d.js"><link rel="prefetch" href="/assets/js/138.a1165036.js"><link rel="prefetch" href="/assets/js/139.5463f826.js"><link rel="prefetch" href="/assets/js/14.953bd206.js"><link rel="prefetch" href="/assets/js/140.69c09dfc.js"><link rel="prefetch" href="/assets/js/141.8b9fd52b.js"><link rel="prefetch" href="/assets/js/142.147b6d6a.js"><link rel="prefetch" href="/assets/js/143.dd546710.js"><link rel="prefetch" href="/assets/js/144.941657b5.js"><link rel="prefetch" href="/assets/js/145.78215380.js"><link rel="prefetch" href="/assets/js/146.d9fb9f3e.js"><link rel="prefetch" href="/assets/js/147.8225324e.js"><link rel="prefetch" href="/assets/js/148.c337f4b8.js"><link rel="prefetch" href="/assets/js/149.99791800.js"><link rel="prefetch" href="/assets/js/15.788ab204.js"><link rel="prefetch" href="/assets/js/150.01ef95ed.js"><link rel="prefetch" href="/assets/js/151.73516070.js"><link rel="prefetch" href="/assets/js/152.312b4f71.js"><link rel="prefetch" href="/assets/js/153.51199cc0.js"><link rel="prefetch" href="/assets/js/154.38765fc0.js"><link rel="prefetch" href="/assets/js/155.c4772294.js"><link rel="prefetch" href="/assets/js/156.dba995d3.js"><link rel="prefetch" href="/assets/js/157.febf2a37.js"><link rel="prefetch" href="/assets/js/158.5c617914.js"><link rel="prefetch" href="/assets/js/159.7afd47a4.js"><link rel="prefetch" href="/assets/js/16.a8ac42d0.js"><link rel="prefetch" href="/assets/js/160.3e114d91.js"><link rel="prefetch" href="/assets/js/161.03fc4564.js"><link rel="prefetch" href="/assets/js/162.2d06723d.js"><link rel="prefetch" href="/assets/js/163.f96fbca4.js"><link rel="prefetch" href="/assets/js/164.5926aa29.js"><link rel="prefetch" href="/assets/js/165.8d0206b7.js"><link rel="prefetch" href="/assets/js/166.472b7c60.js"><link rel="prefetch" href="/assets/js/167.d331a578.js"><link rel="prefetch" href="/assets/js/168.480e9ab5.js"><link rel="prefetch" href="/assets/js/169.2dec1738.js"><link rel="prefetch" href="/assets/js/17.fe51f36e.js"><link rel="prefetch" href="/assets/js/170.77e69ee3.js"><link rel="prefetch" href="/assets/js/171.906f827c.js"><link rel="prefetch" href="/assets/js/172.3e35ef02.js"><link rel="prefetch" href="/assets/js/173.64b3d1b4.js"><link rel="prefetch" href="/assets/js/174.dfa273b7.js"><link rel="prefetch" href="/assets/js/175.96511cb1.js"><link rel="prefetch" href="/assets/js/176.63a71948.js"><link rel="prefetch" href="/assets/js/177.7594cf45.js"><link rel="prefetch" href="/assets/js/178.cf6074b1.js"><link rel="prefetch" href="/assets/js/179.8df26c21.js"><link rel="prefetch" href="/assets/js/18.024fa592.js"><link rel="prefetch" href="/assets/js/180.d846b783.js"><link rel="prefetch" href="/assets/js/181.c76dc216.js"><link rel="prefetch" href="/assets/js/182.76632e9c.js"><link rel="prefetch" href="/assets/js/183.1a0fd677.js"><link rel="prefetch" href="/assets/js/184.1a7938ef.js"><link rel="prefetch" href="/assets/js/185.be4d890e.js"><link rel="prefetch" href="/assets/js/186.01f7c273.js"><link rel="prefetch" href="/assets/js/187.8b728ff6.js"><link rel="prefetch" href="/assets/js/188.ad2a6aca.js"><link rel="prefetch" href="/assets/js/189.3fb4a3b9.js"><link rel="prefetch" href="/assets/js/19.31c4b5a4.js"><link rel="prefetch" href="/assets/js/190.35a5c502.js"><link rel="prefetch" href="/assets/js/191.93c313f1.js"><link rel="prefetch" href="/assets/js/192.55ef30e7.js"><link rel="prefetch" href="/assets/js/193.75cad5bb.js"><link rel="prefetch" href="/assets/js/194.7756cd80.js"><link rel="prefetch" href="/assets/js/195.5b271923.js"><link rel="prefetch" href="/assets/js/196.f66ab0e9.js"><link rel="prefetch" href="/assets/js/197.750b1ac6.js"><link rel="prefetch" href="/assets/js/198.3e67119c.js"><link rel="prefetch" href="/assets/js/199.e2c0e389.js"><link rel="prefetch" href="/assets/js/20.e3db9e85.js"><link rel="prefetch" href="/assets/js/200.b7db4910.js"><link rel="prefetch" href="/assets/js/201.306ba5d4.js"><link rel="prefetch" href="/assets/js/202.70a99dee.js"><link rel="prefetch" href="/assets/js/203.cf4ba983.js"><link rel="prefetch" href="/assets/js/204.f6df2292.js"><link rel="prefetch" href="/assets/js/205.1c7dbcbf.js"><link rel="prefetch" href="/assets/js/206.619293ba.js"><link rel="prefetch" href="/assets/js/207.d29f6d4c.js"><link rel="prefetch" href="/assets/js/208.f12323cb.js"><link rel="prefetch" href="/assets/js/209.1638df68.js"><link rel="prefetch" href="/assets/js/21.c0e4d7f3.js"><link rel="prefetch" href="/assets/js/210.4fbcd52a.js"><link rel="prefetch" href="/assets/js/211.5679fe27.js"><link rel="prefetch" href="/assets/js/212.19350edb.js"><link rel="prefetch" href="/assets/js/213.2e35c344.js"><link rel="prefetch" href="/assets/js/214.64034d68.js"><link rel="prefetch" href="/assets/js/215.2d2fd4fc.js"><link rel="prefetch" href="/assets/js/216.c1ee84e2.js"><link rel="prefetch" href="/assets/js/217.2f502ead.js"><link rel="prefetch" href="/assets/js/218.f1d6174c.js"><link rel="prefetch" href="/assets/js/219.9557bd57.js"><link rel="prefetch" href="/assets/js/22.de833a70.js"><link rel="prefetch" href="/assets/js/220.96ea3867.js"><link rel="prefetch" href="/assets/js/221.2164bf41.js"><link rel="prefetch" href="/assets/js/222.0a184710.js"><link rel="prefetch" href="/assets/js/223.1e8d1f07.js"><link rel="prefetch" href="/assets/js/224.ec817514.js"><link rel="prefetch" href="/assets/js/225.474aa0e8.js"><link rel="prefetch" href="/assets/js/226.99aae808.js"><link rel="prefetch" href="/assets/js/227.c058e005.js"><link rel="prefetch" href="/assets/js/228.8d8602d7.js"><link rel="prefetch" href="/assets/js/229.022fec70.js"><link rel="prefetch" href="/assets/js/23.fc0be805.js"><link rel="prefetch" href="/assets/js/230.76c0751b.js"><link rel="prefetch" href="/assets/js/231.0beed38d.js"><link rel="prefetch" href="/assets/js/232.53afb913.js"><link rel="prefetch" href="/assets/js/233.9437186d.js"><link rel="prefetch" href="/assets/js/234.2441a8e1.js"><link rel="prefetch" href="/assets/js/235.00f8fccb.js"><link rel="prefetch" href="/assets/js/236.57445acd.js"><link rel="prefetch" href="/assets/js/237.5b7eaebe.js"><link rel="prefetch" href="/assets/js/238.67594aa0.js"><link rel="prefetch" href="/assets/js/239.7ae39847.js"><link rel="prefetch" href="/assets/js/24.af37f64a.js"><link rel="prefetch" href="/assets/js/240.6dc7c286.js"><link rel="prefetch" href="/assets/js/241.37775fb7.js"><link rel="prefetch" href="/assets/js/242.a21e75d9.js"><link rel="prefetch" href="/assets/js/243.b49003bf.js"><link rel="prefetch" href="/assets/js/244.8fc27363.js"><link rel="prefetch" href="/assets/js/245.62a3c1f3.js"><link rel="prefetch" href="/assets/js/246.fe2a5ba4.js"><link rel="prefetch" href="/assets/js/247.d9410f13.js"><link rel="prefetch" href="/assets/js/248.14bd1691.js"><link rel="prefetch" href="/assets/js/249.9655ee98.js"><link rel="prefetch" href="/assets/js/25.e3a1586e.js"><link rel="prefetch" href="/assets/js/250.15ee2f4b.js"><link rel="prefetch" href="/assets/js/251.1b4698eb.js"><link rel="prefetch" href="/assets/js/252.5ec2410b.js"><link rel="prefetch" href="/assets/js/253.688ee87a.js"><link rel="prefetch" href="/assets/js/254.c9d8bdcf.js"><link rel="prefetch" href="/assets/js/255.e4474127.js"><link rel="prefetch" href="/assets/js/256.9d6cb532.js"><link rel="prefetch" href="/assets/js/257.d8354084.js"><link rel="prefetch" href="/assets/js/258.53eff5e6.js"><link rel="prefetch" href="/assets/js/259.336567d3.js"><link rel="prefetch" href="/assets/js/26.7a28901f.js"><link rel="prefetch" href="/assets/js/260.7b2146ac.js"><link rel="prefetch" href="/assets/js/261.d13bb1a2.js"><link rel="prefetch" href="/assets/js/262.380aa93e.js"><link rel="prefetch" href="/assets/js/263.78418fcc.js"><link rel="prefetch" href="/assets/js/264.64c27155.js"><link rel="prefetch" href="/assets/js/265.dc64df65.js"><link rel="prefetch" href="/assets/js/266.8968e90a.js"><link rel="prefetch" href="/assets/js/267.b9d7888c.js"><link rel="prefetch" href="/assets/js/268.3ee87df3.js"><link rel="prefetch" href="/assets/js/269.f6f3e98a.js"><link rel="prefetch" href="/assets/js/27.014f64b3.js"><link rel="prefetch" href="/assets/js/270.25e99f8a.js"><link rel="prefetch" href="/assets/js/271.657e2e0e.js"><link rel="prefetch" href="/assets/js/272.01bb84e6.js"><link rel="prefetch" href="/assets/js/273.e5cfb29b.js"><link rel="prefetch" href="/assets/js/274.437038af.js"><link rel="prefetch" href="/assets/js/275.a3825c59.js"><link rel="prefetch" href="/assets/js/276.c423c006.js"><link rel="prefetch" href="/assets/js/277.6c8c44a4.js"><link rel="prefetch" href="/assets/js/278.285ae837.js"><link rel="prefetch" href="/assets/js/279.e1b77e6b.js"><link rel="prefetch" href="/assets/js/28.d83e40f6.js"><link rel="prefetch" href="/assets/js/280.5aaa4fae.js"><link rel="prefetch" href="/assets/js/281.9a5edb18.js"><link rel="prefetch" href="/assets/js/282.b3b6c7cf.js"><link rel="prefetch" href="/assets/js/283.5fee7c4c.js"><link rel="prefetch" href="/assets/js/284.11848098.js"><link rel="prefetch" href="/assets/js/285.dc96b34a.js"><link rel="prefetch" href="/assets/js/286.b95ef0a2.js"><link rel="prefetch" href="/assets/js/287.191ac9b3.js"><link rel="prefetch" href="/assets/js/288.f3cc2c59.js"><link rel="prefetch" href="/assets/js/289.2d495f11.js"><link rel="prefetch" href="/assets/js/29.1bf530d5.js"><link rel="prefetch" href="/assets/js/290.c49f30c8.js"><link rel="prefetch" href="/assets/js/291.c6ff7c24.js"><link rel="prefetch" href="/assets/js/292.e696e266.js"><link rel="prefetch" href="/assets/js/293.419fbf1d.js"><link rel="prefetch" href="/assets/js/294.35c220bc.js"><link rel="prefetch" href="/assets/js/295.931ac57b.js"><link rel="prefetch" href="/assets/js/296.f751db69.js"><link rel="prefetch" href="/assets/js/297.de164ae0.js"><link rel="prefetch" href="/assets/js/298.6b0f7675.js"><link rel="prefetch" href="/assets/js/299.0697417d.js"><link rel="prefetch" href="/assets/js/30.736ee74b.js"><link rel="prefetch" href="/assets/js/300.8a5ab6e3.js"><link rel="prefetch" href="/assets/js/301.dcc5f9d1.js"><link rel="prefetch" href="/assets/js/302.1b9e9726.js"><link rel="prefetch" href="/assets/js/303.f3ce3b1e.js"><link rel="prefetch" href="/assets/js/304.45a65327.js"><link rel="prefetch" href="/assets/js/305.b9957432.js"><link rel="prefetch" href="/assets/js/306.bece9f27.js"><link rel="prefetch" href="/assets/js/307.37e6b34f.js"><link rel="prefetch" href="/assets/js/308.15b4f1b2.js"><link rel="prefetch" href="/assets/js/309.20a143fb.js"><link rel="prefetch" href="/assets/js/31.a37fbf54.js"><link rel="prefetch" href="/assets/js/310.29354689.js"><link rel="prefetch" href="/assets/js/311.fdcaf983.js"><link rel="prefetch" href="/assets/js/312.9bd822f6.js"><link rel="prefetch" href="/assets/js/313.98b382f5.js"><link rel="prefetch" href="/assets/js/314.e9a95851.js"><link rel="prefetch" href="/assets/js/315.9001a3b9.js"><link rel="prefetch" href="/assets/js/316.abff951c.js"><link rel="prefetch" href="/assets/js/317.3d085838.js"><link rel="prefetch" href="/assets/js/318.5574bbf1.js"><link rel="prefetch" href="/assets/js/319.ca278302.js"><link rel="prefetch" href="/assets/js/32.9540d518.js"><link rel="prefetch" href="/assets/js/320.cf9bab39.js"><link rel="prefetch" href="/assets/js/321.9e4df485.js"><link rel="prefetch" href="/assets/js/322.f0c822bb.js"><link rel="prefetch" href="/assets/js/323.cc4006c3.js"><link rel="prefetch" href="/assets/js/324.76ab927e.js"><link rel="prefetch" href="/assets/js/325.9bffe213.js"><link rel="prefetch" href="/assets/js/326.5f2b651f.js"><link rel="prefetch" href="/assets/js/327.6c72ab8e.js"><link rel="prefetch" href="/assets/js/328.9e5a8206.js"><link rel="prefetch" href="/assets/js/329.cf94f05a.js"><link rel="prefetch" href="/assets/js/33.bcd2ca1b.js"><link rel="prefetch" href="/assets/js/330.19b6e3e8.js"><link rel="prefetch" href="/assets/js/331.bb3481c9.js"><link rel="prefetch" href="/assets/js/332.61262290.js"><link rel="prefetch" href="/assets/js/333.5b435c6b.js"><link rel="prefetch" href="/assets/js/334.91a3f759.js"><link rel="prefetch" href="/assets/js/335.de6ec63b.js"><link rel="prefetch" href="/assets/js/336.395afd94.js"><link rel="prefetch" href="/assets/js/337.c91dc667.js"><link rel="prefetch" href="/assets/js/338.cf895181.js"><link rel="prefetch" href="/assets/js/339.f9936631.js"><link rel="prefetch" href="/assets/js/34.e288219f.js"><link rel="prefetch" href="/assets/js/340.3a4a4dbd.js"><link rel="prefetch" href="/assets/js/341.2291a265.js"><link rel="prefetch" href="/assets/js/342.8c7b09e0.js"><link rel="prefetch" href="/assets/js/343.5539b339.js"><link rel="prefetch" href="/assets/js/344.bab110d1.js"><link rel="prefetch" href="/assets/js/345.0e2cc637.js"><link rel="prefetch" href="/assets/js/346.0113bd47.js"><link rel="prefetch" href="/assets/js/347.31bb14c3.js"><link rel="prefetch" href="/assets/js/348.6d947efd.js"><link rel="prefetch" href="/assets/js/349.2f84f513.js"><link rel="prefetch" href="/assets/js/35.d9c35b49.js"><link rel="prefetch" href="/assets/js/350.3cb89b35.js"><link rel="prefetch" href="/assets/js/351.c2a9109b.js"><link rel="prefetch" href="/assets/js/352.5dedc2d7.js"><link rel="prefetch" href="/assets/js/353.4bea9ee8.js"><link rel="prefetch" href="/assets/js/354.e84634f5.js"><link rel="prefetch" href="/assets/js/355.fc91e106.js"><link rel="prefetch" href="/assets/js/356.395eea13.js"><link rel="prefetch" href="/assets/js/357.ec891944.js"><link rel="prefetch" href="/assets/js/358.dcd1fb24.js"><link rel="prefetch" href="/assets/js/359.752860b8.js"><link rel="prefetch" href="/assets/js/36.f973c32c.js"><link rel="prefetch" href="/assets/js/360.2a7ec757.js"><link rel="prefetch" href="/assets/js/361.fbaabb8c.js"><link rel="prefetch" href="/assets/js/362.ecf19f42.js"><link rel="prefetch" href="/assets/js/363.e295a316.js"><link rel="prefetch" href="/assets/js/364.6caee30a.js"><link rel="prefetch" href="/assets/js/365.e7849604.js"><link rel="prefetch" href="/assets/js/366.00220c48.js"><link rel="prefetch" href="/assets/js/367.1ca06504.js"><link rel="prefetch" href="/assets/js/368.a6207421.js"><link rel="prefetch" href="/assets/js/369.cffa4487.js"><link rel="prefetch" href="/assets/js/37.13f94594.js"><link rel="prefetch" href="/assets/js/370.59b708cc.js"><link rel="prefetch" href="/assets/js/371.567edaad.js"><link rel="prefetch" href="/assets/js/372.e1b1d6ea.js"><link rel="prefetch" href="/assets/js/373.731f3a71.js"><link rel="prefetch" href="/assets/js/374.ddf93124.js"><link rel="prefetch" href="/assets/js/375.530c90d6.js"><link rel="prefetch" href="/assets/js/376.170955cb.js"><link rel="prefetch" href="/assets/js/377.a155530b.js"><link rel="prefetch" href="/assets/js/378.f38f5d49.js"><link rel="prefetch" href="/assets/js/379.9e502c18.js"><link rel="prefetch" href="/assets/js/38.f46a40f8.js"><link rel="prefetch" href="/assets/js/380.ad04dab6.js"><link rel="prefetch" href="/assets/js/381.4a41ca5f.js"><link rel="prefetch" href="/assets/js/382.27de1779.js"><link rel="prefetch" href="/assets/js/383.4f8c20db.js"><link rel="prefetch" href="/assets/js/384.57e3473e.js"><link rel="prefetch" href="/assets/js/385.6d3f8e09.js"><link rel="prefetch" href="/assets/js/386.716d6632.js"><link rel="prefetch" href="/assets/js/387.5721bfb1.js"><link rel="prefetch" href="/assets/js/388.d0667045.js"><link rel="prefetch" href="/assets/js/389.88449395.js"><link rel="prefetch" href="/assets/js/39.cb9682ad.js"><link rel="prefetch" href="/assets/js/390.288b9aba.js"><link rel="prefetch" href="/assets/js/391.c0bd4fdf.js"><link rel="prefetch" href="/assets/js/392.d8fb9844.js"><link rel="prefetch" href="/assets/js/393.a4795032.js"><link rel="prefetch" href="/assets/js/394.ea5da5e4.js"><link rel="prefetch" href="/assets/js/395.fbde91c5.js"><link rel="prefetch" href="/assets/js/396.f1d6f379.js"><link rel="prefetch" href="/assets/js/397.16e91a9c.js"><link rel="prefetch" href="/assets/js/398.b7f9a327.js"><link rel="prefetch" href="/assets/js/399.fdd49712.js"><link rel="prefetch" href="/assets/js/4.f22a2214.js"><link rel="prefetch" href="/assets/js/40.d84c9d3a.js"><link rel="prefetch" href="/assets/js/400.ac79fc97.js"><link rel="prefetch" href="/assets/js/401.944c8416.js"><link rel="prefetch" href="/assets/js/402.1ddd98cd.js"><link rel="prefetch" href="/assets/js/403.c36fb40c.js"><link rel="prefetch" href="/assets/js/404.433e7d51.js"><link rel="prefetch" href="/assets/js/405.82176482.js"><link rel="prefetch" href="/assets/js/406.d0290ec4.js"><link rel="prefetch" href="/assets/js/407.3ed4bb5e.js"><link rel="prefetch" href="/assets/js/408.6a1fe82b.js"><link rel="prefetch" href="/assets/js/409.aa3db9b8.js"><link rel="prefetch" href="/assets/js/41.5205b230.js"><link rel="prefetch" href="/assets/js/410.08483a72.js"><link rel="prefetch" href="/assets/js/411.fbff6afc.js"><link rel="prefetch" href="/assets/js/412.30979066.js"><link rel="prefetch" href="/assets/js/413.5bae10c0.js"><link rel="prefetch" href="/assets/js/414.6c1b96cf.js"><link rel="prefetch" href="/assets/js/415.9aa2b4b9.js"><link rel="prefetch" href="/assets/js/416.84c79fea.js"><link rel="prefetch" href="/assets/js/417.b4eedb1b.js"><link rel="prefetch" href="/assets/js/418.d7ef42c8.js"><link rel="prefetch" href="/assets/js/419.c7af5a85.js"><link rel="prefetch" href="/assets/js/42.8295b9f3.js"><link rel="prefetch" href="/assets/js/420.fefe5e6a.js"><link rel="prefetch" href="/assets/js/421.f0ae1f41.js"><link rel="prefetch" href="/assets/js/422.bb46e775.js"><link rel="prefetch" href="/assets/js/423.ff940fc4.js"><link rel="prefetch" href="/assets/js/424.c45808c7.js"><link rel="prefetch" href="/assets/js/425.db56b6b6.js"><link rel="prefetch" href="/assets/js/426.d1002dba.js"><link rel="prefetch" href="/assets/js/427.39224ded.js"><link rel="prefetch" href="/assets/js/428.1058869a.js"><link rel="prefetch" href="/assets/js/429.a76c3a9d.js"><link rel="prefetch" href="/assets/js/43.74d2f9c8.js"><link rel="prefetch" href="/assets/js/430.700a69ce.js"><link rel="prefetch" href="/assets/js/431.4ba7ca19.js"><link rel="prefetch" href="/assets/js/432.cba922af.js"><link rel="prefetch" href="/assets/js/433.a123468d.js"><link rel="prefetch" href="/assets/js/434.c588fb7c.js"><link rel="prefetch" href="/assets/js/435.f8ba2507.js"><link rel="prefetch" href="/assets/js/436.0a2d472c.js"><link rel="prefetch" href="/assets/js/437.74659bae.js"><link rel="prefetch" href="/assets/js/438.6cac7e1a.js"><link rel="prefetch" href="/assets/js/439.8cf8fd59.js"><link rel="prefetch" href="/assets/js/44.6b47f6ad.js"><link rel="prefetch" href="/assets/js/440.a41cf499.js"><link rel="prefetch" href="/assets/js/441.6358d6af.js"><link rel="prefetch" href="/assets/js/442.1c4f1b28.js"><link rel="prefetch" href="/assets/js/443.03b8d26c.js"><link rel="prefetch" href="/assets/js/444.a630ddad.js"><link rel="prefetch" href="/assets/js/445.3001a535.js"><link rel="prefetch" href="/assets/js/446.be775b67.js"><link rel="prefetch" href="/assets/js/447.498db4af.js"><link rel="prefetch" href="/assets/js/448.31738e12.js"><link rel="prefetch" href="/assets/js/449.496ce758.js"><link rel="prefetch" href="/assets/js/45.04bf14c1.js"><link rel="prefetch" href="/assets/js/450.d4a87f03.js"><link rel="prefetch" href="/assets/js/451.8d273b23.js"><link rel="prefetch" href="/assets/js/452.a9d55b12.js"><link rel="prefetch" href="/assets/js/453.182ae2de.js"><link rel="prefetch" href="/assets/js/454.9df24be5.js"><link rel="prefetch" href="/assets/js/455.9ea706f3.js"><link rel="prefetch" href="/assets/js/456.ef41eca8.js"><link rel="prefetch" href="/assets/js/457.472d7363.js"><link rel="prefetch" href="/assets/js/458.1c5bd634.js"><link rel="prefetch" href="/assets/js/459.4d8beb5c.js"><link rel="prefetch" href="/assets/js/46.1346d109.js"><link rel="prefetch" href="/assets/js/460.6ec1b967.js"><link rel="prefetch" href="/assets/js/461.a8de4d5b.js"><link rel="prefetch" href="/assets/js/462.7b2e33fa.js"><link rel="prefetch" href="/assets/js/463.e55e49c3.js"><link rel="prefetch" href="/assets/js/464.927f3308.js"><link rel="prefetch" href="/assets/js/465.fe17503c.js"><link rel="prefetch" href="/assets/js/466.63544e4f.js"><link rel="prefetch" href="/assets/js/467.25928052.js"><link rel="prefetch" href="/assets/js/468.50270474.js"><link rel="prefetch" href="/assets/js/469.489a3095.js"><link rel="prefetch" href="/assets/js/47.2ba9e3db.js"><link rel="prefetch" href="/assets/js/470.03ef8960.js"><link rel="prefetch" href="/assets/js/471.93cdd9f9.js"><link rel="prefetch" href="/assets/js/472.b177dbd0.js"><link rel="prefetch" href="/assets/js/473.48f873b9.js"><link rel="prefetch" href="/assets/js/474.77c5b2d8.js"><link rel="prefetch" href="/assets/js/475.f1644f47.js"><link rel="prefetch" href="/assets/js/476.61d43ed9.js"><link rel="prefetch" href="/assets/js/477.9cf80dbf.js"><link rel="prefetch" href="/assets/js/478.44ef03f8.js"><link rel="prefetch" href="/assets/js/479.e54b6b49.js"><link rel="prefetch" href="/assets/js/48.743a037f.js"><link rel="prefetch" href="/assets/js/480.728498f5.js"><link rel="prefetch" href="/assets/js/481.e5cc1529.js"><link rel="prefetch" href="/assets/js/482.389f8c8b.js"><link rel="prefetch" href="/assets/js/483.bcbc90ee.js"><link rel="prefetch" href="/assets/js/484.3b9a54f7.js"><link rel="prefetch" href="/assets/js/485.dfdb6d76.js"><link rel="prefetch" href="/assets/js/486.c324592a.js"><link rel="prefetch" href="/assets/js/487.ec74af6b.js"><link rel="prefetch" href="/assets/js/488.fc6254ba.js"><link rel="prefetch" href="/assets/js/489.1b1cca5e.js"><link rel="prefetch" href="/assets/js/49.611afad8.js"><link rel="prefetch" href="/assets/js/490.0a358bcb.js"><link rel="prefetch" href="/assets/js/491.92db30d2.js"><link rel="prefetch" href="/assets/js/492.f95bcc95.js"><link rel="prefetch" href="/assets/js/493.1cf2300c.js"><link rel="prefetch" href="/assets/js/494.d5bdc9bb.js"><link rel="prefetch" href="/assets/js/495.13c958a2.js"><link rel="prefetch" href="/assets/js/496.4df9269b.js"><link rel="prefetch" href="/assets/js/497.0e213460.js"><link rel="prefetch" href="/assets/js/498.bae3237f.js"><link rel="prefetch" href="/assets/js/499.8a5f14b8.js"><link rel="prefetch" href="/assets/js/5.3bb975c6.js"><link rel="prefetch" href="/assets/js/50.df5d0371.js"><link rel="prefetch" href="/assets/js/500.acf573c1.js"><link rel="prefetch" href="/assets/js/501.8354fb54.js"><link rel="prefetch" href="/assets/js/502.2e3d0976.js"><link rel="prefetch" href="/assets/js/503.d04481a4.js"><link rel="prefetch" href="/assets/js/504.14370a03.js"><link rel="prefetch" href="/assets/js/505.d5e2ae99.js"><link rel="prefetch" href="/assets/js/506.d8ba5bd6.js"><link rel="prefetch" href="/assets/js/508.79773c04.js"><link rel="prefetch" href="/assets/js/509.ed944cd9.js"><link rel="prefetch" href="/assets/js/51.97f00ee0.js"><link rel="prefetch" href="/assets/js/510.eb380e54.js"><link rel="prefetch" href="/assets/js/511.a5077d0e.js"><link rel="prefetch" href="/assets/js/512.1d6f4737.js"><link rel="prefetch" href="/assets/js/513.81c6551a.js"><link rel="prefetch" href="/assets/js/514.48ae14c4.js"><link rel="prefetch" href="/assets/js/515.f2e70775.js"><link rel="prefetch" href="/assets/js/516.362d9e49.js"><link rel="prefetch" href="/assets/js/517.6b51e21e.js"><link rel="prefetch" href="/assets/js/518.cce6ae7b.js"><link rel="prefetch" href="/assets/js/519.4305680c.js"><link rel="prefetch" href="/assets/js/52.43b8b542.js"><link rel="prefetch" href="/assets/js/520.eb245e24.js"><link rel="prefetch" href="/assets/js/521.20a1c85d.js"><link rel="prefetch" href="/assets/js/522.d2beb05e.js"><link rel="prefetch" href="/assets/js/523.7369d08b.js"><link rel="prefetch" href="/assets/js/524.e892da52.js"><link rel="prefetch" href="/assets/js/525.6bbe8d0e.js"><link rel="prefetch" href="/assets/js/526.97196fe7.js"><link rel="prefetch" href="/assets/js/527.2ed3b536.js"><link rel="prefetch" href="/assets/js/528.964a3ff6.js"><link rel="prefetch" href="/assets/js/529.0a7e0ee5.js"><link rel="prefetch" href="/assets/js/53.f7c8aa12.js"><link rel="prefetch" href="/assets/js/530.0255328e.js"><link rel="prefetch" href="/assets/js/531.58d3ce43.js"><link rel="prefetch" href="/assets/js/532.8669949b.js"><link rel="prefetch" href="/assets/js/533.0d494023.js"><link rel="prefetch" href="/assets/js/534.ae1ff688.js"><link rel="prefetch" href="/assets/js/535.99260404.js"><link rel="prefetch" href="/assets/js/536.ae0ef549.js"><link rel="prefetch" href="/assets/js/537.1a72127c.js"><link rel="prefetch" href="/assets/js/538.0f945ebf.js"><link rel="prefetch" href="/assets/js/539.c4f26654.js"><link rel="prefetch" href="/assets/js/54.2eb0f699.js"><link rel="prefetch" href="/assets/js/540.941a3c0b.js"><link rel="prefetch" href="/assets/js/541.ebd7134f.js"><link rel="prefetch" href="/assets/js/542.c1d71a2a.js"><link rel="prefetch" href="/assets/js/543.0f8a48de.js"><link rel="prefetch" href="/assets/js/544.d44aa524.js"><link rel="prefetch" href="/assets/js/545.e2aad96b.js"><link rel="prefetch" href="/assets/js/546.670fb0ff.js"><link rel="prefetch" href="/assets/js/547.5b6bcbf8.js"><link rel="prefetch" href="/assets/js/548.fd52ac7c.js"><link rel="prefetch" href="/assets/js/549.2bd9d4e9.js"><link rel="prefetch" href="/assets/js/55.99480536.js"><link rel="prefetch" href="/assets/js/550.b7531483.js"><link rel="prefetch" href="/assets/js/551.74b6d6e3.js"><link rel="prefetch" href="/assets/js/552.424bc1b9.js"><link rel="prefetch" href="/assets/js/553.fb104cb0.js"><link rel="prefetch" href="/assets/js/554.88483130.js"><link rel="prefetch" href="/assets/js/555.31ab2b25.js"><link rel="prefetch" href="/assets/js/556.9c885287.js"><link rel="prefetch" href="/assets/js/557.b01df8d0.js"><link rel="prefetch" href="/assets/js/558.0580c57d.js"><link rel="prefetch" href="/assets/js/559.0e2b1119.js"><link rel="prefetch" href="/assets/js/56.a891624e.js"><link rel="prefetch" href="/assets/js/560.2d545d11.js"><link rel="prefetch" href="/assets/js/561.fde4781b.js"><link rel="prefetch" href="/assets/js/562.5dd801cf.js"><link rel="prefetch" href="/assets/js/563.a65cc63b.js"><link rel="prefetch" href="/assets/js/564.8c76634f.js"><link rel="prefetch" href="/assets/js/565.d10b7aa8.js"><link rel="prefetch" href="/assets/js/566.55b1bac3.js"><link rel="prefetch" href="/assets/js/567.757aa00e.js"><link rel="prefetch" href="/assets/js/568.fca8acf0.js"><link rel="prefetch" href="/assets/js/569.db624ddf.js"><link rel="prefetch" href="/assets/js/57.a2919d29.js"><link rel="prefetch" href="/assets/js/570.0fa8e8bd.js"><link rel="prefetch" href="/assets/js/571.57ec0cd9.js"><link rel="prefetch" href="/assets/js/572.d4f75286.js"><link rel="prefetch" href="/assets/js/573.308f26b3.js"><link rel="prefetch" href="/assets/js/574.5a1a9ea5.js"><link rel="prefetch" href="/assets/js/575.eb66ac4c.js"><link rel="prefetch" href="/assets/js/576.580b0771.js"><link rel="prefetch" href="/assets/js/577.f300b6e2.js"><link rel="prefetch" href="/assets/js/578.51ab1897.js"><link rel="prefetch" href="/assets/js/579.7d3068db.js"><link rel="prefetch" href="/assets/js/58.f9239230.js"><link rel="prefetch" href="/assets/js/580.1252c262.js"><link rel="prefetch" href="/assets/js/581.7629ae39.js"><link rel="prefetch" href="/assets/js/582.86cd7607.js"><link rel="prefetch" href="/assets/js/583.94b5e866.js"><link rel="prefetch" href="/assets/js/584.040fe966.js"><link rel="prefetch" href="/assets/js/585.33a214ef.js"><link rel="prefetch" href="/assets/js/586.0c659354.js"><link rel="prefetch" href="/assets/js/587.8698ec73.js"><link rel="prefetch" href="/assets/js/588.a276dca2.js"><link rel="prefetch" href="/assets/js/589.78fb7324.js"><link rel="prefetch" href="/assets/js/59.87ddc316.js"><link rel="prefetch" href="/assets/js/590.bd225b4d.js"><link rel="prefetch" href="/assets/js/591.cc635846.js"><link rel="prefetch" href="/assets/js/592.bf853bd5.js"><link rel="prefetch" href="/assets/js/593.1cb289cd.js"><link rel="prefetch" href="/assets/js/594.a159a687.js"><link rel="prefetch" href="/assets/js/595.d4dcd63e.js"><link rel="prefetch" href="/assets/js/596.fdb0e408.js"><link rel="prefetch" href="/assets/js/597.a0a3e439.js"><link rel="prefetch" href="/assets/js/598.15e9ce2a.js"><link rel="prefetch" href="/assets/js/599.491a8c2c.js"><link rel="prefetch" href="/assets/js/6.aabda231.js"><link rel="prefetch" href="/assets/js/60.00af8a1d.js"><link rel="prefetch" href="/assets/js/600.25453214.js"><link rel="prefetch" href="/assets/js/601.aee87cf1.js"><link rel="prefetch" href="/assets/js/602.25152e40.js"><link rel="prefetch" href="/assets/js/603.49e40e0b.js"><link rel="prefetch" href="/assets/js/604.08d82483.js"><link rel="prefetch" href="/assets/js/605.03424fcb.js"><link rel="prefetch" href="/assets/js/606.8657ab30.js"><link rel="prefetch" href="/assets/js/607.42c87f30.js"><link rel="prefetch" href="/assets/js/608.251cd6ee.js"><link rel="prefetch" href="/assets/js/609.0b0159f2.js"><link rel="prefetch" href="/assets/js/61.8ea03122.js"><link rel="prefetch" href="/assets/js/610.dc12d24c.js"><link rel="prefetch" href="/assets/js/611.94390da4.js"><link rel="prefetch" href="/assets/js/612.5d15c0d3.js"><link rel="prefetch" href="/assets/js/613.55b18d87.js"><link rel="prefetch" href="/assets/js/614.515508a0.js"><link rel="prefetch" href="/assets/js/615.3edf9761.js"><link rel="prefetch" href="/assets/js/616.5772893b.js"><link rel="prefetch" href="/assets/js/617.13e5eb5e.js"><link rel="prefetch" href="/assets/js/618.a9b3dca2.js"><link rel="prefetch" href="/assets/js/619.f8fb6726.js"><link rel="prefetch" href="/assets/js/62.60d3c830.js"><link rel="prefetch" href="/assets/js/620.773c4f26.js"><link rel="prefetch" href="/assets/js/621.23df567d.js"><link rel="prefetch" href="/assets/js/622.dfa4a6e4.js"><link rel="prefetch" href="/assets/js/623.bab12a73.js"><link rel="prefetch" href="/assets/js/624.dbcb364f.js"><link rel="prefetch" href="/assets/js/625.93e91bee.js"><link rel="prefetch" href="/assets/js/626.2773f43a.js"><link rel="prefetch" href="/assets/js/627.c46f857b.js"><link rel="prefetch" href="/assets/js/628.a0d21f71.js"><link rel="prefetch" href="/assets/js/629.5f534bd0.js"><link rel="prefetch" href="/assets/js/63.e515d654.js"><link rel="prefetch" href="/assets/js/630.eb02c458.js"><link rel="prefetch" href="/assets/js/631.1dcd5554.js"><link rel="prefetch" href="/assets/js/632.ab995315.js"><link rel="prefetch" href="/assets/js/633.7bf07a63.js"><link rel="prefetch" href="/assets/js/634.c1a9d0bb.js"><link rel="prefetch" href="/assets/js/635.cf9ca148.js"><link rel="prefetch" href="/assets/js/636.4b94120c.js"><link rel="prefetch" href="/assets/js/637.b9390a65.js"><link rel="prefetch" href="/assets/js/638.d12d11a7.js"><link rel="prefetch" href="/assets/js/639.2907516a.js"><link rel="prefetch" href="/assets/js/64.9a5770f6.js"><link rel="prefetch" href="/assets/js/640.d232ec85.js"><link rel="prefetch" href="/assets/js/641.91048590.js"><link rel="prefetch" href="/assets/js/642.2a890c39.js"><link rel="prefetch" href="/assets/js/643.b55e9ad5.js"><link rel="prefetch" href="/assets/js/644.f3b11365.js"><link rel="prefetch" href="/assets/js/645.1a6525bf.js"><link rel="prefetch" href="/assets/js/646.077f764b.js"><link rel="prefetch" href="/assets/js/647.f524b2a4.js"><link rel="prefetch" href="/assets/js/648.48d82dd1.js"><link rel="prefetch" href="/assets/js/65.8b64dc8f.js"><link rel="prefetch" href="/assets/js/66.7695923e.js"><link rel="prefetch" href="/assets/js/67.cd42133d.js"><link rel="prefetch" href="/assets/js/68.7ac00872.js"><link rel="prefetch" href="/assets/js/69.8bc1b3a1.js"><link rel="prefetch" href="/assets/js/7.1f2e36d5.js"><link rel="prefetch" href="/assets/js/70.28af8661.js"><link rel="prefetch" href="/assets/js/71.d532cb53.js"><link rel="prefetch" href="/assets/js/72.087b46ba.js"><link rel="prefetch" href="/assets/js/73.a0f2d66d.js"><link rel="prefetch" href="/assets/js/74.24a480ee.js"><link rel="prefetch" href="/assets/js/75.d12be42a.js"><link rel="prefetch" href="/assets/js/76.2ae46eb6.js"><link rel="prefetch" href="/assets/js/77.a7b2c581.js"><link rel="prefetch" href="/assets/js/78.29d1481e.js"><link rel="prefetch" href="/assets/js/79.af922102.js"><link rel="prefetch" href="/assets/js/8.d08ebc9e.js"><link rel="prefetch" href="/assets/js/80.4c0f78c5.js"><link rel="prefetch" href="/assets/js/81.0acb0d05.js"><link rel="prefetch" href="/assets/js/82.7f1b5bfe.js"><link rel="prefetch" href="/assets/js/83.f0d6bec6.js"><link rel="prefetch" href="/assets/js/84.02a5f303.js"><link rel="prefetch" href="/assets/js/85.f3f26aff.js"><link rel="prefetch" href="/assets/js/86.52482ce6.js"><link rel="prefetch" href="/assets/js/87.2277dd24.js"><link rel="prefetch" href="/assets/js/88.ba079e3a.js"><link rel="prefetch" href="/assets/js/89.13ea2e0c.js"><link rel="prefetch" href="/assets/js/9.3e0f8ff1.js"><link rel="prefetch" href="/assets/js/90.01f14da2.js"><link rel="prefetch" href="/assets/js/91.eb96bded.js"><link rel="prefetch" href="/assets/js/92.2358af1d.js"><link rel="prefetch" href="/assets/js/93.f98b8c68.js"><link rel="prefetch" href="/assets/js/94.c60a9e8d.js"><link rel="prefetch" href="/assets/js/95.9c52dc20.js"><link rel="prefetch" href="/assets/js/96.09c8b287.js"><link rel="prefetch" href="/assets/js/97.7c55946f.js"><link rel="prefetch" href="/assets/js/98.1d2962b7.js"><link rel="prefetch" href="/assets/js/99.ddb872b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8d39077f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-ff03da5a><div data-v-ff03da5a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-2b487510 data-v-ff03da5a data-v-ff03da5a><h3 class="title" data-v-2b487510>集合网</h3> <p class="description" data-v-2b487510>集合网 你想要的这里都有！</p> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2025
+      </a></span></div></div> <div class="hide" data-v-ff03da5a><header class="navbar" data-v-ff03da5a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">集合网</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/AI人工智能/" class="nav-link"><i class="undefined"></i>
+  AI人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习路线/" class="nav-link"><i class="undefined"></i>
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/逆向分析/" class="nav-link"><i class="undefined"></i>
+  逆向分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ff03da5a></div> <aside class="sidebar" data-v-ff03da5a><div class="personal-info-wrapper" data-v-400a92f6 data-v-ff03da5a><img src="/logo.svg" alt="author-avatar" class="personal-img" data-v-400a92f6> <h3 class="name" data-v-400a92f6>
+    🔅
+  </h3> <div class="num" data-v-400a92f6><div data-v-400a92f6><h3 data-v-400a92f6>638</h3> <h6 data-v-400a92f6>Articles</h6></div> <div data-v-400a92f6><h3 data-v-400a92f6>0</h3> <h6 data-v-400a92f6>Tags</h6></div></div> <ul class="social-links" data-v-400a92f6><li class="social-item" data-v-400a92f6><i class="iconfont reco-rss" style="color:#f47e60;" data-v-400a92f6></i></li></ul> <hr data-v-400a92f6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/AI人工智能/" class="nav-link"><i class="undefined"></i>
+  AI人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习路线/" class="nav-link"><i class="undefined"></i>
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/逆向分析/" class="nav-link"><i class="undefined"></i>
+  逆向分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-2b487510 data-v-ff03da5a><h3 class="title" data-v-2b487510>黑马-嵌入式开发2024单片机开发教程</h3> <!----> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2025
+      </a></span></div></div> <div data-v-ff03da5a><div data-v-ff03da5a><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">黑马-嵌入式开发2024单片机开发教程</h1> <div data-v-666b8910><i class="iconfont reco-account" data-v-666b8910><span data-v-666b8910>🔅</span></i> <i class="iconfont reco-date" data-v-666b8910><span data-v-666b8910>7/2/2024</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><div id="boxx" data-v-817d5b90><div data-v-817d5b90><p v-if="true" class="custom-block-title" data-v-817d5b90></p> <p v-if="true" data-v-817d5b90></p></div></div> <p><img src="https://www.itxbzxw.com/wp-content/uploads/2024/06/13044545237.png" alt=""></p> <h3 id="课程目录"><a href="#课程目录" class="header-anchor">#</a> 课程目录：</h3> <p>┣━【黑马程序员】嵌入式开发2024<br>
+┃ ┣━01阶段:模拟电路,计算机原理<br>
+┃ ┃ ┣━模拟电路<br>
+┃ ┃ ┣━视频<br>
+┃ ┃ ┣━计算机组成原理<br>
+┃ ┣━02阶段:C语言编程<br>
+┃ ┃ ┣━day01<br>
+┃ ┃ ┃ ┣━视频<br>
+┃ ┃ ┣━day02<br>
+┃ ┃ ┃ ┣━视频<br>
+┃ ┃ ┣━day03<br>
+┃ ┃ ┃ ┣━视频<br>
+┃ ┃ ┣━day04<br>
+┃ ┃ ┃ ┣━视频<br>
+┃ ┃ ┣━day05<br>
+┃ ┃ ┃ ┣━视频<br>
+┃ ┃ ┣━day06<br>
+┃ ┃ ┃ ┣━视频<br>
+┃ ┣━03阶段:STC8增强型单片机开发<br>
+┃ ┃ ┣━day01<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_课程简介.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_STC系列产品介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_MCU的CPU和外设关系.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_Keil软件的安装与激活.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_Keil创建第一个STC8工程.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_Keil编写代码及烧录流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_IO模式配置.mp4<br>
+┃ ┃ ┣━day02<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━04_点灯_通过库函数实现1.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_点灯_通过库函数实现2.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_UART串口基础知识.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_UART初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_使用逻辑分析仪解析数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_UART1和UART4数据通讯实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_IO模式_高阻输入&amp;开漏输出.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_软延时操作.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_点灯_通过寄存器实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_通过Delay库函数实现延时.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_UART初始化重点注意.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_UART重点注意.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_串口通讯测试需求.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_LogicAnalyzer逻辑分析仪的使用.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_AStyle格式化工具.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_UART数据的接收并回显.mp4<br>
+┃ ┃ ┣━day03<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━02_UART1数据接收发送_寄存器形式.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_extern关键字_封装头文件.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_Timer的定时器自动重装机制.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_认识中断系统.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_通过UART1中断函数开关灯.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_extern关键字.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_Timer的初始化及配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_Timer利用extern实现自己的业务.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_不同主频下机器周期的执行时间.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_LED灯组_全部点亮.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_LED_SW总开关失效的解决方法.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_LED灯组_走马灯.mp4<br>
+┃ ┃ ┣━day04<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_LED灯组_Timer调整灯的亮灭.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_LED灯组_Timer配合UART调整duty.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_LED灯组_串口控制PWM占空比.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_PWM死区设置.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_LED灯组_8路PWM控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_震动马达.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_震动马达_PWM控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_ADC采样_热敏电阻测温原理.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_LED灯组_UART串口控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_UART接收数据判断逻辑.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_PWM简介.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_LED灯组_PWM控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_LED灯组_PWM呼吸灯.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_ADC采样_电位器电压.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_ADC采样_内部1.19V参考信号源.mp4<br>
+┃ ┃ ┣━day05<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_PWM频率&amp;周期&amp;占空比.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_ADC采样_热敏电阻_封装NTC.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_ADC采样_热敏电阻_封装NTC优化.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_独立按键_获取单个按钮状态.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_独立按键_获取多个按钮状态.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_数码管_认识数码管.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_数码管_移位寄存器的操作方式.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_数码管_输出数据到移位寄存器.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_ADC采样_热敏电阻_求出阻值.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_ADC采样_热敏电阻_根据阻值查出温度.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_独立按键_使用位操作.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_数码管_使用Digtal模拟.mp4<br>
+┃ ┃ ┣━day06<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━04_数码管_其他引脚功能.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_数码管_函数优化.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_蜂鸣器_发声原理.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_蜂鸣器_基础乐理知识.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_蜂鸣器_使用PWM播放.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_蜂鸣器_播放两只老虎.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_数码管_两个字节控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_数码管_封装库函数show.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_蜂鸣器_播放天空之城.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_数码管_封装库函数display.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_蜂鸣器_播放哆来咪发唆拉西哆.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_蜂鸣器_两只老虎乐谱.mp4<br>
+┃ ┃ ┣━day07<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━05_RTC时钟_读取数据_秒.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_I2C协议读写流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_RTC时钟_写秒分时日月年.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_外部中断_INT0.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_RTC时钟芯片的电路.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_I2C开发环境准备.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_RTC时钟芯片PCF8563文档阅读.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_RTC时钟_读取秒分时.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_RTC时钟_读取年月日.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_RTC时钟_封装读写函数.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_外部中断_INT3.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_RTC时钟_设置闹钟Alarm.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_I2C总线简介.mp4<br>
+┃ ┃ ┣━day08<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━03_RTC时钟_封装Alarm.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_RTC时钟_Timer封装.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_考试题讲解.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_考题讲解2.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_RTC时钟_Timer的开发流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_RTC时钟_区分Timer和Alarm.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_RTC时钟_封装Alarm2.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_RTC时钟_实现Timer.mp4<br>
+┃ ┃ ┣━day09<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━02_0.96寸OLED显示屏_介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_0.96寸OLED显示屏_显示日期时间.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_I2C通讯数据查看_逻辑分析仪.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_DHT11温湿度传感器的数据时序.mp4<br>
+┃ ┃ ┃ ┃ ┣━授人以渔.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_0.96寸OLED显示屏C51_IIC官方示例.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_0.96寸OLED显示屏_显示字符&amp;汉字.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_0.96寸OLED显示屏_显示图片.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_0.96寸OLED显示屏_移植OLED为I2C硬实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_DHT11温湿度_解析数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_DHT11温湿度_解析40个bit.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_RTC时钟_I2C读写数据_单独启用Alarm&amp;Timer.mp4<br>
+┃ ┃ ┣━day10<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━01_DHT11温湿度传感器_解析数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_DHT11温湿度传感器_解决潜在bug.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_SPI协议OLED屏幕_官方示例.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_SPI协议OLED屏幕_官方示例API.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_矩阵键盘_多个按钮.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_使用EEPROM读写str.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_DHT11温湿度传感器_封装.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_SPI协议OLED屏幕_SPI通讯流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_矩阵键盘_单个按钮.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_矩阵键盘_全部按钮_数组存储状态.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_矩阵键盘_全部按钮_封装.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_了解EEPROM.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_矩阵键盘_全部按钮_二进制位存储状态.mp4<br>
+┃ ┃ ┃ ┃ ┣━编辑器&amp;浏览器配置.mp4<br>
+┃ ┃ ┣━day11<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_USB键盘_Config描述符.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_USB键盘_避免频繁发送数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_USB键盘_PC_OUT获取LOCK状态.mp4<br>
+┃ ┃ ┃ ┃ ┣━小车焊接.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_HID官方示例.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_HID文件了解.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_封装USB的HID协议驱动.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_USB键盘_集成矩阵键盘.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_USB键盘_封装发送函数&amp;点灯.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_USB键盘_配置HID描述符.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_USB键盘_封装LED回调函数.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_USB鼠标_实现移动&amp;按键.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_USB键盘_发送多个按键.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_USB鼠标_描述符配置.mp4<br>
+┃ ┃ ┣━day12<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_今日任务.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_新建STC8H原理图&amp;供电.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_CH340的二极管和电阻.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_线性稳压器LDO_可调输出ADJ.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_替换电容电阻为0603.mp4<br>
+┃ ┃ ┃ ┃ ┣━小车自测固件.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_线性稳压器5V-3V3.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_Type-C接口.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_LED指示灯.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_串口和HID切换&amp;所有引脚.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_PCB设计_摆放元器件.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_PCB设计_电源布线.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_CH340及周围电路.mp4<br>
+┃ ┃ ┣━day13<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━03_串口烧录器_PCB走线.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_小闹钟_SCH_时钟芯片.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_小闹钟_PCB电源走线.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_串口烧录器_SCH提取.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_串口烧录器_端子接线问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_小闹钟_PCB_摆放器件.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_小闹钟_SCH_其他外设.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_串口烧录器_PCB布局.mp4<br>
+┃ ┃ ┣━day14<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━01_了解最小操作系统.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_RTX51系统_环境初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_RTX51系统_集成库函数.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_巡线小车_简介.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_巡线小车_按键控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_RTX51系统_多任务执行.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_RTX51系统_K_TMO和K_IVL区别.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_RTX51系统_K_SIG信号.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_RTX51系统_外设驱动.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_RTX51系统_按键更新数码管.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_巡线小车_ADC电压检测Battery.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_巡线小车_蜂鸣器Buzzer.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识复习.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_巡线小车_车灯控制.mp4<br>
+┃ ┃ ┣━day15<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━01_超声测距_原理.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_超声测距_TRIG触发测距.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_超声测距_ECHO计算距离.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_循迹传感器_原理介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_巡线小车_IO控制电机.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_巡线小车_PWM控制小车速度.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_巡线小车_PWM控制所有车轮.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_巡线小车_PWM指定速度实现转弯&amp;掉头.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_循迹传感器_读取所有光电传感器状态.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_循迹传感器_计算小车转弯方向.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_循迹传感器_光电传感器问题排查.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_巡线小车_PWM控制前进后退.mp4<br>
+┃ ┃ ┣━day16<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━01_巡线小车_根据按钮切换巡线功能.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_蓝牙模块_AT指令1.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_蓝牙模块_通过核心板直连.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_遥控小车_接收并处理模拟遥控器数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_巡线小车_根据巡线传感器调整方向.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_蓝牙模块_简介.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_蓝牙模块_AT指令2.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_蓝牙模块_通过PC或手机蓝牙连接.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_蓝牙模块_接收消息并执行.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_遥控小车_启用禁用超声测距模块.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_遥控小车_启用禁用巡线.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_遥控小车_遇到前方障碍物停车.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_遥控小车_电量监测.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_遥控小车_方向控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_蓝牙模块_通讯流程.mp4<br>
+┃ ┃ ┣━day17<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━02_舵机PWM_分频系数.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_舵机PWM的控制原理.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_舵机PWM_工程初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_舵机PWM_修改不同的占空比.mp4<br>
+┃ ┣━04阶段:Python与上位机开发<br>
+┃ ┃ ┣━day01<br>
+┃ ┃ ┣━day02<br>
+┃ ┃ ┣━day03<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━01_推导式.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_类和对象.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_声明类&amp;创建对象.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_练习_搬家具进房子.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_面向对象_扩展知识.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_pygame创建窗口.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_高级变量的公共语法.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_练习_字符串的逆序统计.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_面向对象概念.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_类的组成.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_特殊方法和参数.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_str和repr.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_private私有化.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_面向对象_多态.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_pygame环境准备.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_面向对象_封装.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_面向对象_继承.mp4<br>
+┃ ┃ ┣━day04<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━03_pygame自动计算fps_Clock.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_pygame绘制背景图&amp;线条.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_pygame封装Snake和Food.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_pygame蛇身移动起来.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_pygame蛇身根据用户输入更新方向.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_pygame吃掉食物&amp;更新食物.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_pygame碰撞墙壁&amp;身体判定.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_pygame基本操作.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_pygame手动计算fps.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_pygame封装Game类.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_pygame游戏结束&amp;文字绘制.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_pygame穿墙从另一端出现&amp;原地调头bug.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_pygame其他细节.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_pygame更新蛇头图标.mp4<br>
+┃ ┃ ┣━day05<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_module_导入模块中的功能.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_VSCode配置常用代码块.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_常用系统内置模块2_random_math.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_异常捕获try_except_finally.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_默认值参数和关键字参数.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_可变参数_组合使用.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_递归函数.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_module_模块导入冲突及解决.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_模块内置变量__name__.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_包package.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_常用系统内置模块sys_datetime等.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_异常捕获try_except.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_异常捕获try_except_else_finally.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_常见异常.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_自定义异常.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_可变参数.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_文件的写入.mp4<br>
+┃ ┃ ┃ ┃ ┣━22_绝对路径&amp;相对路径.mp4<br>
+┃ ┃ ┃ ┃ ┣━23_练习_文件IO.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_多个异常捕获&amp;异常的返回值.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_练习-根据需要创建用户.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_文件的读取.mp4<br>
+┃ ┃ ┃ ┃ ┣━21_文件读写模式.mp4<br>
+┃ ┃ ┣━day06<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_冲突的产生及解决.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_版本控制系统Git.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_配置忽略文件.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_GUI工具操作.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_将新建项目&amp;已有项目添加版本管理.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_分支reset操作.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_Git分支操作.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_git常用命令.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_使用VSCode编辑器提交代码.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_PyQt5概述.mp4<br>
+┃ ┃ ┣━day07<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_PyQt环境搭建_VSCode插件.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_PyQt文本、图片及输入组件.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_PyQt按钮.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_信号关联系统函数.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_PyQt对话框.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_单选&amp;多选输入.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_面向对象开发QWidget.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_QWidget&amp;关联槽函数问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_PyQt创建窗口&amp;并设置窗口信息.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_槽函数使用lambda表达式.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_PyQt布局layout.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_加载QMainWindow自定义ui文件.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_QtDesigner主要功能.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_自定义主题qt-material.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_加载QWidget自定义ui文件.mp4<br>
+┃ ┃ ┣━day08<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━02_端口和端口号.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_TCP网络程序开发流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_TCP服务端_接受并回复消息.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_UDP介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_UDP广播.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_多任务开发-线程.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_给线程添加参数.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_同步和异步.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_练习:多任务版TCP服务器.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_IP地址.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_socket套接字.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_字符串数据编解码.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_TCP特点.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_TCP拓展知识_三次握手&amp;四次挥手.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_TCP服务端_循环接受客户端.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_UDP发送端代码实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_UDP接收端代码实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_多任务介绍_并发&amp;并行.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_守护线程.mp4<br>
+┃ ┃ ┃ ┃ ┣━21_Python的venv虚拟环境.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_TCP客户端发送并接收消息.mp4<br>
+┃ ┃ ┣━day09<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━02_加载ui_res下的资源.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_网络工具_TCP客户端_连接服务器.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_网络工具_TCP客户端_发送数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_网络工具_TCP服务器_接收数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_串口工具_UI界面搭建.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_串口工具_扫描所有设备.mp4<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_初始化PyQt5实用工具UI.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_网络工具_TCP客户端_初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_网络工具_TCP服务器_隐藏显示Widget.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_串口工具_pyserial的使用.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_网络工具_TCP客户端_根据连接状态更新UI.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_网络工具_TCP客户端_循环接收展示数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_网络工具_TCP服务器_接收多个客户端数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_串口工具_设置对话框.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_串口工具_通过子线程异步接收数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_串口工具_更新数据及状态到UI.mp4<br>
+┃ ┃ ┣━day10<br>
+┃ ┃ ┃ ┣━Video<br>
+┃ ┃ ┃ ┃ ┣━00_知识回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_Python的蓝牙模块pybluez调试设计.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_蓝牙助手_初始化UI.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_蓝牙助手_发送数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_聊天室_UI界面搭建.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_聊天室_将异步数据接受任务封装到Mananger.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_彩色日志工具.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_PyQt多线程&amp;多任务管理.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_蓝牙助手_连接设备并更新状态.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_聊天室_自定义信号和槽.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_聊天室_解析并展示历史消息.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_使用pyinstaller打包程序.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_蓝牙助手_扫描所有蓝牙设备.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_聊天室_聊天室数据获取.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_聊天室_发送消息.mp4<br>
+┃ ┣━05阶段:GD32开发<br>
+┃ ┃ ┣━day01<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━02_扩展板介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_51单片机和ARM说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_芯片内部外设概述.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_梁山派说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_ARMPACK安装.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_ARMCC V5安装和配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_SPL库和HAL库.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_GD32_模板创建.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_测试GD32模板.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_system_tick介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_STM32点灯测试.mp4<br>
+┃ ┃ ┃ ┃ ┣━21_STM32 V6问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━5_ARM介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_开发板介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_ARM32芯片介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_Keil安装2.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_GPIO点灯实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_GD32标准库资料下载.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_GD32_外设库文件系统介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_Keil安装说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_stm32_SPL库移植V5.mp4<br>
+┃ ┃ ┣━day02<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━02_梁山派原理图初步说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_转接板引脚说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_GPIO引脚基本电路说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_GPIO引脚内部寄存器控制电路详解.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_GPIO的输入模式.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_代码中的输入输出情况分析.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_总线介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_时钟树介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_电量显示需求说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_模拟开始充电和结束充电.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_BSP驱动初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_转接板介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_MOS管基础.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_GPIO的推挽和开漏.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_ARM的输入输出电路小结.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_GPIO输出和输入案例.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_GPIO输入按键配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_模拟电量增加.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_BSP驱动开始和结束的业务.mp4<br>
+┃ ┃ ┃ ┃ ┣━21_BSP流水灯初步实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━22_BSP流水灯逻辑实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_GPIO的推挽和开漏的线与操作.mp4<br>
+┃ ┃ ┣━day03<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_STM32_GPIO输入操作.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_串口发送流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_串口发送字符串和printf.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_串口接收的配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_GD32串口驱动封装.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_STM32串口封装_串口部分.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_STM32_流水灯实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_串口基础理论.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_串口初始化API详解1.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_串口发送调试.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_串口接收中断状态变化说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_串口接收逻辑实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_STM32串口封装_GPIO部分.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_文档来源.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_串口复用功能发送实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_串口发送配置需要关注的点.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_串口接收中断过程说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_STM32串口封装实现.mp4<br>
+┃ ┃ ┣━day04<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━05_按键外部中断实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_扩展板外部中断按键实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_外部中断软件触发.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_中断优先级介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_中断优先级配置_全局和局部.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_中断优先级小实验.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_外部中断简单封装.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_中断机制.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_外部中断相关概念.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_外部中断初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_外部中断关注点.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_外部中断的特殊案例.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_外部中断封装2.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_外部中断封装2.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_外部中断函数实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_systick实现tick计时.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_中断优先级环境准备.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_STM32外部中断实现.mp4<br>
+┃ ┃ ┣━day05<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_定时器初步认知.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_通用定时器配置实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_定时器多通道的配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_定时器封装配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_基本定时器初始化配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_基本定时器周期和频率配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_基本定时器分频计数.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_定时器配置关系的内容.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_蜂鸣器实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_定时器前期封装准备.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_定时器封装完成.mp4<br>
+┃ ┃ ┣━day06<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━04_高级定时器特性.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_DMA通讯过程.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_DMA的一些关键文档信息.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_高级定时器配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_高级定时器封装配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_STM32_timerGPIO配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_STM32_timer_channel和brk配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_CPU内存外设数据间通讯过程.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_DMA实现内存到内存的功能.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_DMA内存到内存关心的配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_DMA内存到内存中断完成.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_高级定时器极性和break电路配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_DMA的初始化常规配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_DMA动态配置内存到内存的实现.mp4<br>
+┃ ┃ ┣━day07<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_dma发送流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_DMA数据发送调试.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_DMA数据发送优化.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_DMA串口接收配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_DMA接收中断逻辑实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_STM32 DMA发送调试.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_GD32 串口驱动封装初始配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_GD32 RTC时钟介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_DMA数据发送地址配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_DMA数据发送细节配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_DMA串口接收流程分析.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_DMA接收数据计数流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_STM32 DMA接收实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_STM32 DMA内存到内存.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_STM32 DMA发送配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_GD32 串口驱动内部配置定义.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_GD32 RTC时钟日期配置和读取.mp4<br>
+┃ ┃ ┣━day08<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_RTC时钟闹钟参数配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_RTC时钟闹钟中断配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_RTC闹钟代码来源说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_看门狗的基本概念.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_窗口看门狗实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_I2C写数据的流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_I2C操作的基本环境准备.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_I2C的START和STOP信号实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_I2C的SEND数据信号.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_I2C的写数据实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_独立看门狗实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_窗口看门狗问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_I2C一些常规理论.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_I2C基本信号函数定义.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_I2C写的开始结束和数据发送信号.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_I2C的Wait ACK介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_I2C的Wait ACK实现.mp4<br>
+┃ ┃ ┣━day09<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_I2C通讯回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_I2C读取流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_I2C读取流程代码表达.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_I2C读数据信号的实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_I2C读取数据的实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_I2C错误状态定义.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_I2C硬件电路写数据实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_I2C硬件电路的初始化配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_I2C硬件电路读数据实现.mp4<br>
+┃ ┃ ┣━day10<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━02_I2C屏幕官方环境移植.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_I2C屏幕协议逻辑调试.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_GD32的OLED屏幕驱动移植.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_GD32核心板MCU选型.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_核心板设计烧录按钮.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_核心板设计DAP Link.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_数码管驱动移植.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_I2C屏幕移植的问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_GD32的i2c移植过程中发送数据格式问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_二维数组内存分布问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_GD32的I2C的二维数据数据发送实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_I2C驱动封装实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_核心板设计RTC时钟选型.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_核心板设计重置按钮.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_核心板设计电源部分设计.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_核心板设计电源选型.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_核心板设计LDO.mp4<br>
+┃ ┃ ┃ ┃ ┣━21_核心板设计DCDC.mp4<br>
+┃ ┃ ┃ ┃ ┣━22_核心板比较.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_开发调试注意事项.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_GD32的I2C硬件实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_核心板设计非常规引脚说明.mp4<br>
+┃ ┃ ┣━day11<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━03_线规格选型说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_梁山派母座封装创建.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_梁山派母座封装实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_电机驱动芯片选型.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_电机驱动芯片引脚介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_MPU6050绘制.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_其他电路介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_平衡车功能分析.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_电机介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_姿态传感器介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_梁山派母座元件创建.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_电机接口配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_电机驱动原理图绘制.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_电池供电版本实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_引脚功能分析.mp4<br>
+┃ ┃ ┣━day12<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━02_电机模块摆放.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_mpu6050布线说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_其他模块布线说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_i2c屏幕引脚选型说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_布线注意的内容.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_布局摆放.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_电机模块引脚选型和电源走线.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_蜂鸣器电路布线.mp4<br>
+┃ ┃ ┣━day13<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━03_ADC初始化配置介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_ADC配置参数说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_ADC温度采样结果.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_ADC主频和采样时间的关系.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_ADC解决多路数据采样问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_ADC的插入通道的实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_ADC原理介绍02.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_ADC采样多路的配置和问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_ADC的DMA分析和配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_ADC的DMA采样实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_SPI基础概念介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_SPI的时钟极性和相位极性.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_SPI的传输和采样的几种模式.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_SPI屏幕移植.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_ADC原理介绍01.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_ADC初始化常用配置说明.mp4<br>
+┃ ┃ ┣━day14<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━03_SPI协议bug处理.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_SPI协议片选切换修复读时时钟问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_SPI协议的抽象封装.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_SPI软实现应用到OLED中.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_SPI硬实现初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_SPI读写的实现和分频处理.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_SPI读写Bug的处理.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_SPI flash源码迁移.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_SPI4接口抽取.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_SPI Flash驱动改造.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_SPI的 读写软实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_SPI的片选和时钟分析.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_SPI flash示例源码获取.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_SPI Flash 的API的使用.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_立创开源项目介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_SPI调试环境的搭建.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_SPI协议读和写的实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_SPI软实现移植到GD32平台.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_SPI config配置实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_spi封装完成.mp4<br>
+┃ ┃ ┃ ┃ ┣━21_stm32 cubemx 的Repostory配置.mp4<br>
+┃ ┃ ┣━day15<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_PMU电池管理单元介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_PMU的三种省电模式.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_PMU睡眠模式和深度睡眠模式演示.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_待机模式说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_HAL库点灯实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_HAL库时钟配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_HAL库中断和dma发送.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_HAL库ADC的实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_HAL库I2c写操作实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_HAL库I2C读操作实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_HAL库SPI配置实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_PMU模式初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_HAL库开发过程的强调.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_HAL库串口发送实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_HAL库串口接收实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_HAL库的ADC配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_HAL库SPI读写实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_HAL库I2C配置.mp4<br>
+┃ ┃ ┣━day16<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_HAL库TIM的环境搭建.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_HAL库的TIM配置倍频.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_FreeRTOS介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_FreeRTOS的源文件导入.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_FreeRTOS移植中断接管问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_FreeRTOS移植配置问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_操作系统中的任务调度相关名称.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_操作系统的调度机制理解.mp4<br>
+┃ ┃ ┣━day17<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_临界区的介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_内存分配说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_freeRTOS中断介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_计数型信号量演示.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_递归互斥信号量演示.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_队列介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_freeRTOS队列入队和出队.mp4<br>
+┃ ┃ ┃ ┃ ┣━17安装.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_二进制信号量演示.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_freeRTOS中的消息队列.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_freeRTOS消息队列复杂类型.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_freeFTOS中断演示.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_freeRTOS官方文档介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_freeRTOS的软件定时器.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_创建二进制信号量.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_互斥信号量演示.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_freeRTOS队列创建.mp4<br>
+┃ ┃ ┣━day18<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━02_任务中队列的使用规则.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_事件组的多接收.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_姿态简单介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_MPU6050移植.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_MPU6050调试过程.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_电机霍尔传感器测速原理.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_队列结构.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_验证MPU功能是否可用.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_验证问题说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_电机的加速比.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_mpu调试过程说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_消息队列实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_消息队列的中断发送.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_事件组的基本概念.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_事件组多事件触发.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_示波器功能介绍.mp4<br>
+┃ ┃ ┣━day19<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_编码器环境准备.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_编码器测数实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_项目架构设计.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_BSP驱动开发和PML联动.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_通讯协议构建过程.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_PC端实现指定协议封装.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_双方调试方式的调通.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_开发板消息解析的实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_STLink keil闪退bug修复.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_定时器正交编码器.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_BSP驱动开发的优化.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_项目代码结构介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_通讯协议双方的职责.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_PC端协议构建.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_环形缓冲区介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_环形缓冲区创建.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_项目结构新建.mp4<br>
+┃ ┃ ┣━day20<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01_内存处理操作.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_gd32 FreeRTOS接收协议逻辑.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_开环和闭环系统.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_小车PID目标和测量值.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_速度环说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_速度环调节.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_将协议移植到C51.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_PID理论介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_error调试测量介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_I和D的介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_平衡环调节点.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_具体协议的解析.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_c51大小端温度.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_GD32 数据和解析和耗时操作分离.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_P值的范围选择.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_D值问题.mp4<br>
+┃ ┣━06阶段:lvgl开发<br>
+┃ ┃ ┣━day01<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━03_lvgl概述.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_lvgl学习线路.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_显示一个按钮.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_LVGL显示第一个OBJ.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_显示样式.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_按钮状态可选.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_textarea显示.mp4<br>
+┃ ┃ ┃ ┃ ┣━22_gif显示.mp4<br>
+┃ ┃ ┃ ┃ ┣━26_官方例程如何学习.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_课程介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_lvgl模拟器环境.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_lvgl注意事项.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_显示Label.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_改变label字体大小和颜色.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_显示button.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_cmake安装问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_btnmatrix按钮矩阵.mp4<br>
+┃ ┃ ┃ ┃ ┣━24_界面切换.mp4<br>
+┃ ┃ ┃ ┃ ┣━25_tabview.mp4<br>
+┃ ┃ ┃ ┃ ┣━27_动态的显示表格数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_运行lvgl模拟器环境.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_配置MINGW环境.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_如何显示中文.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_按钮事件的处理.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_btnmatrix事件处理.mp4<br>
+┃ ┃ ┃ ┃ ┣━21_img显示.mp4<br>
+┃ ┃ ┃ ┃ ┣━23_布局相关.mp4<br>
+┃ ┃ ┣━day02<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━05_vscode加载工程代码.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_修改UI一些小细节.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_代码演示界面切换.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_阅读屏幕相关资料.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_屏幕移植注意事项.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_移植准备工作.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_移植源代码.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_移植显示部分.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_演示显示部分.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_squareline界面说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_查看示例工程.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_创建UI工程.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_完成时钟转动的代码.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_冒号添加动画.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_温度显示界面.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_遇到新的芯片该怎么做.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_按照官方文档移植启动流程.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_移植触摸部分.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_环境搭建的问题说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_导入触摸的代码.mp4<br>
+┃ ┃ ┣━day03<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━02_移植Smartwatch.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_导入freertos模板.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_导入lvgl源代码.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_上次课内容回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_实现代码逻辑.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_使用vscode编写keil工程.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_编写按钮与文本刷新案例.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_编写5个核心代码.mp4<br>
+┃ ┣━07阶段:JieLi_AC79开发<br>
+┃ ┃ ┣━day01<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━06_输不出来的原因.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_点灯.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_pwm控制灯_下.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_读取程序启动日志_中.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_演示音乐的播放.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_屏蔽不要的内容.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_上次课问题.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_线上文档说明_上.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_阅读代码相关的文档.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_输出helloitheima.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_输出日志.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_pwm控制灯_上.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_了解boardc文件内容.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_uart收发数据.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_内容小结.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_线上文档说明_下.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_一些问题说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_添加自己的c文件.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_添加按键空能_上.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_按键功能处理_下.mp4<br>
+┃ ┃ ┣━day02<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01-物联网项目分析.mp4<br>
+┃ ┃ ┃ ┃ ┣━02_开发方式.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_JSON数据交换格式.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_cJSON文档阅读.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_封装了发送的功能.mp4<br>
+┃ ┃ ┃ ┃ ┣━08_测试串口接收解析协议.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_阅读sdk代码.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_使用通用mqtt_sdk验证连接.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_设备上传阿里云.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_PC连接梁山派.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_cJSON移植到keil中.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_cJSON数据格式化代码.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_串口数据收发代码实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_阿里云端的配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_下午_阿里云端的配置.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_全流程上传逻辑.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_全流程下载逻辑.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_验证sdk连接.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_阿里云创建步骤小结.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_使用alink连接阿里云.mp4<br>
+┃ ┃ ┣━day03<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━02_编写串口收发函数.mp4<br>
+┃ ┃ ┃ ┃ ┣━04_串口收发_异常调试.mp4<br>
+┃ ┃ ┃ ┃ ┣━05_配置wifi信息.mp4<br>
+┃ ┃ ┃ ┃ ┣━06_tcp代码复制.mp4<br>
+┃ ┃ ┃ ┃ ┣━11_mqtt_demo代码编写.mp4<br>
+┃ ┃ ┃ ┃ ┣━18_梁山派端代码修改.mp4<br>
+┃ ┃ ┃ ┃ ┣━01_流程回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━03_串口收发_烧录代码.mp4<br>
+┃ ┃ ┃ ┃ ┣━09_网络连接部分问题说明.mp4<br>
+┃ ┃ ┃ ┃ ┣━10_mqtt_demo代码阅读.mp4<br>
+┃ ┃ ┃ ┃ ┣━12_mqtt_demo验证.mp4<br>
+┃ ┃ ┃ ┃ ┣━14_uart与mqtt代码测试.mp4<br>
+┃ ┃ ┃ ┃ ┣━15_流程回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━16_mqtt收发代码测试.mp4<br>
+┃ ┃ ┃ ┃ ┣━17_屏蔽SDK中的日志.mp4<br>
+┃ ┃ ┃ ┃ ┣━19_梁山派端测试收发.mp4<br>
+┃ ┃ ┃ ┃ ┣━20_物联网项目小结.mp4<br>
+┃ ┃ ┃ ┃ ┣━21_移植屏幕显示部分.mp4<br>
+┃ ┃ ┃ ┃ ┣━22_lvgl需要注意的地方.mp4<br>
+┃ ┃ ┃ ┃ ┣━23_课程小结.mp4<br>
+┃ ┃ ┃ ┃ ┣━07_网络连接部分.mp4<br>
+┃ ┃ ┃ ┃ ┣━13_uart与mqtt代码合并.mp4<br>
+┃ ┣━08阶段:Linux驱动（ros）<br>
+┃ ┃ ┣━day01-Linux<br>
+┃ ┃ ┃ ┣━01.课程内容讲解.mp4<br>
+┃ ┃ ┃ ┣━02.linux操作系统简介.mp4<br>
+┃ ┃ ┃ ┣━03.linux的文件和目录.mp4<br>
+┃ ┃ ┃ ┣━04.命令的组成和帮助文档.mp4<br>
+┃ ┃ ┃ ┣━05.查看和切换目录.mp4<br>
+┃ ┃ ┃ ┣━06.文件和文件夹命令.mp4<br>
+┃ ┃ ┃ ┣━07.输出重定向和查看文件内容.mp4<br>
+┃ ┃ ┃ ┣━08.grep和find.mp4<br>
+┃ ┃ ┃ ┣━09.管道.mp4<br>
+┃ ┃ ┃ ┣━10.管道和链接.mp4<br>
+┃ ┃ ┃ ┣━11.字母法修改权限.mp4<br>
+┃ ┃ ┃ ┣━12.权限修改和超级管理员权限获取.mp4<br>
+┃ ┃ ┃ ┣━13.文件压缩和解压缩.mp4<br>
+┃ ┃ ┃ ┣━14.软件卸载和安装.mp4<br>
+┃ ┃ ┃ ┣━15.vim编辑器.mp4<br>
+┃ ┃ ┣━day02-Linux<br>
+┃ ┃ ┃ ┣━01.debug串口连接鲁班猫.mp4<br>
+┃ ┃ ┃ ┣━02.共享网络连接鲁班猫.mp4<br>
+┃ ┃ ┃ ┣━03.鲁班猫引脚说明.mp4<br>
+┃ ┃ ┃ ┣━04.gpio操作.mp4<br>
+┃ ┃ ┃ ┣━05.gpiod操控io口.mp4<br>
+┃ ┃ ┃ ┣━06.pwm控制.mp4<br>
+┃ ┃ ┃ ┣━07.uart通信.mp4<br>
+┃ ┃ ┃ ┣━08.vscode远程开发和pip镜像.mp4<br>
+┃ ┃ ┃ ┣━09.gpiod引脚输入和输出.mp4<br>
+┃ ┃ ┃ ┣━10.periphery.mp4<br>
+┃ ┃ ┃ ┣━11.pwm代码操控.mp4<br>
+┃ ┃ ┃ ┣━12.串口代码控制.mp4<br>
+┃ ┃ ┣━day03-opencv<br>
+┃ ┃ ┃ ┣━01_课程介绍.mp4<br>
+┃ ┃ ┃ ┣━02_opencv安装.mp4<br>
+┃ ┃ ┃ ┣━03_机器视觉概述.mp4<br>
+┃ ┃ ┃ ┣━04_面临的挑战.mp4<br>
+┃ ┃ ┃ ┣━05_opencv文档介绍.mp4<br>
+┃ ┃ ┃ ┣━06_读取图片.mp4<br>
+┃ ┃ ┃ ┣━07_vscode中的jupyter.mp4<br>
+┃ ┃ ┃ ┣━08_操作像素.mp4<br>
+┃ ┃ ┃ ┣━09_图像剪切.mp4<br>
+┃ ┃ ┃ ┣━10_图像的镜像处理.mp4<br>
+┃ ┃ ┃ ┣━11_图像的位移.mp4<br>
+┃ ┃ ┃ ┣━12_仿射变换mp4.mp4<br>
+┃ ┃ ┃ ┣━13_仿射变换_下.mp4<br>
+┃ ┃ ┃ ┣━14_图像金字塔.mp4<br>
+┃ ┃ ┃ ┣━15_图像的融合.mp4<br>
+┃ ┃ ┃ ┣━16_彩色图像转灰度.mp4<br>
+┃ ┃ ┃ ┣━17_颜色反转.mp4<br>
+┃ ┃ ┃ ┣━18_图像马赛克效果.mp4<br>
+┃ ┃ ┃ ┣━19_毛玻璃的效果.mp4<br>
+┃ ┃ ┃ ┣━20_图像的浮雕效果.mp4<br>
+┃ ┃ ┃ ┣━21_绘制图像信息.mp4<br>
+┃ ┃ ┃ ┣━22_图像亮度增强.mp4<br>
+┃ ┃ ┃ ┣━23_图像的直方图.mp4<br>
+┃ ┃ ┃ ┣━24_灰度图直方图均衡化.mp4<br>
+┃ ┃ ┃ ┣━25_彩色图像直方图均衡化.mp4<br>
+┃ ┃ ┣━day04-opencv<br>
+┃ ┃ ┃ ┣━01_读取视频数据.mp4<br>
+┃ ┃ ┃ ┣━02_读取摄像头数据.mp4<br>
+┃ ┃ ┃ ┣━03_判断当前是白天还是黑夜.mp4<br>
+┃ ┃ ┃ ┣━03_截取图片中的网球.mp4<br>
+┃ ┃ ┃ ┣━04_截取出网球.mp4<br>
+┃ ┃ ┃ ┣━05_图像的二值化.mp4<br>
+┃ ┃ ┃ ┣━06_自适应阈值.mp4<br>
+┃ ┃ ┃ ┣━07_图像卷积运算概念.mp4<br>
+┃ ┃ ┃ ┣━08_三种滤波算法.mp4<br>
+┃ ┃ ┃ ┣━09_Sobel算子.mp4<br>
+┃ ┃ ┃ ┣━10_Scharr函数.mp4<br>
+┃ ┃ ┃ ┣━11_拉普拉斯算法.mp4<br>
+┃ ┃ ┃ ┣━12_canny边缘检测.mp4<br>
+┃ ┃ ┃ ┣━13_图像锐化处理.mp4<br>
+┃ ┃ ┃ ┣━14_霍夫直线概念.mp4<br>
+┃ ┃ ┃ ┣━15_查找棋盘中所有的线段.mp4<br>
+┃ ┃ ┃ ┣━16_霍夫圆形.mp4<br>
+┃ ┃ ┃ ┣━17_查找轮廓.mp4<br>
+┃ ┃ ┃ ┣━18_获取轮廓信息.mp4<br>
+┃ ┃ ┃ ┣━20231206_095253.mp4<br>
+┃ ┃ ┃ ┣━20231206_143305.mp4<br>
+┃ ┃ ┣━day05-opencv<br>
+┃ ┃ ┃ ┣━01_形态学变换概述.mp4<br>
+┃ ┃ ┃ ┣━02_膨胀操作.mp4<br>
+┃ ┃ ┃ ┣━03_腐蚀操作.mp4<br>
+┃ ┃ ┃ ┣━04_开操作.mp4<br>
+┃ ┃ ┃ ┣━05_闭操作.mp4<br>
+┃ ┃ ┃ ┣━06_距离变换.mp4<br>
+┃ ┃ ┃ ┣━07_零件计数.mp4<br>
+┃ ┃ ┃ ┣━08_车道线检测_上.mp4<br>
+┃ ┃ ┃ ┣━09_车道线检测_合并直线.mp4<br>
+┃ ┃ ┃ ┣━10_车道线检测_下.mp4<br>
+┃ ┃ ┃ ┣━11_演示landetect.mp4<br>
+┃ ┃ ┃ ┣━12_移动侦测功能.mp4<br>
+┃ ┃ ┃ ┣━13_图像切边_上.mp4<br>
+┃ ┃ ┃ ┣━14_图像切边_下.mp4<br>
+┃ ┃ ┃ ┣━15_删除图像中所有的英文.mp4<br>
+┃ ┃ ┃ ┣━16_鼠标监听.mp4<br>
+┃ ┃ ┃ ┣━17_图片修复功能.mp4<br>
+┃ ┃ ┃ ┣━18_opencv小结.mp4<br>
+┃ ┃ ┃ ┣━19_扩展_人脸检测.mp4<br>
+┃ ┃ ┃ ┣━20_扩展_人脸属性.mp4<br>
+┃ ┃ ┃ ┣━21_扩展_人脸106个特征点.mp4<br>
+┃ ┃ ┃ ┣━22_扩展_人脸识别锁.mp4<br>
+┃ ┃ ┃ ┣━23_扩展_人脸识别锁流程.mp4<br>
+┃ ┃ ┣━day06-ros<br>
+┃ ┃ ┃ ┣━01.回顾.mp4<br>
+┃ ┃ ┃ ┣━02.鲁班猫连接摄像头.mp4<br>
+┃ ┃ ┃ ┣━03.打开摄像头.mp4<br>
+┃ ┃ ┃ ┣━04.ros介绍.mp4<br>
+┃ ┃ ┃ ┣━05.ros环境安装.mp4<br>
+┃ ┃ ┃ ┣━06.ros节点介绍.mp4<br>
+┃ ┃ ┃ ┣━07.turtlesim和rqt.mp4<br>
+┃ ┃ ┃ ┣━08.topic通信.mp4<br>
+┃ ┃ ┃ ┣━09.service通信.mp4<br>
+┃ ┃ ┃ ┣━10.第一个ros节点.mp4<br>
+┃ ┃ ┃ ┣━11.自定义ros节点.mp4<br>
+┃ ┃ ┃ ┣━12.节点面向对象抽取.mp4<br>
+┃ ┃ ┃ ┣━13.vscode模板代码配置.mp4<br>
+┃ ┃ ┣━day07-ros<br>
+┃ ┃ ┃ ┣━01.节点图片处理和加载.mp4<br>
+┃ ┃ ┃ ┣━02.苹果检测节点实现.mp4<br>
+┃ ┃ ┃ ┣━03.摄像头识别苹果实现.mp4<br>
+┃ ┃ ┃ ┣━04.topic通信回顾.mp4<br>
+┃ ┃ ┃ ┣━05.topic发布者.mp4<br>
+┃ ┃ ┃ ┣━06.topic订阅者.mp4<br>
+┃ ┃ ┃ ┣━07.自定义msg.mp4<br>
+┃ ┃ ┃ ┣━08.自定义msg使用.mp4<br>
+┃ ┃ ┃ ┣━09.节点打开摄像头.mp4<br>
+┃ ┃ ┃ ┣━10.摄像头节点发布图像数据.mp4<br>
+┃ ┃ ┃ ┣━11.接收摄像头节点画面.mp4<br>
+┃ ┃ ┃ ┣━12.发布苹果图像数据.mp4<br>
+┃ ┃ ┃ ┣━13.接收苹果图片并解析.mp4<br>
+┃ ┃ ┣━day08-ros<br>
+┃ ┃ ┃ ┣━01.topic多对多通信实现.mp4<br>
+┃ ┃ ┃ ┣━02.topic小乌龟控制程序初始化.mp4<br>
+┃ ┃ ┃ ┣━03.小乌龟控制布局.mp4<br>
+┃ ┃ ┃ ┣━04.小乌龟线速度和角速度控制.mp4<br>
+┃ ┃ ┃ ┣━05.订阅小乌龟位置.mp4<br>
+┃ ┃ ┃ ┣━06.更新界面显示.mp4<br>
+┃ ┃ ┃ ┣━07.service通信回顾.mp4<br>
+┃ ┃ ┃ ┣━08.service通信server端实现.mp4<br>
+┃ ┃ ┃ ┣━09.service通信client端实现.mp4<br>
+┃ ┃ ┃ ┣━10.自定义srv消息.mp4<br>
+┃ ┃ ┃ ┣━11.apple检测流程.mp4<br>
+┃ ┃ ┃ ┣━12.苹果检测图像发布.mp4<br>
+┃ ┃ ┃ ┣━13.server端接收图像数据.mp4<br>
+┃ ┃ ┃ ┣━14.apple检测自定义srv.mp4<br>
+┃ ┃ ┃ ┣━15.apple检测server端.mp4<br>
+┃ ┃ ┃ ┣━16.apple检测client端.mp4<br>
+┃ ┃ ┃ ┣━17.小乌龟service搭建.mp4<br>
+┃ ┃ ┃ ┣━18.小乌龟service控制界面实现.mp4<br>
+┃ ┃ ┃ ┣━19.小乌龟clear和reset.mp4<br>
+┃ ┃ ┃ ┣━20.小乌龟spawn.mp4<br>
+┃ ┃ ┃ ┣━21.杀死小乌龟.mp4<br>
+┃ ┃ ┃ ┣━22.设置画笔.mp4<br>
+┃ ┃ ┃ ┣━23.设置绝对位置和相对位置.mp4<br>
+┃ ┃ ┣━day09-ros<br>
+┃ ┃ ┃ ┣━01.扫地机器人界面搭建.mp4<br>
+┃ ┃ ┃ ┣━02.小乌龟移动到前方位置.mp4<br>
+┃ ┃ ┃ ┣━03.小乌龟位置信息订阅.mp4<br>
+┃ ┃ ┃ ┣━04.小乌龟按照特定时间移动到指定位置.mp4<br>
+┃ ┃ ┃ ┣━05.以特定小数时间移动到目标点.mp4<br>
+┃ ┃ ┃ ┣━06.以任意时间移动到指定位置.mp4<br>
+┃ ┃ ┃ ┣━07.解决小乌龟移动时界面更新卡顿.mp4<br>
+┃ ┃ ┃ ┣━08.pid回顾.mp4<br>
+┃ ┃ ┃ ┣━09.计算小乌龟和目标的角度.mp4<br>
+┃ ┃ ┃ ┣━10.通过pid调节小乌龟移动速度.mp4<br>
+┃ ┃ ┃ ┣━11.小乌龟转向任意方向实现.mp4<br>
+┃ ┃ ┃ ┣━12.扫地机器人纵向扫地.mp4<br>
+┃ ┃ ┃ ┣━13.param参数命令.mp4<br>
+┃ ┃ ┃ ┣━14.param参数代码实现.mp4<br>
+┃ ┃ ┃ ┣━15.launch文件实现.mp4<br>
+┃ ┃ ┃ ┣━16.节点名和命名空间.mp4<br>
+┃ ┃ ┃ ┣━17.topic重定向.mp4<br>
+┃ ┃ ┃ ┣━18.param参数和yaml文件加载.mp4<br>
+┃ ┃ ┃ ┣━19.launch文件包含.mp4<br>
+┃ ┃ ┣━day10-ros<br>
+┃ ┃ ┃ ┣━01.鲁班猫串口调试.mp4<br>
+┃ ┃ ┃ ┣━02.usart1串口实现.mp4<br>
+┃ ┃ ┃ ┣━03.上位机和下位机通信流程.mp4<br>
+┃ ┃ ┃ ┣━04.struct回顾.mp4<br>
+┃ ┃ ┃ ┣━05.rk3566给gd32发数据流程.mp4<br>
+┃ ┃ ┃ ┣━06.gd32发送数据给rk3566流程.mp4<br>
+┃ ┃ ┃ ┣━07.整合上位机和下位机通信.mp4<br>
+┃ ┃ ┃ ┣━08.usb_cam摄像头节点.mp4<br>
+┃ ┃ ┃ ┣━09.rk3566识别车道线.mp4<br>
+┃ ┃ ┃ ┣━10.上位机通过串口发布线速度和角速度.mp4<br>
+┃ ┃ ┃ ┣━11.下位机接收线速度和角速度处理.mp4<br>
+┃ ┃ ┃ ┣━12.下位机差速运行的原理.mp4<br>
+┃ ┣━09阶段:机器狗项目<br>
+┃ ┃ ┣━day01<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01.课程介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━02.机械狗介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━03.机械狗自由度介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━04.机械狗扩展版设计介绍.mp4<br>
+┃ ┃ ┃ ┃ ┣━05.舵机驱动.mp4<br>
+┃ ┃ ┣━day02<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━03.常见狗腿逆解.mp4<br>
+┃ ┃ ┃ ┃ ┣━04.狗腿逆解alpha.mp4<br>
+┃ ┃ ┃ ┃ ┣━06.狗腿逆解求bata.mp4<br>
+┃ ┃ ┃ ┃ ┣━07.求BCE的坐标.mp4<br>
+┃ ┃ ┃ ┃ ┣━08.绘制所有的狗腿直线.mp4<br>
+┃ ┃ ┃ ┃ ┣━09.狗腿点详情绘制.mp4<br>
+┃ ┃ ┃ ┃ ┣━10.绘制足端文本和角度文本呢.mp4<br>
+┃ ┃ ┃ ┃ ┣━01.回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━02.正解和逆解.mp4<br>
+┃ ┃ ┃ ┃ ┣━11.手动设置狗腿目标点.mp4<br>
+┃ ┃ ┃ ┃ ┣━05.狗腿逆解ABC夹角.mp4<br>
+┃ ┃ ┣━day03<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━03.timer1和timer2初始化.mp4<br>
+┃ ┃ ┃ ┃ ┣━04.舵机初始化及角度控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━05.8个舵机控制.mp4<br>
+┃ ┃ ┃ ┃ ┣━08.狗腿反解之后转换成舵机角度.mp4<br>
+┃ ┃ ┃ ┃ ┣━09.摆动曲线讲解.mp4<br>
+┃ ┃ ┃ ┃ ┣━10.小跑 步态实现.mp4<br>
+┃ ┃ ┃ ┃ ┣━01.狗腿反解补充.mp4<br>
+┃ ┃ ┃ ┃ ┣━02.摆动曲线和步态规划.mp4<br>
+┃ ┃ ┃ ┃ ┣━07.安装角度及舵机偏差调节.mp4<br>
+┃ ┃ ┃ ┃ ┣━11.小跑步态实现常见动作.mp4<br>
+┃ ┃ ┃ ┃ ┣━06.下位机实现反解.mp4<br>
+┃ ┃ ┣━day04<br>
+┃ ┃ ┃ ┣━video<br>
+┃ ┃ ┃ ┃ ┣━01.回顾.mp4<br>
+┃ ┃ ┃ ┃ ┣━06.下位机运动控制和姿态控制组合.mp4<br>
+┃ ┃ ┃ ┃ ┣━07.机械狗控制上位机界面搭建.mp4<br>
+┃ ┃ ┃ ┃ ┣━02.机械狗下位机移植freeRTOS.mp4<br>
+┃ ┃ ┃ ┃ ┣━03.上位机和下位机通信的指令.mp4<br>
+┃ ┃ ┃ ┃ ┣━08.上位机控制机械狗.mp4<br>
+┃ ┃ ┃ ┃ ┣━04.下位机通过flag控制狗前后左右踏步运动.mp4<br>
+┃ ┃ ┃ ┃ ┣━05.狗前倾控制.mp4<br>
+┃ ┣━【在线版】24年嵌入式课件<br>
+┃ ┃ ┣━01-阶段课件.rar<br>
+┃ ┃ ┣━02-阶段课件.rar<br>
+┃ ┃ ┣━03-阶段课件.rar<br>
+┃ ┃ ┣━04-阶段课件.rar<br>
+┃ ┃ ┣━05-阶段课件.rar<br>
+┃ ┃ ┣━06阶段课件.rar<br>
+┃ ┃ ┣━07阶段课件.rar<br>
+┃ ┃ ┣━08阶段课件.rar<br>
+┃ ┃ ┣━09阶段课件.rar</p> <h2 id="下载地址"><a href="#下载地址" class="header-anchor">#</a> 下载地址：</h2> <p><a href="https://www.itxbzxw.com/qrskf/9808.html" target="_blank" rel="noopener noreferrer">黑马-嵌入式开发2024单片机开发教程-小白自学网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-4a336604 data-v-ff03da5a></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-2a01419c data-v-2a01419c><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-2a01419c><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-2a01419c></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-2a01419c></path></svg></div><div></div></div></div>
+    <script src="/assets/js/app.28272836.js" defer></script><script src="/assets/js/3.e4614d1a.js" defer></script><script src="/assets/js/1.26ec475b.js" defer></script><script src="/assets/js/507.0edd50d3.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>AI Agent全栈开发工程师【完结】 | 集合网</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.svg">
+    <link rel="dns-prefetch" href="//xbcyw.github.io">
+    <meta name="description" content="集合网 你想要的这里都有！">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    <link rel="preload" href="/assets/css/0.styles.8d39077f.css" as="style"><link rel="preload" href="/assets/js/app.28272836.js" as="script"><link rel="preload" href="/assets/js/3.e4614d1a.js" as="script"><link rel="preload" href="/assets/js/1.26ec475b.js" as="script"><link rel="preload" href="/assets/js/38.f46a40f8.js" as="script"><link rel="prefetch" href="/assets/js/10.49ba9b8c.js"><link rel="prefetch" href="/assets/js/100.19984c37.js"><link rel="prefetch" href="/assets/js/101.dc7866ef.js"><link rel="prefetch" href="/assets/js/102.4e772d99.js"><link rel="prefetch" href="/assets/js/103.28ebe009.js"><link rel="prefetch" href="/assets/js/104.c7c6cbbf.js"><link rel="prefetch" href="/assets/js/105.d7e75dd9.js"><link rel="prefetch" href="/assets/js/106.b446db66.js"><link rel="prefetch" href="/assets/js/107.7aa80550.js"><link rel="prefetch" href="/assets/js/108.18fa6115.js"><link rel="prefetch" href="/assets/js/109.a653f147.js"><link rel="prefetch" href="/assets/js/11.4de6be44.js"><link rel="prefetch" href="/assets/js/110.8665ba13.js"><link rel="prefetch" href="/assets/js/111.80b747fa.js"><link rel="prefetch" href="/assets/js/112.366e2f05.js"><link rel="prefetch" href="/assets/js/113.e083009f.js"><link rel="prefetch" href="/assets/js/114.3018a6e8.js"><link rel="prefetch" href="/assets/js/115.fb793b7c.js"><link rel="prefetch" href="/assets/js/116.b87fa2cb.js"><link rel="prefetch" href="/assets/js/117.ae3d3624.js"><link rel="prefetch" href="/assets/js/118.061a6056.js"><link rel="prefetch" href="/assets/js/119.094056ee.js"><link rel="prefetch" href="/assets/js/12.d618e98c.js"><link rel="prefetch" href="/assets/js/120.d3ba36ea.js"><link rel="prefetch" href="/assets/js/121.0f98ba70.js"><link rel="prefetch" href="/assets/js/122.8df9a9c6.js"><link rel="prefetch" href="/assets/js/123.5a9e1459.js"><link rel="prefetch" href="/assets/js/124.69507889.js"><link rel="prefetch" href="/assets/js/125.f806a87c.js"><link rel="prefetch" href="/assets/js/126.50e7aaf7.js"><link rel="prefetch" href="/assets/js/127.61e72efb.js"><link rel="prefetch" href="/assets/js/128.9410be52.js"><link rel="prefetch" href="/assets/js/129.016d460e.js"><link rel="prefetch" href="/assets/js/13.5b5acc17.js"><link rel="prefetch" href="/assets/js/130.7e04aa62.js"><link rel="prefetch" href="/assets/js/131.69d431e1.js"><link rel="prefetch" href="/assets/js/132.4ff2aaaa.js"><link rel="prefetch" href="/assets/js/133.1583ed2d.js"><link rel="prefetch" href="/assets/js/134.fb2af574.js"><link rel="prefetch" href="/assets/js/135.05ae5cac.js"><link rel="prefetch" href="/assets/js/136.46bcd136.js"><link rel="prefetch" href="/assets/js/137.aebcbb1d.js"><link rel="prefetch" href="/assets/js/138.a1165036.js"><link rel="prefetch" href="/assets/js/139.5463f826.js"><link rel="prefetch" href="/assets/js/14.953bd206.js"><link rel="prefetch" href="/assets/js/140.69c09dfc.js"><link rel="prefetch" href="/assets/js/141.8b9fd52b.js"><link rel="prefetch" href="/assets/js/142.147b6d6a.js"><link rel="prefetch" href="/assets/js/143.dd546710.js"><link rel="prefetch" href="/assets/js/144.941657b5.js"><link rel="prefetch" href="/assets/js/145.78215380.js"><link rel="prefetch" href="/assets/js/146.d9fb9f3e.js"><link rel="prefetch" href="/assets/js/147.8225324e.js"><link rel="prefetch" href="/assets/js/148.c337f4b8.js"><link rel="prefetch" href="/assets/js/149.99791800.js"><link rel="prefetch" href="/assets/js/15.788ab204.js"><link rel="prefetch" href="/assets/js/150.01ef95ed.js"><link rel="prefetch" href="/assets/js/151.73516070.js"><link rel="prefetch" href="/assets/js/152.312b4f71.js"><link rel="prefetch" href="/assets/js/153.51199cc0.js"><link rel="prefetch" href="/assets/js/154.38765fc0.js"><link rel="prefetch" href="/assets/js/155.c4772294.js"><link rel="prefetch" href="/assets/js/156.dba995d3.js"><link rel="prefetch" href="/assets/js/157.febf2a37.js"><link rel="prefetch" href="/assets/js/158.5c617914.js"><link rel="prefetch" href="/assets/js/159.7afd47a4.js"><link rel="prefetch" href="/assets/js/16.a8ac42d0.js"><link rel="prefetch" href="/assets/js/160.3e114d91.js"><link rel="prefetch" href="/assets/js/161.03fc4564.js"><link rel="prefetch" href="/assets/js/162.2d06723d.js"><link rel="prefetch" href="/assets/js/163.f96fbca4.js"><link rel="prefetch" href="/assets/js/164.5926aa29.js"><link rel="prefetch" href="/assets/js/165.8d0206b7.js"><link rel="prefetch" href="/assets/js/166.472b7c60.js"><link rel="prefetch" href="/assets/js/167.d331a578.js"><link rel="prefetch" href="/assets/js/168.480e9ab5.js"><link rel="prefetch" href="/assets/js/169.2dec1738.js"><link rel="prefetch" href="/assets/js/17.fe51f36e.js"><link rel="prefetch" href="/assets/js/170.77e69ee3.js"><link rel="prefetch" href="/assets/js/171.906f827c.js"><link rel="prefetch" href="/assets/js/172.3e35ef02.js"><link rel="prefetch" href="/assets/js/173.64b3d1b4.js"><link rel="prefetch" href="/assets/js/174.dfa273b7.js"><link rel="prefetch" href="/assets/js/175.96511cb1.js"><link rel="prefetch" href="/assets/js/176.63a71948.js"><link rel="prefetch" href="/assets/js/177.7594cf45.js"><link rel="prefetch" href="/assets/js/178.cf6074b1.js"><link rel="prefetch" href="/assets/js/179.8df26c21.js"><link rel="prefetch" href="/assets/js/18.024fa592.js"><link rel="prefetch" href="/assets/js/180.d846b783.js"><link rel="prefetch" href="/assets/js/181.c76dc216.js"><link rel="prefetch" href="/assets/js/182.76632e9c.js"><link rel="prefetch" href="/assets/js/183.1a0fd677.js"><link rel="prefetch" href="/assets/js/184.1a7938ef.js"><link rel="prefetch" href="/assets/js/185.be4d890e.js"><link rel="prefetch" href="/assets/js/186.01f7c273.js"><link rel="prefetch" href="/assets/js/187.8b728ff6.js"><link rel="prefetch" href="/assets/js/188.ad2a6aca.js"><link rel="prefetch" href="/assets/js/189.3fb4a3b9.js"><link rel="prefetch" href="/assets/js/19.31c4b5a4.js"><link rel="prefetch" href="/assets/js/190.35a5c502.js"><link rel="prefetch" href="/assets/js/191.93c313f1.js"><link rel="prefetch" href="/assets/js/192.55ef30e7.js"><link rel="prefetch" href="/assets/js/193.75cad5bb.js"><link rel="prefetch" href="/assets/js/194.7756cd80.js"><link rel="prefetch" href="/assets/js/195.5b271923.js"><link rel="prefetch" href="/assets/js/196.f66ab0e9.js"><link rel="prefetch" href="/assets/js/197.750b1ac6.js"><link rel="prefetch" href="/assets/js/198.3e67119c.js"><link rel="prefetch" href="/assets/js/199.e2c0e389.js"><link rel="prefetch" href="/assets/js/20.e3db9e85.js"><link rel="prefetch" href="/assets/js/200.b7db4910.js"><link rel="prefetch" href="/assets/js/201.306ba5d4.js"><link rel="prefetch" href="/assets/js/202.70a99dee.js"><link rel="prefetch" href="/assets/js/203.cf4ba983.js"><link rel="prefetch" href="/assets/js/204.f6df2292.js"><link rel="prefetch" href="/assets/js/205.1c7dbcbf.js"><link rel="prefetch" href="/assets/js/206.619293ba.js"><link rel="prefetch" href="/assets/js/207.d29f6d4c.js"><link rel="prefetch" href="/assets/js/208.f12323cb.js"><link rel="prefetch" href="/assets/js/209.1638df68.js"><link rel="prefetch" href="/assets/js/21.c0e4d7f3.js"><link rel="prefetch" href="/assets/js/210.4fbcd52a.js"><link rel="prefetch" href="/assets/js/211.5679fe27.js"><link rel="prefetch" href="/assets/js/212.19350edb.js"><link rel="prefetch" href="/assets/js/213.2e35c344.js"><link rel="prefetch" href="/assets/js/214.64034d68.js"><link rel="prefetch" href="/assets/js/215.2d2fd4fc.js"><link rel="prefetch" href="/assets/js/216.c1ee84e2.js"><link rel="prefetch" href="/assets/js/217.2f502ead.js"><link rel="prefetch" href="/assets/js/218.f1d6174c.js"><link rel="prefetch" href="/assets/js/219.9557bd57.js"><link rel="prefetch" href="/assets/js/22.de833a70.js"><link rel="prefetch" href="/assets/js/220.96ea3867.js"><link rel="prefetch" href="/assets/js/221.2164bf41.js"><link rel="prefetch" href="/assets/js/222.0a184710.js"><link rel="prefetch" href="/assets/js/223.1e8d1f07.js"><link rel="prefetch" href="/assets/js/224.ec817514.js"><link rel="prefetch" href="/assets/js/225.474aa0e8.js"><link rel="prefetch" href="/assets/js/226.99aae808.js"><link rel="prefetch" href="/assets/js/227.c058e005.js"><link rel="prefetch" href="/assets/js/228.8d8602d7.js"><link rel="prefetch" href="/assets/js/229.022fec70.js"><link rel="prefetch" href="/assets/js/23.fc0be805.js"><link rel="prefetch" href="/assets/js/230.76c0751b.js"><link rel="prefetch" href="/assets/js/231.0beed38d.js"><link rel="prefetch" href="/assets/js/232.53afb913.js"><link rel="prefetch" href="/assets/js/233.9437186d.js"><link rel="prefetch" href="/assets/js/234.2441a8e1.js"><link rel="prefetch" href="/assets/js/235.00f8fccb.js"><link rel="prefetch" href="/assets/js/236.57445acd.js"><link rel="prefetch" href="/assets/js/237.5b7eaebe.js"><link rel="prefetch" href="/assets/js/238.67594aa0.js"><link rel="prefetch" href="/assets/js/239.7ae39847.js"><link rel="prefetch" href="/assets/js/24.af37f64a.js"><link rel="prefetch" href="/assets/js/240.6dc7c286.js"><link rel="prefetch" href="/assets/js/241.37775fb7.js"><link rel="prefetch" href="/assets/js/242.a21e75d9.js"><link rel="prefetch" href="/assets/js/243.b49003bf.js"><link rel="prefetch" href="/assets/js/244.8fc27363.js"><link rel="prefetch" href="/assets/js/245.62a3c1f3.js"><link rel="prefetch" href="/assets/js/246.fe2a5ba4.js"><link rel="prefetch" href="/assets/js/247.d9410f13.js"><link rel="prefetch" href="/assets/js/248.14bd1691.js"><link rel="prefetch" href="/assets/js/249.9655ee98.js"><link rel="prefetch" href="/assets/js/25.e3a1586e.js"><link rel="prefetch" href="/assets/js/250.15ee2f4b.js"><link rel="prefetch" href="/assets/js/251.1b4698eb.js"><link rel="prefetch" href="/assets/js/252.5ec2410b.js"><link rel="prefetch" href="/assets/js/253.688ee87a.js"><link rel="prefetch" href="/assets/js/254.c9d8bdcf.js"><link rel="prefetch" href="/assets/js/255.e4474127.js"><link rel="prefetch" href="/assets/js/256.9d6cb532.js"><link rel="prefetch" href="/assets/js/257.d8354084.js"><link rel="prefetch" href="/assets/js/258.53eff5e6.js"><link rel="prefetch" href="/assets/js/259.336567d3.js"><link rel="prefetch" href="/assets/js/26.7a28901f.js"><link rel="prefetch" href="/assets/js/260.7b2146ac.js"><link rel="prefetch" href="/assets/js/261.d13bb1a2.js"><link rel="prefetch" href="/assets/js/262.380aa93e.js"><link rel="prefetch" href="/assets/js/263.78418fcc.js"><link rel="prefetch" href="/assets/js/264.64c27155.js"><link rel="prefetch" href="/assets/js/265.dc64df65.js"><link rel="prefetch" href="/assets/js/266.8968e90a.js"><link rel="prefetch" href="/assets/js/267.b9d7888c.js"><link rel="prefetch" href="/assets/js/268.3ee87df3.js"><link rel="prefetch" href="/assets/js/269.f6f3e98a.js"><link rel="prefetch" href="/assets/js/27.014f64b3.js"><link rel="prefetch" href="/assets/js/270.25e99f8a.js"><link rel="prefetch" href="/assets/js/271.657e2e0e.js"><link rel="prefetch" href="/assets/js/272.01bb84e6.js"><link rel="prefetch" href="/assets/js/273.e5cfb29b.js"><link rel="prefetch" href="/assets/js/274.437038af.js"><link rel="prefetch" href="/assets/js/275.a3825c59.js"><link rel="prefetch" href="/assets/js/276.c423c006.js"><link rel="prefetch" href="/assets/js/277.6c8c44a4.js"><link rel="prefetch" href="/assets/js/278.285ae837.js"><link rel="prefetch" href="/assets/js/279.e1b77e6b.js"><link rel="prefetch" href="/assets/js/28.d83e40f6.js"><link rel="prefetch" href="/assets/js/280.5aaa4fae.js"><link rel="prefetch" href="/assets/js/281.9a5edb18.js"><link rel="prefetch" href="/assets/js/282.b3b6c7cf.js"><link rel="prefetch" href="/assets/js/283.5fee7c4c.js"><link rel="prefetch" href="/assets/js/284.11848098.js"><link rel="prefetch" href="/assets/js/285.dc96b34a.js"><link rel="prefetch" href="/assets/js/286.b95ef0a2.js"><link rel="prefetch" href="/assets/js/287.191ac9b3.js"><link rel="prefetch" href="/assets/js/288.f3cc2c59.js"><link rel="prefetch" href="/assets/js/289.2d495f11.js"><link rel="prefetch" href="/assets/js/29.1bf530d5.js"><link rel="prefetch" href="/assets/js/290.c49f30c8.js"><link rel="prefetch" href="/assets/js/291.c6ff7c24.js"><link rel="prefetch" href="/assets/js/292.e696e266.js"><link rel="prefetch" href="/assets/js/293.419fbf1d.js"><link rel="prefetch" href="/assets/js/294.35c220bc.js"><link rel="prefetch" href="/assets/js/295.931ac57b.js"><link rel="prefetch" href="/assets/js/296.f751db69.js"><link rel="prefetch" href="/assets/js/297.de164ae0.js"><link rel="prefetch" href="/assets/js/298.6b0f7675.js"><link rel="prefetch" href="/assets/js/299.0697417d.js"><link rel="prefetch" href="/assets/js/30.736ee74b.js"><link rel="prefetch" href="/assets/js/300.8a5ab6e3.js"><link rel="prefetch" href="/assets/js/301.dcc5f9d1.js"><link rel="prefetch" href="/assets/js/302.1b9e9726.js"><link rel="prefetch" href="/assets/js/303.f3ce3b1e.js"><link rel="prefetch" href="/assets/js/304.45a65327.js"><link rel="prefetch" href="/assets/js/305.b9957432.js"><link rel="prefetch" href="/assets/js/306.bece9f27.js"><link rel="prefetch" href="/assets/js/307.37e6b34f.js"><link rel="prefetch" href="/assets/js/308.15b4f1b2.js"><link rel="prefetch" href="/assets/js/309.20a143fb.js"><link rel="prefetch" href="/assets/js/31.a37fbf54.js"><link rel="prefetch" href="/assets/js/310.29354689.js"><link rel="prefetch" href="/assets/js/311.fdcaf983.js"><link rel="prefetch" href="/assets/js/312.9bd822f6.js"><link rel="prefetch" href="/assets/js/313.98b382f5.js"><link rel="prefetch" href="/assets/js/314.e9a95851.js"><link rel="prefetch" href="/assets/js/315.9001a3b9.js"><link rel="prefetch" href="/assets/js/316.abff951c.js"><link rel="prefetch" href="/assets/js/317.3d085838.js"><link rel="prefetch" href="/assets/js/318.5574bbf1.js"><link rel="prefetch" href="/assets/js/319.ca278302.js"><link rel="prefetch" href="/assets/js/32.9540d518.js"><link rel="prefetch" href="/assets/js/320.cf9bab39.js"><link rel="prefetch" href="/assets/js/321.9e4df485.js"><link rel="prefetch" href="/assets/js/322.f0c822bb.js"><link rel="prefetch" href="/assets/js/323.cc4006c3.js"><link rel="prefetch" href="/assets/js/324.76ab927e.js"><link rel="prefetch" href="/assets/js/325.9bffe213.js"><link rel="prefetch" href="/assets/js/326.5f2b651f.js"><link rel="prefetch" href="/assets/js/327.6c72ab8e.js"><link rel="prefetch" href="/assets/js/328.9e5a8206.js"><link rel="prefetch" href="/assets/js/329.cf94f05a.js"><link rel="prefetch" href="/assets/js/33.bcd2ca1b.js"><link rel="prefetch" href="/assets/js/330.19b6e3e8.js"><link rel="prefetch" href="/assets/js/331.bb3481c9.js"><link rel="prefetch" href="/assets/js/332.61262290.js"><link rel="prefetch" href="/assets/js/333.5b435c6b.js"><link rel="prefetch" href="/assets/js/334.91a3f759.js"><link rel="prefetch" href="/assets/js/335.de6ec63b.js"><link rel="prefetch" href="/assets/js/336.395afd94.js"><link rel="prefetch" href="/assets/js/337.c91dc667.js"><link rel="prefetch" href="/assets/js/338.cf895181.js"><link rel="prefetch" href="/assets/js/339.f9936631.js"><link rel="prefetch" href="/assets/js/34.e288219f.js"><link rel="prefetch" href="/assets/js/340.3a4a4dbd.js"><link rel="prefetch" href="/assets/js/341.2291a265.js"><link rel="prefetch" href="/assets/js/342.8c7b09e0.js"><link rel="prefetch" href="/assets/js/343.5539b339.js"><link rel="prefetch" href="/assets/js/344.bab110d1.js"><link rel="prefetch" href="/assets/js/345.0e2cc637.js"><link rel="prefetch" href="/assets/js/346.0113bd47.js"><link rel="prefetch" href="/assets/js/347.31bb14c3.js"><link rel="prefetch" href="/assets/js/348.6d947efd.js"><link rel="prefetch" href="/assets/js/349.2f84f513.js"><link rel="prefetch" href="/assets/js/35.d9c35b49.js"><link rel="prefetch" href="/assets/js/350.3cb89b35.js"><link rel="prefetch" href="/assets/js/351.c2a9109b.js"><link rel="prefetch" href="/assets/js/352.5dedc2d7.js"><link rel="prefetch" href="/assets/js/353.4bea9ee8.js"><link rel="prefetch" href="/assets/js/354.e84634f5.js"><link rel="prefetch" href="/assets/js/355.fc91e106.js"><link rel="prefetch" href="/assets/js/356.395eea13.js"><link rel="prefetch" href="/assets/js/357.ec891944.js"><link rel="prefetch" href="/assets/js/358.dcd1fb24.js"><link rel="prefetch" href="/assets/js/359.752860b8.js"><link rel="prefetch" href="/assets/js/36.f973c32c.js"><link rel="prefetch" href="/assets/js/360.2a7ec757.js"><link rel="prefetch" href="/assets/js/361.fbaabb8c.js"><link rel="prefetch" href="/assets/js/362.ecf19f42.js"><link rel="prefetch" href="/assets/js/363.e295a316.js"><link rel="prefetch" href="/assets/js/364.6caee30a.js"><link rel="prefetch" href="/assets/js/365.e7849604.js"><link rel="prefetch" href="/assets/js/366.00220c48.js"><link rel="prefetch" href="/assets/js/367.1ca06504.js"><link rel="prefetch" href="/assets/js/368.a6207421.js"><link rel="prefetch" href="/assets/js/369.cffa4487.js"><link rel="prefetch" href="/assets/js/37.13f94594.js"><link rel="prefetch" href="/assets/js/370.59b708cc.js"><link rel="prefetch" href="/assets/js/371.567edaad.js"><link rel="prefetch" href="/assets/js/372.e1b1d6ea.js"><link rel="prefetch" href="/assets/js/373.731f3a71.js"><link rel="prefetch" href="/assets/js/374.ddf93124.js"><link rel="prefetch" href="/assets/js/375.530c90d6.js"><link rel="prefetch" href="/assets/js/376.170955cb.js"><link rel="prefetch" href="/assets/js/377.a155530b.js"><link rel="prefetch" href="/assets/js/378.f38f5d49.js"><link rel="prefetch" href="/assets/js/379.9e502c18.js"><link rel="prefetch" href="/assets/js/380.ad04dab6.js"><link rel="prefetch" href="/assets/js/381.4a41ca5f.js"><link rel="prefetch" href="/assets/js/382.27de1779.js"><link rel="prefetch" href="/assets/js/383.4f8c20db.js"><link rel="prefetch" href="/assets/js/384.57e3473e.js"><link rel="prefetch" href="/assets/js/385.6d3f8e09.js"><link rel="prefetch" href="/assets/js/386.716d6632.js"><link rel="prefetch" href="/assets/js/387.5721bfb1.js"><link rel="prefetch" href="/assets/js/388.d0667045.js"><link rel="prefetch" href="/assets/js/389.88449395.js"><link rel="prefetch" href="/assets/js/39.cb9682ad.js"><link rel="prefetch" href="/assets/js/390.288b9aba.js"><link rel="prefetch" href="/assets/js/391.c0bd4fdf.js"><link rel="prefetch" href="/assets/js/392.d8fb9844.js"><link rel="prefetch" href="/assets/js/393.a4795032.js"><link rel="prefetch" href="/assets/js/394.ea5da5e4.js"><link rel="prefetch" href="/assets/js/395.fbde91c5.js"><link rel="prefetch" href="/assets/js/396.f1d6f379.js"><link rel="prefetch" href="/assets/js/397.16e91a9c.js"><link rel="prefetch" href="/assets/js/398.b7f9a327.js"><link rel="prefetch" href="/assets/js/399.fdd49712.js"><link rel="prefetch" href="/assets/js/4.f22a2214.js"><link rel="prefetch" href="/assets/js/40.d84c9d3a.js"><link rel="prefetch" href="/assets/js/400.ac79fc97.js"><link rel="prefetch" href="/assets/js/401.944c8416.js"><link rel="prefetch" href="/assets/js/402.1ddd98cd.js"><link rel="prefetch" href="/assets/js/403.c36fb40c.js"><link rel="prefetch" href="/assets/js/404.433e7d51.js"><link rel="prefetch" href="/assets/js/405.82176482.js"><link rel="prefetch" href="/assets/js/406.d0290ec4.js"><link rel="prefetch" href="/assets/js/407.3ed4bb5e.js"><link rel="prefetch" href="/assets/js/408.6a1fe82b.js"><link rel="prefetch" href="/assets/js/409.aa3db9b8.js"><link rel="prefetch" href="/assets/js/41.5205b230.js"><link rel="prefetch" href="/assets/js/410.08483a72.js"><link rel="prefetch" href="/assets/js/411.fbff6afc.js"><link rel="prefetch" href="/assets/js/412.30979066.js"><link rel="prefetch" href="/assets/js/413.5bae10c0.js"><link rel="prefetch" href="/assets/js/414.6c1b96cf.js"><link rel="prefetch" href="/assets/js/415.9aa2b4b9.js"><link rel="prefetch" href="/assets/js/416.84c79fea.js"><link rel="prefetch" href="/assets/js/417.b4eedb1b.js"><link rel="prefetch" href="/assets/js/418.d7ef42c8.js"><link rel="prefetch" href="/assets/js/419.c7af5a85.js"><link rel="prefetch" href="/assets/js/42.8295b9f3.js"><link rel="prefetch" href="/assets/js/420.fefe5e6a.js"><link rel="prefetch" href="/assets/js/421.f0ae1f41.js"><link rel="prefetch" href="/assets/js/422.bb46e775.js"><link rel="prefetch" href="/assets/js/423.ff940fc4.js"><link rel="prefetch" href="/assets/js/424.c45808c7.js"><link rel="prefetch" href="/assets/js/425.db56b6b6.js"><link rel="prefetch" href="/assets/js/426.d1002dba.js"><link rel="prefetch" href="/assets/js/427.39224ded.js"><link rel="prefetch" href="/assets/js/428.1058869a.js"><link rel="prefetch" href="/assets/js/429.a76c3a9d.js"><link rel="prefetch" href="/assets/js/43.74d2f9c8.js"><link rel="prefetch" href="/assets/js/430.700a69ce.js"><link rel="prefetch" href="/assets/js/431.4ba7ca19.js"><link rel="prefetch" href="/assets/js/432.cba922af.js"><link rel="prefetch" href="/assets/js/433.a123468d.js"><link rel="prefetch" href="/assets/js/434.c588fb7c.js"><link rel="prefetch" href="/assets/js/435.f8ba2507.js"><link rel="prefetch" href="/assets/js/436.0a2d472c.js"><link rel="prefetch" href="/assets/js/437.74659bae.js"><link rel="prefetch" href="/assets/js/438.6cac7e1a.js"><link rel="prefetch" href="/assets/js/439.8cf8fd59.js"><link rel="prefetch" href="/assets/js/44.6b47f6ad.js"><link rel="prefetch" href="/assets/js/440.a41cf499.js"><link rel="prefetch" href="/assets/js/441.6358d6af.js"><link rel="prefetch" href="/assets/js/442.1c4f1b28.js"><link rel="prefetch" href="/assets/js/443.03b8d26c.js"><link rel="prefetch" href="/assets/js/444.a630ddad.js"><link rel="prefetch" href="/assets/js/445.3001a535.js"><link rel="prefetch" href="/assets/js/446.be775b67.js"><link rel="prefetch" href="/assets/js/447.498db4af.js"><link rel="prefetch" href="/assets/js/448.31738e12.js"><link rel="prefetch" href="/assets/js/449.496ce758.js"><link rel="prefetch" href="/assets/js/45.04bf14c1.js"><link rel="prefetch" href="/assets/js/450.d4a87f03.js"><link rel="prefetch" href="/assets/js/451.8d273b23.js"><link rel="prefetch" href="/assets/js/452.a9d55b12.js"><link rel="prefetch" href="/assets/js/453.182ae2de.js"><link rel="prefetch" href="/assets/js/454.9df24be5.js"><link rel="prefetch" href="/assets/js/455.9ea706f3.js"><link rel="prefetch" href="/assets/js/456.ef41eca8.js"><link rel="prefetch" href="/assets/js/457.472d7363.js"><link rel="prefetch" href="/assets/js/458.1c5bd634.js"><link rel="prefetch" href="/assets/js/459.4d8beb5c.js"><link rel="prefetch" href="/assets/js/46.1346d109.js"><link rel="prefetch" href="/assets/js/460.6ec1b967.js"><link rel="prefetch" href="/assets/js/461.a8de4d5b.js"><link rel="prefetch" href="/assets/js/462.7b2e33fa.js"><link rel="prefetch" href="/assets/js/463.e55e49c3.js"><link rel="prefetch" href="/assets/js/464.927f3308.js"><link rel="prefetch" href="/assets/js/465.fe17503c.js"><link rel="prefetch" href="/assets/js/466.63544e4f.js"><link rel="prefetch" href="/assets/js/467.25928052.js"><link rel="prefetch" href="/assets/js/468.50270474.js"><link rel="prefetch" href="/assets/js/469.489a3095.js"><link rel="prefetch" href="/assets/js/47.2ba9e3db.js"><link rel="prefetch" href="/assets/js/470.03ef8960.js"><link rel="prefetch" href="/assets/js/471.93cdd9f9.js"><link rel="prefetch" href="/assets/js/472.b177dbd0.js"><link rel="prefetch" href="/assets/js/473.48f873b9.js"><link rel="prefetch" href="/assets/js/474.77c5b2d8.js"><link rel="prefetch" href="/assets/js/475.f1644f47.js"><link rel="prefetch" href="/assets/js/476.61d43ed9.js"><link rel="prefetch" href="/assets/js/477.9cf80dbf.js"><link rel="prefetch" href="/assets/js/478.44ef03f8.js"><link rel="prefetch" href="/assets/js/479.e54b6b49.js"><link rel="prefetch" href="/assets/js/48.743a037f.js"><link rel="prefetch" href="/assets/js/480.728498f5.js"><link rel="prefetch" href="/assets/js/481.e5cc1529.js"><link rel="prefetch" href="/assets/js/482.389f8c8b.js"><link rel="prefetch" href="/assets/js/483.bcbc90ee.js"><link rel="prefetch" href="/assets/js/484.3b9a54f7.js"><link rel="prefetch" href="/assets/js/485.dfdb6d76.js"><link rel="prefetch" href="/assets/js/486.c324592a.js"><link rel="prefetch" href="/assets/js/487.ec74af6b.js"><link rel="prefetch" href="/assets/js/488.fc6254ba.js"><link rel="prefetch" href="/assets/js/489.1b1cca5e.js"><link rel="prefetch" href="/assets/js/49.611afad8.js"><link rel="prefetch" href="/assets/js/490.0a358bcb.js"><link rel="prefetch" href="/assets/js/491.92db30d2.js"><link rel="prefetch" href="/assets/js/492.f95bcc95.js"><link rel="prefetch" href="/assets/js/493.1cf2300c.js"><link rel="prefetch" href="/assets/js/494.d5bdc9bb.js"><link rel="prefetch" href="/assets/js/495.13c958a2.js"><link rel="prefetch" href="/assets/js/496.4df9269b.js"><link rel="prefetch" href="/assets/js/497.0e213460.js"><link rel="prefetch" href="/assets/js/498.bae3237f.js"><link rel="prefetch" href="/assets/js/499.8a5f14b8.js"><link rel="prefetch" href="/assets/js/5.3bb975c6.js"><link rel="prefetch" href="/assets/js/50.df5d0371.js"><link rel="prefetch" href="/assets/js/500.acf573c1.js"><link rel="prefetch" href="/assets/js/501.8354fb54.js"><link rel="prefetch" href="/assets/js/502.2e3d0976.js"><link rel="prefetch" href="/assets/js/503.d04481a4.js"><link rel="prefetch" href="/assets/js/504.14370a03.js"><link rel="prefetch" href="/assets/js/505.d5e2ae99.js"><link rel="prefetch" href="/assets/js/506.d8ba5bd6.js"><link rel="prefetch" href="/assets/js/507.0edd50d3.js"><link rel="prefetch" href="/assets/js/508.79773c04.js"><link rel="prefetch" href="/assets/js/509.ed944cd9.js"><link rel="prefetch" href="/assets/js/51.97f00ee0.js"><link rel="prefetch" href="/assets/js/510.eb380e54.js"><link rel="prefetch" href="/assets/js/511.a5077d0e.js"><link rel="prefetch" href="/assets/js/512.1d6f4737.js"><link rel="prefetch" href="/assets/js/513.81c6551a.js"><link rel="prefetch" href="/assets/js/514.48ae14c4.js"><link rel="prefetch" href="/assets/js/515.f2e70775.js"><link rel="prefetch" href="/assets/js/516.362d9e49.js"><link rel="prefetch" href="/assets/js/517.6b51e21e.js"><link rel="prefetch" href="/assets/js/518.cce6ae7b.js"><link rel="prefetch" href="/assets/js/519.4305680c.js"><link rel="prefetch" href="/assets/js/52.43b8b542.js"><link rel="prefetch" href="/assets/js/520.eb245e24.js"><link rel="prefetch" href="/assets/js/521.20a1c85d.js"><link rel="prefetch" href="/assets/js/522.d2beb05e.js"><link rel="prefetch" href="/assets/js/523.7369d08b.js"><link rel="prefetch" href="/assets/js/524.e892da52.js"><link rel="prefetch" href="/assets/js/525.6bbe8d0e.js"><link rel="prefetch" href="/assets/js/526.97196fe7.js"><link rel="prefetch" href="/assets/js/527.2ed3b536.js"><link rel="prefetch" href="/assets/js/528.964a3ff6.js"><link rel="prefetch" href="/assets/js/529.0a7e0ee5.js"><link rel="prefetch" href="/assets/js/53.f7c8aa12.js"><link rel="prefetch" href="/assets/js/530.0255328e.js"><link rel="prefetch" href="/assets/js/531.58d3ce43.js"><link rel="prefetch" href="/assets/js/532.8669949b.js"><link rel="prefetch" href="/assets/js/533.0d494023.js"><link rel="prefetch" href="/assets/js/534.ae1ff688.js"><link rel="prefetch" href="/assets/js/535.99260404.js"><link rel="prefetch" href="/assets/js/536.ae0ef549.js"><link rel="prefetch" href="/assets/js/537.1a72127c.js"><link rel="prefetch" href="/assets/js/538.0f945ebf.js"><link rel="prefetch" href="/assets/js/539.c4f26654.js"><link rel="prefetch" href="/assets/js/54.2eb0f699.js"><link rel="prefetch" href="/assets/js/540.941a3c0b.js"><link rel="prefetch" href="/assets/js/541.ebd7134f.js"><link rel="prefetch" href="/assets/js/542.c1d71a2a.js"><link rel="prefetch" href="/assets/js/543.0f8a48de.js"><link rel="prefetch" href="/assets/js/544.d44aa524.js"><link rel="prefetch" href="/assets/js/545.e2aad96b.js"><link rel="prefetch" href="/assets/js/546.670fb0ff.js"><link rel="prefetch" href="/assets/js/547.5b6bcbf8.js"><link rel="prefetch" href="/assets/js/548.fd52ac7c.js"><link rel="prefetch" href="/assets/js/549.2bd9d4e9.js"><link rel="prefetch" href="/assets/js/55.99480536.js"><link rel="prefetch" href="/assets/js/550.b7531483.js"><link rel="prefetch" href="/assets/js/551.74b6d6e3.js"><link rel="prefetch" href="/assets/js/552.424bc1b9.js"><link rel="prefetch" href="/assets/js/553.fb104cb0.js"><link rel="prefetch" href="/assets/js/554.88483130.js"><link rel="prefetch" href="/assets/js/555.31ab2b25.js"><link rel="prefetch" href="/assets/js/556.9c885287.js"><link rel="prefetch" href="/assets/js/557.b01df8d0.js"><link rel="prefetch" href="/assets/js/558.0580c57d.js"><link rel="prefetch" href="/assets/js/559.0e2b1119.js"><link rel="prefetch" href="/assets/js/56.a891624e.js"><link rel="prefetch" href="/assets/js/560.2d545d11.js"><link rel="prefetch" href="/assets/js/561.fde4781b.js"><link rel="prefetch" href="/assets/js/562.5dd801cf.js"><link rel="prefetch" href="/assets/js/563.a65cc63b.js"><link rel="prefetch" href="/assets/js/564.8c76634f.js"><link rel="prefetch" href="/assets/js/565.d10b7aa8.js"><link rel="prefetch" href="/assets/js/566.55b1bac3.js"><link rel="prefetch" href="/assets/js/567.757aa00e.js"><link rel="prefetch" href="/assets/js/568.fca8acf0.js"><link rel="prefetch" href="/assets/js/569.db624ddf.js"><link rel="prefetch" href="/assets/js/57.a2919d29.js"><link rel="prefetch" href="/assets/js/570.0fa8e8bd.js"><link rel="prefetch" href="/assets/js/571.57ec0cd9.js"><link rel="prefetch" href="/assets/js/572.d4f75286.js"><link rel="prefetch" href="/assets/js/573.308f26b3.js"><link rel="prefetch" href="/assets/js/574.5a1a9ea5.js"><link rel="prefetch" href="/assets/js/575.eb66ac4c.js"><link rel="prefetch" href="/assets/js/576.580b0771.js"><link rel="prefetch" href="/assets/js/577.f300b6e2.js"><link rel="prefetch" href="/assets/js/578.51ab1897.js"><link rel="prefetch" href="/assets/js/579.7d3068db.js"><link rel="prefetch" href="/assets/js/58.f9239230.js"><link rel="prefetch" href="/assets/js/580.1252c262.js"><link rel="prefetch" href="/assets/js/581.7629ae39.js"><link rel="prefetch" href="/assets/js/582.86cd7607.js"><link rel="prefetch" href="/assets/js/583.94b5e866.js"><link rel="prefetch" href="/assets/js/584.040fe966.js"><link rel="prefetch" href="/assets/js/585.33a214ef.js"><link rel="prefetch" href="/assets/js/586.0c659354.js"><link rel="prefetch" href="/assets/js/587.8698ec73.js"><link rel="prefetch" href="/assets/js/588.a276dca2.js"><link rel="prefetch" href="/assets/js/589.78fb7324.js"><link rel="prefetch" href="/assets/js/59.87ddc316.js"><link rel="prefetch" href="/assets/js/590.bd225b4d.js"><link rel="prefetch" href="/assets/js/591.cc635846.js"><link rel="prefetch" href="/assets/js/592.bf853bd5.js"><link rel="prefetch" href="/assets/js/593.1cb289cd.js"><link rel="prefetch" href="/assets/js/594.a159a687.js"><link rel="prefetch" href="/assets/js/595.d4dcd63e.js"><link rel="prefetch" href="/assets/js/596.fdb0e408.js"><link rel="prefetch" href="/assets/js/597.a0a3e439.js"><link rel="prefetch" href="/assets/js/598.15e9ce2a.js"><link rel="prefetch" href="/assets/js/599.491a8c2c.js"><link rel="prefetch" href="/assets/js/6.aabda231.js"><link rel="prefetch" href="/assets/js/60.00af8a1d.js"><link rel="prefetch" href="/assets/js/600.25453214.js"><link rel="prefetch" href="/assets/js/601.aee87cf1.js"><link rel="prefetch" href="/assets/js/602.25152e40.js"><link rel="prefetch" href="/assets/js/603.49e40e0b.js"><link rel="prefetch" href="/assets/js/604.08d82483.js"><link rel="prefetch" href="/assets/js/605.03424fcb.js"><link rel="prefetch" href="/assets/js/606.8657ab30.js"><link rel="prefetch" href="/assets/js/607.42c87f30.js"><link rel="prefetch" href="/assets/js/608.251cd6ee.js"><link rel="prefetch" href="/assets/js/609.0b0159f2.js"><link rel="prefetch" href="/assets/js/61.8ea03122.js"><link rel="prefetch" href="/assets/js/610.dc12d24c.js"><link rel="prefetch" href="/assets/js/611.94390da4.js"><link rel="prefetch" href="/assets/js/612.5d15c0d3.js"><link rel="prefetch" href="/assets/js/613.55b18d87.js"><link rel="prefetch" href="/assets/js/614.515508a0.js"><link rel="prefetch" href="/assets/js/615.3edf9761.js"><link rel="prefetch" href="/assets/js/616.5772893b.js"><link rel="prefetch" href="/assets/js/617.13e5eb5e.js"><link rel="prefetch" href="/assets/js/618.a9b3dca2.js"><link rel="prefetch" href="/assets/js/619.f8fb6726.js"><link rel="prefetch" href="/assets/js/62.60d3c830.js"><link rel="prefetch" href="/assets/js/620.773c4f26.js"><link rel="prefetch" href="/assets/js/621.23df567d.js"><link rel="prefetch" href="/assets/js/622.dfa4a6e4.js"><link rel="prefetch" href="/assets/js/623.bab12a73.js"><link rel="prefetch" href="/assets/js/624.dbcb364f.js"><link rel="prefetch" href="/assets/js/625.93e91bee.js"><link rel="prefetch" href="/assets/js/626.2773f43a.js"><link rel="prefetch" href="/assets/js/627.c46f857b.js"><link rel="prefetch" href="/assets/js/628.a0d21f71.js"><link rel="prefetch" href="/assets/js/629.5f534bd0.js"><link rel="prefetch" href="/assets/js/63.e515d654.js"><link rel="prefetch" href="/assets/js/630.eb02c458.js"><link rel="prefetch" href="/assets/js/631.1dcd5554.js"><link rel="prefetch" href="/assets/js/632.ab995315.js"><link rel="prefetch" href="/assets/js/633.7bf07a63.js"><link rel="prefetch" href="/assets/js/634.c1a9d0bb.js"><link rel="prefetch" href="/assets/js/635.cf9ca148.js"><link rel="prefetch" href="/assets/js/636.4b94120c.js"><link rel="prefetch" href="/assets/js/637.b9390a65.js"><link rel="prefetch" href="/assets/js/638.d12d11a7.js"><link rel="prefetch" href="/assets/js/639.2907516a.js"><link rel="prefetch" href="/assets/js/64.9a5770f6.js"><link rel="prefetch" href="/assets/js/640.d232ec85.js"><link rel="prefetch" href="/assets/js/641.91048590.js"><link rel="prefetch" href="/assets/js/642.2a890c39.js"><link rel="prefetch" href="/assets/js/643.b55e9ad5.js"><link rel="prefetch" href="/assets/js/644.f3b11365.js"><link rel="prefetch" href="/assets/js/645.1a6525bf.js"><link rel="prefetch" href="/assets/js/646.077f764b.js"><link rel="prefetch" href="/assets/js/647.f524b2a4.js"><link rel="prefetch" href="/assets/js/648.48d82dd1.js"><link rel="prefetch" href="/assets/js/65.8b64dc8f.js"><link rel="prefetch" href="/assets/js/66.7695923e.js"><link rel="prefetch" href="/assets/js/67.cd42133d.js"><link rel="prefetch" href="/assets/js/68.7ac00872.js"><link rel="prefetch" href="/assets/js/69.8bc1b3a1.js"><link rel="prefetch" href="/assets/js/7.1f2e36d5.js"><link rel="prefetch" href="/assets/js/70.28af8661.js"><link rel="prefetch" href="/assets/js/71.d532cb53.js"><link rel="prefetch" href="/assets/js/72.087b46ba.js"><link rel="prefetch" href="/assets/js/73.a0f2d66d.js"><link rel="prefetch" href="/assets/js/74.24a480ee.js"><link rel="prefetch" href="/assets/js/75.d12be42a.js"><link rel="prefetch" href="/assets/js/76.2ae46eb6.js"><link rel="prefetch" href="/assets/js/77.a7b2c581.js"><link rel="prefetch" href="/assets/js/78.29d1481e.js"><link rel="prefetch" href="/assets/js/79.af922102.js"><link rel="prefetch" href="/assets/js/8.d08ebc9e.js"><link rel="prefetch" href="/assets/js/80.4c0f78c5.js"><link rel="prefetch" href="/assets/js/81.0acb0d05.js"><link rel="prefetch" href="/assets/js/82.7f1b5bfe.js"><link rel="prefetch" href="/assets/js/83.f0d6bec6.js"><link rel="prefetch" href="/assets/js/84.02a5f303.js"><link rel="prefetch" href="/assets/js/85.f3f26aff.js"><link rel="prefetch" href="/assets/js/86.52482ce6.js"><link rel="prefetch" href="/assets/js/87.2277dd24.js"><link rel="prefetch" href="/assets/js/88.ba079e3a.js"><link rel="prefetch" href="/assets/js/89.13ea2e0c.js"><link rel="prefetch" href="/assets/js/9.3e0f8ff1.js"><link rel="prefetch" href="/assets/js/90.01f14da2.js"><link rel="prefetch" href="/assets/js/91.eb96bded.js"><link rel="prefetch" href="/assets/js/92.2358af1d.js"><link rel="prefetch" href="/assets/js/93.f98b8c68.js"><link rel="prefetch" href="/assets/js/94.c60a9e8d.js"><link rel="prefetch" href="/assets/js/95.9c52dc20.js"><link rel="prefetch" href="/assets/js/96.09c8b287.js"><link rel="prefetch" href="/assets/js/97.7c55946f.js"><link rel="prefetch" href="/assets/js/98.1d2962b7.js"><link rel="prefetch" href="/assets/js/99.ddb872b8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8d39077f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-ff03da5a><div data-v-ff03da5a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-2b487510 data-v-ff03da5a data-v-ff03da5a><h3 class="title" data-v-2b487510>集合网</h3> <p class="description" data-v-2b487510>集合网 你想要的这里都有！</p> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2025
+      </a></span></div></div> <div class="hide" data-v-ff03da5a><header class="navbar" data-v-ff03da5a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">集合网</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/AI人工智能/" class="nav-link"><i class="undefined"></i>
+  AI人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习路线/" class="nav-link"><i class="undefined"></i>
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/逆向分析/" class="nav-link"><i class="undefined"></i>
+  逆向分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-ff03da5a></div> <aside class="sidebar" data-v-ff03da5a><div class="personal-info-wrapper" data-v-400a92f6 data-v-ff03da5a><img src="/logo.svg" alt="author-avatar" class="personal-img" data-v-400a92f6> <h3 class="name" data-v-400a92f6>
+    🔅
+  </h3> <div class="num" data-v-400a92f6><div data-v-400a92f6><h3 data-v-400a92f6>638</h3> <h6 data-v-400a92f6>Articles</h6></div> <div data-v-400a92f6><h3 data-v-400a92f6>0</h3> <h6 data-v-400a92f6>Tags</h6></div></div> <ul class="social-links" data-v-400a92f6><li class="social-item" data-v-400a92f6><i class="iconfont reco-rss" style="color:#f47e60;" data-v-400a92f6></i></li></ul> <hr data-v-400a92f6></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/AI人工智能/" class="nav-link"><i class="undefined"></i>
+  AI人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/云计算-大数据/" class="nav-link"><i class="undefined"></i>
+  云计算-大数据
+</a></li><li class="dropdown-item"><!----> <a href="/categories/人工智能/" class="nav-link"><i class="undefined"></i>
+  人工智能
+</a></li><li class="dropdown-item"><!----> <a href="/categories/免费课程/" class="nav-link"><i class="undefined"></i>
+  免费课程
+</a></li><li class="dropdown-item"><!----> <a href="/categories/全栈开发/" class="nav-link"><i class="undefined"></i>
+  全栈开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/其他资源/" class="nav-link"><i class="undefined"></i>
+  其他资源
+</a></li><li class="dropdown-item"><!----> <a href="/categories/前端开发/" class="nav-link"><i class="undefined"></i>
+  前端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/区块链/" class="nav-link"><i class="undefined"></i>
+  区块链
+</a></li><li class="dropdown-item"><!----> <a href="/categories/后端开发/" class="nav-link"><i class="undefined"></i>
+  后端开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/嵌入式开发/" class="nav-link"><i class="undefined"></i>
+  嵌入式开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/学习路线/" class="nav-link"><i class="undefined"></i>
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据分析师/" class="nav-link"><i class="undefined"></i>
+  数据分析师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/数据结构-算法/" class="nav-link"><i class="undefined"></i>
+  数据结构-算法
+</a></li><li class="dropdown-item"><!----> <a href="/categories/架构师/" class="nav-link"><i class="undefined"></i>
+  架构师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/测试工程师/" class="nav-link"><i class="undefined"></i>
+  测试工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/移动开发/" class="nav-link"><i class="undefined"></i>
+  移动开发
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网络安全/" class="nav-link"><i class="undefined"></i>
+  网络安全
+</a></li><li class="dropdown-item"><!----> <a href="/categories/网课代刷/" class="nav-link"><i class="undefined"></i>
+  网课代刷
+</a></li><li class="dropdown-item"><!----> <a href="/categories/课件源码/" class="nav-link"><i class="undefined"></i>
+  课件源码
+</a></li><li class="dropdown-item"><!----> <a href="/categories/运维工程师/" class="nav-link"><i class="undefined"></i>
+  运维工程师
+</a></li><li class="dropdown-item"><!----> <a href="/categories/逆向分析/" class="nav-link"><i class="undefined"></i>
+  逆向分析
+</a></li><li class="dropdown-item"><!----> <a href="/categories/面试集合/" class="nav-link"><i class="undefined"></i>
+  面试集合
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="https://xbcyw.github.io/rss.xml" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-rss"></i>
+  订阅
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  最近更新
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-2b487510 data-v-ff03da5a><h3 class="title" data-v-2b487510>AI Agent全栈开发工程师【完结】</h3> <!----> <label id="box" class="inputBox" data-v-2b487510><input type="password" value="" data-v-2b487510> <span data-v-2b487510>Konck! Knock!</span> <button data-v-2b487510>OK</button></label> <div class="footer" data-v-2b487510><span data-v-2b487510><i class="iconfont reco-theme" data-v-2b487510></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-2b487510>vuePress-theme-reco</a></span> <span data-v-2b487510><i class="iconfont reco-copyright" data-v-2b487510></i> <a data-v-2b487510><span data-v-2b487510>🔅</span>
+          
+        <span data-v-2b487510>2021 - </span>
+        2025
+      </a></span></div></div> <div data-v-ff03da5a><div data-v-ff03da5a><main class="page" style="padding-right:0;"><section style="display:;"><div class="page-title"><h1 class="title">AI Agent全栈开发工程师【完结】</h1> <div data-v-666b8910><i class="iconfont reco-account" data-v-666b8910><span data-v-666b8910>🔅</span></i> <i class="iconfont reco-date" data-v-666b8910><span data-v-666b8910>9/24/2025</span></i> <!----> <!----></div></div> <div class="theme-reco-content content__default"><div id="boxx" data-v-817d5b90><div data-v-817d5b90><p v-if="true" class="custom-block-title" data-v-817d5b90></p> <p v-if="true" data-v-817d5b90></p></div></div> <p><img src="https://www.itxbzxw.com/wp-content/uploads/2025/09/17013549550.png" alt=""></p> <h3 id="课程介绍"><a href="#课程介绍" class="header-anchor">#</a> 课程介绍：</h3> <p>AI Agent全栈开发工程师 LLM应用开发平台特训营视频教程，由优库it资源网整理发布。锁定未来AI高薪！ 3年内炙手可热的AI Agent赛道，零基础全流程实战，助你轻松掌握商业级Agent研发核心力。首选口碑好课，低门槛、高成长，从零打造你的专属 (Coze/Dify) 低代码智能体开发平台，轻松入行/转行！</p> <h3 id="课程目录"><a href="#课程目录" class="header-anchor">#</a> 课程目录：</h3> <p>├── 阶段一：【LLMOPs平台搭建】架构设计与基础聊天机器人开发/<br>
+│ ├── 1-第1周 LLMOps平台开发基础及架构设计/<br>
+│ │ ├── 第1章 课程介绍与安排/<br>
+│ │ │ └── [ 18M] 1-1 课程导学【快速了解课程与安排】<br>
+│ │ ├── 第2章 夯实基础，了解LLM大语言模型/<br>
+│ │ │ ├── [2.4M] 2-1 章节介绍<br>
+│ │ │ ├── [ 16M] 2-2 什么是大语言模型（LLM）<br>
+│ │ │ ├── [ 18M] 2-3 LLM在企业中的价值与市场需求<br>
+│ │ │ ├── [ 28M] 2-4 ChatGPT聊天机器人的使用与局限性<br>
+│ │ │ ├── [ 14M] 2-5 LLM应用开发专有名词解释<br>
+│ │ │ ├── [ 12M] 2-6 LLM&amp;AI Agent应用的交互模式<br>
+│ │ │ └── [4.6M] 2-7 章节总结<br>
+│ │ ├── 第3章 初窥LLMOps，助力大模型落地/<br>
+│ │ │ ├── [3.8M] 3-1 章节介绍<br>
+│ │ │ ├── [ 27M] 3-2 从LLM大模型到AI Agent的技术演进<br>
+│ │ │ ├── [9.8M] 3-3 初识LLMOps，为什么需要LLMOps<br>
+│ │ │ ├── [ 18M] 3-4 Dify LLMOps应用开发平台功能演示<br>
+│ │ │ ├── [ 25M] 3-5 LLMOPs项目需求拆分与设计<br>
+│ │ │ ├── [ 20M] 3-6 课程LLMOps应用开发平台演示<br>
+│ │ │ └── [6.5M] 3-7 课程学习目标与解决的问题展示<br>
+│ │ └── 第4章 ChatGPT辅助学习与建议/<br>
+│ │ ├── [3.6M] 4-1 章节介绍<br>
+│ │ ├── [ 18M] 4-2 不同方向的学员如何学习这门课程与建议<br>
+│ │ ├── [ 31M] 4-3 ChatGPT辅助学习与课程提示词<br>
+│ │ ├── [ 48M] 4-4 OpenAI&amp;月之暗面API秘钥获取与参数详解<br>
+│ │ ├── [ 46M] 4-5 Playground快速调试Prompt与接口参数<br>
+│ │ └── [3.1M] 4-6 章节总结<br>
+│ ├── 2-第2周 LLMOps后端搭建，构建基础聊天机器人/<br>
+│ │ ├── 第1章 后端Python环境搭建与项目配置/<br>
+│ │ │ ├── [3.0M] 1-1 章节介绍<br>
+│ │ │ ├── [ 22M] 1-2 Python环境搭建与配置镜像加速<br>
+│ │ │ ├── [ 13M] 1-3 PyCharm编辑器配置与插件安装<br>
+│ │ │ ├── [8.6M] 1-4 项目架构与基础框架选择<br>
+│ │ │ ├── [ 32M] 1-5 项目目录结构约定、规范与依赖注入<br>
+│ │ │ ├── [ 31M] 1-6 依赖库介绍、安装与测试<br>
+│ │ │ ├── [ 14M] 1-7 Postman基础配置与使用介绍<br>
+│ │ │ └── [4.8M] 1-8 本章总结<br>
+│ │ ├── 第2章 实现第一个GPT聊天机器人/<br>
+│ │ │ ├──【认准一手完整 www.ukoou.com】<br>
+│ │ │ ├── [3.1M] 2-1 章节介绍<br>
+│ │ │ ├── [ 20M] 2-2 30行代码实现一个聊天机器人API<br>
+│ │ │ ├── [ 33M] 2-3 校验API接口输入请求<br>
+│ │ │ ├── [ 34M] 2-4 统一响应接口设计与实现<br>
+│ │ │ ├── [ 27M] 2-5 异常错误状态统一设计与实现<br>
+│ │ │ ├── [ 42M] 2-6 PyTest配置与API测试用例<br>
+│ │ │ ├── [ 42M] 2-7 Flask-SQLAlchemy扩展的配置与使用<br>
+│ │ │ ├── [ 74M] 2-8 应用ORM模型的创建与增删改查<br>
+│ │ │ ├── [ 17M] 2-9 重写SQLAlchemy核心类实现自动提交<br>
+│ │ │ ├── [ 39M] 2-10 Flask-Migrate扩展介绍与使用<br>
+│ │ │ └── [3.9M] 2-11 本章总结<br>
+│ │ └── 第3章 LangChain初入门-简化LLM开发难度/<br>
+│ │ ├── [4.9M] 3-1 章节介绍<br>
+│ │ ├── [ 41M] 3-2 LangChain简介及为什么选择LangChain？<br>
+│ │ ├── [ 42M] 3-3 LangChain框架安装及文档介绍<br>
+│ │ ├── [ 76M] 3-4 Prompt组件及使用技巧<br>
+│ │ ├── [ 55M] 3-5 Model组件及使用技巧<br>
+│ │ ├── [ 67M] 3-6 OutputParser组件及使用技巧<br>
+│ │ ├── [ 48M] 3-7 LCEL表达式与Runnable可运行协议<br>
+│ │ ├── [ 56M] 3-8 两个Runnable核心类的讲解与使用<br>
+│ │ ├── [ 44M] 3-9 利用回调功能调试链应用-让过程更透明<br>
+│ │ ├── [ 22M] 3-10 LangSmith平台介绍与使用-从原型到生产<br>
+│ │ ├── [ 39M] 3-11 API接口文档介绍与接口统一<br>
+│ │ ├── [ 17M] 3-12 项目Git版本管理与控制<br>
+│ │ └── [4.2M] 3-13 本章总结<br>
+│ └── 3-第3周 LLMOPs前端搭建关联聊天机器人API/<br>
+│ ├── 第1章 前端Node.js环境搭建与前端项目初始化/<br>
+│ │ ├── [2.6M] 1-1 本章介绍<br>
+│ │ ├── [ 33M] 1-2 Node.js环境搭建及镜像加速<br>
+│ │ ├── [ 21M] 1-3 项目前端架构与基础框架选择<br>
+│ │ ├── [ 38M] 1-4 前端项目搭建与开发规范<br>
+│ │ ├── [ 13M] 1-5 WebStorm编辑器配置-提升TS代码开发效率<br>
+│ │ ├── [ 39M] 1-6 ArcoDesign与TailwindCSS简化UI界面开发<br>
+│ │ ├── [ 45M] 1-7 项目页面模板与路由配置，实现路由守卫功能<br>
+│ │ ├── [ 37M] 1-8 Pinia实现多页面共享数据状态<br>
+│ │ ├── [ 60M] 1-9 前端接口请求Fetch方法封装<br>
+│ │ └── [3.4M] 1-10 本章总结<br>
+│ ├── 第2章 实现联动第一个带UI的聊天机器人/<br>
+│ │ ├── [2.7M] 2-1 本章介绍<br>
+│ │ ├── [ 39M] 2-2 解决前后端分离接口跨域问题<br>
+│ │ ├── [ 22M] 2-3 即时设计 UI 设计稿快速上手与解读<br>
+│ │ ├── [ 59M] 2-4 应用编排页面结构与样式设计<br>
+│ │ ├── [ 40M] 2-5 对接API实现第一个带UI的基础聊天机器人<br>
+│ │ ├── [ 36M] 2-6 应用调试与预览功能封装与逻辑优化<br>
+│ │ └── [5.0M] 2-7 本章总结<br>
+│ └── 附件/<br>
+│ ├── [4.7M] 1.pdf<br>
+│ ├── [1.6M] 2.pdf<br>
+│ └── [644K] 第3周-代码.zip<br>
+└── 阶段二：【商业级聊天机器人开发】具备记忆、自动联网、联动自制知识库/<br>
+├── 1-第4周 记忆模块开发，让聊天机器人有记忆/<br>
+│ ├── 第1章 LangChain记忆模块快速上手/<br>
+│ │ ├── [4.2M] 1-1 本章介绍<br>
+│ │ ├── [ 57M] 1-2 LLM实现记忆功能思路与常见记忆模式<br>
+│ │ ├── [ 55M] 1-3 ChatGPT-Playground手动模拟记忆功能<br>
+│ │ ├── [ 74M] 1-4 Python+OpenAI原生SDK实现记忆功能<br>
+│ │ ├── [ 70M] 1-5 ChatMessageHistory组件上手与源码解析<br>
+│ │ ├── [ 59M] 1-6 Memory组件运行流程及不同记忆分类<br>
+│ │ ├── [ 68M] 1-7 LangChain缓冲记忆组件的使用与解析<br>
+│ │ ├── [ 64M] 1-8 LangChain摘要记忆组件的使用与解析<br>
+│ │ ├── [ 43M] 1-9 LangChain实体记忆组件的使用与解析<br>
+│ │ ├── @优库it资源网ukoou.com<br>
+│ │ ├── [ 39M] 1-10 记忆组件的持久化与第三方集成<br>
+│ │ ├── [ 68M] 1-11 内置Chain组件的使用与源码解读<br>
+│ │ ├── [ 44M] 1-12 RunnableWithMessageHistory简化代码与使用<br>
+│ │ └── [4.5M] 1-13 本章总结<br>
+│ ├── 第2章 LLMOps记忆模块解析与Runnable深入/<br>
+│ │ ├── [3.3M] 2-1 本章介绍<br>
+│ │ ├── [ 28M] 2-2 LLMOps项目记忆功能需求拆解分析<br>
+│ │ ├── [ 83M] 2-3 运行流程拆解与基础数据表设计<br>
+│ │ ├── [ 27M] 2-4 记忆功能相关API文档编写整理<br>
+│ │ ├── [ 58M] 2-5 Runnable组件动态添加默认调用参数<br>
+│ │ ├── [ 49M] 2-6 Runnable组件配置运行时链内部<br>
+│ │ ├── [ 35M] 2-7 Runnable组件动态替换运行组件<br>
+│ │ ├── [ 43M] 2-8 Runnable组件重试与回退机制降低程序错误率<br>
+│ │ ├── [ 36M] 2-9 Runnable组件生命周期监听器与使用场景<br>
+│ │ ├── [ 43M] 2-10 基于Runnable封装记忆链实现记忆自动管理<br>
+│ │ ├── [ 38M] 2-11 开源智能体MetaGPT记忆模块解读<br>
+│ │ └── [4.0M] 2-12 本章总结<br>
+│ └── 附件/<br>
+│ └── [523K] 第4周（代码）.zip<br>
+├── 2-第5周 数据集模块开发-实现特定知识库问答/<br>
+│ ├── 第1章 大模型RAG应用开发基础及入门/<br>
+│ │ ├── [4.5M] 1-1 本章介绍<br>
+│ │ ├── [ 45M] 1-2 大语言模型出现幻觉的原因及缓解方案<br>
+│ │ ├── [ 44M] 1-3 检索增强生成RAG基础架构与手动模拟<br>
+│ │ ├── [ 41M] 1-4 AI应用开发新宠——向量数据库的介绍与用途<br>
+│ │ ├── [ 42M] 1-5 传统数据库与向量数据库的使用差异<br>
+│ │ ├── [ 41M] 1-6 Embedding文本嵌入模型介绍与使用<br>
+│ │ ├── [ 45M] 1-7 OpenAI Embedding接口使用实践测试<br>
+│ │ ├── [ 33M] 1-8 CacheBackEmbedding组件的使用与注意事项<br>
+│ │ ├── [ 42M] 1-9 其他Embedding嵌入模型的配置与使用<br>
+│ │ ├── [ 93M] 1-10 Faiss向量数据库的配置与使用<br>
+│ │ ├── [ 67M] 1-11 Pinecone向量数据库的配置与使用<br>
+│ │ ├── [ 89M] 1-12 TCVectorDB向量数据库的配置与使用<br>
+│ │ ├── [ 67M] 1-13 Weaviate向量数据库的配置与使用<br>
+│ │ ├── [ 57M] 1-14 对接自定义向量数据库的配置与使用<br>
+│ │ ├── [ 56M] 1-15 构建第一个LangChain RAG应用<br>
+│ │ └── [4.5M] 1-16 本章总结<br>
+│ ├── 第2章 LangChain RAG应用开发组件深入学习/<br>
+│ │ ├── [4.6M] 2-1 本章介绍<br>
+│ │ ├── [ 50M] 2-2 Document组件与文档加载器组件的使用<br>
+│ │ ├── [ 97M] 2-3 LangChain内置文档加载器使用技巧<br>
+│ │ ├── [ 31M] 2-4 自定义LangChain文档加载器使用技巧<br>
+│ │ ├── [ 47M] 2-5 Blob与BlobParser代替文档加载器<br>
+│ │ ├── [ 61M] 2-6 文档转换器与字符分割器组件的使用<br>
+│ │ ├── [ 77M] 2-7 递归字符文本分割器的使用与运行流程<br>
+│ │ ├── [101M] 2-8 语义文档分割器与其他内容分割器的使用<br>
+│ │ ├── [ 33M] 2-9 自定义LangChain文档分割器技巧<br>
+│ │ ├── [ 43M] 2-10 非分割类型的文档转换器使用技巧<br>
+│ │ ├── [ 75M] 2-11 VectorStore组件深入学习与检索方法<br>
+│ │ ├── [ 34M] 2-12 检索器组件深入学习与使用技巧<br>
+│ │ ├── [ 21M] 2-13 内置的检索器组件与自定义检索器技巧<br>
+│ │ └── [6.3M] 2-14 本章总结<br>
+│ ├── 第3章 RAG优化策略与知识库模块功能开发解析/<br>
+│ │ ├── [4.1M] 3-1 本章介绍<br>
+│ │ ├── [ 48M] 3-2 RAG开发6个阶段优化策略分析<br>
+│ │ ├── [ 49M] 3-3 多查询重写策略提升检索准确性<br>
+│ │ ├── [ 57M] 3-4 RAG多查询结果融合策略<br>
+│ │ ├── [ 61M] 3-5 问题分解策略提升复杂问题检索正确率<br>
+│ │ ├── [ 66M] 3-6 Step-Back回答回退策略实现前置检索<br>
+│ │ ├── [ 36M] 3-7 混合策略实现doc-doc对称检索<br>
+│ │ ├── [ 33M] 3-8 集成多种检索器算法实现混合检索<br>
+│ │ ├── [ 65M] 3-9 检索器的逻辑路由缩减检索范围<br>
+│ │ ├── [ 23M] 3-10 使用语义路由选择不同的Prompt模板<br>
+│ │ ├── [ 81M] 3-11 自查询检索器实现动态元数据过滤<br>
+│ │ ├── [ 52M] 3-12 MultiVector实现多向量检索文档<br>
+│ │ ├── [ 44M] 3-13 父文档检索器实现拆分和存储平衡<br>
+│ │ ├── [ 67M] 3-14 递归文档树检索实施高级RAG深入理解<br>
+│ │ ├── [ 39M] 3-15 ReRank重排序提升RAG系统效果<br>
+│ │ ├── [ 37M] 3-16 纠正性索引增强生成CRAG优化策略<br>
+│ │ ├── [ 32M] 3-17 使用Self-RAG纠正低质量的检索生成<br>
+│ │ └── [8.3M] 3-18 本章总结<br>
+│ └── 附件/<br>
+│ ├── [2.4M] 1.pdf<br>
+│ ├── [4.7M] 2.pdf<br>
+│ ├── [3.8M] 3.pdf<br>
+│ ├── [4.2M] 4.pdf<br>
+│ ├── [3.9M] 5.pdf<br>
+│ ├── [5.5M] 6.pdf<br>
+│ ├── [ 39M] weaviate.zip<br>
+│ ├── [381K] 第1章大模型RAG应用开发基础及入门.zip<br>
+│ ├── [532K] 第2章LangChainRAG应用开发组件深入学习.zip<br>
+│ └── [643K] 第3章RAG优化策略与知识库模块功能解析.zip<br>
+└── 3-第6周 插件功能开发-聊天机器人实时联网获取信息/<br>
+├── 第1章 大语言模型函数调用与Agent开发/<br>
+│ ├── [4.5M] 1-1 本章介绍<br>
+│ ├── [ 54M] 1-2 LLM函数调用使用技巧与应用场景<br>
+│ ├── [ 46M] 1-3 LangChain中的工具与工具包<br>
+│ ├── [ 48M] 1-4 创建自定义工具的3种技巧与使用场景<br>
+│ ├── [ 60M] 1-5 高德天气预报查询插件的集成与编写<br>
+│ ├── [ 34M] 1-6 谷歌实时信息搜索插件的集成与编写<br>
+│ ├── [ 55M] 1-7 ChatModel使用函数调用的技巧与流程<br>
+│ ├── [ 67M] 1-8 不支持函数调用的大语言模型解决技巧<br>
+│ ├── [ 53M] 1-9 函数调用快速提取结构化数据使用技巧<br>
+│ ├── [ 88M] 1-10 函数调用出错捕获提升程序健壮性<br>
+│ ├── [ 72M] 1-11 多模态LLM执行函数调用的技巧<br>
+│ ├── [113M] 1-12 基于ReACT架构的Agent智能体设计与实现<br>
+│ ├── [ 56M] 1-13 基于工具调用的智能体设计与实现<br>
+│ ├── [ 37M] 1-14 内置的其他Agent类型介绍与上手<br>
+│ ├── [ 52M] 1-15 AgentExecutor源码解析与Agent组件缺陷<br>
+│ └── [5.0M] 1-16 本章总结<br>
+├── 第2章 LangGraph与LCEL构建大型复杂应用/<br>
+│ ├── [5.3M] 2-1 本章介绍<br>
+│ ├── [ 60M] 2-2 LCEL链表达式的缺点与扩展<br>
+│ ├── [ 78M] 2-3 LangGraph介绍与基础组件上手<br>
+│ ├── [ 78M] 2-4 条件边与循环流程实现工具调用Agent<br>
+│ ├── [ 40M] 2-5 LangGraph实现ReACT架构Agent<br>
+│ ├── [ 67M] 2-6 图结构应用程序删除消息的使用技巧<br>
+│ ├── [ 63M] 2-7 LangGraph检查点实现记忆持久化功能<br>
+│ ├── @优库it资源网ukoou.com<br>
+│ ├── [ 76M] 2-8 图结构断点实现Agent与人进行交互<br>
+│ ├── [ 61M] 2-9 LangGraph子图架构实现AI工作流<br>
+│ ├── [116M] 2-10 需求转换图架构的技巧-CRAG实现<br>
+│ ├── [ 44M] 2-11 利用图优化LLMOps聊天机器人架构<br>
+│ ├── [ 40M] 2-12 LangGraph两种基础流式响应技巧<br>
+│ ├── [ 41M] 2-13 LangGraph 总结与注意事项篇<br>
+│ └── [4.3M] 2-14 本章总结<br>
+└── 附件/<br>
+├── [3.9M] 大语言模型函数调用与Agent开发【ppt-1】.pdf<br>
+├── [4.1M] 大语言模型函数调用与Agent开发【ppt-2】.pdf<br>
+└── [1.4M] 第6周-完整代码.zip<br>
+└── 阶段三：LLMOps应用平台可视化+安全性保障+性能优化+开放API/<br>
+├── 1-第7周 可视化编排开发-插件与知识库集成/<br>
+│ ├── 第1章 插件广场与通用自定义插件模块开发/<br>
+│ │ ├── [7.5M] 1-1 本章介绍<br>
+│ │ ├── [ 31M] 1-2 插件广场与自定义插件功能模块解析<br>
+│ │ ├── [ 40M] 1-3 YAML+工厂函数实现插件化配置思路<br>
+│ │ ├── [106M] 1-4 工厂函数实现动态配置内置插件<br>
+│ │ ├── [ 44M] 1-5 内置插件参数功能完善及流程解析<br>
+│ │ ├── [ 60M] 1-6 六个高频使用的自定义插件集成<br>
+│ │ ├── [ 35M] 1-7 插件广场模块API文档撰写<br>
+│ │ ├── [ 91M] 1-8 插件广场模块工具API接口实现<br>
+│ │ ├── [ 67M] 1-9 插件广场分类与图标API接口<br>
+│ │ ├── [ 33M] 1-10 内置插件API接口测试用例编写<br>
+│ │ ├── [ 37M] 1-11 OpenAPI规范解读与API插件设计思路<br>
+│ │ ├── [ 16M] 1-12 使用简化OpenAPI规范描述API工具<br>
+│ │ ├── [ 42M] 1-13 个人空间插件模块API文档撰写<br>
+│ │ ├── [ 25M] 1-14 API插件数据库表设计与ORM实现<br>
+│ │ ├── [ 85M] 1-15 OpenAPI结构数据验证接口实现与测试<br>
+│ │ ├── [ 45M] 1-16 创建自定义API插件接口的设计与实现<br>
+│ │ ├── [ 21M] 1-17 获取指定API插件接口的设计与实现<br>
+│ │ ├── [ 26M] 1-18 获取API插件参数详情接口设计实现<br>
+│ │ ├── [ 18M] 1-19 删除自定义API工具提供者与注意事项<br>
+│ │ ├── [ 69M] 1-20 自定义API插件数据分页与接口实现<br>
+│ │ ├── [ 39M] 1-21 修改自定义API插件接口的设计与实现<br>
+│ │ ├── [ 35M] 1-22 分离Service服务中的基础增删改查<br>
+│ │ ├── [ 27M] 1-23 单元测试中实现数据回滚的技巧与实现<br>
+│ │ ├── [ 71M] 1-24 API插件管理器实现动态创建插件<br>
+│ │ ├── [ 55M] 1-25 LLMOps前端布局页面设计与实现<br>
+│ │ ├── [ 75M] 1-26 内置插件模块列表页与搜索逻辑实现<br>
+│ │ ├── [ 38M] 1-27 利用抽屉组件展示内置提供者详情<br>
+│ │ ├── [ 52M] 1-28 个人空间API插件列表页设计与实现<br>
+│ │ ├── [ 66M] 1-29 使用上拉加载数据实现数据分页<br>
+│ │ ├── [ 64M] 1-30 新增与修改API插件模态窗UI设计<br>
+│ │ ├── [107M] 1-31 API插件模块增删改页面逻辑实现<br>
+│ │ └── [5.3M] 1-32 本章总结<br>
+│ ├── 第2章 知识库模块功能设计与API接口开发/<br>
+│ │ ├── [5.9M] 2-1 本章介绍<br>
+│ │ ├── [ 38M] 2-2 LLMOps项目知识库功能模块解析<br>
+│ │ ├── [ 48M] 2-3 知识库模块流程图拆解降低开发难度<br>
+│ │ ├── [ 35M] 2-4 文件上传模块数据库表设计与API文档撰写<br>
+│ │ ├── [ 92M] 2-5 腾讯云cos对象存储服务接入与API开发<br>
+│ │ ├── [ 27M] 2-6 LLMOps集成日志记录器实现错误记录<br>
+│ │ ├── [ 37M] 2-7 知识库模块API文档撰写及表结构分析<br>
+│ │ ├── [ 54M] 2-8 文档模块API文档撰写及表结构分析<br>
+│ │ ├── [ 30M] 2-9 片段模块API文档撰写及表结构分析<br>
+│ │ ├── [ 35M] 2-10 Flask集成Redis实现缓存与消息代理<br>
+│ │ ├── [ 38M] 2-11 Flask集成Celery处理异步任务<br>
+│ │ ├── [ 77M] 2-12 知识库三大层级及扩展表ORM模型实现<br>
+│ │ ├── [ 99M] 2-13 知识库增改查4个API接口的设计与实现<br>
+│ │ ├── [ 16M] 2-14 weaviate向量数据库的配置与安装<br>
+│ │ ├── [ 42M] 2-15 本地Embeddings模型部署与使用<br>
+│ │ ├── [ 13M] 2-16 jieba分词服务设计与关键词抽取<br>
+│ │ ├── [ 48M] 2-17 通用文件加载器实现cos文件加载<br>
+│ │ ├── [ 62M] 2-18 新增文档API接口同步任务设计与实现<br>
+│ │ ├── [ 55M] 2-19 知识库文档分段规则校验逻辑实现<br>
+│ │ ├── [105M] 2-20 加载与分割文档异步任务设计与实现<br>
+│ │ ├── [ 62M] 2-21 文档索引与存储异步任务设计与实现<br>
+│ │ ├── [ 46M] 2-22 Thread多线程使用与文档上传代码优化<br>
+│ │ ├── [ 34M] 2-23 批处理获取文档状态接口设计与实现<br>
+│ │ ├── [ 74M] 2-24 文档模块基础CURD接口设计与实现<br>
+│ │ ├── [ 78M] 2-25 缓存锁与修改文档启用状态接口设计实现<br>
+│ │ ├── [ 65M] 2-26 缓存锁与删除文档接口设计与实现<br>
+│ │ ├── [ 66M] 2-27 混合检索器设计思路与关键词表服务抽取<br>
+│ │ ├── [ 96M] 2-28 RAG片段模块同步接口设计与实现<br>
+│ │ ├── [ 60M] 2-29 知识库新增片段API接口的设计与实现<br>
+│ │ ├── [ 53M] 2-30 基于知识库的LangChain检索器实现<br>
+│ │ ├── [ 94M] 2-31 召回测试与查询API接口设计与实现<br>
+│ │ ├── [ 60M] 2-32 删除片段与知识库API接口设计与实现<br>
+│ │ ├── [ 15M] 2-33 RAG模块修改片段接口实现与注意事项<br>
+│ │ └── [5.1M] 2-34 本章总结<br>
+│ └── 附件/<br>
+│ ├── [1011] 【代码】第2章 知识库模块功能设计与API接口开发.zip<br>
+│ └── [1011] 第7周【第一章代码】.zip<br>
+├── 2-第8周 响应模块开发与升级-提升聊天机器人响应/<br>
+│ ├── 第1章 记忆与流式响应功能API与UI界面开发/<br>
+│ │ ├── [4.1M] 1-1 本章介绍<br>
+│ │ ├── [ 15M] 1-2 LLMOps项目记忆与流式响应模块功能解析<br>
+│ │ ├── [ 31M] 1-3 流式事件与块响应接口设计流程拆解<br>
+│ │ ├── [ 78M] 1-4 应用调试接口改流式事件输出初体验<br>
+│ │ ├── [ 32M] 1-5 利用fetch请求库添加流式事件响应支持<br>
+│ │ ├── [ 19M] 1-6 前端对接流式事件输出实现打字机效果<br>
+│ │ ├── [ 37M] 1-7 长记忆摘要服务实现与Prompt编写<br>
+│ │ ├── [ 42M] 1-8 Agent会话名称自动生成设计与实现<br>
+│ │ ├── [ 20M] 1-9 Agent问答建议服务实现与Prompt编写<br>
+│ │ ├── [ 41M] 1-10 记忆与应用调试模块API文档撰写<br>
+│ │ ├── [ 49M] 1-11 记忆与消息会话数据库表设计及ORM实现<br>
+│ │ ├── [ 44M] 1-12 基于会话模型的记忆组件设计与实现<br>
+│ │ ├── [ 71M] 1-13 基于工具调用的Agent图结构设计与实现<br>
+│ │ ├── [ 53M] 1-14 Agent图结构节点完善与子线程优化<br>
+│ │ ├── [ 63M] 1-15 使用队列管理器优化Agent流式事件输出<br>
+│ │ ├── [ 51M] 1-16 为工具调用智能体添加队列管理器<br>
+│ │ └── [4.6M] 1-17 本章总结<br>
+│ ├── 第2章 知识库模块UI界面与交互逻辑开发/<br>
+│ │ ├── [2.6M] 2-1 本章介绍<br>
+│ │ ├── [ 49M] 2-2 知识库列表UI页面与数据分页加载实现<br>
+│ │ ├── [ 33M] 2-3 使用hooks封装页面逻辑简化开发难度<br>
+│ │ ├── [ 72M] 2-4 知识库模块增删改模态窗与API接口对接<br>
+│ │ ├── [ 55M] 2-5 使用ArcoDesign表格完成文档列表页设计<br>
+│ │ ├── [ 67M] 2-6 文档列表页分页逻辑与前端分页器实现<br>
+│ │ ├── [ 78M] 2-7 删除与重命名文档模态窗与API接口对接<br>
+│ │ ├── [ 42M] 2-8 使用XHR完成文件与图片上传<br>
+│ │ ├── [ 57M] 2-9 知识库召回测试模态窗UI界面设计<br>
+│ │ ├── [ 97M] 2-10 召回测试API接口对接与交互逻辑实现<br>
+│ │ ├── [ 48M] 2-11 利用ArcoDesign步骤条设计新增文档页面<br>
+│ │ ├── [104M] 2-12 新增文档页面接口对接与状态管理<br>
+│ │ ├── [ 81M] 2-13 片段模块UI页面与交互逻辑代码解读<br>
+│ │ └── [4.3M] 2-14 本章总结<br>
+│ └── 附件/<br>
+│ ├── [ 187] 第1章 -代码.zip<br>
+│ └── [ 187] 第2章-代码.zip<br>
+├── 3-第9周 授权认证模块开发-保证应用使用安全/<br>
+│ ├── 第1章 授权认证与API接口鉴权服务开发/<br>
+│ │ ├── [4.1M] 1-1 本章介绍<br>
+│ │ ├── [ 11M] 1-2 授权认证与API鉴权模块功能解析<br>
+│ │ ├── [ 18M] 1-3 LLMOps授权认证模块API文档撰写<br>
+│ │ ├── [ 22M] 1-4 账号与授权认证数据库表与ORM实现<br>
+│ │ ├── [ 45M] 1-5 集成JWT与哈希加密完成前置工作<br>
+│ │ ├── [ 37M] 1-6 Flask-Login扩展的集成与中间件编写<br>
+│ │ ├── [ 40M] 1-7 对接Github OAuth实现github快捷登录<br>
+│ │ ├── [ 74M] 1-8 OAuth模块API接口的设计与实现<br>
+│ │ ├── [ 54M] 1-9 账号设置模块API接口的设计与实现<br>
+│ │ ├── [ 38M] 1-10 账号密码登录与退出登录接口设计实现<br>
+│ │ ├── [ 23M] 1-11 项目服务历史Todo事项完善与优化<br>
+│ │ ├── [ 34M] 1-12 前端授权凭证与账号状态设计实现<br>
+│ │ ├── [ 20M] 1-13 授权模块api对接与数据结构实现<br>
+│ │ ├── [ 73M] 1-14 授权认证UI页面与交互逻辑实现<br>
+│ │ ├── [ 26M] 1-15 前端Fetch与XHR请求工具添加授权凭证<br>
+│ │ ├── [ 36M] 1-16 账号设置模块UI页面与交互逻辑实现<br>
+│ │ └── [2.6M] 1-17 本章总结<br>
+│ └── 附件/<br>
+│ ├── [1011] LLMOps数据库ER图【资料】.zip<br>
+│ └── [1011] 第9周【代码】.zip<br>
+└── 4-第10周 审核模块开发-确保企业AI生成合规内容/<br>
+├── 第1章 应用配置与Agent审核模块功能开发/<br>
+│ ├── [3.9M] 1-1 本章介绍<br>
+│ ├── [ 21M] 1-2 应用配置与审核模块功能与流程解析<br>
+│ ├── [ 25M] 1-3 应用编排草稿配置与发布运行流程<br>
+│ ├── [ 58M] 1-4 应用配置与审核模块API文档撰写<br>
+│ ├── [ 31M] 1-5 应用配置数据库表设计与ORM实现<br>
+│ ├── [ 68M] 1-6 新增应用与获取应用信息接口实现<br>
+│ ├── [ 97M] 1-7 获取应用的草稿配置接口设计与实现<br>
+│ ├── [104M] 1-8 草稿配置增量更新与字典数据校验<br>
+│ ├── [ 18M] 1-9 更新应用草稿配置API接口设计与实现<br>
+│ ├── [ 46M] 1-10 发布与更新应用配置接口的设计与实现<br>
+│ ├── [ 48M] 1-11 取消发布与历史配置接口的设计与实现<br>
+│ ├── [ 36M] 1-12 历史配置回退接口的设计与实现<br>
+│ ├── [ 49M] 1-13 调试长记忆获取与更新接口的设计与实现<br>
+│ ├── [ 34M] 1-14 实现知识库检索转LangChain工具<br>
+│ ├── [ 76M] 1-15 基于草稿配置的调试接口的设计与实现<br>
+│ ├── [ 71M] 1-16 调试接口完善与会话信息读取存储<br>
+│ ├── [110M] 1-17 基于Runnable的FCAgent通用智能体实现<br>
+│ ├── [ 50M] 1-18 使用FCAgent及子线程优化应用调试接口<br>
+│ ├── [ 27M] 1-19 停止某次应用调试会话接口的设计与实现<br>
+│ ├── [ 57M] 1-20 获取调试会话消息分页数据的设计与实现<br>
+│ ├── [ 72M] 1-21 建议问题生成与prompt优化接口的设计实现<br>
+│ └── [3.0M] 1-22 本章总结<br>
+├── 第2章 LLMOps应用编排UI页面及交互开发/<br>
+│ ├── [3.5M] 2-1 本章介绍<br>
+│ ├── [ 66M] 2-2 应用编排页面API接口服务的设计与实现<br>
+│ ├── [ 66M] 2-3 编排页面基础布局页面拆解与实现<br>
+│ ├── [ 68M] 2-4 应用历史配置抽屉与配置回退逻辑实现<br>
+│ ├── [ 42M] 2-5 预设Prompt与配置草稿增量更新逻辑实现<br>
+│ ├── [ 42M] 2-6 AI优化Prompt组件实现与API接口对接<br>
+│ ├── [ 40M] 2-7 Agent长期记忆的获取与更新逻辑实现<br>
+│ ├── [ 91M] 2-8 长期记忆与对话开场白应用能力实现<br>
+│ ├── [102M] 2-9 审核配置与建议问题生成组件的设计实现<br>
+│ ├── [ 54M] 2-10 Agent引用知识库组件的设计与完善<br>
+│ ├── [ 50M] 2-11 引用插件折叠面板的设计与代码解读<br>
+│ ├── [ 52M] 2-12 关联插件模态窗的设计与代码解读<br>
+│ ├── [ 28M] 2-13 调试与预览基础布局与对话开场白设计<br>
+│ ├── [ 69M] 2-14 应用对话列表的设计与虚拟列表优化<br>
+│ ├── [ 96M] 2-15 应用调试会话与流式输出推理步骤UI实现<br>
+│ ├── [ 44M] 2-16 停止调试与建议问题生成交互逻辑实现<br>
+│ └── [2.8M] 2-17 本章总结<br>
+└── 附件/<br>
+├── [1012] 第1章 应用配置与Agent审核模块功能开发【代码】.zip<br>
+└── [1010] 第2章【代码】.zip<br>
+│ └── 5-第11周 开放API模块-搭建与其他应用连接的桥梁/<br>
+│ ├── 第1章 开放API模块设计与UI界面开发/<br>
+│ │ ├── [3.7M] 1-1 本章介绍<br>
+│ │ ├── [9.7M] 1-2 开放API与秘钥功能模块流程解析<br>
+│ │ ├── [ 19M] 1-3 开放API模块API接口文档撰写<br>
+│ │ ├── [ 13M] 1-4 API秘钥与终端用户数据库表设计与ORM实现<br>
+│ │ ├── [ 64M] 1-5 Api秘钥模块增删改查API的设计与实现<br>
+│ │ ├── [ 26M] 1-6 Api秘钥鉴权中间件的设计与完善<br>
+│ │ ├── [ 47M] 1-7 BaseAgent补全非流式响应功能实现块返回<br>
+│ │ ├── [ 55M] 1-8 应用调试流式响应接口服务分离与优化<br>
+│ │ ├── [ 84M] 1-9 开放Chat接口两种响应格式的设计与完善<br>
+│ │ ├── [ 29M] 1-10 开放API前端快速开始页面的设计与完善<br>
+│ │ ├── [ 40M] 1-11 开放API秘钥增删改查UI页面的设计与完善<br>
+│ │ └── [1.9M] 1-12 本章总结<br>
+│ └── 附件/<br>
+│ └── [4.5M] 【代码】开放API模块设计与UI界面开发.zip<br>
+└── 阶段四：【LLMOps扩展】实现通用型+支持多LLM接入的AI应用/<br>
+└── 1-第12周 LLMOps多应用及工作流模块/<br>
+├── 第1章 多应用与应用广场模块API接口及UI开发/<br>
+│ ├── [2.5M] 1-1 本章介绍<br>
+│ ├── [ 15M] 1-2 多应用与应用广场模块流程解析<br>
+│ ├── [ 23M] 1-3 应用增删改查与应用广场API文档撰写<br>
+│ ├── [ 51M] 1-4 Agent应用基础增删改查API接口设计与实现<br>
+│ ├── [ 27M] 1-5 基于现有应用创建副本API接口的设计与实现<br>
+│ ├── [ 28M] 1-6 基于Yaml文件的Agent配置管理器实现<br>
+│ ├── [ 22M] 1-7 应用广场模块三大API接口的设计与实现<br>
+│ ├── [ 46M] 1-8 LLMOps多应用模块UI页面的设计与实现<br>
+│ ├── [ 27M] 1-9 LLMOps应用广场UI页面与交互逻辑实现<br>
+│ └── [2.8M] 1-10 本章总结<br>
+├── 第2章 LLMOps工作流模块拆解及API接口开发/<br>
+│ ├── [3.8M] 2-1 本章介绍<br>
+│ ├── [ 25M] 2-2 LLMOps工作流模块运行流程及拆解<br>
+│ ├── [ 20M] 2-3 LangGraph设计可编排的工作流思路<br>
+│ ├── [ 43M] 2-4 LangGraph工作流基础框架搭建<br>
+│ ├── [ 88M] 2-5 工作流基础节点及开始结束节点的设计<br>
+│ ├── [ 44M] 2-6 工作流大语言模型节点的设计与实现<br>
+│ ├── [ 21M] 2-7 模板转换节点的设计与实现<br>
+│ ├── [ 53M] 2-8 知识库检索节点的设计与实现<br>
+│ ├── [ 50M] 2-9 Python代码节点的设计与实现<br>
+│ ├── [ 29M] 2-10 扩展插件节点的设计与实现<br>
+│ ├── [ 32M] 2-11 HTTP请求节点的设计与实现<br>
+│ ├── [ 32M] 2-12 LangGraph工作流并行节点的设计优化<br>
+│ ├── [ 29M] 2-13 工作流节点输入数据服务分离优化<br>
+│ ├── [ 38M] 2-14 工作流字典数据结构转Pydantic模型优化<br>
+│ ├── [ 38M] 2-15 LLMOps工作流模块API接口文档撰写<br>
+│ ├── [ 12M] 2-16 LLMOps工作流数据库表设计与ORM实现<br>
+│ ├── [ 98M] 2-17 节点与边数据校验逻辑的设计与实现<br>
+│ ├── [ 32M] 2-18 工作流模块增删改查API接口设计与实现<br>
+│ ├── [ 37M] 2-19 更新工作流编排配置API接口设计与实现<br>
+│ ├── [ 25M] 2-20 获取工作流编排配置API接口设计与实现<br>
+│ ├── [ 27M] 2-21 调试工作流API接口的设计与实现<br>
+│ ├── [ 16M] 2-22 发布与取消发布工作流API接口的设计实现<br>
+│ └── [3.5M] 2-23 本章总结<br>
+└── 附件/<br>
+└── [4.5M] 第1章 多应用与应用广场模块API接口及UI开发.zip<br>
+│ ├── 第3章 LLMOps前端工作流编排模块开发/<br>
+│ │ ├── 第3章 LLMOps前端工作流编排模块开发-1/<br>
+│ │ └── 第3章 LLMOps前端工作流编排模块开发-2/<br>
+│ └── 附件/<br>
+│ ├── [4.6M] 【代码】第2章 LLMOps工作流模块拆解及API接口开发.zip<br>
+│ ├── [4.4M] 第1章 多应用与应用广场模块API接口及UI开发.zip<br>
+│ └── [4.7M] 第3章 LLMOps前端工作流编排模块开发.zip<br>
+└── 2-第13周 LLMOps集成多LLM模型/<br>
+├── 第1章 LLMOps多LLM集成与通用接口开发/<br>
+│ ├── [2.6M] 1-1 本章介绍<br>
+│ ├── [6.9M] 1-2 LLMOps多LLM接入与集成功能介绍<br>
+│ ├── [ 19M] 1-3 模型管理器与动态导入实现多LLM接入思路<br>
+│ ├── [ 46M] 1-4 提供商与模型实体数据结构设计实现<br>
+│ ├── [10.0M] 1-5 GPT服务提供商接入与YAML配置文件编写<br>
+│ ├── [ 27M] 1-6 利用pydantic实现提供商与模型初始化<br>
+│ ├── [ 40M] 1-7 利用YAML配置+动态导入设计模型管理器<br>
+│ ├── [ 38M] 1-8 多LLM快速配置接入的技巧与实操<br>
+│ ├── [ 18M] 1-9 模型实体信息优化与工具调用特性扩展<br>
+│ ├── [ 14M] 1-10 LLMOps多LLM模块API文档撰写<br>
+│ ├── [ 17M] 1-11 多LLM模块API接口的设计与开发<br>
+│ └── [3.0M] 1-12 本章总结<br>
+├── 第2章 辅助Agent开发与LLM接入服务完善/<br>
+│ ├── [5.3M] 2-1 本章介绍@优库it资源网ukoou点com<br>
+│ ├── [ 27M] 2-2 Ollama快速部署本地LLM与常用命令技巧<br>
+│ ├── [ 12M] 2-3 在LLMOps项目中集成本地大语言模型<br>
+│ ├── [ 20M] 2-4 辅助Agent模块介绍与运行逻辑分析<br>
+│ ├── [ 14M] 2-5 辅助Agent模块API接口文档撰写<br>
+│ ├── [ 58M] 2-6 辅助Agent模块API基础逻辑的设计与实现<br>
+│ ├── [ 27M] 2-7 Faiss本地向量数据库检索工具的设计实现<br>
+│ ├── [ 44M] 2-8 创建Agent智能体工具的设计与实现<br>
+│ ├── [ 24M] 2-9 调用语言模型管理器并配置默认模型<br>
+│ ├── [ 77M] 2-10 完善LLMOps遗留LLM配置校验逻辑<br>
+│ ├── [ 78M] 2-11 ReActAgent智能体的设计思路与实现<br>
+│ ├── [ 40M] 2-12 应用编排模型配置模态窗的设计与实现<br>
+│ ├── [ 14M] 2-13 工作流LLM节点模型配置与选择逻辑<br>
+│ ├── [ 30M] 2-14 LLMOps辅助Agent页面与交互逻辑实现<br>
+│ └── [2.8M] 2-15 本章总结<br>
+└── 附件/<br>
+├── [4.7M] 【代码】第1章 LLMOps多LLM集成与通用接口开发.zip<br>
+└── [6.7M] 【代码】第2章 辅助Agent开发与LLM接入服务完善.zip<br>
+├── 阶段五：【 LLMOps平台调优部署】前端调优及生产环境调优部署/<br>
+│ ├── 1-第14周上 LLMOps统计模块开发-呈现使用情况/<br>
+│ │ ├── 第1章 统计模块开发-快速了解成本与使用信息/<br>
+│ │ │ ├── [2.5M] 1-1 本章介绍<br>
+│ │ │ ├── [4.1M] 1-2 统计模块与AI消息Token输出功能解析<br>
+│ │ │ ├── [ 18M] 1-3 LLMOps统计模块API文档设计与撰写<br>
+│ │ │ ├── [ 50M] 1-4 设计并完善LLM输入与输出Token统计功能<br>
+│ │ │ ├── [ 92M] 1-5 LLMOps统计模块API的设计与实现<br>
+│ │ │ ├── [ 20M] 1-6 完善调试会话AI消息耗时与token数展示<br>
+│ │ │ ├── [ 20M] 1-7 统计模块UI界面基础架构及指标卡设计<br>
+│ │ │ ├── [ 20M] 1-8 接入ECharts实现可视化图表展示<br>
+│ │ │ └── [2.4M] 1-9 本章总结<br>
+│ │ ├── 第2章 应用发布模块与WebApp设计开发/<br>
+│ │ │ ├── [5.2M] 2-1 本章介绍<br>
+│ │ │ ├── [ 10M] 2-2 关联工作流与发布功能模块解析与流程<br>
+│ │ │ ├── [ 65M] 2-3 优化Agent配置接口并关联工作流<br>
+│ │ │ ├── [ 30M] 2-4 应用编排页关联工作流UI与交互逻辑实现<br>
+│ │ │ ├── [ 25M] 2-5 发布模块API文档撰写与数据库表设计<br>
+│ │ │ ├── [ 26M] 2-6 WebApp凭证标识配置获取与重生成实现<br>
+│ │ │ ├── [ 68M] 2-7 WebApp基础信息与对话接口设计实现<br>
+│ │ │ ├── [ 61M] 2-8 WebApp会话与消息列表接口的设计与实现<br>
+│ │ │ ├── [ 24M] 2-9 会话模块增删改查接口的设计与实现<br>
+│ │ │ ├── [ 26M] 2-10 发布配置页面UI与交互逻辑的设计实现<br>
+│ │ │ ├── [ 43M] 2-11 WebApp模块UI 布局与会话列表设计实现<br>
+│ │ │ ├── [ 36M] 2-12 WebApp模块对话功能交互设计实现<br>
+│ │ │ ├── [7.5M] 2-13 接入markdown-it实现AI消息富文本输出<br>
+│ │ │ └── [2.2M] 2-14 本章总结<br>
+│ │ └── 附件/<br>
+│ │ ├── [6.8M] 【代码】第2章 应用发布模块与WebApp设计开发<br>
+│ │ └── [6.7M] 【代码】统计模块开发-快速了解成本与使用信息<br>
+│ ├── 2-第14周下 LLMOps前端项目优化与配置、部署/<br>
+│ │ ├── 第1章 LLMOps前端优化思路分享与项目部署/<br>
+│ │ │ ├── [3.3M] 1-1 本章介绍<br>
+│ │ │ ├── [ 16M] 1-2 为LLMOps项目添加404与403错误页面<br>
+│ │ │ ├── [ 18M] 1-3 优化并统一项目hooks与ref的使用<br>
+│ │ │ ├── [ 14M] 1-4 分离消息组件并优化markdown展示效果<br>
+│ │ │ ├── [ 26M] 1-5 完善LLMOps流式事件输出错误消息的展示<br>
+│ │ │ ├── [ 24M] 1-6 完善页面按钮跳转逻辑修复工作流节点冲突<br>
+│ │ │ ├── [ 27M] 1-7 Vite常用命令学习与前端环境变量配置<br>
+│ │ │ ├── [ 15M] 1-8 优化并补全LLMOps项目ts类型声明<br>
+│ │ │ ├── [ 30M] 1-9 LLMOps项目服务部署架构设计与学习<br>
+│ │ │ ├── [ 30M] 1-10 编写Dockerfile实现Vue项目快速部署<br>
+│ │ │ ├── [ 12M] 1-11 使用docker-compose管理Docker容器<br>
+│ │ │ └── [2.5M] 1-12 1-12+本章总结<br>
+│ │ └── 附件/<br>
+│ │ └── [4.3M] 【代码】 LLMOps前端优化思路分享与项目部署<br>
+│ ├── 3-第15周上 LLMOPs后端项目优化与配置/<br>
+│ │ ├── 第1章 后端项目优化与向量数据库插件化集成/<br>
+│ │ │ ├── [3.1M] 1-1 本章介绍<br>
+│ │ │ ├── [ 13M] 1-2 并发场合下日志写入冲突问题优化解决<br>
+│ │ │ ├── [ 23M] 1-3 Weaviate向量数据库插件化集成与警告修复<br>
+│ │ │ ├── [ 27M] 1-4 完善Postgres数据库索引设计与添加<br>
+│ │ │ ├── [ 14M] 1-5 Postgres数据库多表查询优化与实现<br>
+│ │ │ ├── [ 18M] 1-6 优化存储推理过程逻辑避免获取空数据<br>
+│ │ │ ├── [ 16M] 1-7 区分LLMOps运行环境并配置Celery猴子补丁<br>
+│ │ │ ├── [ 15M] 1-8 LangChain-0.3版本升级指南与代码变化<br>
+│ │ │ ├── [ 16M] 1-9 pip-tools——Python依赖管理终极方案<br>
+│ │ │ ├── [5.6M] 1-10 模型onupdate配置与项目Bug维护<br>
+│ │ │ ├── [ 26M] 1-11 完善项目基础requirements.txt配置<br>
+│ │ │ └── [4.1M] 1-12 本章总结<br>
+│ │ └── 附件/<br>
+│ │ └── [ 25M] 【代码】15周(上)<br>
+│ └── 4-第15周下 LLMOps生产环境部署与优化/<br>
+│ ├── 第1章 LLMOps项目部署与微软OpenAI接口/<br>
+│ │ ├── [2.8M] 1-1 本章介绍<br>
+│ │ ├── [ 12M] 1-2 项目Redis容器化配置部署与持久化<br>
+│ │ ├── [ 17M] 1-3 Postgres数据库容器化配置与持久化<br>
+│ │ ├── [ 20M] 1-4 Weaviate向量数据库容器化配置与持久化<br>
+│ │ ├── [ 24M] 1-5 Gunicorn服务器与命令使用技巧<br>
+│ │ ├── [ 14M] 1-6 编写API与Celery服务执行命令脚本<br>
+│ │ ├── [ 16M] 1-7 unstructured依赖于nltk数据下载<br>
+│ │ ├── [ 34M] 1-8 同步与异步Weaviate对Gevent的影响<br>
+│ │ ├── [ 43M] 1-9 编写Flask API服务Dockerfile容器配置<br>
+│ │ ├── [ 10M] 1-10 编写Celery服务Docker容器配置<br>
+│ │ ├── [ 20M] 1-11 完善Nginx反向代理服务器配置与部署<br>
+│ │ ├── [ 13M] 1-12 SSL证书生成与Nginx配置集成<br>
+│ │ ├── [ 10M] 1-13 将LLMOps项目部署到腾讯云服务器<br>
+│ │ ├── [ 15M] 1-14 Azure OpenAI接口与企业服务介绍<br>
+│ │ └── [4.5M] 1-15 本章总结<br>
+│ └── 附件/<br>
+│ └── [ 25M] 15周(下)<br>
+└── 阶段六：LLMOps应用平台多模态插件+第三方应用集成/<br>
+└── 1-第16周 多模态插件及开放API与三方应用集成/<br>
+├── 第1章 Agent应用多模态输入输出功能开发/<br>
+│ ├── [3.2M] 1-1 本章介绍<br>
+│ ├── [9.6M] 1-2 Agent多模态输入输出功能介绍与流程解析<br>
+│ ├── [ 23M] 1-3 GPT多模态输入参数结构与LangChain实现<br>
+│ ├── [ 15M] 1-4 Whisper服务与语音文本互转功能设计思路<br>
+│ ├── [ 17M] 1-5 多模态输入数据库表设计与API文档更新<br>
+│ ├── [ 31M] 1-6 优化基础语言模型并集成图片输入功能<br>
+│ ├── [ 11M] 1-7 切换模型查找不到GPT2词表与解决方案<br>
+│ ├── [ 34M] 1-8 完善LLMOps前端多模态图片输入功能<br>
+│ ├── [ 11M] 1-9 语音输入与应用配置API接口的设计与实现<br>
+│ ├── [ 20M] 1-10 对接Whisper服务实现语音转文本功能<br>
+│ ├── [ 20M] 1-11 Agent编排页面语音能力配置与实现<br>
+│ ├── [ 13M] 1-12 TTS文字流式转语音功能的设计与实现<br>
+│ ├── [ 43M] 1-13 完善LLMOps前端tts语音播放功能<br>
+│ └── [2.5M] 1-14 本章总结<br>
+├── 第2章 Agent集成第三方社交媒体平台/<br>
+│ ├── [4.9M] 2-1 本章介绍<br>
+│ ├── [ 16M] 2-2 Agent社交媒体平台发布功能与流程解析<br>
+│ ├── [ 35M] 2-3 微信公众号开发基础与Agent对接思路<br>
+│ ├── [ 19M] 2-4 利用wechatpy简化微信公众号对接<br>
+│ ├── [ 23M] 2-5 三方平台发布模块API文档的撰写与数据库设计<br>
+│ ├── [ 33M] 2-6 LLMOps项目前端发布模块API与UI开发<br>
+│ ├── [ 33M] 2-7 微信消息推送API接口的设计与开发<br>
+│ ├── [ 17M] 2-8 从微信公众号扩展到其他社交平台的思路<br>
+│ ├── [ 17M] 2-9 扩展课时-快速接入DeepSeek云端模型<br>
+│ └── [3.2M] 2-10 本章总结<br>
+└── 附件/<br>
+├── [ 26M] 【代码】Agent应用多模态输入输出功能开发<br>
+└── [ 26M] 【代码】Agent社交媒体平台发布功能开发<br>
+├── 阶段七：【LLMOps应用平台企业级商用】火热五大商业级AI应用实战/<br>
+│ ├── 1-第17周上 构建智能客服系统-实现24h无人轮值客服/<br>
+│ │ ├── 第1章 基于LLM的智能客服问答Agent编排与构建/<br>
+│ │ │ ├── [2.6M] 1-1 本章介绍<br>
+│ │ │ ├── [ 17M] 1-2 智能客服问答Agent功能设计与模块拆分<br>
+│ │ │ ├── [ 35M] 1-3 利用工作流对接快递鸟快递查询API接口<br>
+│ │ │ ├── [ 21M] 1-4 电商问答知识库的设计与数据存储<br>
+│ │ │ ├── [ 30M] 1-5 工作流实现CRAG单次流程降低幻觉概率<br>
+│ │ │ ├── [ 29M] 1-6 Agent智能体应用基础功能编排与设置<br>
+│ │ │ ├── [ 11M] 1-7 利用开放API设计中间件对接微信客服的思路<br>
+│ │ │ └── [4.1M] 1-8 本章总结<br>
+│ │ └── 附件/<br>
+│ │ └── [649K] 【代码】基于LLM的智能客服问答Agent编排与构建<br>
+│ ├── 2-第17周下 构建口语学习助手-低成本拥有全天候助教/<br>
+│ │ ├── 第1章 利用gemini编排构建实时口语学习助手/<br>
+│ │ │ ├── [3.4M] 1-1 本章介绍<br>
+│ │ │ ├── [ 26M] 1-2 支持Realtime实时语音的大语言模型运行流程解析<br>
+│ │ │ ├── [ 24M] 1-3 gemini-flash-exp模型API参数与使用技巧<br>
+│ │ │ ├── [ 16M] 1-4 基于gemini的口语助手编排与设计思路<br>
+│ │ │ ├── [ 11M] 1-5 EleventLabs音频工具的使用与tts的接入<br>
+│ │ │ ├── [ 25M] 1-6 gemini口语学习助手项目初始化与依赖安装<br>
+│ │ │ ├── [ 38M] 1-7 口语助手预设prompt、监听模块设计与实现<br>
+│ │ │ ├── [ 27M] 1-8 使用异步队列发送和接收音频的设计与实现<br>
+│ │ │ ├── [9.1M] 1-9 asyncio事件循环与口语助手的运行实现<br>
+│ │ │ └── [3.6M] 1-10 本章总结<br>
+│ │ └── 附件/<br>
+│ │ ├── [5.1K] 【代码】17周下gemini-spoken-assistant<br>
+│ │ └── [3.6M] 【课件资料】第17周<br>
+│ └── 3-第18周上 快速构建图片转HTML前端智能工具/<br>
+│ └── 第1章 利用Agent多轮迭代构建图片转HTML工具/<br>
+│ ├── [3.7M] 1-1 本章介绍<br>
+│ ├── [ 28M] 1-2 图片转HTML应用运行流程与需求拆解<br>
+│ ├── [ 21M] 1-3 图片转代码Agent应用可视化编排与测试<br>
+│ ├── [ 23M] 1-4 图片转代码前端框架选择与项目初始化<br>
+│ ├── [ 26M] 1-5 在Next.js中对接腾讯云COS实现图片上传<br>
+│ └── [ 14M] 1-6 在Next.js中实现转发开放API实现API秘钥的隐藏<br>
+│ │ │ ├── [ 30M] 1-7 完善Next.js代码生成、更新与预览交互逻辑完善<br>
+│ │ │ ├── [ 20M] 1-8 图片转HTML扩展与复杂UI转代码实现思路<br>
+│ │ │ └── [2.3M] 1-9 本章总结<br>
+│ │ └── 附件/<br>
+│ │ ├── [ 74K] 【代码】ui-to-code.zip<br>
+│ │ └── [2.1M] 第18周(上) 课件与资料.zip<br>
+│ ├── 4-第18周下 建虚拟数字人-批量生成口播视频&amp;直播推流/<br>
+│ │ ├── 第1章 基于音频驱动的虚拟数字人生成器Agent构建/<br>
+│ │ │ ├── [2.6M] 1-1 本章介绍<br>
+│ │ │ ├── 优库it资源网ukoou点com<br>
+│ │ │ ├── [ 14M] 1-2 虚拟数字人Agent智能体运行流程与拆解<br>
+│ │ │ ├── [ 23M] 1-3 LLMOps文案生成器Agent基础信息编排<br>
+│ │ │ ├── [ 35M] 1-4 利用Gradio对接LLMOps开放API与tts服务<br>
+│ │ │ ├── [ 18M] 1-5 CUDA环境配置、安装与注意事项<br>
+│ │ │ ├── [ 26M] 1-6 EchoMimic配置、部署安装与注意事项<br>
+│ │ │ ├── [ 12M] 1-7 利用Gradio连接Agent与EchoMinic<br>
+│ │ │ ├── [ 21M] 1-8 其他数字人SDK与数字人Agent应用扩展<br>
+│ │ │ └── [2.6M] 1-9 本章总结<br>
+│ │ └── 附件/<br>
+│ │ ├── [ 20M] 【代码】EchoMimic.zip<br>
+│ │ └── [2.8M] 【课件资料】第18周(下).zip<br>
+│ └── 5-第19周 快速构建PPT自动生成工具/<br>
+│ ├── 第1章 扩展LLMOps内置插件实现文本转PPT智能体/<br>
+│ │ ├── [3.3M] 1-1 本章介绍<br>
+│ │ ├── [ 14M] 1-2 自然语言转PPT应用工具运行流程与拆解<br>
+│ │ ├── [ 31M] 1-3 自然语言转PPT智能体基础信息配置与编排<br>
+│ │ ├── [ 17M] 1-4 python-pptx三方库的使用与快速上手<br>
+│ │ ├── [ 12M] 1-5 1-5+mistune三方库的使用与快速上手<br>
+│ │ ├── [ 42M] 1-6 为LLMOps平台设计并集成md2ppt内置插件<br>
+│ │ ├── [ 13M] 1-7 扩展-基于Moffee实现的云端PPT生成<br>
+│ │ ├── [ 16M] 1-8 五大编排应用运行流程与编排架构回顾<br>
+│ │ └── [3.1M] 1-9 本章总结<br>
+│ └── 附件/<br>
+│ └── [1.7M] 【课件】第19周-第1章.zip<br>
+└── 阶段八：课程总结与LLM大语言模型进阶/<br>
+├── 1-第20周上 课程回顾与总结/<br>
+│ ├── 第1章 LLMOps项目回顾与开发总结/<br>
+│ │ ├── [3.9M] 1-1 本章介绍<br>
+│ │ ├── [ 54M] 1-2 LLMOps项目架构与运行流程回顾<br>
+│ │ ├── [ 27M] 1-3 工作流Python代码节点沙箱与云函数<br>
+│ │ ├── [ 28M] 1-4 无框架下的LLMOps工作流与其他类型节点<br>
+│ │ ├── [ 32M] 1-5 Python中的Websocket连接与LLM交互<br>
+│ │ ├── [ 42M] 1-6 服务器部署LLM配置与并发量计算公式<br>
+│ │ ├── [ 25M] 1-7 langchain-core各模块组件核心功能<br>
+│ │ ├── [ 20M] 1-8 LLM评测基准与各大排行榜单<br>
+│ │ ├── [ 27M] 1-9 LLM应用开发社区、框架与未来发展方向<br>
+│ │ ├── [ 17M] 1-10 高频AI&amp;LLM应用开发面试题速览<br>
+│ │ └── [3.8M] 1-11 本章总结<br>
+│ └── 附件/<br>
+│ ├── [581K] LLM 评测基准与各大排行榜单.pdf<br>
+│ ├── [667K] LLM应用开发社区、框架与未来发展方向.pdf<br>
+│ ├── [1.6K] 【代码】websocket-spark-llm-demo.zip<br>
+│ ├── [6.6M] 【资料】架构图等资料.zip<br>
+│ ├── [469K] 工作流 Python 代码节点沙箱与云函数.pdf<br>
+│ ├── [571K] 无框架下的 LLMOps 工作流与节点扩展.pdf<br>
+│ ├── [628K] 服务器部署 LLM 配置与输出速度计算公式.pdf<br>
+│ └── [1.4M] 高频AI&amp;LLM应用开发面试题速览.pdf<br>
+└── 2-第20周下 LLM大语言模型的预训练&amp;微调与数据投喂/<br>
+├── 第1章 扩展学习-LLM的预训练&amp;微调初步了解/<br>
+│ ├── [2.3M] 1-1 本章介绍<br>
+│ ├── [ 19M] 1-2 预训练&amp;微调与RAG的差异与适用场景<br>
+│ ├── [ 36M] 1-3 零编程通过可视化方式快速微调GPT模型<br>
+│ ├── [ 47M] 1-4 本地LLM的快速微调与数据结构示例<br>
+│ ├── [ 26M] 1-5 快速训练一个LLM大语言模型演示示例<br>
+│ └── [2.1M] 1-6 本章总结<br>
+└── 附件/<br>
+├── [1.5M] 1.pdf<br>
+└── [756K] 【代码】4和5节代码和数据.zip</p> <p>└── 资料代码/<br>
+└── 电子书/</p> <h2 id="下载地址"><a href="#下载地址" class="header-anchor">#</a> 下载地址：</h2> <p><a href="https://www.itxbzxw.com/learn/rgongzhineng/11730.html" target="_blank" rel="noopener noreferrer">AI Agent全栈开发工程师【完结】-小白自学网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div></main></div> <!----></div> <ul class="sub-sidebar sub-sidebar-wrapper" style="width:0;" data-v-4a336604 data-v-ff03da5a></ul></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-2a01419c data-v-2a01419c><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-2a01419c><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-2a01419c></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-2a01419c></path></svg></div><div></div></div></div>
+    <script src="/assets/js/app.28272836.js" defer></script><script src="/assets/js/3.e4614d1a.js" defer></script><script src="/assets/js/1.26ec475b.js" defer></script><script src="/assets/js/38.f46a40f8.js" defer></script>
+  </body>
+</html>
